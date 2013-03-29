@@ -10,6 +10,6 @@ class SuggestionsMailer < ActionMailer::Base
   def new_suggestion(suggestion)
     @suggestion = suggestion
 
-    mail to: @suggestion.proposal.proposer.email, subject: "Someone just posted a suggestion for your euruko proposal!"
+    mail to: @suggestion.proposal.proposer.email, subject: "Someone just posted a suggestion on #{@suggestion.proposal.title}!"
   end
 end
