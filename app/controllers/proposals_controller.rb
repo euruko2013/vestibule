@@ -23,6 +23,7 @@ class ProposalsController < ApplicationController
   def create
     @proposal = current_user.proposals.new(params[:proposal])
     if @proposal.save
+      ProposalMailer.new_proposal(@proposal).deliver 
       redirect_to proposals_path
     else
       render :new
