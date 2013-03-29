@@ -1,7 +1,7 @@
 Vestibule::Application.routes.draw do
   resources :users, :only => [:show, :edit, :update]
   resources :proposals, :except => [:destroy] do
-    resources :suggestions, :only => [:create]
+    resources :suggestions, :only => [:create, :update]
     member do
       post :withdraw
       post :republish
