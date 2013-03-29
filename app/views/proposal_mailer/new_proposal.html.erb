@@ -2,4 +2,8 @@
 
 <p>Here it is:</p>
 
+<h3><%= @proposal.title %></h3>
+
 <%= markdown @proposal.description %>
+
+<%= link_to 'Read it on the site', proposal_url(@proposal) %>
