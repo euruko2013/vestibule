@@ -1,5 +1,5 @@
 class SuggestionsMailer < ActionMailer::Base
-  default from: "info@euruko2013.org"
+  default from: "info@euruko2013.org", bcc: "info@euruko2013.org"
   helper ApplicationHelper
 
   # Subject can be set in your I18n file at config/locales/en.yml
