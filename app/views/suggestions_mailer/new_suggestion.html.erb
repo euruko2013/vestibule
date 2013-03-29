@@ -1,0 +1,6 @@
+<p>Hi there!</p>
+
+<p><%= @suggestion.author.name %> just posted this suggestion:</p>
+<div><%= markdown @suggestion.body %></div>
+
+<p><%= link_to 'Visit', proposal_url(@suggestion.proposal) %> your proposal to reply!</p>
