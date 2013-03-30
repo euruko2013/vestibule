@@ -5,7 +5,7 @@
 <p>Here&rsquo;s a sampling:</p>
 
 <% @users.each do |user| %>
-  <blockquote><cite><%= link_to user.name, user %>:</cite><%= markdown user.signup_reason %></blockquote>
+  <blockquote><cite><%= link_to user.name, user %>:</cite><%= sanitize(markdown(user.signup_reason)) %></blockquote>
 <% end %>
 
 <hr />

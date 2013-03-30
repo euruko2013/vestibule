@@ -18,7 +18,7 @@
         <% if @proposal.withdrawn? %>
             <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
         <% end %>
-        <div class="description"><%= markdown @proposal.description %></div>
+        <div class="description"><%= sanitize(markdown(@proposal.description)) %></div>
 
         <% if can? :vote, @proposal %>
             <% if current_user.voted_on?(@proposal) %>
@@ -93,7 +93,7 @@
                         <% end %>
                         <span class="age"><%= time_ago_in_words suggestion.updated_at %> ago</span>
                     </h5>
-                    <section class="body"><%= markdown suggestion.body %></section>
+                    <section class="body"><%= sanitize(markdown(suggestion.body)) %></section>
                 <% end %>
             <% end %>
         </ul>
