@@ -4,6 +4,6 @@ class ProposalMailer < ActionMailer::Base
 
   def new_proposal(proposal)
     @proposal = proposal
-    mail subject: 'New proposal guys'
+    mail subject: 'A new proposal has been posted!'
   end
 end
