@@ -24,6 +24,9 @@ defaults: &defaults
     account: ''
     domain: ''
     allow_linker: false
+  mailer:
+    from: '"EuRuKo 2013" <info@euruko2013.org>'
+    bcc: 'info@euruko2013.org'
 
 development:
   <<: *defaults

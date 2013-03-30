@@ -20,6 +20,9 @@ defaults: &defaults
     account: ''
     domain: ''
     allow_linker: false
+  mailer:
+    from: '"Your Event" <info@example.org>'
+    bcc: 'info@example.org'
 
 development:
   <<: *defaults
