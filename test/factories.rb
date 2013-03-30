@@ -5,6 +5,7 @@ FactoryGirl.define do
     f.sequence(:github_uid) { |n| "#{n}123456" }
     f.github_nickname { Faker::Lorem.words(2).join('_') }
     f.email { Faker::Internet.email }
+    f.subscribe_to_suggestions_notifications { true }
   end
 
   factory :proposal do |f|

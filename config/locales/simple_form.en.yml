@@ -28,6 +28,7 @@ en:
         body: 'What would make this proposal better?'
       user:
         signup_reason: 'About you'
+        subscribe_to_suggestions_notifications: 'Email me for new suggestions on my proposals'
     hints:
       user:
         signup_reason: Tell everyone a little bit about what you are looking to get out of the event. What interests you? What doesn't interest you?
