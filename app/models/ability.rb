@@ -24,6 +24,12 @@ class Ability
       can [:update, :create, :withdraw, :republish], Proposal, :proposer_id => user.id
 
       can [:create], Suggestion, :author_id => user.id
+
+      # EuRuKo 2013 committee shall be able to moderate stuff
+      if user.email.present? && user.email =~ /@euruko2013\.org$/
+        can :update, Suggestion
+      end
+
       can [:vote], Proposal
       cannot [:vote], Proposal, :proposer_id => user.id
     end

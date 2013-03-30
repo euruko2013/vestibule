@@ -17,11 +17,26 @@ class ProposalSuggestionTest < IntegrationTestCase
         refute page.has_css?("form[action='#{proposal_suggestions_path(@proposal)}']")
       end
 
-      should "be able to subscribe to the rss feed of suggestions to the proposal" do
-        visit proposal_path(@proposal)
-        assert page.has_css?("link[rel='alternate'][type='application/rss+xml'][href$='#{proposal_path(@proposal, :format => :rss)}']")
-        visit proposal_path(@proposal, :format => :rss)
-        assert_match %r{application/rss\+xml}, page.response_headers['Content-Type']
+      context 'when there are some suggestions already' do
+        setup do
+          @other_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :created_at => 2.days.ago, :updated_at => 2.days.ago)
+        end
+
+        should "be able to subscribe to the rss feed of suggestions to the proposal" do
+          assert page.has_css?("link[rel='alternate'][type='application/rss+xml'][href$='#{proposal_path(@proposal, :format => :rss)}']")
+          visit proposal_path(@proposal, :format => :rss)
+          assert_match %r{application/rss\+xml}, page.response_headers['Content-Type']
+        end
+
+        should 'see the existing suggestions in the feed' do
+          visit proposal_path(@proposal, :format => :rss)
+          assert page.has_xpath?('.//item/title', :text => "Suggestion from #{@other_suggestion.author.name} (@#{@other_suggestion.author.github_nickname})")
+          assert page.has_xpath?('.//item/description', :text => @other_suggestion.body)
+        end
+
+        should "not be able to edit an existing suggestion of someone else" do
+          refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, @other_suggestion)}']")
+        end
       end
     end
 
@@ -95,6 +110,17 @@ Other than that, sounds great!
           assert page.has_xpath?('.//item[position() = 1]/title', :text => "Suggestion from #{@me.name} (@#{@me.github_nickname})")
           assert page.has_xpath?('.//item[position() = 1]/description', :text => "I think you should focus on the first bit, because that's going to be more interesting to newbies.")
         end
+
+        should "not be able to edit an existing suggestion of someone else" do
+          refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, @other_suggestion)}']")
+        end
+
+        should "not be able to edit an existing suggestion of their own" do
+          own_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :author => @me)
+          visit proposal_path(@proposal)
+
+          refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, own_suggestion)}']")
+        end
       end
 
       should "anonymise suggestions by the proposer" do
@@ -143,8 +169,32 @@ Other than that, sounds great!
         assert page.has_content?("You respond")
       end
 
+      should "not be able to edit an existing suggestion of their own" do
+        own_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :author => @proposer)
+        visit proposal_path(@proposal)
+
+        refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, own_suggestion)}']")
+      end
+
+      should "not be able to edit an existing suggestion of someone else" do
+        other_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal)
+        visit proposal_path(@proposal)
+
+        refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, other_suggestion)}']")
+      end
     end
 
+    context "a moderator viewing a proposal with suggestions" do
+      setup do
+        @suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :created_at => 2.days.ago, :updated_at => 2.days.ago)
+        sign_in FactoryGirl.create(:user, :email => 'moderator@euruko2013.org')
+        visit proposal_path(@proposal)
+      end
+
+      should "be able to edit the suggestion" do
+        assert page.has_css?("form[action='#{proposal_suggestion_path(@proposal, @suggestion)}']")
+      end
+    end
   end
 
   def suggest(body)
