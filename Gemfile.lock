@@ -142,9 +142,9 @@ GEM
     omniauth-twitter (0.0.14)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
-    paper_trail (1.6.4)
-      actionpack (>= 2.3)
-      activerecord (>= 2.3)
+    paper_trail (2.7.1)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
     pg (0.14.1)
     polyglot (0.3.3)
     powerbar (1.0.11)
@@ -254,7 +254,7 @@ DEPENDENCIES
   omniauth-github (= 1.0.3)
   omniauth-openid
   omniauth-twitter
-  paper_trail (= 1.6.4)
+  paper_trail (~> 2.7.1)
   pg (= 0.14.1)
   rails (= 3.2.13)
   redcarpet (= 2.2.2)

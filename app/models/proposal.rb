@@ -2,6 +2,7 @@ class Proposal < ActiveRecord::Base
   belongs_to :proposer, :class_name => 'User'
   has_many :suggestions
 
+  has_paper_trail
   acts_as_voteable
 
   validates :title, :presence => true
