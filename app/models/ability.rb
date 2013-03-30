@@ -1,6 +1,8 @@
 class Ability
   include CanCan::Ability
 
+  ADMIN_EMAILS = ['nikosd@euruko2013.org']
+
   # See the wiki for how to define abilities:
   # https://github.com/ryanb/cancan/wiki/Defining-Abilities
   def initialize(user)
@@ -24,6 +26,9 @@ class Ability
       can [:update, :create, :withdraw, :republish], Proposal, :proposer_id => user.id
 
       can [:create], Suggestion, :author_id => user.id
+      
+      can :update, Suggestion if ADMIN_EMAILS.include? user.email
+
       can [:vote], Proposal
       cannot [:vote], Proposal, :proposer_id => user.id
     end
