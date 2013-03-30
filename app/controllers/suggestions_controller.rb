@@ -27,7 +27,8 @@ class SuggestionsController < ApplicationController
   end
 
   private
-    def fetch_proposal
-      @proposal = Proposal.find(params[:proposal_id])
-    end
+
+  def fetch_proposal
+    @proposal = Proposal.find(params[:proposal_id])
+  end
 end
