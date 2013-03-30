@@ -35,3 +35,5 @@ en:
       proposal:
         title: 'This is all we need from you for your suggestion.  Think of something snappy.'
         description: 'Tell everyone a bit more about what your talk is about. The community will help you develop this into a description of exactly what to expect from your talk.'
+      suggestion:
+        body: 'Foul language will not be tolerated in the comments. Please read our <a href="http://euruko2013.org/codeofconduct">Code of Conduct</a> for further info.'
