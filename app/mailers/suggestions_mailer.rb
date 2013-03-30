@@ -2,6 +2,7 @@ class SuggestionsMailer < ActionMailer::Base
   default from: "info@euruko2013.org",
           bcc: "info@euruko2013.org"
   helper ApplicationHelper
+  layout 'mailer'
 
   def new_suggestion(suggestion)
     @suggestion = suggestion
