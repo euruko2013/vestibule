@@ -12,5 +12,4 @@ class ProposalMailerTest < ActionMailer::TestCase
     assert_equal ["info@euruko2013.org"], mail.from
     assert_match @proposal.description, mail.body.encoded
   end
-
 end

@@ -12,5 +12,4 @@ class SuggestionsMailerTest < ActionMailer::TestCase
     assert_equal ["info@euruko2013.org"], mail.from
     assert_match @suggestion.body, mail.body.encoded
   end
-
 end
