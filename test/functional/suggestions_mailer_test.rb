@@ -15,12 +15,16 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert_equal "Someone just posted a suggestion on '#{@suggestion.proposal.title}'!", @mail.subject
     end
 
-    should "not have author as recipient" do
-      assert_equal [], @mail.to
+    should "have no recipient" do
+      assert_equal nil, @mail.to
+    end
+
+    should "not have proposer in bcc" do
+      assert !@suggestion.proposal.proposer.email.in?(@mail.bcc)
     end
 
     should "have info@euruko2013.org in bcc" do
-      assert_equal ["info@euruko2013.org"], @mail.bcc
+      assert_includes @mail.bcc, "info@euruko2013.org"
     end
 
     should "have info@euruko2013.org as sender" do
@@ -41,12 +45,12 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert_equal "Someone just posted a suggestion on '#{@suggestion.proposal.title}'!", @mail.subject
     end
 
-    should "have author as recipient" do
-      assert_equal [@suggestion.proposal.proposer.email], @mail.to
+    should "have proposer in bcc" do
+      assert_includes @mail.bcc, @suggestion.proposal.proposer.email
     end
 
     should "have info@euruko2013.org in bcc" do
-      assert_equal ["info@euruko2013.org"], @mail.bcc
+      assert_includes @mail.bcc, "info@euruko2013.org"
     end
 
     should "have info@euruko2013.org as sender" do
@@ -68,12 +72,12 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert_equal "Someone just posted a suggestion on '#{@suggestion.proposal.title}'!", @mail.subject
     end
 
-    should "not have author as recipient" do
-      assert_equal [], @mail.to
+    should "not have proposer in bcc" do
+      assert !@suggestion.proposal.proposer.email.in?(@mail.bcc)
     end
 
     should "have info@euruko2013.org in bcc" do
-      assert_equal ["info@euruko2013.org"], @mail.bcc
+      assert_includes @mail.bcc, "info@euruko2013.org"
     end
 
     should "have info@euruko2013.org as sender" do
