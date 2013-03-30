@@ -91,6 +91,8 @@ GEM
     kgio (2.8.0)
     launchy (2.1.2)
       addressable (~> 2.3)
+    letter_opener (1.0.0)
+      launchy (>= 2.0.4)
     libwebsocket (0.1.7.1)
       addressable
       websocket
@@ -243,6 +245,7 @@ DEPENDENCIES
   impressionist
   jquery-rails
   launchy
+  letter_opener
   minitest
   minitest-reporters (>= 0.8.0)
   mocha (= 0.13.1)
