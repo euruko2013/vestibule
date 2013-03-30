@@ -23,12 +23,12 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert !@suggestion.proposal.proposer.email.in?(@mail.bcc)
     end
 
-    should "have info@euruko2013.org in bcc" do
-      assert_includes @mail.bcc, "info@euruko2013.org"
+    should "have default mailer bcc in bcc" do
+      assert_includes @mail.bcc, Settings.mailer.bcc
     end
 
-    should "have info@euruko2013.org as sender" do
-      assert_equal ["info@euruko2013.org"], @mail.from
+    should "have default mailer from as sender" do
+      assert_equal ["info@example.org"], @mail.from
     end
 
     should "have body" do
@@ -49,12 +49,12 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert_includes @mail.bcc, @suggestion.proposal.proposer.email
     end
 
-    should "have info@euruko2013.org in bcc" do
-      assert_includes @mail.bcc, "info@euruko2013.org"
+    should "have default mailer bcc in bcc" do
+      assert_includes @mail.bcc, Settings.mailer.bcc
     end
 
     should "have info@euruko2013.org as sender" do
-      assert_equal ["info@euruko2013.org"], @mail.from
+      assert_equal ["info@example.org"], @mail.from
     end
 
     should "have body" do
@@ -76,12 +76,12 @@ class SuggestionsMailerTest < ActionMailer::TestCase
       assert !@suggestion.proposal.proposer.email.in?(@mail.bcc)
     end
 
-    should "have info@euruko2013.org in bcc" do
-      assert_includes @mail.bcc, "info@euruko2013.org"
+    should "have default mailer bcc in bcc" do
+      assert_includes @mail.bcc, Settings.mailer.bcc
     end
 
     should "have info@euruko2013.org as sender" do
-      assert_equal ["info@euruko2013.org"], @mail.from
+      assert_equal ["info@example.org"], @mail.from
     end
 
     should "have body" do

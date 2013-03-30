@@ -9,8 +9,8 @@ class ProposalMailerTest < ActionMailer::TestCase
     mail = ProposalMailer.new_proposal @proposal
     assert_equal "A new proposal has been posted!", mail.subject
     assert_equal nil, mail.to
-    assert_equal ["info@euruko2013.org"], mail.bcc
-    assert_equal ["info@euruko2013.org"], mail.from
+    assert_equal ["info@example.org"], mail.bcc
+    assert_equal ["info@example.org"], mail.from
     assert_match @proposal.description, mail.body.encoded
   end
 end

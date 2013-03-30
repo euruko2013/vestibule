@@ -33,6 +33,9 @@ development:
 
 test:
   <<: *defaults
+  mailer:
+    from: '"Your Event" <info@example.org>'
+    bcc: 'info@example.org'
 
 production:
   <<: *defaults
