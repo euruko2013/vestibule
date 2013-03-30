@@ -32,6 +32,7 @@ class ProposalsController < ApplicationController
     authorize! :create, @proposal
 
     if @proposal.save
+      ProposalMailer.new_proposal(@proposal).deliver 
       redirect_to proposals_path
     else
       render :new

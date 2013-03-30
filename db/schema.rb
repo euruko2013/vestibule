@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130329195539) do
+ActiveRecord::Schema.define(:version => 20130330101212) do
 
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
@@ -58,8 +58,8 @@ ActiveRecord::Schema.define(:version => 20130329195539) do
 
   create_table "users", :force => true do |t|
     t.text     "signup_reason"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                                               :null => false
+    t.datetime "updated_at",                                               :null => false
     t.string   "name"
     t.integer  "contribution_score"
     t.string   "github_uid"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20130329195539) do
     t.string   "facebook_nickname"
     t.string   "google_uid"
     t.string   "google_nickname"
+    t.boolean  "subscribe_to_suggestions_notifications", :default => true
   end
 
   create_table "votes", :force => true do |t|

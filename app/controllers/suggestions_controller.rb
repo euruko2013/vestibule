@@ -7,6 +7,7 @@ class SuggestionsController < ApplicationController
     authorize! :create, @suggestion
 
     if @suggestion.save
+      SuggestionsMailer.new_suggestion(@suggestion).deliver
       redirect_to proposal_path(@proposal), notice: "Your suggestion has been published"
     else
       render :template => 'proposals/show'

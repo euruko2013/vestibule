@@ -42,6 +42,10 @@ class SuggestionsControllerTest < ActionController::TestCase
       should "save suggestion" do
         assert assigns(:suggestion).persisted?
       end
+
+      should "send email" do
+        assert !ActionMailer::Base.deliveries.empty?
+      end
     end
   end
 
@@ -63,7 +67,10 @@ class SuggestionsControllerTest < ActionController::TestCase
       should "save suggestion" do
         assert assigns(:suggestion).persisted?
       end
-    end
 
+      should "send email" do
+        assert !ActionMailer::Base.deliveries.empty?
+      end
+    end
   end
 end
