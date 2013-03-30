@@ -7,7 +7,7 @@ class SuggestionsMailerTest < ActionMailer::TestCase
 
   test "new_suggestion" do
     mail = SuggestionsMailer.new_suggestion @suggestion
-    assert_equal "Someone just posted a suggestion on #{@suggestion.proposal.title}!", mail.subject
+    assert_equal "Someone just posted a suggestion on '#{@suggestion.proposal.title}'!", mail.subject
     assert_equal [@suggestion.proposal.proposer.email], mail.to
     assert_equal ["info@euruko2013.org"], mail.from
     assert_match @suggestion.body, mail.body.encoded
