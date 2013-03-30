@@ -10,4 +10,11 @@ class SuggestionsMailer < BaseMailer
     mail subject: "Someone just posted a suggestion on '#{@suggestion.proposal.title}'!",
          bcc: [self.class.default[:bcc], proposer].flatten.compact
   end
+
+  def updated_suggestion(suggestion)
+    @suggestion = suggestion
+
+    mail subject: "Your suggestion on '#{@suggestion.proposal.title}' was moderated!",
+         to: @suggestion.author.email
+  end
 end

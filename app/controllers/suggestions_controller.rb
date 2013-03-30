@@ -20,6 +20,7 @@ class SuggestionsController < ApplicationController
     authorize! :update, @suggestion
 
     if @suggestion.update_attributes params[:suggestion]
+      SuggestionsMailer.updated_suggestion(@suggestion).deliver
       redirect_to proposal_path(@proposal), notice: "Suggestion has been updated"
     else
       redirect_to proposal_path(@proposal), alert: "Suggestion could not be updated"

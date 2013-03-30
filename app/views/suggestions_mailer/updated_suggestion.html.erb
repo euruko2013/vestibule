@@ -1,0 +1,24 @@
+<div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #99352d; border-top: 1px solid #ddd;"><br>
+    Your suggestion on '<%= @suggestion.proposal.title %>' was moderated!
+</div>
+
+<br>
+
+<div>
+    Your suggestion was moderated from a member of the EuRuKo 2013 committee for any of following reasons:
+
+    <ul>
+        <li>Use of inappropriate language.</li>
+        <li>Being offensive.</li>
+        <li>Not in the spirit of EuRuKo 2013 or in general violation of our <%= link_to 'Code of Conduct', 'http://euruko2013.org/codeofconduct' %>.</li>
+    </ul>
+
+    You can see the moderated version <%= link_to 'here', proposal_url(@suggestion.proposal) %>.
+</div>
+
+<br>
+
+<div>
+    We appreciate your participation very much.
+    If there is anything you want to clarify, please fell free to contact us directly by replying to this email.
+</div>
