@@ -56,7 +56,7 @@ I want to make sure that the talks cover something *other* than rails!!
         end
 
         should "allow the user to go back and edit their reason" do
-          click_link 'Edit your reason'
+          click_link 'Edit your profile'
 
           i_am_on edit_user_path(@user)
         end

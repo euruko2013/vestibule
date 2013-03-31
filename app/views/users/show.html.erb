@@ -5,7 +5,7 @@
     <% if @user.signup_reason.present? %>
     <article id="signup_reason">
       <%= markdown @user.signup_reason %>
-      <% if @user == current_user %><aside><%= link_to 'Edit your reason', edit_user_path(current_user) %></aside><% end %>
+      <% if @user == current_user %><aside><%= link_to 'Edit your profile', edit_user_path(current_user) %></aside><% end %>
     </article>
     <% else %>
       <% if @user == current_user %>
