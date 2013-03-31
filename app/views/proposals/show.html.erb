@@ -1,13 +1,6 @@
 <div id="proposal" class="hero-unit">
     <%= proposal_div(@proposal) do %>
         <%= page_title @proposal.title %>
-        <p>
-            <% if can? :edit, @proposal %>
-                <%= link_to "Edit proposal", edit_proposal_path(@proposal), class: "btn btn-primary" %>
-            <% end %>
-
-            <%= change_proposal_state_button(@proposal) %>
-        </p>
 
         <p class="age muted">
             <%= proposal_update_information @proposal %>
@@ -20,6 +13,17 @@
             <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
         <% end %>
         <div class="description"><%= markdown @proposal.description %></div>
+
+        <% if can? :edit, @proposal %>
+            <small class="text-info">
+                <em>Having second thoughts or a better idea?</em>
+            </small>
+            &nbsp;
+
+            <%= link_to "Edit proposal", edit_proposal_path(@proposal), class: "btn btn-primary" %>
+        <% end %>
+
+        <%= change_proposal_state_button(@proposal) %>
 
         <% if can? :vote, @proposal %>
             <% if current_user.voted_on?(@proposal) %>
