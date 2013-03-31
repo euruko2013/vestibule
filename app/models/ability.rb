@@ -25,8 +25,7 @@ class Ability
 
       can [:create], Suggestion, :author_id => user.id
 
-      # EuRuKo 2013 committee shall be able to moderate stuff
-      if user.email.present? && user.email =~ /@euruko2013\.org$/
+      if user.moderator?
         can :update, Suggestion
       end
 
