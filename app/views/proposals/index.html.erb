@@ -35,26 +35,16 @@
         <% end %>
     </h2>
 
-  <ul class="proposals">
-    <% for proposal in @proposals %>
-      <%= content_tag_for :li, proposal do %>
-        <%= link_to proposal.title, proposal %>
-        <span class="age"><%= proposal_update_information proposal %></span>
-      <% end %>
-    <% end %>
-  </ul>
+    <ul class="proposals">
+        <%= render :partial => 'proposal_listing', collection: @proposals %>
+    </ul>
 </section>
 
 <% if @withdrawn_proposals.any? %>
 <section>
   <p>The following proposals have been withdrawn:</p>
   <ul class="proposals">
-    <% for proposal in @withdrawn_proposals %>
-      <%= content_tag_for :li, proposal do %>
-        <%= link_to proposal.title, proposal %>
-        <span class="age"><%= proposal_update_information proposal %></span>
-      <% end %>
-    <% end %>
+    <%= render :partial => 'proposal_listing', collection: @withdrawn_proposals %>
   </ul>
 </section>
 <% end %>
