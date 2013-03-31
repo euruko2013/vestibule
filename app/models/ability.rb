@@ -9,6 +9,7 @@ class Ability
     # Everyone
     can :see, :index
     can :see, :motivation
+    can :see, :about
     can :create, :session
     can :read, User
     can :read, Proposal
