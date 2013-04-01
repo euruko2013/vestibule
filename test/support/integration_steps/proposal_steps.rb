@@ -3,7 +3,7 @@ module ProposalSteps
     options = options.reverse_merge(:title => 'A talk', :description => 'A great talk')
 
     visit proposals_path
-    click_link "Propose talk"
+    click_link "Propose a talk"
 
     fill_in "Title", :with => options[:title]
     fill_in "Description", :with => options[:description]
@@ -15,7 +15,7 @@ module ProposalSteps
   end
 
   def assert_page_has_proposal(options)
-    assert page.has_css?("title", :text => "#{options[:title]} :: Vestibule") if options[:title]
+    assert page.has_css?("title", :text => "#{options[:title]} - #{Settings.event_name}") if options[:title]
     within_proposal do
       assert page.has_content?(options[:title]) if options[:title]
       if options[:proposer]

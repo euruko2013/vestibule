@@ -1,7 +1,7 @@
 <%= page_title 'Dashboard', no_h1=true %>
 
 <h2>Your proposals</h2>
-<p>(Because they are anonymised, other users will not see that you are the author of these proposals. <%= link_to "Read more about anonymisation", anonymous_proposals_path %>.)</p>
+<p class='alert'>Since they are anonymised, other users will not see that you are the author of these proposals. <%= link_to "Read more about the process", about_path %>.</p>
 <% if @your_proposals.present? %>
   <ul id="your-proposals" class="proposals">
     <% @your_proposals.each do |proposal| %>
@@ -19,7 +19,7 @@
 <p><%= link_to "Propose #{'another' if @your_proposals.present?} talk", new_proposal_path, class: "btn btn-primary" %></p>
 
 <% if @proposals_you_should_look_at.present? %>
-  <h2>You should consider giving some suggestions about these proposals</h2>
+  <h2>You should consider reviewing these proposals</h2>
   <ul id="you-should-look-at-these" class="proposals">
     <% @proposals_you_should_look_at.each do |proposal| %>
       <%= content_tag_for :li, proposal do %>
@@ -43,7 +43,7 @@
 <% end %>
 
 <% if @proposals_that_have_been_withdrawn.present? %>
-  <h2>These proposals you made suggestions on have been withdrawn</h3>
+  <h2>These proposals you made suggestions on have been withdrawn</h2>
   <ul id="things-have-ended" class="proposals">
     <% @proposals_that_have_been_withdrawn.each do |proposal| %>
       <%= content_tag_for :li, proposal do %>

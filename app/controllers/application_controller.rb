@@ -1,8 +1,19 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  check_authorization
+
   helper_method :current_user, :user_signed_in?
 
   before_filter :reload_settings if Rails.env.development?
+
+  rescue_from CanCan::AccessDenied do |exception|
+    if user_signed_in?
+      flash[:alert] = exception.message
+      redirect_to(request.referer.presence || root_url)
+    else
+      authenticate_user!
+    end
+  end
 
   private
 
@@ -14,7 +25,7 @@ class ApplicationController < ActionController::Base
     unless current_user
       flash[:alert] = "You need to sign in or sign up before continuing."
       session[:user_id] = nil
-      redirect_to root_url
+      redirect_to(request.referer.presence || root_url)
     end
   end
 

@@ -1,0 +1,94 @@
+body, button, input, select, textarea {
+  color: $dark_grey;
+}
+
+#nav .sign-in {
+  p {
+    margin: 0 20px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  padding: 80px 0 0;
+  max-width: 70%;
+}
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font: 300 32px/42px $ubuntu;
+}
+
+h2 {
+  margin-top: 24px;
+  font: 300 26px/32px $ubuntu;
+}
+
+h3 {
+  margin-top: 24px;
+  font: 300 22px/26px $ubuntu;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  font: 300 16px/24px $ubuntu;
+  text-align: justify;
+
+  em {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+}
+
+footer {
+  padding: 40px 0;
+  background: #efefef;
+  margin: 40px auto 0;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.age {
+  color: #ccc;
+  margin-top: 0px;
+}
+
+/* Media Queries: Tablet devices overwrite 641px...960px */
+
+@media only screen and (max-width: 960px) {
+  #cfp {
+  }
+}
+
+/* Media Queries: Mobile devices overwrite 320px...640px */
+
+@media only screen and (max-width: 640px) {
+  #cfp {
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 22px;
+    }
+  }
+}

@@ -18,7 +18,7 @@ module ApplicationHelper
     page_title = content_for(:page_title)
     page_title = 'Welcome' if page_title.blank?
     # using content_for to set :page_title means it's already been escaped.
-    %Q{#{page_title} :: Vestibule}.html_safe
+    %Q{#{page_title} - #{Settings.event_name}}.html_safe
   end
 
   def page_title(new_page_title, no_h1 = false)
@@ -29,7 +29,7 @@ module ApplicationHelper
   end
 
   def remind_account_for_signup_reason
-    current_user && !current_user.signup_reason.present? && !request.path[/user/]
+    current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
   end
 
   def avatar_url(user, bigger=false)
@@ -118,11 +118,18 @@ module ApplicationHelper
   end
 
   def change_proposal_state_button(proposal)
-    if proposal.withdrawn?
-      button_to "Re-publish proposal", republish_proposal_path(proposal), class: "btn"
-    else
-      button_to "Withdraw proposal", withdraw_proposal_path(proposal), class: "btn btn-danger"
+    if proposal.withdrawn? && can?(:republish, proposal)
+      link_to "Re-publish proposal", republish_proposal_path(proposal), class: "btn", method: :post
+    elsif proposal.published? && can?(:withdraw, proposal)
+      link_to "Withdraw proposal", withdraw_proposal_path(proposal), class: "btn btn-danger", method: :post
     end
+  end
+
+  def authentication_links(container = :p)
+    [['Google', '/auth/google'],
+     ['Twitter', '/auth/twitter'],
+     ['Github', '/auth/github'],
+     ['Facebook', '/auth/facebook']].map { |name, url| content_tag container, link_to(name, url) }.join("\n").html_safe
   end
 
   protected

@@ -1,10 +1,11 @@
 .rvmrc
+.ruby-version
 .bundle
 db/*.sqlite3
 log/*.log
 tmp/**/*
 vendor/bundle
 config/database.yml
-config/application.yml
 .env
 Procfile.local
+.idea/

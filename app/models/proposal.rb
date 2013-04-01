@@ -2,6 +2,8 @@ class Proposal < ActiveRecord::Base
   belongs_to :proposer, :class_name => 'User'
   has_many :suggestions
 
+  acts_as_voteable
+
   validates :title, :presence => true
 
   # This allows us to do @proposal.impression_count
@@ -14,16 +16,19 @@ class Proposal < ActiveRecord::Base
     end
   }
 
+  scope :without_votes_from, lambda { |user|
+    voted_by_user = user.votes.where(voteable_type: 'Proposal')
+    if voted_by_user.any?
+      where('id NOT IN (?)', voted_by_user.map{ |s| s.voteable_id }.uniq)
+    end
+  }
+
   scope :not_proposed_by, lambda { |user|
     where('proposer_id != ?', user.id)
   }
 
   scope :active, where(withdrawn: false)
   scope :withdrawn, where(withdrawn: true)
-
-  def self.available_for_selection_by(user)
-    active.reject { |p| Selection.where(proposal_id: p.id, user_id: user.id).exists? }
-  end
 
   after_create :update_proposer_score
 
@@ -37,6 +42,10 @@ class Proposal < ActiveRecord::Base
 
   def new_suggestions
     suggestions.after(last_modified_by_proposer)
+  end
+
+  def published?
+    !withdrawn
   end
 
   def withdraw!

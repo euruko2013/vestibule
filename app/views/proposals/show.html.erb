@@ -1,67 +1,130 @@
-<div class="row">
-  <div class="span6">
-    <div id="proposal">
-      <%= proposal_div(@proposal) do %>
+<div id="proposal" class="hero-unit">
+    <%= proposal_div(@proposal) do %>
         <%= page_title @proposal.title %>
+        <p>
+            <% if can? :edit, @proposal %>
+                <%= link_to "Edit proposal", edit_proposal_path(@proposal), class: "btn btn-primary" %>
+            <% end %>
 
-        <% if @proposal.proposed_by?(current_user) %>
-          <ul class="nav nav-pills">
-            <li><%= link_to "Edit proposal", edit_proposal_path(@proposal), class: "btn btn-primary" %></li>
-            <li><%= change_proposal_state_button(@proposal) %></li>
-          </ul>
+            <%= change_proposal_state_button(@proposal) %>
+        </p>
+
+        <p class="age muted">
+            <%= proposal_update_information @proposal %>
+            <span class='st_facebook_hcount' displayText='Facebook'></span>
+            <span class='st_twitter_hcount' st_via="euruko" displayText='Tweet'></span>
+        </p>
+
+        <% if @proposal.withdrawn? %>
+            <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
         <% end %>
-        <p class="age"><%= proposal_update_information @proposal %></p>
-
-        <% if @proposal.withdrawn? %><h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2><% end %>
         <div class="description"><%= markdown @proposal.description %></div>
-      <% end %>
-    </div>
-  </div>
 
-  <div class="span5 offset1">
-    <div id="suggestions">
-      <h2>Suggestions</h2>
-      <% if user_signed_in? %>
-        <% if current_user == @proposal.proposer %>
-          <p>You can respond to suggestions here. As the proposer of the talk, your identity will be masked from other visitors.</p>
-        <% else %>
-          <p>Help develop this into a good proposal by asking questions about anything that isn't clear, making suggestions about what to include or avoid, and asking for more detail or clarifications.</p>
+        <% if can? :vote, @proposal %>
+            <% if current_user.voted_on?(@proposal) %>
+                <br>
+
+                <small class="text-info">
+                    <em>You have already voted <strong><%= current_user.voted_for?(@proposal) ? 'up' : 'down' %></strong> this proposal.</em>
+                </small>
+
+                <div class="btn-group">
+                    <%= link_to 'Changed your mind?', '#', :class => 'btn btn-small dropdown-toggle', :data => {:toggle => 'dropdown'} %>
+                    &nbsp;
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <%= link_to vote_proposal_path(@proposal, :vote => 'up'), :method => :post do %>
+                                <i class="icon-thumbs-up"></i> I would like to see this!
+                            <% end %>
+                        </li>
+
+                        <li>
+                            <%= link_to vote_proposal_path(@proposal, :vote => 'down'), :method => :post do %>
+                                <i class="icon-thumbs-down"></i> Not really interested...
+                            <% end %>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <%= link_to vote_proposal_path(@proposal, :vote => 'clear'), :method => :post do %>
+                                Not sure yet (clear my vote)
+                            <% end %>
+                        </li>
+                    </ul>
+                </div>
+
+            <% else %>
+                <br>
+
+                <small class="text-info">
+                    <em>What do you think about this proposal?</em>
+                </small>
+                &nbsp;
+
+                <%= link_to vote_proposal_path(@proposal, :vote => 'up'), :method => :post, :class => 'btn btn-success' do %>
+                    <i class="icon-thumbs-up icon-white"></i> I would like to see this!
+                <% end %>
+
+                <%= link_to vote_proposal_path(@proposal, :vote => 'down'), :method => :post, :class => 'btn btn-inverse' do %>
+                    <i class="icon-thumbs-down icon-white"></i> Not really interested...
+                <% end %>
+            <% end %>
         <% end %>
+    <% end %>
+</div>
+
+<div id="suggestions">
+    <% unless @proposal.suggestions.empty? %>
+        <h2>Suggestions</h2>
+
+        <ul class="suggestions">
+            <% @proposal.suggestions.latest.each do |suggestion| %>
+                <%= content_tag_for(:li, suggestion, :class => suggestion.author == @proposal.proposer ? 'alert alert-block alert-info' : '') do %>
+                    <h5 class="author">
+                        <% if suggestion.author == @proposal.proposer %>
+                            <% if current_user == @proposal.proposer %>
+                                You responded
+                            <% else %>
+                                The proposal author responded
+                            <% end %>
+                        <% else %>
+                            <%= render 'shared/user', :user => suggestion.author %> suggested
+                        <% end %>
+                        <span class="age"><%= time_ago_in_words suggestion.updated_at %> ago</span>
+                    </h5>
+                    <section class="body"><%= markdown suggestion.body %></section>
+                <% end %>
+            <% end %>
+        </ul>
+    <% end %>
+
+    <% if @suggestion && can?(:create, Suggestion) %>
+        <div class="add-suggestion">
+            <% if current_user == @proposal.proposer %>
+                <p class="">You can respond to suggestions here. As the proposer of the talk, your identity will be
+                    masked from other visitors.</p>
+            <% else %>
+                <h2>Improve this proposal</h2>
+
+                <p class="">Help develop this into a good proposal by asking questions about anything that isn't clear,
+                    making suggestions about what to include or avoid, and asking for more detail or clarifications.</p>
+            <% end %>
+        </div>
 
         <%= simple_form_for [@proposal, @suggestion] do |f| %>
-          <% if notification = f.error_notification %>
-            <div class="alert alert-error fade in">
-              <%= notification %>
-            </div>
-          <% end %>
+            <% if notification = f.error_notification %>
+                <div class="alert alert-error fade in">
+                    <%= notification %>
+                </div>
+            <% end %>
 
-          <%= f.input :body, as: :markdown, input_html: {rows: 10} %>
-          <%= f.button :submit, "Make your suggestion", class: "btn" %>
+            <%= f.input :body, as: :markdown, input_html: {rows: 10} %>
+            <%= f.button :submit, "Make your suggestion", class: "btn btn-primary" %>
         <% end %>
-      <% end %>
-
-      <ul class="suggestions">
-        <% @proposal.suggestions.latest.each do |suggestion| %>
-          <%= content_tag_for(:li, suggestion) do %>
-            <p class="author">
-              <% if suggestion.author == @proposal.proposer %>
-                <% if current_user == @proposal.proposer %>
-                  You respond
-                <% else %>
-                  The proposal author responds
-                <% end %>
-              <% else %>
-                <%= render 'shared/user', :user => suggestion.author %> suggests
-              <% end %>
-              <span class="age"><%= time_ago_in_words suggestion.updated_at %> ago</span>
-            </p>
-            <section class="body"><%= markdown suggestion.body %></section>
-          <% end %>
-        <% end %>
-      </ul>
-    </div>
-  </div>
+    <% end %>
 </div>
+
 <% content_for :head do %>
-  <%= auto_discovery_link_tag :rss, :format => :rss %>
+    <%= auto_discovery_link_tag :rss, :format => :rss %>
 <% end %>

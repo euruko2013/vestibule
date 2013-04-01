@@ -9,6 +9,8 @@ gem "redcarpet", "2.2.2"
 gem "bootstrap-sass"
 gem "unicorn"
 gem "settingslogic"
+gem "thumbs_up"
+gem "cancan"
 
 # Gem for tracking pageviews and stuff
 gem 'impressionist'
@@ -34,7 +36,8 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem "minitest-reporters", '>= 0.5.0'
+  gem "minitest"
+  gem "minitest-reporters", '>= 0.8.0'
   gem "factory_girl_rails", "4.1.0"
   gem "shoulda", "3.3.2"
   gem "capybara", "1.1.4"
@@ -49,4 +52,5 @@ group :test do
   gem "escape_utils", "0.1.9"
 end
 
+gem "bugsnag"
 gem "newrelic_rpm"
