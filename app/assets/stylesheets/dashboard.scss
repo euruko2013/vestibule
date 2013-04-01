@@ -1,0 +1,41 @@
+#proposals_since_last_login, #suggestions_since_last_login {
+  width: 48%;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  .title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .count, .atom {
+    font-size: 0.8em;
+  }
+
+  hr {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    height: 1px;
+    background: #999;
+  }
+
+  .proposals a.proposer, .suggestions a.author {
+    color: #666;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+}
+
+#proposals_since_last_login { float: left; }
+#suggestions_since_last_login { float: right; }
+
+#moderator_dashboard {
+  overflow: hidden;
+  border: none; /*1px solid #666;*/
+  margin-bottom: 40px;
+  background: whitesmoke;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}

@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  attr_accessible :is_moderator, :last_visited_at
+
   has_many :proposals, :foreign_key => :proposer_id
   has_many :suggestions, :foreign_key => :author_id
   has_many :proposals_of_interest, :through => :suggestions, :source => :proposal, :uniq => true
