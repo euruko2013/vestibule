@@ -27,9 +27,9 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu sign-in">
-                <% if can?(:see, :dashboard) -%><p><%= link_to "Dashboard", dashboard_path %></p><% end -%>
-                <% if can?(:read, Proposal) -%><p><%= link_to "All proposals", proposals_path %></p><% end -%>
-                <% if can?(:read, current_user) -%><p><%= link_to "Your profile", user_path(current_user) %></p><% end -%>
+                <% if can?(:see, :dashboard) -%><p><%= link_to "Dashboard", dashboard_path, :class => "#{active_nav?(dashboard_path) ? 'active' : ''}" %></p><% end -%>
+                <% if can?(:read, Proposal) -%><p><%= link_to "All proposals", proposals_path, :class => "#{active_nav?(proposals_path) ? 'active' : ''}" %></p><% end -%>
+                <% if can?(:read, current_user) -%><p><%= link_to "Your profile", user_path(current_user), :class => "#{active_nav?(user_path(current_user)) ? 'active' : ''}" %></p><% end -%>
                 <% if can?(:destroy, :session) -%><p><%= link_to "Sign out", logout_path %></p><% end -%>
             </ul>
           </li>
@@ -47,7 +47,7 @@
 
         <li><%= link_to "Blog", 'http://euruko2013.org/blog/' %></li>
         <li><%= link_to "Contact", 'http://euruko2013.org/#contact' %></li>
-        <% if can?(:read, Proposal) -%><li><%= link_to "Proposals", proposals_path %></li><% end -%>
+        <% if can?(:read, Proposal) -%><li <%= active_nav_class(proposals_path) %>><%= link_to "Proposals", proposals_path %></li><% end -%>
         <li><%= link_to "Sponsors", 'http://euruko2013.org/#sponsors' %></li>
         <li><%= link_to "Venue", 'http://euruko2013.org/#venue' %></li>
         <li><%= link_to "Tickets", 'http://euruko2013.org/#tickets' %></li>

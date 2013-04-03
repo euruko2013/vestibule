@@ -26,6 +26,12 @@
       margin: 0 $hr/2;
       padding: 0 $hr/2;
 
+      &.active {
+        &>a {
+          color: $dark_grey;
+        }
+      }
+
       a {
         font: normal 14px $ubuntu;
         color: $light_grey;
@@ -33,7 +39,7 @@
         text-transform: uppercase;
       }
 
-      a:hover {
+      a:hover, a.active {
         color: $dark_grey;
       }
     }
