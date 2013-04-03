@@ -64,7 +64,7 @@ class ProposalTest < IntegrationTestCase
     end
 
     context "and I propose a talk with all the required details" do
-      setup { propose_talk :title => "My Amazing Talk", :description => 'This talk is amazing.' }
+      setup { propose_talk :title => "My Amazing Talk", :description => 'This talk is <script>pwned</script>amazing.' }
 
       should "be able to see my proposal on the site" do
         visit proposals_path
@@ -73,6 +73,7 @@ class ProposalTest < IntegrationTestCase
           :title        => "My Amazing Talk",
           :description  => 'This talk is amazing.',
           :proposer     => @user
+        assert !page.has_css?('script', text: 'pwned')
       end
 
       should "be able to withdraw my proposal" do
