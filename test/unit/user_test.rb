@@ -10,6 +10,11 @@ class UserTest < ActiveSupport::TestCase
       assert @user.valid?
     end
 
+    should "respond to moderator attributes" do
+      assert @user.respond_to? :last_visited_at
+      assert @user.respond_to? :is_moderator
+    end
+
     context "who has made suggestions on a proposal" do
       setup do
         @proposal = FactoryGirl.create(:proposal)

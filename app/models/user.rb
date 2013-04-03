@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  # TODO: last_visited_at should be updated at most once per day.
   attr_accessible :is_moderator, :last_visited_at
 
   has_many :proposals, :foreign_key => :proposer_id

@@ -1,6 +1,8 @@
 <%= page_title 'Dashboard', no_h1=true %>
 
 <% if can? :see, :moderator_dashboard %>
+    <% #TODO Limit the number of results to a sane number & add an expand button. %>
+    <% #TODO When no results are available, sections should either dissapear or display a default message. %>
     <div id="moderator_dashboard">
       <div id="proposals_since_last_login">
         <span class="title">Latest Proposals</span>
