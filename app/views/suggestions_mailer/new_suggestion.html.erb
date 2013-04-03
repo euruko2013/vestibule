@@ -1,0 +1,16 @@
+<div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #99352d; border-top: 1px solid #ddd;"><br>
+    New suggestion on '<%= @suggestion.proposal.title %>'
+</div>
+
+
+<p style="font-style: italic; text-decoration: underline"><%= @suggestion.author.name %> suggested:</p>
+
+<div><%= markdown @suggestion.body %></div>
+
+<p><%= link_to 'Visit', proposal_url(@suggestion.proposal) %> your proposal to reply!</p>
+
+<div style="border-top: 1px solid #ddd;">
+    <br>
+    You are receiving this email because you are participating in the CfP process for <%= Settings.event_name %>.
+    You can always <%= link_to 'edit your notification settings', edit_user_url(@suggestion.proposal.proposer) %>.
+</div>

@@ -19,7 +19,7 @@
 
     <div id="nav">
       <ul class="centered clearfix">
-        <li><a class="ir" href="/">Euruko 2013</a></li>
+        <li><a class="ir" href="/"><%= Settings.event_name %></a></li>
         <% if user_signed_in? -%>
           <li class="dropdown <%= 'active' if active_nav?(dashboard_path, user_path(current_user)) %>">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">

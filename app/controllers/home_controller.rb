@@ -19,4 +19,8 @@ class HomeController < ApplicationController
     authorize! :see, :my_motivation
     redirect_to edit_user_path(current_user)
   end
+
+  def about
+    authorize! :see, :about
+  end
 end

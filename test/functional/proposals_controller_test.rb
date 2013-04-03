@@ -176,6 +176,10 @@ class ProposalsControllerTest < ActionController::TestCase
       should "assign proposal to user" do
         assert_equal @viewer, assigns(:proposal).proposer
       end
+
+      should "send email" do
+        assert !ActionMailer::Base.deliveries.empty?
+      end
     end
 
     context 'on #GET to edit' do

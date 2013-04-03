@@ -1,10 +1,10 @@
 source "http://rubygems.org"
 ruby "1.9.3"
 
-gem "rails", "3.2.12"
+gem "rails", "3.2.13"
 gem "pg", "0.14.1"
 gem "simple_form", "2.0.4"
-gem "paper_trail", "1.6.4"
+gem "paper_trail", "~> 2.7.1"
 gem "redcarpet", "2.2.2"
 gem "bootstrap-sass"
 gem "unicorn"
@@ -34,6 +34,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem "letter_opener"
+end
 
 group :test do
   gem "minitest"

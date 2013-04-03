@@ -12,7 +12,6 @@
 # It's strongly recommended to check this file into your version control system.
 
 ActiveRecord::Schema.define(:version => 20130401184401) do
-
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
     t.integer  "impressionable_id"
@@ -58,8 +57,8 @@ ActiveRecord::Schema.define(:version => 20130401184401) do
 
   create_table "users", :force => true do |t|
     t.text     "signup_reason"
-    t.datetime "created_at",                            :null => false
-    t.datetime "updated_at",                            :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "name"
     t.integer  "contribution_score"
     t.string   "github_uid"
@@ -73,7 +72,19 @@ ActiveRecord::Schema.define(:version => 20130401184401) do
     t.string   "google_nickname"
     t.boolean  "is_moderator",       :default => false, :null => false
     t.datetime "last_visited_at"
+    t.boolean  "subscribe_to_suggestions_notifications", :default => true
   end
+
+  create_table "versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
 
   create_table "votes", :force => true do |t|
     t.boolean  "vote",          :default => false, :null => false

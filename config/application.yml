@@ -24,12 +24,18 @@ defaults: &defaults
     account: ''
     domain: ''
     allow_linker: false
+  mailer:
+    from: '"EuRuKo 2013" <info@euruko2013.org>'
+    bcc: 'info@euruko2013.org'
 
 development:
   <<: *defaults
 
 test:
   <<: *defaults
+  mailer:
+    from: '"Your Event" <info@example.org>'
+    bcc: 'info@example.org'
 
 production:
   <<: *defaults

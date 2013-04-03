@@ -66,4 +66,10 @@ class User < ActiveRecord::Base
     self.contribution_score = (suggestions.not_on_proposals_by(self).count * SUGGESTION_WEIGHT)
     self.contribution_score += REASON_WEIGHT if self.signup_reason.present?
   end
+
+  ### ACL Stuff ###
+
+  def moderator?
+    self.email.present? && self.email =~ /@euruko2013\.org$/
+  end
 end

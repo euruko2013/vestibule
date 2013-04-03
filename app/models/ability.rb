@@ -9,6 +9,7 @@ class Ability
     # Everyone
     can :see, :index
     can :see, :motivation
+    can :see, :about
     can :create, :session
     can :read, User
     can :read, Proposal
@@ -24,6 +25,11 @@ class Ability
       can [:update, :create, :withdraw, :republish], Proposal, :proposer_id => user.id
 
       can [:create], Suggestion, :author_id => user.id
+
+      if user.moderator?
+        can :update, Suggestion
+      end
+
       can [:vote], Proposal
       cannot [:vote], Proposal, :proposer_id => user.id
     end

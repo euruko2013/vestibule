@@ -5,7 +5,7 @@
     <% if @user.signup_reason.present? %>
     <article id="signup_reason">
       <%= markdown @user.signup_reason %>
-      <% if @user == current_user %><aside><%= link_to 'Edit your reason', edit_user_path(current_user) %></aside><% end %>
+      <% if @user == current_user %><aside><%= link_to 'Edit your profile', edit_user_path(current_user) %></aside><% end %>
     </article>
     <% else %>
       <% if @user == current_user %>
@@ -36,7 +36,7 @@
     </div>
     <div class="span6">
   <% else %>
-    <div class="span12"%>
+    <div class="span12">
   <% end %>
     <section id="involvement">
       <h2>Proposals <%= to_be(false) %> involved with</h2>
