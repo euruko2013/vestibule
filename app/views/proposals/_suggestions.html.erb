@@ -19,7 +19,7 @@
                         <%= link_to 'edit', '#', class: 'edit_suggestion_link' if can?(:update, suggestion) %>
                     </h5>
 
-                    <section class="body"><%= markdown suggestion.body %></section>
+                    <section class="body"><%= sanitize(markdown(suggestion.body)) %></section>
 
                     <% if can?(:update, suggestion) %>
                         <%= simple_form_for [@proposal, suggestion], id: dom_id(suggestion), html: {class: 'hide edit_suggestion_form'} do |f| %>

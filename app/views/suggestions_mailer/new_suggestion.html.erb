@@ -5,7 +5,7 @@
 
 <p style="font-style: italic; text-decoration: underline"><%= @suggestion.author.name %> suggested:</p>
 
-<div><%= markdown @suggestion.body %></div>
+<div><%= sanitize(markdown(@suggestion.body)) %></div>
 
 <p><%= link_to 'Visit', proposal_url(@suggestion.proposal) %> your proposal to reply!</p>
 

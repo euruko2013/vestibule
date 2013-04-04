@@ -15,7 +15,7 @@
         <% if @proposal.withdrawn? %>
             <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
         <% end %>
-        <div class="description"><%= markdown @proposal.description %></div>
+        <div class="description"><%= sanitize(markdown(@proposal.description)) %></div>
 
         <% if can? :edit, @proposal %>
             <small class="text-info">
