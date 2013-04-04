@@ -28,14 +28,11 @@ class Ability
 
       if user.moderator?
         can :update, Suggestion
+        can :see, :moderator_dashboard
       end
 
       can [:vote], Proposal
       cannot [:vote], Proposal, :proposer_id => user.id
-    end
-
-    if user.is_moderator
-      can :see, :moderator_dashboard
     end
   end
 end
