@@ -29,7 +29,7 @@
 
 <section>
     <h2>
-        Active proposals
+        <%= @proposals.size %> Active proposals
         <%= link_to :format => :rss do %>
             <%= image_tag 'feed-icon-14x14.png' %>
         <% end %>
@@ -42,7 +42,7 @@
 
 <% if @withdrawn_proposals.any? %>
 <section>
-  <p>The following proposals have been withdrawn:</p>
+  <p>The following <%= @withdrawn_proposals.size %> proposals have been withdrawn:</p>
   <ul class="proposals">
     <%= render :partial => 'proposal_listing', collection: @withdrawn_proposals %>
   </ul>
