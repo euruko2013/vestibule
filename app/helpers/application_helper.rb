@@ -112,7 +112,7 @@ module ApplicationHelper
     result = "updated #{time_ago_in_words proposal.updated_at} ago"
     if proposal.suggestions.any?
       suggestion = proposal.suggestions.latest.first
-      result += "; latest suggestion #{time_ago_in_words(suggestion.updated_at)} ago"
+      result += "; #{proposal.suggestions.size} suggestions; latest suggestion #{time_ago_in_words(suggestion.updated_at)} ago"
     end
     result
   end
