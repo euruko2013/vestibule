@@ -1,8 +1,24 @@
-<% proposal = proposal_listing %>
+<%
+   proposal = proposal_listing
+   show_votes = false unless defined?(show_votes)
+   show_new_suggestions = false unless defined?(show_new_suggestions)
+%>
 
 <%= content_tag_for :li, proposal do %>
     <%= link_to proposal.title, proposal, :class => 'title' %>
 
     <br>
+
+    <% if show_votes && can?(:see_votes, proposal) %>
+        <% votes_for, votes_against = proposal.votes_for, proposal.votes_against %>
+        <% if votes_for > 0 %><span class="badge badge-success">+<%= votes_for %></span><% end %>
+        <% if votes_for > 0 && votes_against > 0 %>/<% end %>
+        <% if votes_against > 0 %><span class="badge badge-inverse">-<%= votes_against %></span><% end %>
+    <% end %>
+
     <span class="age"><%= proposal_update_information proposal %></span>
+
+    <% if show_new_suggestions && proposal.new_suggestions.any? %>
+        <%= pluralize proposal.new_suggestions.count, "new suggestion" %>
+    <% end %>
 <% end %>

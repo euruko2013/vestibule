@@ -22,7 +22,7 @@ class Ability
       can :see, :my_motivation
       can [:update], User, :id => user.id
 
-      can [:update, :create, :withdraw, :republish], Proposal, :proposer_id => user.id
+      can [:update, :create, :withdraw, :republish, :see_votes], Proposal, :proposer_id => user.id
 
       can [:create], Suggestion, :author_id => user.id
 
