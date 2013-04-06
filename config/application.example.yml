@@ -23,6 +23,8 @@ defaults: &defaults
   mailer:
     from: '"Your Event" <info@example.org>'
     bcc: 'info@example.org'
+  submissions_start: '2013-03-28T00:00:00+2'
+  submissions_end: '2013-04-24T00:00:00+3'
 
 development:
   <<: *defaults

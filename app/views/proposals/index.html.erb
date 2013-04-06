@@ -10,6 +10,10 @@
     </p>
 
     <p>
+        You have <%= countdown_to_submissions_end %> to submit, refine and discuss proposals!
+    </p>
+
+    <p>
     <% if user_signed_in? %>
         <%= link_to "Propose a talk", new_proposal_path, :class => 'btn btn-primary' %>
     <% else %>

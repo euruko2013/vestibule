@@ -132,6 +132,15 @@ module ApplicationHelper
      ['Facebook', '/auth/facebook']].map { |name, url| content_tag container, link_to(name, url) }.join("\n").html_safe
   end
 
+  def countdown_to_submissions_end
+    submissions_end = DateTime.parse(Settings.submissions_end)
+    if submissions_end > DateTime.now
+      content_tag :span, '', id: 'counter', data: {countdown_end: DateTime.parse(Settings.submissions_end).to_i * 1000}
+    else
+      content_tag :span, 'no time'
+    end
+  end
+
   protected
   def markdown_parser(options = {})
     @markdown_parser ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML,
