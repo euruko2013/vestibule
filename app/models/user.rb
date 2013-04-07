@@ -67,6 +67,10 @@ class User < ActiveRecord::Base
   ### ACL Stuff ###
 
   def moderator?
+    self.committee_member?
+  end
+
+  def committee_member?
     self.email.present? && self.email =~ /@euruko2013\.org$/
   end
 end
