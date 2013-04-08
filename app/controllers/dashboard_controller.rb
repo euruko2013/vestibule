@@ -13,6 +13,7 @@ class DashboardController < ApplicationController
 
       @proposals_since_selected_time = Proposal.where("updated_at > ? ", show_proposals_since)
       @suggestions_since_selected_time = Suggestion.where("created_at > ? ", show_proposals_since)
+      @users_since_selected_time = User.where("created_at > ?", show_proposals_since)
     end
   end
 end

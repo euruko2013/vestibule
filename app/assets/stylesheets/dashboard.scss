@@ -18,8 +18,10 @@
     clear: both;
     margin-bottom: 20px;
 
-    .highcharts-container rect {
-      fill-opacity: 0;
+    .highcharts-container {
+      rect {
+        fill-opacity: 0;
+      }
     }
   }
 

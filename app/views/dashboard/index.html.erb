@@ -1,53 +1,7 @@
 <%= page_title 'Dashboard', no_h1=true %>
 
 <% if can? :see, :moderator_dashboard %>
-    <% #TODO Limit the number of results to a sane number & add an expand button. %>
-    <% #TODO When no results are available, sections should either disappear or display a default message. %>
-    <div id="moderator_dashboard">
-      <div id="options">
-        This is the options area
-      </div>
-      <div id="graph">
-        This is the graph area
-      </div>
-      <div id="proposals_since_selected_time">
-        <span class="title">Proposals</span>
-        <span class="count">(<%= @proposals_since_selected_time.count %>)</span>
-        <hr />
-        <% if @proposals_since_selected_time.count > 0 %>
-            <ul type="square" class='proposals'>
-              <% @proposals_since_selected_time.each do |proposal| %>
-                  <li class='proposal'>
-                    <%= link_to proposal.title, proposal %>
-                    <span class='atom'> by </span>
-                    <%= link_to proposal.proposer.name, proposal.proposer, :class => 'proposer' %>
-                  </li>
-              <% end %>
-            </ul>
-        <% else %>
-            <div class="centered">No results present.</div>
-        <% end %>
-      </div>
-      <div id="suggestions_since_selected_time">
-        <span class="title">Suggestions</span>
-        <span class="count">(<%= @suggestions_since_selected_time.count %>)</span>
-        <hr />
-
-        <% if @suggestions_since_selected_time.count > 0 %>
-            <ul type="square" class='suggestions'>
-              <% @suggestions_since_selected_time.each do |suggestion| %>
-                  <li class='suggestion'>
-                    <%= link_to truncate(suggestion.body, :length => 80, :separator => ' '), suggestion.proposal %>
-                    <span class='atom'> by </span>
-                    <%= link_to suggestion.author.name, suggestion.author, :class => 'author' %>
-                  </li>
-              <% end %>
-            </ul>
-        <% else %>
-            <div class="centered">No results present.</div>
-        <% end %>
-      </div>
-    </div>
+<%= render :partial => 'dashboard/moderator' %>
 <% end %>
 
 <h2>Your proposals</h2>
