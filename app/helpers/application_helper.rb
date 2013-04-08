@@ -112,7 +112,7 @@ module ApplicationHelper
     result = "updated #{time_ago_in_words proposal.updated_at} ago"
     if proposal.suggestions.any?
       suggestion = proposal.suggestions.latest.first
-      result += "; latest suggestion #{time_ago_in_words(suggestion.updated_at)} ago"
+      result += "; #{proposal.suggestions.size} suggestions; latest suggestion #{time_ago_in_words(suggestion.updated_at)} ago"
     end
     result
   end
@@ -130,6 +130,15 @@ module ApplicationHelper
      ['Twitter', '/auth/twitter'],
      ['Github', '/auth/github'],
      ['Facebook', '/auth/facebook']].map { |name, url| content_tag container, link_to(name, url) }.join("\n").html_safe
+  end
+
+  def countdown_to_submissions_end
+    submissions_end = DateTime.parse(Settings.submissions_end)
+    if submissions_end > DateTime.now
+      content_tag :span, '', id: 'counter', data: {countdown_end: DateTime.parse(Settings.submissions_end).to_i * 1000}
+    else
+      content_tag :span, 'no time'
+    end
   end
 
   protected

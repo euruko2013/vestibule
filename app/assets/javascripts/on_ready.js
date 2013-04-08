@@ -12,4 +12,15 @@ $(function() {
   	  $form.slideDown();
   	}
   });
+
+    var counter = $('#counter');
+    if (counter.length) {
+        var timerId =
+            countdown(
+                new Date(counter.data('countdown-end')),
+                function(ts) {
+                    counter.html(ts.toHTML("strong"));
+                },
+                countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+    }
 })

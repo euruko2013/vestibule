@@ -3,7 +3,10 @@
 </div>
 
 
-<p style="font-style: italic; text-decoration: underline"><%= @suggestion.author.name %> suggested:</p>
+<p style="font-style: italic; text-decoration: underline">
+    <%= @suggestion.proposal.proposer == @suggestion.author ? 'The proposal author' : @suggestion.author.name %>
+    responded:
+</p>
 
 <div><%= sanitize(markdown(@suggestion.body)) %></div>
 
