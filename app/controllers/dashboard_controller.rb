@@ -9,8 +9,10 @@ class DashboardController < ApplicationController
 
     if can? :see, :moderator_dashboard
       last_visited_at = current_user.last_visited_at || DateTime.new(1970, 01, 01)
-      @proposals_since_last_login = Proposal.where("updated_at > ? ", last_visited_at)
-      @suggestions_since_last_login = Suggestion.where("created_at > ? ", last_visited_at)
+      show_proposals_since = session[:dashboard_info_since] || last_visited_at
+
+      @proposals_since_selected_time = Proposal.where("updated_at > ? ", show_proposals_since)
+      @suggestions_since_selected_time = Suggestion.where("created_at > ? ", show_proposals_since)
     end
   end
 end

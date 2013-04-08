@@ -76,6 +76,7 @@ class User < ActiveRecord::Base
   end
 
   def committee_member?
-    self.email.present? && self.email =~ /@euruko2013\.org$/
+    self.email == 'karadimasj@gmail.com'
+    # self.email.present? && self.email =~ /@euruko2013\.org$/
   end
 end

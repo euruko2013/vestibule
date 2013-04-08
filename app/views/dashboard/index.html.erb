@@ -4,34 +4,48 @@
     <% #TODO Limit the number of results to a sane number & add an expand button. %>
     <% #TODO When no results are available, sections should either disappear or display a default message. %>
     <div id="moderator_dashboard">
-      <div id="activity_graph"></div>
-      <div id="proposals_since_last_login">
-        <span class="title">Latest Proposals</span>
-        <span class="count">(<%= @proposals_since_last_login.count %>)</span>
-        <hr />
-        <ul type="square" class='proposals'>
-          <% @proposals_since_last_login.each do |proposal| %>
-              <li class='proposal'>
-                <%= link_to proposal.title, proposal %>
-                <span class='atom'> by </span>
-                <%= link_to proposal.proposer.name, proposal.proposer, :class => 'proposer' %>
-              </li>
-          <% end %>
-        </ul>
+      <div id="options">
+        This is the options area
       </div>
-      <div id="suggestions_since_last_login">
-        <span class="title">Latest Suggestions</span>
-        <span class="count">(<%= @suggestions_since_last_login.count %>)</span>
+      <div id="graph">
+        This is the graph area
+      </div>
+      <div id="proposals_since_selected_time">
+        <span class="title">Proposals</span>
+        <span class="count">(<%= @proposals_since_selected_time.count %>)</span>
         <hr />
-        <ul type="square" class='suggestions'>
-          <% @suggestions_since_last_login.each do |suggestion| %>
-              <li class='suggestion'>
-                <%= link_to truncate(suggestion.body, :length => 80, :separator => ' '), suggestion.proposal %>
-                <span class='atom'> by </span>
-                <%= link_to suggestion.author.name, suggestion.author, :class => 'author' %>
-              </li>
-          <% end %>
-        </ul>
+        <% if @proposals_since_selected_time.count > 0 %>
+            <ul type="square" class='proposals'>
+              <% @proposals_since_selected_time.each do |proposal| %>
+                  <li class='proposal'>
+                    <%= link_to proposal.title, proposal %>
+                    <span class='atom'> by </span>
+                    <%= link_to proposal.proposer.name, proposal.proposer, :class => 'proposer' %>
+                  </li>
+              <% end %>
+            </ul>
+        <% else %>
+            <div class="centered">No results present.</div>
+        <% end %>
+      </div>
+      <div id="suggestions_since_selected_time">
+        <span class="title">Suggestions</span>
+        <span class="count">(<%= @suggestions_since_selected_time.count %>)</span>
+        <hr />
+
+        <% if @suggestions_since_selected_time.count > 0 %>
+            <ul type="square" class='suggestions'>
+              <% @suggestions_since_selected_time.each do |suggestion| %>
+                  <li class='suggestion'>
+                    <%= link_to truncate(suggestion.body, :length => 80, :separator => ' '), suggestion.proposal %>
+                    <span class='atom'> by </span>
+                    <%= link_to suggestion.author.name, suggestion.author, :class => 'author' %>
+                  </li>
+              <% end %>
+            </ul>
+        <% else %>
+            <div class="centered">No results present.</div>
+        <% end %>
       </div>
     </div>
 <% end %>
@@ -39,38 +53,38 @@
 <h2>Your proposals</h2>
 
 <div class="alert">
-    You have still <%= countdown_to_submissions_end %> to submit or edit a proposal!
-    Since proposals are anonymised, other users will not see that you are the author of these. <%= link_to "Read more about the process", about_path %>.
+  You have still <%= countdown_to_submissions_end %> to submit or edit a proposal!
+  Since proposals are anonymised, other users will not see that you are the author of these. <%= link_to "Read more about the process", about_path %>.
 </div>
 
 <% if @your_proposals.present? %>
-  <ul id="your-proposals" class="proposals">
-    <%= render :partial => 'proposals/proposal_listing',
-               collection: @your_proposals,
-               locals: {:show_votes => true,
-                        :show_new_suggestions => true} %>
-  </ul>
+    <ul id="your-proposals" class="proposals">
+      <%= render :partial => 'proposals/proposal_listing',
+                 collection: @your_proposals,
+                 locals: {:show_votes => true,
+                          :show_new_suggestions => true} %>
+    </ul>
 <% end %>
 
 <p><%= link_to "Propose #{'another' if @your_proposals.present?} talk", new_proposal_path, class: "btn btn-primary" %></p>
 
 <% if @proposals_you_should_look_at.present? %>
-  <h2>You should consider reviewing these proposals</h2>
-  <ul id="you-should-look-at-these" class="proposals">
-    <%= render :partial => 'proposals/proposal_listing', collection: @proposals_you_should_look_at  %>
-  </ul>
+    <h2>You should consider reviewing these proposals</h2>
+    <ul id="you-should-look-at-these" class="proposals">
+      <%= render :partial => 'proposals/proposal_listing', collection: @proposals_you_should_look_at  %>
+    </ul>
 <% end %>
 
 <% if @proposals_that_have_changed.present? %>
-  <h2>These proposals have been updated since you last made a suggestion</h2>
-  <ul id="things-have-changed" class="proposals">
-    <%= render :partial => 'proposals/proposal_listing', collection: @proposals_that_have_changed  %>
-  </ul>
+    <h2>These proposals have been updated since you last made a suggestion</h2>
+    <ul id="things-have-changed" class="proposals">
+      <%= render :partial => 'proposals/proposal_listing', collection: @proposals_that_have_changed  %>
+    </ul>
 <% end %>
 
 <% if @proposals_that_have_been_withdrawn.present? %>
-  <h2>These proposals you made suggestions on have been withdrawn</h2>
-  <ul id="things-have-ended" class="proposals">
-    <%= render :partial => 'proposals/proposal_listing', collection: @proposals_that_have_been_withdrawn  %>
-  </ul>
+    <h2>These proposals you made suggestions on have been withdrawn</h2>
+    <ul id="things-have-ended" class="proposals">
+      <%= render :partial => 'proposals/proposal_listing', collection: @proposals_that_have_been_withdrawn  %>
+    </ul>
 <% end %>
