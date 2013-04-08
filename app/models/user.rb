@@ -10,6 +10,9 @@ class User < ActiveRecord::Base
   scope :without_signup_reasons, where(:signup_reason => nil)
   scope :by_contribution, order("contribution_score DESC")
 
+  attr_accessible :signup_reason,
+                  :subscribe_to_suggestions_notifications
+
   before_save :update_contribution_score
 
   def proposals_you_should_look_at
