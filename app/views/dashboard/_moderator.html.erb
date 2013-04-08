@@ -1,7 +1,10 @@
 <% #TODO Limit the number of results to a sane number & add an expand button. %>
 <div id="moderator_dashboard">
   <div id="options">
-    This is the options area
+    <%= form_for :dashboard do |f| %>
+        <%= f.label :selected_time, 'Time period:' %>
+        <%= f.select :selected_time, @time_options.map {|a| [a[1], a[0]] }, { selected: session[:selected_time_code], include_blank: true } %>
+    <% end %>
   </div>
   <div id="graph"></div>
   <div id="proposals_since_selected_time">
@@ -42,3 +45,28 @@
     <% end %>
   </div>
 </div>
+<script type="text/javascript">
+    window.suggestions_data = [
+        <% @suggestions_since_selected_time.group_by { |c| c.created_at.to_date }.map { |date, suggestions| [date, suggestions.size] }.each do |item| %>
+            <%= "[Date.UTC(#{item[0].year},#{item[0].month-1},#{item[0].day}), #{item[1]}]" %>
+        <% end %>
+    ];
+
+    window.proposals_data = [
+        <% @proposals_since_selected_time.group_by { |c| c.created_at.to_date }.map { |date, suggestions| [date, suggestions.size] }.each do |item| %>
+            <%= "[Date.UTC(#{item[0].year},#{item[0].month-1},#{item[0].day}), #{item[1]}]" %>
+        <% end %>
+    ];
+
+    window.users_data = [
+        <% @users_since_selected_time.group_by { |c| c.created_at.to_date }.map { |date, suggestions| [date, suggestions.size] }.each do |item| %>
+            <%= "[Date.UTC(#{item[0].year},#{item[0].month-1},#{item[0].day}), #{item[1]}]" %>
+        <% end %>
+    ];
+
+    window.logins_data = [
+        <% @logins_since_selected_time.group_by { |c| c.last_visited_at.to_date }.map { |date, suggestions| [date, suggestions.size] }.each do |item| %>
+            <%= "[Date.UTC(#{item[0].year},#{item[0].month-1},#{item[0].day}), #{item[1]}]" %>
+        <% end %>
+    ]
+</script>

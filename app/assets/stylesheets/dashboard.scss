@@ -2,27 +2,37 @@
   overflow: hidden;
   border: none; /*1px solid #666;*/
   margin-bottom: 40px;
+  margin-top: 10px;
   background: whitesmoke;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 25px;
   padding-bottom: 20px;
 
+
   #options {
     width: 100%;
     clear: both;
+    text-align: right;
+
+    label {
+      line-height: 30px;
+      /*float: right;*/
+      display: inline;
+      margin-right: 10px;
+    }
+
+    select {
+      /*float: right;*/
+      margin-right: 40px;
+      display: inline;
+    }
   }
 
   #graph {
     width: 100%;
     clear: both;
     margin-bottom: 20px;
-
-    .highcharts-container {
-      rect {
-        fill-opacity: 0;
-      }
-    }
   }
 
   #proposals_since_selected_time, #suggestions_since_selected_time {

@@ -3,26 +3,42 @@
 
 $(function () {
     if ($("#moderator_dashboard").length)
-        render_chart($("#moderator_dashboard #graph"));
+    {
+        render_daily_activity_chart($("#moderator_dashboard #graph"));
+        $("#dashboard_selected_time").change(function (evt) {
+            evt.currentTarget.form.submit();
+        })
+    }
+
+
 });
 
-function render_chart($region) {
+function render_daily_activity_chart($region) {
     $region.highcharts({
         chart: {
             type: 'line',
             marginRight: 40,
-            marginBottom: 75
+            marginBottom: 75,
+            backgroundColor: "rgba(0,0,0,0)"
         },
         title: {
-            text: 'Site Statistics',
-            x: -20 //center
+            text: 'Daily Activity',
+            x: 0,
+            useHTML: true,
+            style: {
+                fontSize: '18px',
+                fontWeight: 'bold',
+                color: 'black'
+            }
         },
         xAxis: {
             type: 'datetime',
             dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b',
-                day: '%b'
+                month: '%e %b',
+                year: '%e b %y',
+                day: '%e b',
+                second: '%e %b',
+                millisecond: '%e %b'
             }
         },
         yAxis: {
@@ -44,19 +60,16 @@ function render_chart($region) {
         series: [{
 
             name: 'Users',
-            data: [
-                [Date.UTC(2013,  1, 12), 6.9],
-                [Date.UTC(2013,  1, 27), 7.0],
-                [Date.UTC(2013,  2, 1) , 18.2],
-                [Date.UTC(2013,  2, 2), 21.5],
-                [Date.UTC(2013,  2, 5), 25.2],
-                [Date.UTC(2013,  2, 8), 26.5],
-                [Date.UTC(2013,  2, 14), 14.5],
-                [Date.UTC(2013,  2, 17), 23.3],
-                [Date.UTC(2013,  3, 1), 18.3],
-                [Date.UTC(2013,  3, 5), 13.9],
-                [Date.UTC(2013,  3, 9), 9.6]
-            ]
+            data: window.users_data
+        }, {
+            name: 'Suggestions',
+            data: window.suggestions_data
+        }, {
+            name: 'Proposals',
+            data: window.proposals_data
+        }, {
+            name: 'Logins',
+            data: window.logins_data
         }]
     });
 }
