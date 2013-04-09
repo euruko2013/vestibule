@@ -28,6 +28,7 @@ class Ability
 
       if user.moderator?
         can :update, Suggestion
+        can :see, :moderator_dashboard
       end
 
       can [:vote], Proposal

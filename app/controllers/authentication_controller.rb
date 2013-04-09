@@ -8,6 +8,7 @@ class AuthenticationController < ApplicationController
     user = User.find_or_create_with_omniauth(auth_hash)
     session[:user_id] = user.id
     user.update_provider_details(auth_hash)
+    user.update_last_visit
 
     redirect_to root_url, :notice => "Signed in successfully."
   end

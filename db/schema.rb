@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330134700) do
+ActiveRecord::Schema.define(:version => 20130401184401) do
 
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20130330134700) do
     t.string   "google_uid"
     t.string   "google_nickname"
     t.boolean  "subscribe_to_suggestions_notifications", :default => true
+    t.datetime "last_visited_at"
   end
 
   create_table "versions", :force => true do |t|

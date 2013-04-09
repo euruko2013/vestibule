@@ -10,6 +10,10 @@ class UserTest < ActiveSupport::TestCase
       assert @user.valid?
     end
 
+    should "respond to last_visited_at" do
+      assert @user.respond_to? :last_visited_at
+    end
+
     context "who has made suggestions on a proposal" do
       setup do
         @proposal = FactoryGirl.create(:proposal)

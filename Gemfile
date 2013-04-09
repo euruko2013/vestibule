@@ -11,6 +11,7 @@ gem "unicorn"
 gem "settingslogic"
 gem "thumbs_up"
 gem "cancan"
+gem "highcharts-rails"
 
 # Gem for tracking pageviews and stuff
 gem 'impressionist'
