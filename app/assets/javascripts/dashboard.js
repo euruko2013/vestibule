@@ -2,19 +2,15 @@
 //= require highcharts/highcharts-more
 
 $(function () {
-    if ($("#moderator_dashboard").length)
-    {
-        render_daily_activity_chart($("#moderator_dashboard #graph"));
-        $("#dashboard_selected_time").change(function (evt) {
-            evt.currentTarget.form.submit();
-        })
+    if ($('[data-chart]').length) {
+        $('[data-chart]').each(function(){
+            render_chart($(this));
+        });
     }
-
-
 });
 
-function render_daily_activity_chart($region) {
-    $region.highcharts({
+function render_chart($dataChart) {
+    $($dataChart.data('target')).highcharts({
         chart: {
             type: 'line',
             marginRight: 40,
@@ -57,19 +53,6 @@ function render_daily_activity_chart($region) {
                     Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' m';
             }
         },
-        series: [{
-
-            name: 'Users',
-            data: window.users_data
-        }, {
-            name: 'Suggestions',
-            data: window.suggestions_data
-        }, {
-            name: 'Proposals',
-            data: window.proposals_data
-        }, {
-            name: 'Logins',
-            data: window.logins_data
-        }]
+        series: $dataChart.data('series')
     });
 }

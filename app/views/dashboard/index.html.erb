@@ -1,7 +1,19 @@
 <%= page_title 'Dashboard', no_h1=true %>
 
 <% if can? :see, :moderator_dashboard %>
-<%= render :partial => 'dashboard/moderator' %>
+    <%
+       series = [
+               {:name => 'Suggestions', :data => time_series_array(@suggestions, :created_at, @submissions_start)},
+               {:name => 'Proposals', :data => time_series_array(@proposals, :created_at, @submissions_start)},
+               {:name => 'Users', :data => time_series_array(@users, :created_at, @submissions_start)},
+               {:name => 'Impressions', :data => time_series_array(@impressions, :created_at, @submissions_start)},
+               {:name => 'Upvotes', :data => time_series_array(@upvotes, :created_at, @submissions_start)},
+               {:name => 'Downvotes', :data => time_series_array(@downvotes, :created_at, @submissions_start)}
+       ]
+    %>
+    <div data-chart="true" data-target="#chart" data-series="<%= series.to_json %>">
+        <div id="chart"></div>
+    </div>
 <% end %>
 
 <h2>Your proposals</h2>
@@ -13,7 +25,7 @@
 
 <% if @your_proposals.present? %>
     <ul id="your-proposals" class="proposals">
-      <%= render :partial => 'proposals/proposal_listing',
+      <%= render partial: 'proposals/proposal_listing',
                  collection: @your_proposals,
                  locals: {:show_votes => true,
                           :show_new_suggestions => true} %>
@@ -21,6 +33,13 @@
 <% end %>
 
 <p><%= link_to "Propose #{'another' if @your_proposals.present?} talk", new_proposal_path, class: "btn btn-primary" %></p>
+
+<% if @proposals_since_last_visit.present? %>
+    <h2>New or updated proposals since your last visit</h2>
+    <ul class="proposals">
+        <%= render :partial => 'proposals/proposal_listing', collection: @proposals_since_last_visit  %>
+    </ul>
+<% end %>
 
 <% if @proposals_you_should_look_at.present? %>
     <h2>You should consider reviewing these proposals</h2>
