@@ -8,7 +8,6 @@ class DashboardController < ApplicationController
     @proposals_that_have_been_withdrawn = current_user.proposals_that_have_been_withdrawn
 
     @submissions_start = DateTime.parse(Settings.submissions_start).to_date
-    @proposals_since_last_visit = Proposal.where("updated_at > ? ", current_user.last_visited_at || @submissions_start)
 
     if can? :see, :moderator_dashboard
       @proposals = Proposal.where("updated_at > ? ", @submissions_start)

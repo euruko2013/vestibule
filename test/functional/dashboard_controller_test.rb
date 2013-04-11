@@ -8,7 +8,6 @@ class DashboardControllerTest < ActionController::TestCase
       get :index
     end
 
-    should assign_to(:proposals_since_last_visit)
     should assign_to(:proposals)
     should assign_to(:suggestions)
     should assign_to(:upvotes)
