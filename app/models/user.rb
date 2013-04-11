@@ -55,6 +55,11 @@ class User < ActiveRecord::Base
     self.save
   end
 
+  def  update_last_visit
+    self.last_visited_at = DateTime.now
+    self.save!
+  end
+
   REASON_WEIGHT = 5
   SUGGESTION_WEIGHT = 2
 
