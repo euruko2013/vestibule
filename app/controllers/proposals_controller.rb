@@ -31,7 +31,9 @@ class ProposalsController < ApplicationController
     @proposal = Proposal.new({:proposer => current_user}.merge(params[:proposal] || {}))
     authorize! :create, @proposal
 
-    if @proposal.save
+    if params[:preview]
+      render :new
+    elsif @proposal.save
       ProposalMailer.new_proposal(@proposal).deliver 
       redirect_to proposals_path
     else
@@ -48,7 +50,11 @@ class ProposalsController < ApplicationController
     @proposal = Proposal.find(params[:id])
     authorize! :update, @proposal
 
-    if @proposal.update_attributes(params[:proposal])
+    if @proposal && params[:preview]
+      @proposal.title = params[:proposal][:title]
+      @proposal.description = params[:proposal][:description]
+      render :edit
+    elsif @proposal.update_attributes(params[:proposal])
       redirect_to proposal_path(@proposal)
     else
       render :edit

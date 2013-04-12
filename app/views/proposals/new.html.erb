@@ -4,4 +4,12 @@
 
 <p><strong>NOTE:</strong> proposals are anonymous &mdash; <%= link_to "read more about the process", about_path %>.</p>
 
+<% if @proposal.title %>
+  <h4>Preview of your proposal:</h4>
+  <div class="well">
+    <h1><%= @proposal.title %></h1>
+    <%= markdown @proposal.description %>
+  </div>
+<% end %>
+
 <%= render "form" %>
