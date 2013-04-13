@@ -58,5 +58,15 @@ module Vestibule
       provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
       provider :open_id, :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id'
     end
+
+    if ENV['IRON_CACHE_PROJECT_ID'] && ENV['IRON_CACHE_TOKEN']
+      config.cache_store = :iron_cache_store,
+                           {project_id: ENV['IRON_CACHE_PROJECT_ID'],
+                            token: ENV['IRON_CACHE_TOKEN'],
+                            namespace: "EuRuKo2013CFP-#{Rails.env}"}
+      config.action_controller.perform_caching = true
+    else
+      config.action_controller.perform_caching = false
+    end
   end
 end

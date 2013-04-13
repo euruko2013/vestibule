@@ -12,6 +12,8 @@ gem "settingslogic"
 gem "thumbs_up"
 gem "cancan"
 gem "highcharts-rails"
+gem 'iron_cache'
+gem 'typhoeus'
 
 # Gem for tracking pageviews and stuff
 gem 'impressionist'
