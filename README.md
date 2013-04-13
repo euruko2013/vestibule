@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/euruko2013/vestibule.png)](http://travis-ci.org/euruko2013/vestibule)
+
 Vestibule
 =========
 
@@ -99,11 +101,6 @@ How to contribute
 -----------------
 
 Fork, patch, test, send a pull request. Branches should be based on `master` and not `euruko2013` with the exception of EuRuKo 2013 specific stuff.
-
-Build Status
-------------
-
-[![Build Status](https://secure.travis-ci.org/euruko2013/vestibule.png)](http://travis-ci.org/euruko2013/vestibule)
 
 [Euruko 2013]: http://euruko2013.org/
 [Ruby Manor 3]: http://rubymanor.org/3
