@@ -7,7 +7,9 @@ class SuggestionsController < ApplicationController
     @suggestion = Suggestion.new(params[:suggestion].merge(:proposal => @proposal, :author => current_user))
     authorize! :create, @suggestion
 
-    if @suggestion.save
+    if params[:preview]
+      render :template => 'proposals/show'
+    elsif @suggestion.save
       SuggestionsMailer.new_suggestion(@suggestion).deliver
       redirect_to proposal_path(@proposal), notice: "Your suggestion has been published"
     else

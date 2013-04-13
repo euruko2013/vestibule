@@ -1,2 +1,8 @@
+<h4>Preview of your proposal:</h4>
+<div class="well">
+  <h1><%= @proposal.title %></h1>
+  <%= markdown @proposal.description %>
+</div>
+
 <%= page_title 'Edit your proposal' %>
 <%= render "form" %>
