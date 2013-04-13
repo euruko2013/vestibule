@@ -1,47 +1,9 @@
 <%= page_title 'Dashboard', no_h1=true %>
 
 <% if can? :see, :moderator_dashboard %>
-    <div class="row" style="text-align: center; margin-bottom: 30px; margin-left: 0">
-        <div class="span3">
-            <h2>Users</h2>
-            <span class="lead"><%= @users.size %></span>
-        </div>
-        <div class="span3">
-            <h2>Proposals</h2>
-            <span class="lead"><%= @proposals.size %></span>
-        </div>
-        <div class="span3">
-            <h2>Views</h2>
-            <span class="lead"><%= @impressions.size %></span>
-        </div>
-
-        <div class="span3">
-            <h2>Suggestions</h2>
-            <span class="lead"><%= @suggestions.size %></span>
-        </div>
-        <div class="span3">
-            <h2>Upvotes</h2>
-            <span class="lead"><%= @upvotes.size %></span>
-        </div>
-        <div class="span3">
-            <h2>Downvotes</h2>
-            <span class="lead"><%= @downvotes.size %></span>
-        </div>
-    </div>
-
-    <%
-       series = [
-               {:name => 'Suggestions', :data => time_series_array(@suggestions, :created_at, @submissions_start)},
-               {:name => 'Proposals', :data => time_series_array(@proposals, :created_at, @submissions_start)},
-               {:name => 'Users', :data => time_series_array(@users, :created_at, @submissions_start)},
-               {:name => 'Impressions', :data => time_series_array(@impressions, :created_at, @submissions_start)},
-               {:name => 'Upvotes', :data => time_series_array(@upvotes, :created_at, @submissions_start)},
-               {:name => 'Downvotes', :data => time_series_array(@downvotes, :created_at, @submissions_start)}
-       ]
-    %>
-    <div data-chart="true" data-target="#chart" data-series="<%= series.to_json %>">
-        <div id="chart"></div>
-    </div>
+    <% cache 'moderator_dashboard', expires_in: 15.minutes do %>
+        <%= render 'moderator_dashboard' %>
+    <% end %>
 <% end %>
 
 <h2>Your proposals</h2>

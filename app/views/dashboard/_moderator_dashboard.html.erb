@@ -1,0 +1,69 @@
+<%
+   submissions_start = DateTime.parse(Settings.submissions_start).to_date
+
+   proposals = Proposal.scoped
+   suggestions = Suggestion.scoped
+   users = User.scoped
+   impressions = Impression.where(impressionable_type: 'Proposal')
+   votes = Vote.where(voter_type: 'User').where(voteable_type: 'Proposal')
+   upvotes = votes.where(:vote => true)
+   downvotes = votes.where(:vote => false)
+%>
+<div class="row" style="text-align: center; margin-left: 0">
+    <div class="span3">
+        <h2>Users</h2>
+        <span class="lead"><%= users.size %></span><br><br>
+        <ul class="unstyled">
+            <li><strong>With proposals:</strong> <%= proposals.uniq.pluck(:proposer_id).size %></li>
+            <li><strong>With suggestions:</strong> <%= suggestions.uniq.pluck(:author_id).size %></li>
+            <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voter_id).size %></li>
+        </ul>
+    </div>
+    <div class="span3">
+        <h2>Proposals</h2>
+        <span class="lead"><%= proposals.size %></span><br><br>
+        <ul class="unstyled">
+            <li><strong>Active:</strong> <%= proposals.where(withdrawn: false).size %></li>
+            <li><strong>Withdrawn:</strong> <%= proposals.where(withdrawn: true).size %></li>
+            <li><strong>With suggestions:</strong> <%= suggestions.uniq.pluck(:proposal_id).size %></li>
+            <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voteable_id).size %></li>
+        </ul>
+    </div>
+    <div class="span3">
+        <h2>Suggestions</h2>
+        <span class="lead"><%= suggestions.size %></span><br><br>
+        <ul class="unstyled">
+            <li><strong>From unique users:</strong> <%= suggestions.uniq.pluck(:author_id).size %></li>
+            <li><strong>From proposal authors:</strong> <%= suggestions.joins(:proposal).where('suggestions.author_id != proposals.proposer_id').uniq.pluck(:author_id).size %></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row" style="text-align: center; margin-bottom: 30px; margin-left: 0">
+    <div class="span3">
+        <h2>Impressions</h2>
+        <span class="lead"><%= impressions.size %></span><br><br>
+    </div>
+    <div class="span3">
+        <h2>Upvotes</h2>
+        <span class="lead"><%= upvotes.size %></span>
+    </div>
+    <div class="span3">
+        <h2>Downvotes</h2>
+        <span class="lead"><%= downvotes.size %></span>
+    </div>
+</div>
+
+<%
+   series = [
+           {:name => 'Suggestions', :data => time_series_array(suggestions, :created_at, submissions_start)},
+           {:name => 'Proposals', :data => time_series_array(proposals, :created_at, submissions_start)},
+           {:name => 'Users', :data => time_series_array(users, :created_at, submissions_start)},
+           {:name => 'Impressions', :data => time_series_array(impressions, :created_at, submissions_start)},
+           {:name => 'Upvotes', :data => time_series_array(upvotes, :created_at, submissions_start)},
+           {:name => 'Downvotes', :data => time_series_array(downvotes, :created_at, submissions_start)}
+   ]
+%>
+<div data-chart="true" data-target="#chart" data-series="<%= series.to_json %>">
+    <div id="chart"></div>
+</div>
