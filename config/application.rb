@@ -50,13 +50,22 @@ module Vestibule
     config.assets.version = '1.0'
 
     require 'omniauth-openid'
-    require 'openid/store/filesystem'
+
+    store = if ENV['MEMCACHIER_SERVERS'].present?
+      require 'openid/store/memcache'
+      OpenID::Store::Memcache.new(Dalli::Client.new(ENV['MEMCACHIER_SERVERS'],
+                                                    username: ENV['MEMCACHIER_USERNAME'],
+                                                    password: ENV['MEMCACHIER_PASSWORD']))
+    else
+      require 'openid/store/filesystem'
+      OpenID::Store::Filesystem.new('/tmp')
+    end
 
     config.middleware.use OmniAuth::Builder do
       provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET'], scope: 'user:email'
       provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET'], scope: 'user:email'
       provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
-      provider :open_id, :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id'
+      provider :open_id, :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :store => store
     end
 
     if ENV['IRON_CACHE_PROJECT_ID'] && ENV['IRON_CACHE_TOKEN']
