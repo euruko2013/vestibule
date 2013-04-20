@@ -25,6 +25,9 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-openid'
 
+# User data sync
+gem 'gibbon'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
