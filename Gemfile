@@ -19,7 +19,7 @@ gem 'dalli'
 # Gem for tracking pageviews and stuff
 gem 'impressionist'
 
-## omniauth Strategies
+# Authentication stuff
 gem 'omniauth-github', '1.0.3'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
