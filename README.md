@@ -1,4 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/euruko2013/vestibule.png)](http://travis-ci.org/euruko2013/vestibule)
+[![Dependency Status](https://gemnasium.com/euruko2013/vestibule.png)](https://gemnasium.com/euruko2013/vestibule)
 
 Vestibule
 =========
