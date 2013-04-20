@@ -62,10 +62,12 @@
         <section id="notices">
           <%= render "shared/notices" %>
 
+          <% if remind_account_for_tickets %>
           <div class="alert alert-info">
             <i class="icon-bullhorn"></i>&nbsp;&nbsp;
             <strong><em><%= link_to 'Tickets for EuRuKo 2013 are now available!', 'https://www.eventora.com/en/Events/euruko-2013-athens' %></em></strong>
           </div>
+          <% end %>
 
           <% if remind_account_for_signup_reason -%>
           <div class="alert">

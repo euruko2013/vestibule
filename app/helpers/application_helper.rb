@@ -28,6 +28,10 @@ module ApplicationHelper
     content_tag :h1, new_page_title unless no_h1
   end
 
+  def remind_account_for_tickets
+    current_user && !current_user.delegate?
+  end
+
   def remind_account_for_signup_reason
     current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
   end
