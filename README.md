@@ -59,9 +59,8 @@ Deploying on Heroku (non official site)
 3. Login from the command line: `heroku login`
 4. Create your heroku app: `heroku create`
 5. Add the New Relic add on (requires credit card information): `heroku addons:add newrelic:standard`
-6. Switch to your own branch (or in EuRuKo 2013 case, the `euruko2013` branch) and un-ignore the `config/application.yml` since heroku needs this
-7. Deploy: `rake release`
-8. Check the app: `heroku open`
+6. Deploy: `rake release`
+7. Check the app: `heroku open`
 
 For more info, checkout the [official heroku guide][]
 
@@ -100,7 +99,7 @@ Contact @nikosd
 How to contribute
 -----------------
 
-Fork, patch, test, send a pull request. Branches should be based on `master` and not `euruko2013` with the exception of EuRuKo 2013 specific stuff.
+Fork, patch, test, send a pull request.
 
 [Euruko 2013]: http://euruko2013.org/
 [Ruby Manor 3]: http://rubymanor.org/3
