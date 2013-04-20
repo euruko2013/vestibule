@@ -62,6 +62,11 @@
         <section id="notices">
           <%= render "shared/notices" %>
 
+          <div class="alert alert-info">
+            <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+            <strong><em><%= link_to 'Tickets are now available!', 'https://www.eventora.com/en/Events/euruko-2013-athens' %></em></strong>
+          </div>
+
           <% if remind_account_for_signup_reason -%>
           <div class="alert">
             Other attendees are wondering what you hope to get out of <%= Settings.event_name %>.
