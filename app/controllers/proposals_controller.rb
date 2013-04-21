@@ -9,6 +9,7 @@ class ProposalsController < ApplicationController
 
     @withdrawn_proposals = Proposal.withdrawn.all
     @proposals = Proposal.active.order('created_at desc').all
+    @suggested_proposal = current_user.proposals_without_own_votes.active.sample || Proposal.active.sample if current_user
 
     respond_with @proposals
   end

@@ -136,13 +136,16 @@ module ApplicationHelper
      ['Facebook', '/auth/facebook']].map { |name, url| content_tag container, link_to(name, url) }.join("\n").html_safe
   end
 
-  def countdown_to_submissions_end
-    submissions_end = Phase::ONE.ending_at
-    if submissions_end > DateTime.now
-      content_tag :span, '', id: 'counter', data: {countdown_end: submissions_end.to_i * 1000}
+  def countdown_to(phase_end)
+    if phase_end > DateTime.now
+      content_tag :span, '', id: 'counter', data: {countdown_end: phase_end.to_i * 1000}
     else
       content_tag :span, 'no time'
     end
+  end
+
+  def countdown_to_phase_end
+    countdown_to current_phase.ending_at
   end
 
   protected

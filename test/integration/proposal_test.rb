@@ -10,7 +10,12 @@ class ProposalTest < IntegrationTestCase
       context "As a visitor to the site" do
         should "not see a link to propose a talk" do
           visit proposals_path
-          assert !page.has_content?("Propose talk"), "link to propose talk should not be present!"
+          assert !page.has_content?("Propose a talk"), "link to propose talk should not be present!"
+        end
+
+        should "not see a link to vote for a talk" do
+          visit proposals_path
+          assert !page.has_content?("Cast your votes!"), "link to vote talks should not be present!"
         end
 
         should "not be able to propose a talk" do
@@ -65,6 +70,16 @@ class ProposalTest < IntegrationTestCase
         setup do
           @user = FactoryGirl.create(:user)
           sign_in @user
+        end
+
+        should "see a link to propose a talk" do
+          visit proposals_path
+          assert page.has_content?("Propose a talk"), "link to propose talk should be present!"
+        end
+
+        should "not see a link to vote for a talk" do
+          visit proposals_path
+          assert !page.has_content?("Cast your votes!"), "link to vote talks should not be present!"
         end
 
         context "and I propose a talk with all the required details" do
@@ -220,7 +235,7 @@ blah blah blah
     end
   end
 
-  [Phase.all - [Phase::ONE, Phase::INTERLUDE]].flatten.each do |phase|
+  [Phase::INTERLUDE].each do |phase|
     context "During '#{phase.name}'" do
       setup do
         Phase.stubs(:current).returns(phase)
@@ -229,7 +244,12 @@ blah blah blah
       context "As a visitor to the site" do
         should "not see a link to propose a talk" do
           visit proposals_path
-          assert !page.has_content?("Propose talk"), "link to propose talk should not be present!"
+          assert !page.has_content?("Propose a talk"), "link to propose talk should not be present!"
+        end
+
+        should "not see a link to vote for a talk" do
+          visit proposals_path
+          assert !page.has_content?("Cast your votes!"), "link to vote talks should not be present!"
         end
 
         should "not be able to propose a talk" do
@@ -288,7 +308,128 @@ blah blah blah
 
         should "not see a link to propose a talk" do
           visit proposals_path
-          assert !page.has_content?("Propose talk"), "link to propose talk should not be present!"
+          assert !page.has_content?("Propose a talk"), "link to propose talk should not be present!"
+        end
+
+        context "given a proposal already exists" do
+          setup do
+            @proposal = FactoryGirl.create(:proposal, :title => "Ruby Muby Schmuby")
+          end
+
+          should "see a link to vote for a talk" do
+            visit proposals_path
+            assert page.has_content?("Cast your votes!"), "link to vote talks should be present!"
+          end
+
+          should "be able to see the list of proposals" do
+            visit proposals_path
+            assert page.has_css?('ul.proposals')
+          end
+
+          should "be able to subscribe to the rss feed of proposals" do
+            visit proposals_path
+            assert page.has_css?("link[rel='alternate'][type='application/rss+xml'][href$='#{proposals_path(:format => :rss)}']")
+            visit proposals_path(:format => :rss)
+            assert_match %r{application/rss\+xml}, page.response_headers['Content-Type']
+            assert page.has_xpath?('.//item/title', :text => @proposal.title)
+          end
+
+          should "be able to read individual proposals" do
+            visit proposals_path
+            click_link "Ruby Muby Schmuby"
+            assert_page_has_proposal :title => "Ruby Muby Schmuby"
+          end
+
+          should "not see a link to edit a proposal" do
+            visit proposals_path
+            click_link "Ruby Muby Schmuby"
+            assert !page.has_content?("Edit proposal"), "link to edit proposal should not be present"
+          end
+
+          should "not be able to edit a proposal" do
+            visit edit_proposal_path(@proposal)
+            i_am_not_authorized
+          end
+
+          should "my page view be tracked" do
+            assert_difference(lambda { @proposal.impressionist_count }, 1) do
+              visit proposal_path(@proposal)
+            end
+          end
+        end
+      end
+    end
+  end
+
+  [Phase.all - [Phase::ONE, Phase::INTERLUDE]].flatten.each do |phase|
+    context "During '#{phase.name}'" do
+      setup do
+        Phase.stubs(:current).returns(phase)
+      end
+
+      context "As a visitor to the site" do
+        should "not see a link to propose a talk" do
+          visit proposals_path
+          assert !page.has_content?("Propose a talk"), "link to propose talk should not be present!"
+        end
+
+        should "not be able to propose a talk" do
+          visit new_proposal_path
+          i_am_asked_to_sign_in
+        end
+
+        context "given a proposal already exists" do
+          setup do
+            @proposal = FactoryGirl.create(:proposal, :title => "Ruby Muby Schmuby")
+          end
+
+          should "be able to see the list of proposals" do
+            visit proposals_path
+            assert page.has_css?('ul.proposals')
+          end
+
+          should "be able to subscribe to the rss feed of proposals" do
+            visit proposals_path
+            assert page.has_css?("link[rel='alternate'][type='application/rss+xml'][href$='#{proposals_path(:format => :rss)}']")
+            visit proposals_path(:format => :rss)
+            assert_match %r{application/rss\+xml}, page.response_headers['Content-Type']
+            assert page.has_xpath?('.//item/title', :text => @proposal.title)
+          end
+
+          should "be able to read individual proposals" do
+            visit proposals_path
+            click_link "Ruby Muby Schmuby"
+            assert_page_has_proposal :title => "Ruby Muby Schmuby"
+          end
+
+          should "not see a link to edit a proposal" do
+            visit proposals_path
+            click_link "Ruby Muby Schmuby"
+            assert !page.has_content?("Edit proposal"), "link to edit proposal should not be present"
+          end
+
+          should "not be able to edit a proposal" do
+            visit edit_proposal_path(@proposal)
+            i_am_asked_to_sign_in
+          end
+
+          should "my page view be tracked" do
+            assert_difference(lambda { @proposal.impressionist_count }, 1) do
+              visit proposal_path(@proposal)
+            end
+          end
+        end
+      end
+
+      context "Given I am logged in" do
+        setup do
+          @user = FactoryGirl.create(:user)
+          sign_in @user
+        end
+
+        should "not see a link to propose a talk" do
+          visit proposals_path
+          assert !page.has_content?("Propose a talk"), "link to propose talk should not be present!"
         end
 
         should "not be able to propose a talk" do
