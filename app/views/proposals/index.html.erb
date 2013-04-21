@@ -1,21 +1,21 @@
 <div class="hero-unit">
     <%= page_title "#{Settings.event_name} Call for Presentations" %>
 
-    <p>
-        Be part of <%= Settings.event_name %>:
-        we highly encourage you to submit as many proposals as you want,
-        help the authors make theirs better
-        and finally select the most interesting ones for the final agenda!
-        What are you waiting for?
-    </p>
+    <% if current_phase.main_text %>
+    <p><%= current_phase.main_text.html_safe %></p>
+    <% end %>
 
-    <p>
-        You have <%= countdown_to_submissions_end %> to submit, refine and discuss proposals!
-    </p>
+    <% if current_phase.countdown_text %>
+    <p>You have <%= countdown_to_phase_end %> <%= current_phase.countdown_text %></p>
+    <% end %>
 
     <p>
     <% if user_signed_in? %>
-        <%= link_to "Propose a talk", new_proposal_path, :class => 'btn btn-primary' %>
+        <% if can? :create, Proposal  %>
+            <%= link_to "Propose a talk", new_proposal_path, :class => 'btn btn-primary' %>
+        <% elsif @suggested_proposal && can?(:vote, @suggested_proposal) %>
+            <%= link_to "Cast your votes!", proposal_path(@suggested_proposal), :class => 'btn btn-primary' %>
+        <% end %>
     <% else %>
         <div class="btn-group">
             <%= link_to 'Join the party', '#', :class => 'btn btn-primary dropdown-toggle', :data => {:toggle => 'dropdown'} %>

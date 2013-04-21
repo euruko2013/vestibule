@@ -33,7 +33,11 @@ module ApplicationHelper
   end
 
   def remind_account_for_signup_reason
-    current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
+    current_phase.in?(Phase::ZERO, Phase::ONE) && current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
+  end
+
+  def remind_account_for_author_bio
+    current_phase.in?(Phase::INTERLUDE, Phase::TWO) && current_user && !current_user.signup_reason.present? && current_user.proposals.present? && !request.path[/user/] && can?(:edit, current_user)
   end
 
   def avatar_url(user, bigger=false)
@@ -136,13 +140,16 @@ module ApplicationHelper
      ['Facebook', '/auth/facebook']].map { |name, url| content_tag container, link_to(name, url) }.join("\n").html_safe
   end
 
-  def countdown_to_submissions_end
-    submissions_end = DateTime.parse(Settings.submissions_end)
-    if submissions_end > DateTime.now
-      content_tag :span, '', id: 'counter', data: {countdown_end: DateTime.parse(Settings.submissions_end).to_i * 1000}
+  def countdown_to(phase_end)
+    if phase_end > DateTime.now
+      content_tag :span, '', id: 'counter', data: {countdown_end: phase_end.to_i * 1000}
     else
       content_tag :span, 'no time'
     end
+  end
+
+  def countdown_to_phase_end
+    countdown_to current_phase.ending_at
   end
 
   protected
