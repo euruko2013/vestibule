@@ -7,124 +7,71 @@ class SuggestionsControllerTest < ActionController::TestCase
     @proposal = FactoryGirl.create(:proposal, :proposer => @proposer)
   end
 
-  context 'When visitor' do
-    context 'on #POST to create' do
-      setup do
-        post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
-      end
-
-      should assign_to(:proposal) { @proposal }
-      should assign_to(:suggestion)
-      should respond_with(:redirect)
-      should set_the_flash.to(/You need to sign in or sign up before continuing/)
-
-      should "save suggestion" do
-        assert !assigns(:suggestion).persisted?
-      end
-    end
-
-    context 'on #POST to update' do
-      setup do
-        @suggestion = FactoryGirl.create(:suggestion)
-        put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
-      end
-
-      should assign_to(:proposal) { @proposal }
-      should assign_to(:suggestion)
-      should respond_with(:redirect)
-      should set_the_flash.to(/You need to sign in or sign up before continuing/)
-
-      should "not update suggestion" do
-        assert_equal 1, @suggestion.versions.size
-      end
-    end
-  end
-
-  context 'When viewer' do
+  context 'During phase one' do
     setup do
-      session[:user_id] = @viewer.id
+      Phase.stubs(:current).returns(Phase::ONE)
     end
 
-    context 'on #POST to create' do
-      setup do
-        post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
-      end
-
-      should assign_to(:proposal) { @proposal }
-      should assign_to(:suggestion)
-      should respond_with(:redirect)
-      should set_the_flash.to(/Your suggestion has been published/)
-
-      should "save suggestion" do
-        assert assigns(:suggestion).persisted?
-      end
-
-      should "send email" do
-        assert !ActionMailer::Base.deliveries.empty?
-      end
-    end
-
-    context 'on #POST to update' do
-      setup do
-        @suggestion = FactoryGirl.create(:suggestion, :author => @viewer)
-        put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
-      end
-
-      should assign_to(:proposal) { @proposal }
-      should assign_to(:suggestion)
-      should respond_with(:redirect)
-      should set_the_flash.to(/You are not authorized to access this page/)
-
-      should "not update suggestion" do
-        assert_equal 1, @suggestion.versions.size
-      end
-    end
-  end
-
-  context 'When proposer' do
-    setup do
-      session[:user_id] = @proposer.id
-    end
-
-    context 'on #POST to create' do
-      setup do
-        post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
-      end
-
-      should assign_to(:proposal) { @proposal }
-      should assign_to(:suggestion)
-      should respond_with(:redirect)
-      should set_the_flash.to(/Your suggestion has been published/)
-
-      should "save suggestion" do
-        assert assigns(:suggestion).persisted?
-      end
-
-      should "send email" do
-        assert !ActionMailer::Base.deliveries.empty?
-      end
-    end
-
-    context 'on #POST to update' do
-      context 'own suggestion' do
+    context 'When visitor' do
+      context 'on #POST to create' do
         setup do
-          @suggestion = FactoryGirl.create(:suggestion, :author => @proposer)
+          post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+        end
+
+        should assign_to(:proposal) { @proposal }
+        should assign_to(:suggestion)
+        should respond_with(:redirect)
+        should set_the_flash.to(/You need to sign in or sign up before continuing/)
+
+        should "save suggestion" do
+          assert !assigns(:suggestion).persisted?
+        end
+      end
+
+      context 'on #POST to update' do
+        setup do
+          @suggestion = FactoryGirl.create(:suggestion)
           put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
         end
 
         should assign_to(:proposal) { @proposal }
         should assign_to(:suggestion)
         should respond_with(:redirect)
-        should set_the_flash.to(/You are not authorized to access this page/)
+        should set_the_flash.to(/You need to sign in or sign up before continuing/)
 
         should "not update suggestion" do
           assert_equal 1, @suggestion.versions.size
         end
       end
+    end
 
-      context 'someone else suggestion' do
+    context 'When viewer' do
+      setup do
+        session[:user_id] = @viewer.id
+      end
+
+      context 'on #POST to create' do
         setup do
-          @suggestion = FactoryGirl.create(:suggestion)
+          post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+        end
+
+        should assign_to(:proposal) { @proposal }
+        should assign_to(:suggestion)
+        should respond_with(:redirect)
+        should set_the_flash.to(/Your suggestion has been published/)
+
+        should "save suggestion" do
+          assert assigns(:suggestion).persisted?
+        end
+
+        should "send email" do
+          assert !ActionMailer::Base.deliveries.empty?
+        end
+      end
+
+      context 'on #POST to update' do
+        setup do
+          @suggestion = FactoryGirl.create(:suggestion, :author => @viewer)
           put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
         end
 
@@ -138,55 +85,294 @@ class SuggestionsControllerTest < ActionController::TestCase
         end
       end
     end
+
+    context 'When proposer' do
+      setup do
+        session[:user_id] = @proposer.id
+      end
+
+      context 'on #POST to create' do
+        setup do
+          post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+        end
+
+        should assign_to(:proposal) { @proposal }
+        should assign_to(:suggestion)
+        should respond_with(:redirect)
+        should set_the_flash.to(/Your suggestion has been published/)
+
+        should "save suggestion" do
+          assert assigns(:suggestion).persisted?
+        end
+
+        should "send email" do
+          assert !ActionMailer::Base.deliveries.empty?
+        end
+      end
+
+      context 'on #POST to update' do
+        context 'own suggestion' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion, :author => @proposer)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/You are not authorized to access this page/)
+
+          should "not update suggestion" do
+            assert_equal 1, @suggestion.versions.size
+          end
+        end
+
+        context 'someone else suggestion' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/You are not authorized to access this page/)
+
+          should "not update suggestion" do
+            assert_equal 1, @suggestion.versions.size
+          end
+        end
+      end
+    end
+
+    context 'When moderator' do
+      setup do
+        @moderator = FactoryGirl.create(:user, :email => 'moderator@euruko2013.org')
+        session[:user_id] = @moderator
+      end
+
+      context 'on #POST to update' do
+        context 'own suggestion' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion, :author => @moderator)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/Suggestion has been updated/)
+
+          should "update suggestion" do
+            assert_equal 2, @suggestion.versions.size
+          end
+
+          should "send email" do
+            assert !ActionMailer::Base.deliveries.empty?
+          end
+        end
+
+        context 'someone else suggestion' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/Suggestion has been updated/)
+
+          should "update suggestion" do
+            assert_equal 2, @suggestion.versions.size
+          end
+
+          should "send email" do
+            assert !ActionMailer::Base.deliveries.empty?
+          end
+        end
+      end
+
+    end
   end
 
-  context 'When moderator' do
-    setup do
-      @moderator = FactoryGirl.create(:user, :email => 'moderator@euruko2013.org')
-      session[:user_id] = @moderator
-    end
+  [Phase.all - [Phase::ONE]].flatten.each do |phase|
+    context "During '#{phase.name}'" do
+      setup do
+        Phase.stubs(:current).returns(phase)
+      end
 
-    context 'on #POST to update' do
-      context 'own suggestion' do
-        setup do
-          @suggestion = FactoryGirl.create(:suggestion, :author => @moderator)
-          put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+      context 'When visitor' do
+        context 'on #POST to create' do
+          setup do
+            post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/You need to sign in or sign up before continuing/)
+
+          should "save suggestion" do
+            assert !assigns(:suggestion).persisted?
+          end
         end
 
-        should assign_to(:proposal) { @proposal }
-        should assign_to(:suggestion)
-        should respond_with(:redirect)
-        should set_the_flash.to(/Suggestion has been updated/)
+        context 'on #POST to update' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
 
-        should "update suggestion" do
-          assert_equal 2, @suggestion.versions.size
-        end
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/You need to sign in or sign up before continuing/)
 
-        should "send email" do
-          assert !ActionMailer::Base.deliveries.empty?
+          should "not update suggestion" do
+            assert_equal 1, @suggestion.versions.size
+          end
         end
       end
 
-      context 'someone else suggestion' do
+      context 'When viewer' do
         setup do
-          @suggestion = FactoryGirl.create(:suggestion)
-          put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          session[:user_id] = @viewer.id
         end
 
-        should assign_to(:proposal) { @proposal }
-        should assign_to(:suggestion)
-        should respond_with(:redirect)
-        should set_the_flash.to(/Suggestion has been updated/)
+        context 'on #POST to create' do
+          setup do
+            post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
 
-        should "update suggestion" do
-          assert_equal 2, @suggestion.versions.size
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+
+          should "not save suggestion" do
+            assert !assigns(:suggestion).persisted?
+          end
         end
 
-        should "send email" do
-          assert !ActionMailer::Base.deliveries.empty?
+        context 'on #POST to update' do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion, :author => @viewer)
+            put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+          should set_the_flash.to(/You are not authorized to access this page/)
+
+          should "not update suggestion" do
+            assert_equal 1, @suggestion.versions.size
+          end
+        end
+      end
+
+      context 'When proposer' do
+        setup do
+          session[:user_id] = @proposer.id
+        end
+
+        context 'on #POST to create' do
+          setup do
+            post :create, :proposal_id => @proposal.to_param, :suggestion => FactoryGirl.attributes_for(:suggestion)
+          end
+
+          should assign_to(:proposal) { @proposal }
+          should assign_to(:suggestion)
+          should respond_with(:redirect)
+
+          should "not save suggestion" do
+            assert !assigns(:suggestion).persisted?
+          end
+        end
+
+        context 'on #POST to update' do
+          context 'own suggestion' do
+            setup do
+              @suggestion = FactoryGirl.create(:suggestion, :author => @proposer)
+              put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+            end
+
+            should assign_to(:proposal) { @proposal }
+            should assign_to(:suggestion)
+            should respond_with(:redirect)
+            should set_the_flash.to(/You are not authorized to access this page/)
+
+            should "not update suggestion" do
+              assert_equal 1, @suggestion.versions.size
+            end
+          end
+
+          context 'someone else suggestion' do
+            setup do
+              @suggestion = FactoryGirl.create(:suggestion)
+              put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+            end
+
+            should assign_to(:proposal) { @proposal }
+            should assign_to(:suggestion)
+            should respond_with(:redirect)
+            should set_the_flash.to(/You are not authorized to access this page/)
+
+            should "not update suggestion" do
+              assert_equal 1, @suggestion.versions.size
+            end
+          end
+        end
+      end
+
+      context 'When moderator' do
+        setup do
+          @moderator = FactoryGirl.create(:user, :email => 'moderator@euruko2013.org')
+          session[:user_id] = @moderator
+        end
+
+        context 'on #POST to update' do
+          context 'own suggestion' do
+            setup do
+              @suggestion = FactoryGirl.create(:suggestion, :author => @moderator)
+              put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+            end
+
+            should assign_to(:proposal) { @proposal }
+            should assign_to(:suggestion)
+            should respond_with(:redirect)
+            should set_the_flash.to(/Suggestion has been updated/)
+
+            should "update suggestion" do
+              assert_equal 2, @suggestion.versions.size
+            end
+
+            should "send email" do
+              assert !ActionMailer::Base.deliveries.empty?
+            end
+          end
+
+          context 'someone else suggestion' do
+            setup do
+              @suggestion = FactoryGirl.create(:suggestion)
+              put :update, :proposal_id => @proposal.to_param, :id => @suggestion.id, :suggestion => FactoryGirl.attributes_for(:suggestion)
+            end
+
+            should assign_to(:proposal) { @proposal }
+            should assign_to(:suggestion)
+            should respond_with(:redirect)
+            should set_the_flash.to(/Suggestion has been updated/)
+
+            should "update suggestion" do
+              assert_equal 2, @suggestion.versions.size
+            end
+
+            should "send email" do
+              assert !ActionMailer::Base.deliveries.empty?
+            end
+          end
         end
       end
     end
-
   end
 end

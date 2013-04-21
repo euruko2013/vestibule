@@ -5,6 +5,7 @@ class Ability
   # https://github.com/ryanb/cancan/wiki/Defining-Abilities
   def initialize(user)
     user ||= User.new
+    phase = Phase.current
 
     # Everyone
     can :see, :index
@@ -22,17 +23,33 @@ class Ability
       can :see, :my_motivation
       can [:update], User, :id => user.id
 
-      can [:update, :create, :withdraw, :republish, :see_votes], Proposal, :proposer_id => user.id
+      if phase.new_submissions_allowed?
+        can [:create], Proposal, :proposer_id => user.id
+      end
 
-      can [:create], Suggestion, :author_id => user.id
+      if phase.submission_editing_allowed?
+        can [:update], Proposal, :proposer_id => user.id
+      end
+
+      if phase.submission_withdrawal_allowed?
+        can [:withdraw, :republish], Proposal, :proposer_id => user.id
+      end
+
+      can [:see_votes], Proposal, :proposer_id => user.id
+
+      if phase.new_suggestions_allowed?
+        can [:create], Suggestion, :author_id => user.id
+      end
 
       if user.moderator?
         can :update, Suggestion
         can :see, :moderator_dashboard
       end
 
-      can [:vote], Proposal
-      cannot [:vote], Proposal, :proposer_id => user.id
+      if phase.voting_allowed?
+        can [:vote], Proposal
+        cannot [:vote], Proposal, :proposer_id => user.id
+      end
     end
   end
 end

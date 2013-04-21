@@ -8,6 +8,8 @@ class Phase
     [ZERO, ONE, INTERLUDE, TWO, CONFIRMATION, LINEUP]
   end
 
+  attr_accessor :name
+
   attr_accessor :starting_at
   attr_accessor :ending_at
 
@@ -27,6 +29,7 @@ class Phase
   alias_method :submission_withdrawal_allowed?, :submission_withdrawal_allowed
 
   ZERO = Phase.new.tap do |p|
+    p.name = "Before the beginning"
     p.starting_at = DateTime.new(1970, 1, 1)
     p.ending_at = DateTime.parse('2013-03-28T00:00:00+2')
 
@@ -38,6 +41,7 @@ class Phase
   end.freeze
 
   ONE = Phase.new.tap do |p|
+    p.name = "Phase 1: Submissions"
     p.starting_at = DateTime.parse('2013-03-28T00:00:00+2')
     p.ending_at = DateTime.parse('2013-04-24T00:00:00+3')
 
@@ -49,6 +53,7 @@ class Phase
   end.freeze
 
   INTERLUDE = Phase.new.tap do |p|
+    p.name = "Interlude"
     p.starting_at = DateTime.parse('2013-04-24T00:00:00+3')
     p.ending_at = DateTime.parse('2013-04-29T00:00:00+3')
 
@@ -60,6 +65,7 @@ class Phase
   end.freeze
 
   TWO = Phase.new.tap do |p|
+    p.name = "Phase 2: Final voting"
     p.starting_at = DateTime.parse('2013-04-29T00:00:00+3')
     p.ending_at = DateTime.parse('2013-05-06T00:00:00+3')
 
@@ -71,6 +77,7 @@ class Phase
   end.freeze
 
   CONFIRMATION = Phase.new.tap do |p|
+    p.name = "Speakers confirmation"
     p.starting_at = DateTime.parse('2013-05-06T00:00:00+3')
     p.ending_at = DateTime.parse('2013-05-09T00:00:00+3')
 
@@ -82,6 +89,7 @@ class Phase
   end.freeze
 
   LINEUP = Phase.new.tap do |p|
+    p.name = "Lineup announcement"
     p.starting_at = DateTime.parse('2013-05-09T00:00:00+3')
     p.ending_at = DateTime.parse('2100-01-01T00:00:00+2')
 
