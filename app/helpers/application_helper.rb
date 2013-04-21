@@ -29,7 +29,7 @@ module ApplicationHelper
   end
 
   def remind_account_for_tickets
-    current_user && !current_user.delegate?
+    current_user.blank? || !current_user.delegate?
   end
 
   def remind_account_for_signup_reason
