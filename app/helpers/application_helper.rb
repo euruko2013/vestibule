@@ -33,7 +33,7 @@ module ApplicationHelper
   end
 
   def remind_account_for_signup_reason
-    current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
+    current_phase.in?(Phase::ZERO, Phase::ONE) && current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
   end
 
   def avatar_url(user, bigger=false)
