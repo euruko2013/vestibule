@@ -1,5 +1,5 @@
 <%
-   submissions_start = DateTime.parse(Settings.submissions_start).to_date
+   submissions_start = Phase::ONE.starting_at.to_date
 
    proposals = Proposal.scoped
    suggestions = Suggestion.scoped

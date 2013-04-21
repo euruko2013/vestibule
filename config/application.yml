@@ -27,8 +27,6 @@ defaults: &defaults
   mailer:
     from: '"EuRuKo 2013" <info@euruko2013.org>'
     bcc: 'info@euruko2013.org'
-  submissions_start: '2013-03-28T00:00:00+2'
-  submissions_end: '2013-04-24T00:00:00+3'
 
 development:
   <<: *defaults

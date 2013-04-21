@@ -137,9 +137,9 @@ module ApplicationHelper
   end
 
   def countdown_to_submissions_end
-    submissions_end = DateTime.parse(Settings.submissions_end)
+    submissions_end = Phase::ONE.ending_at
     if submissions_end > DateTime.now
-      content_tag :span, '', id: 'counter', data: {countdown_end: DateTime.parse(Settings.submissions_end).to_i * 1000}
+      content_tag :span, '', id: 'counter', data: {countdown_end: submissions_end.to_i * 1000}
     else
       content_tag :span, 'no time'
     end
