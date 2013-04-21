@@ -3,9 +3,8 @@ class Ability
 
   # See the wiki for how to define abilities:
   # https://github.com/ryanb/cancan/wiki/Defining-Abilities
-  def initialize(user)
+  def initialize(user, phase = Phase.current)
     user ||= User.new
-    phase = Phase.current
 
     # Everyone
     can :see, :index
