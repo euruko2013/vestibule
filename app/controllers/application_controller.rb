@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   check_authorization
 
-  helper_method :current_user, :user_signed_in?
+  helper_method :current_user, :user_signed_in?, :current_phase
 
   before_filter :reload_settings if Rails.env.development?
 
@@ -35,5 +35,9 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
+  end
+
+  def current_phase
+    @current_phase ||= Phase.current
   end
 end
