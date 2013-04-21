@@ -36,6 +36,10 @@ module ApplicationHelper
     current_phase.in?(Phase::ZERO, Phase::ONE) && current_user && !current_user.signup_reason.present? && !request.path[/user/] && can?(:edit, current_user)
   end
 
+  def remind_account_for_author_bio
+    current_phase.in?(Phase::INTERLUDE, Phase::TWO) && current_user && !current_user.signup_reason.present? && current_user.proposals.present? && !request.path[/user/] && can?(:edit, current_user)
+  end
+
   def avatar_url(user, bigger=false)
     hash =
       if user.email.present?

@@ -75,6 +75,14 @@
             <%= link_to "Tell them now", edit_user_path(current_user) %>.
           </div>
           <% end -%>
+
+          <% if remind_account_for_author_bio -%>
+          <div class="alert">
+            <i class="icon-user"></i>
+            You have some proposals waiting to get into the shortlist!
+            <%= link_to "Why don't you update your profile with some background info about you?", edit_user_path(current_user) %>
+          </div>
+          <% end -%>
         </section>
 
         <%= yield %>
