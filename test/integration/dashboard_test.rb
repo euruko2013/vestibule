@@ -31,6 +31,18 @@ class DashboardTest < IntegrationTestCase
           visit "/dashboard"
         end
 
+        should "see a link to submit a new proposal" do
+          assert page.has_content?('Propose another talk')
+        end
+
+        should "see a call to action to submit a new proposal" do
+          assert page.has_content?('to submit or edit a proposal')
+        end
+
+        should "see a call to action to vote for proposals" do
+          assert page.has_content?('to cast your votes for proposals!')
+        end
+
         should "see a list of proposals I made" do
           within('#your-proposals') do
             assert page.has_content?(@my_proposal.title), "proposal was missing"
@@ -183,6 +195,62 @@ class DashboardTest < IntegrationTestCase
               end
             end
           end
+        end
+      end
+    end
+  end
+
+  context "During interlude" do
+    setup do
+      Phase.stubs(:current).returns(Phase::INTERLUDE)
+    end
+
+    context "given a bunch of proposals with varying amounts of feedback" do
+      setup do
+        @me = FactoryGirl.create(:user)
+
+        @proposal1 = FactoryGirl.create(:proposal)
+        @proposal2 = FactoryGirl.create(:proposal)
+        @proposal3 = FactoryGirl.create(:proposal)
+
+        @withdrawn_proposal = FactoryGirl.create(:proposal, withdrawn: true)
+
+        @my_proposal = FactoryGirl.create(:proposal, :proposer => @me)
+
+        FactoryGirl.create(:suggestion, :proposal => @proposal2)
+        FactoryGirl.create(:suggestion, :proposal => @proposal2)
+        FactoryGirl.create(:suggestion, :proposal => @proposal2)
+
+        FactoryGirl.create(:suggestion, :proposal => @proposal1)
+      end
+
+      context "When I visit my dashboard" do
+        setup do
+          sign_in @me
+          visit "/dashboard"
+        end
+
+        should "not see a link to submit a new proposal" do
+          refute page.has_content?('Propose another talk')
+        end
+
+        should "not see a call to action to submit a new proposal" do
+          refute page.has_content?('to submit or edit a proposal')
+        end
+
+        should "see a call to action to vote for proposals" do
+          assert page.has_content?('to cast your votes for proposals!')
+        end
+
+        should "see a list of proposals I made" do
+          within('#your-proposals') do
+            assert page.has_content?(@my_proposal.title), "proposal was missing"
+          end
+        end
+
+        should "link to individual suggestions" do
+          click_link @proposal1.title
+          assert_equal proposal_path(@proposal1), current_path
         end
       end
     end

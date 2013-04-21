@@ -8,10 +8,12 @@
 
 <h2>Your proposals</h2>
 
-<div class="alert">
-  You have still <%= countdown_to Phase.last_submission_date %> to submit or edit a proposal!
-  Since proposals are anonymised, other users will not see that you are the author of these. <%= link_to "Read more about the process", about_path %>.
-</div>
+<% if can? :create, Proposal %>
+    <div class="alert">
+      You have still <%= countdown_to Phase.last_submission_date %> to submit or edit a proposal!
+      Since proposals are anonymised, other users will not see that you are the author of these. <%= link_to "Read more about the process", about_path %>.
+    </div>
+<% end %>
 
 <% if @your_proposals.present? %>
     <ul id="your-proposals" class="proposals">
@@ -22,7 +24,9 @@
     </ul>
 <% end %>
 
-<p><%= link_to "Propose #{'another' if @your_proposals.present?} talk", new_proposal_path, class: "btn btn-primary" %></p>
+<% if can? :create, Proposal %>
+    <p><%= link_to "Propose #{'another' if @your_proposals.present?} talk", new_proposal_path, class: "btn btn-primary" %></p>
+<% end %>
 
 <% if @proposals_you_should_look_at.present? %>
     <h2>You should consider reviewing these proposals</h2>
@@ -33,7 +37,12 @@
 
 <% if @unvoted_proposals.present? %>
     <h2>You have not voted yet for these proposals</h2>
-    <ul id="you-should-look-at-these" class="proposals">
+    <div class="alert">
+        You have still <%= countdown_to Phase.last_voting_date %> to cast your votes for proposals!
+        <%= link_to "Read more about the process", about_path %>
+    </div>
+
+    <ul id="you-should-vote-for-these" class="proposals">
       <%= render :partial => 'proposals/proposal_listing', collection: @unvoted_proposals  %>
     </ul>
 <% end %>
