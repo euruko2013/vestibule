@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
     Proposal.active.without_suggestions_from(self).without_votes_from(self).not_proposed_by(self)
   end
 
+  def proposals_without_own_votes
+    Proposal.active.without_votes_from(self).not_proposed_by(self)
+  end
+
   def proposals_that_have_changed
     proposals_of_interest.active.not_proposed_by(self).select { |p| p.updated_at > p.suggestions.by(self).maximum(:updated_at) }
   end
