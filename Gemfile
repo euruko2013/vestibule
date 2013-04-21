@@ -20,7 +20,7 @@ gem 'dalli'
 gem 'impressionist'
 
 ## omniauth Strategies
-gem 'omniauth-github', '1.0.3'
+gem 'omniauth-github'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-openid'
