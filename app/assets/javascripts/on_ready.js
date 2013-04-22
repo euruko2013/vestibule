@@ -23,4 +23,6 @@ $(function() {
                 },
                 countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
     }
+
+  $('[data-toggle="tooltip"]').tooltip();
 })

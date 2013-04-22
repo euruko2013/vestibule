@@ -89,6 +89,23 @@
     <% end %>
 </div>
 
+<div>
+    <% if @previous_proposal -%>
+        <%= link_to proposal_path(@previous_proposal), class: "btn btn-small", title: @previous_proposal.title, data: {toggle: 'tooltip'} do %>
+            <i class="icon-chevron-left"></i>
+            Previous
+        <% end %>
+    <% end %>
+
+    <% if @next_proposal -%>
+        <%= link_to proposal_path(@next_proposal), class: "btn btn-small pull-right", title: @next_proposal.title, data: {toggle: 'tooltip'} do %>
+            Next
+            <i class="icon-chevron-right"></i>
+        <% end %>
+    <% end %>
+</div>
+<br>
+
 <%= render partial: 'proposals/suggestions' %>
 
 <% content_for :head do %>

@@ -18,6 +18,9 @@ class ProposalsController < ApplicationController
     @proposal = Proposal.find(params[:id])
     authorize! :read, @proposal
 
+    @previous_proposal = Proposal.active.where("id < ?", @proposal).order("id DESC").first
+    @next_proposal = Proposal.active.where("id > ?", @proposal).order("id ASC").first
+
     @suggestion = Suggestion.new if can?(:create, Suggestion)
 
     respond_with @proposal
