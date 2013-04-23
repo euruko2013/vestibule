@@ -125,7 +125,7 @@ GEM
     multi_json (1.7.2)
     multi_xml (0.5.3)
     multipart-post (1.2.0)
-    newrelic_rpm (3.5.6.55)
+    newrelic_rpm (3.6.0.83)
     nokogiri (1.5.6)
     oauth (0.4.7)
     oauth2 (0.8.1)
