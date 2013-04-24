@@ -7,8 +7,8 @@ class ProposalsController < ApplicationController
   def index
     authorize! :read, Proposal
 
-    @withdrawn_proposals = Proposal.withdrawn.all
-    @proposals = Proposal.active.order('created_at desc').all
+    @withdrawn_proposals = Proposal.withdrawn.includes(:suggestions)
+    @proposals = Proposal.active.order('created_at desc').includes(:suggestions)
     @suggested_proposal = current_user.proposals_without_own_votes.active.sample || Proposal.active.sample if current_user
 
     respond_with @proposals

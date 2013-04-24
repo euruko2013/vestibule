@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   end
 
   def proposals_that_have_changed
-    proposals_of_interest.active.not_proposed_by(self).select { |p| p.updated_at > p.suggestions.by(self).maximum(:updated_at) }
+    proposals_of_interest.active.not_proposed_by(self).includes(:suggestions).select { |p| p.updated_at > p.suggestions.by(self).maximum(:updated_at) }
   end
 
   def proposals_that_have_been_withdrawn
