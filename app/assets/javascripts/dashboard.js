@@ -28,14 +28,7 @@ function render_chart($dataChart) {
             }
         },
         xAxis: {
-            type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e %b',
-                year: '%e b %y',
-                day: '%e b',
-                second: '%e %b',
-                millisecond: '%e %b'
-            }
+            type: 'datetime'
         },
         yAxis: {
             title: {
