@@ -17,6 +17,7 @@
             <li><strong>With proposals:</strong> <%= proposals.uniq.pluck(:proposer_id).size %></li>
             <li><strong>With suggestions:</strong> <%= suggestions.uniq.pluck(:author_id).size %></li>
             <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voter_id).size %></li>
+            <li><strong>With tickets:</strong> <%= users.where(:delegate => true).size %></li>
         </ul>
     </div>
     <div class="span3">
