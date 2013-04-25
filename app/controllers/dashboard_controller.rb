@@ -13,7 +13,7 @@ class DashboardController < ApplicationController
     end
 
     if current_phase.voting_allowed?
-      @unvoted_proposals = current_user.proposals_without_own_votes.includes(:suggestions).limit(5)
+      @unvoted_proposals = current_user.proposals_without_own_votes.includes(:suggestions).limit(20)
     end
 
     if current_phase.submission_withdrawal_allowed?
