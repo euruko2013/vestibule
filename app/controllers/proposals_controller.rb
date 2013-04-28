@@ -10,6 +10,7 @@ class ProposalsController < ApplicationController
     @withdrawn_proposals = Proposal.withdrawn.includes(:suggestions)
     @proposals = Proposal.active.order('created_at desc').includes(:suggestions)
     @suggested_proposal = current_user.proposals_without_own_votes.active.sample || Proposal.active.sample if current_user
+    @selected_proposals = current_user.selections.includes(:proposal).map(&:proposal) if current_user
 
     respond_with @proposals
   end
@@ -36,7 +37,7 @@ class ProposalsController < ApplicationController
     authorize! :create, @proposal
 
     if @proposal.save
-      ProposalMailer.new_proposal(@proposal).deliver 
+      ProposalMailer.new_proposal(@proposal).deliver
       redirect_to proposals_path
     else
       render :new

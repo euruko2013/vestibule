@@ -47,7 +47,7 @@
 <section>
     <h2>Selections</h2>
     <ul class="selections">
-        <%= render :partial => 'proposal_listing', collection: current_user.selections.includes(:proposal).map(&:proposal) %>
+        <%= render :partial => 'proposal_listing', collection: @selected_proposals %>
     </ul>
 </section>
 
