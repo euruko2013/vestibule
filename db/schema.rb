@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(:version => 20130428131829) do
     t.text     "description"
     t.boolean  "withdrawn",                 :default => false
     t.integer  "impressions_counter_cache"
+    t.boolean  "nominated",                 :default => false
+    t.integer  "counted_impressions",       :default => 0
+    t.integer  "counted_votes_for",         :default => 0
+    t.integer  "counted_votes_against",     :default => 0
+    t.float    "votes_wilson_score"
+    t.float    "views_wilson_score"
+    t.float    "total_wilson_score"
+    t.integer  "phase_one_ranking"
   end
 
   create_table "selections", :force => true do |t|

@@ -287,6 +287,7 @@ DEPENDENCIES
   settingslogic
   shoulda (= 3.3.2)
   simple_form (= 2.0.4)
+  statistics2
   thumbs_up
   timecop (= 0.5.7)
   typhoeus

@@ -15,6 +15,7 @@ gem "highcharts-rails"
 gem 'iron_cache'
 gem 'typhoeus'
 gem 'dalli'
+gem 'statistics2'
 
 # Gem for tracking pageviews and stuff
 gem 'impressionist'
