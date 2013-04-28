@@ -12,6 +12,7 @@ $(function() {
 
 	if ($('.proposals').length) {
 		$('.proposals.nominated li').draggable({
+            cursor: "url(https://mail.google.com/mail/images/2/closedhand.cur), move",
 	    	appendTo: "body",
 	    	revert: "invalid",
 	    	helper: "clone"
