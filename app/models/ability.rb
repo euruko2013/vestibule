@@ -14,6 +14,10 @@ class Ability
     can :read, User
     can :read, Proposal
 
+    if phase.selection_allowed?
+      can [:see_nominations, :see_stats], Proposal
+    end
+
     # Registered users
     if user.persisted?
       can :destroy, :session
@@ -34,11 +38,13 @@ class Ability
         can [:withdraw, :republish], Proposal, :proposer_id => user.id
       end
 
-      can [:see_votes], Proposal, :proposer_id => user.id
-
       if phase.new_suggestions_allowed?
         can [:create], Suggestion, :author_id => user.id
       end
+
+      #if phase.selection_allowed?
+        #can [:create], Selection # NOT READY!
+      #end
 
       if user.moderator?
         can :update, Suggestion

@@ -12,6 +12,11 @@ class ProposalsController < ApplicationController
     @suggested_proposal = current_user.proposals_without_own_votes.active.sample || Proposal.active.sample if current_user
     @selected_proposals = current_user.selections.includes(:proposal).map(&:proposal) if current_user
 
+    if can? :see_nominations, Proposal
+      @nominated_proposals = Proposal.active.where(:nominated => true).order(:phase_one_ranking)
+      @leftout_proposals = Proposal.active.where(:nominated => false).order(:phase_one_ranking)
+    end
+
     respond_with @proposals
   end
 

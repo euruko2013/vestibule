@@ -1,16 +1,26 @@
 <div id="proposal" class="hero-unit">
     <%= proposal_div(@proposal) do %>
-        <%= page_title @proposal.title %>
+        <%= page_title @proposal.title, no_h1=true %>
+
+        <h1>
+            <% if can?(:see_stats, Proposal) %>
+                <em><strong><%= @proposal.proposer.name %>:</strong></em>
+                <br>
+                <%= @proposal.title %>
+            <% else %>
+                <%= @proposal.title %>
+            <% end %>
+        </h1>
 
         <p class="age muted">
-            <% if can? :see_votes, @proposal %>
-                <% votes_for, votes_against = @proposal.votes_for, @proposal.votes_against %>
-                <% if votes_for > 0 %><span class="badge badge-success">+<%= votes_for %></span><% end %>
-                <% if votes_for > 0 && votes_against > 0 %>/<% end %>
-                <% if votes_against > 0 %><span class="badge badge-inverse">-<%= votes_against %></span><% end %>
+            <% if can? :see_stats, @proposal %>
+                Ranked <em><strong><%= @proposal.phase_one_ranking %></strong></em> with
+                <%= @proposal.counted_impressions %> unique views,
+                <%= @proposal.counted_votes_for %> counted upvotes and
+                <%= @proposal.counted_votes_against %> counted downvotes
+            <% else %>
+                <%= proposal_update_information @proposal %>
             <% end %>
-
-            <%= proposal_update_information @proposal %>
 
             &nbsp;
             <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>

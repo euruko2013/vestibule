@@ -13,6 +13,8 @@
     <% if user_signed_in? %>
         <% if can? :create, Proposal  %>
             <%= link_to "Propose a talk", new_proposal_path, :class => 'btn btn-primary' %>
+        <% elsif can?(:see_nominations, Proposal) %>
+            <%= link_to "Define #{Settings.event_name} lineup!", '#nominations', :class => 'btn btn-primary' %>
         <% elsif @suggested_proposal && can?(:vote, @suggested_proposal) %>
             <%= link_to "Cast your votes!", proposal_path(@suggested_proposal), :class => 'btn btn-primary' %>
         <% end %>
@@ -31,29 +33,58 @@
     </p>
 </div>
 
-<section>
-    <h2>
-        <%= @proposals.size %> Active proposals
-        <%= link_to :format => :rss do %>
-            <%= image_tag 'feed-icon-14x14.png' %>
+<% if can?(:see_nominations, Proposal) %>
+    <% if @nominated_proposals.present? %>
+        <section id="nominations" class="<%= can?(:create, Selection) ? 'one-third' : '' %>">
+            <h2>
+                <%= @nominated_proposals.size %> Nominated &amp; active proposals
+            </h2>
+
+            <ul class="proposals nominated">
+                <%= render :partial => 'proposal_listing', collection: @nominated_proposals %>
+            </ul>
+        </section>
+
+        <% if can?(:create, Selection) %>
+        <section id="selections" data-spy="affix" data-offset-top="520">
+            <h2>Your selections</h2>
+
+            <ul class="selections">
+                <%= render :partial => 'proposal_listing', collection: @selected_proposals %>
+            </ul>
+        </section>
         <% end %>
-    </h2>
 
-    <ul class="proposals nominated">
-        <%= render :partial => 'proposal_listing', collection: @proposals %>
-    </ul>
-</section>
+        <br style="clear: both;">
+    <% end %>
 
-<section>
-    <h2>Selections</h2>
-    <ul class="selections">
-        <%= render :partial => 'proposal_listing', collection: @selected_proposals %>
-    </ul>
-</section>
+    <% if @leftout_proposals.present? %>
+        <section>
+            <h2>The following <%= @leftout_proposals.size %> didn't make it into the final list</h2>
+
+            <ul class="proposals">
+                <%= render :partial => 'proposal_listing', collection: @leftout_proposals %>
+            </ul>
+        </section>
+    <% end %>
+<% else %>
+    <section>
+        <h2>
+            <%= @proposals.size %> Active proposals
+            <%= link_to :format => :rss do %>
+                <%= image_tag 'feed-icon-14x14.png' %>
+            <% end %>
+        </h2>
+
+        <ul class="proposals">
+            <%= render :partial => 'proposal_listing', collection: @proposals %>
+        </ul>
+    </section>
+<% end %>
 
 <% if @withdrawn_proposals.any? %>
 <section>
-  <p>The following <%= @withdrawn_proposals.size %> proposals have been withdrawn:</p>
+  <h2>The following <%= @withdrawn_proposals.size %> proposals have been withdrawn:</h2>
   <ul class="proposals">
     <%= render :partial => 'proposal_listing', collection: @withdrawn_proposals %>
   </ul>
