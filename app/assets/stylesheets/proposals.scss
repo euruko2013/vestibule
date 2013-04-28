@@ -2,10 +2,6 @@
   list-style-image: image-url('mini-ruby.png');
   margin-top: 10px;
 
-  &.nominated {
-    cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;
-  }
-
   li.proposal {
     margin-bottom: 15px;
     padding-left: 5px;
@@ -14,6 +10,10 @@
       font-size: 20px;
     }
   }
+}
+
+.selections, .nominated {
+  cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;
 }
 
 #suggestions {
