@@ -39,8 +39,15 @@
         <% end %>
     </h2>
 
-    <ul class="proposals">
+    <ul class="proposals nominated">
         <%= render :partial => 'proposal_listing', collection: @proposals %>
+    </ul>
+</section>
+
+<section>
+    <h2>Selections</h2>
+    <ul class="selections">
+        <%= render :partial => 'proposal_listing', collection: current_user.selections.includes(:proposal).map(&:proposal) %>
     </ul>
 </section>
 

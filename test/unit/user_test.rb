@@ -228,4 +228,78 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+  context "#add_selections" do
+    setup do
+      @user = FactoryGirl.create(:user, :signup_reason => nil)
+    end
+
+    should "create one selection for every proposal id given with the appropriate position" do
+      proposals = FactoryGirl.create_list(:proposal, 3)
+      @user.add_selections(proposals.map(&:id))
+
+      assert_equal @user.selections.size, 3
+
+      assert_equal @user.selections.first.position, 1
+      assert_equal @user.selections.second.position, 2
+      assert_equal @user.selections.third.position, 3
+
+      assert_equal @user.selections.first.proposal, proposals.first
+      assert_equal @user.selections.second.proposal, proposals.second
+      assert_equal @user.selections.third.proposal, proposals.third
+    end
+
+    should "update the positions based on the proposal positions in the list" do
+      proposals = FactoryGirl.create_list(:proposal, 3)
+      @user.add_selections(proposals.map(&:id))
+      @user.add_selections(proposals.map(&:id).reverse)
+
+      assert_equal @user.selections.size, 3
+
+      assert_equal @user.selections.first.position, 1
+      assert_equal @user.selections.second.position, 2
+      assert_equal @user.selections.third.position, 3
+
+      assert_equal @user.selections.first.proposal, proposals.third
+      assert_equal @user.selections.second.proposal, proposals.second
+      assert_equal @user.selections.third.proposal, proposals.first
+    end
+
+    should "add a new propsoal with the position set correctly" do
+      proposals = FactoryGirl.create_list(:proposal, 3)
+      @user.add_selections(proposals.map(&:id))
+      another_proposal = FactoryGirl.create(:proposal)
+      @user.add_selections(proposals.map(&:id).insert(1, another_proposal.id))
+
+      assert_equal @user.selections.size, 4
+
+      assert_equal @user.selections.first.position, 1
+      assert_equal @user.selections.second.position, 2
+      assert_equal @user.selections.third.position, 3
+      assert_equal @user.selections.fourth.position, 4
+
+      assert_equal @user.selections.first.proposal, proposals.first
+      assert_equal @user.selections.second.proposal, another_proposal
+      assert_equal @user.selections.third.proposal, proposals.second
+      assert_equal @user.selections.fourth.proposal, proposals.third
+    end
+
+    should "update the list of the selctions with the newly passed array" do
+      proposals = FactoryGirl.create_list(:proposal, 3)
+      @user.add_selections(proposals.map(&:id))
+      other_proposals = FactoryGirl.create_list(:proposal, 4)
+      @user.add_selections(other_proposals.map(&:id))
+
+      assert_equal @user.selections.size, 4
+
+      assert_equal @user.selections.first.position, 1
+      assert_equal @user.selections.second.position, 2
+      assert_equal @user.selections.third.position, 3
+      assert_equal @user.selections.fourth.position, 4
+
+      assert_equal @user.selections.first.proposal, other_proposals.first
+      assert_equal @user.selections.second.proposal, other_proposals.second
+      assert_equal @user.selections.third.proposal, other_proposals.third
+      assert_equal @user.selections.fourth.proposal, other_proposals.fourth
+    end
+  end
 end

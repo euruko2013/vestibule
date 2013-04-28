@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130420214029) do
+ActiveRecord::Schema.define(:version => 20130428131829) do
 
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
@@ -47,6 +47,19 @@ ActiveRecord::Schema.define(:version => 20130420214029) do
     t.boolean  "withdrawn",                 :default => false
     t.integer  "impressions_counter_cache"
   end
+
+  create_table "selections", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "proposal_id"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "selections", ["proposal_id"], :name => "index_selections_on_proposal_id"
+  add_index "selections", ["user_id", "position"], :name => "index_selections_on_user_id_and_position", :unique => true
+  add_index "selections", ["user_id", "proposal_id"], :name => "index_selections_on_user_id_and_proposal_id", :unique => true
+  add_index "selections", ["user_id"], :name => "index_selections_on_user_id"
 
   create_table "suggestions", :force => true do |t|
     t.text     "body"

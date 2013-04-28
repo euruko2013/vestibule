@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :proposals, :foreign_key => :proposer_id
   has_many :suggestions, :foreign_key => :author_id
   has_many :proposals_of_interest, :through => :suggestions, :source => :proposal, :uniq => true
+  has_many :selections, order: :position
 
   acts_as_voter
   has_karma(:proposals, :as => :proposer)
@@ -74,6 +75,18 @@ class User < ActiveRecord::Base
   def update_contribution_score
     self.contribution_score = (suggestions.not_on_proposals_by(self).count * SUGGESTION_WEIGHT)
     self.contribution_score += REASON_WEIGHT if self.signup_reason.present?
+  end
+
+  def add_selections(proposal_ids)
+    transaction do
+      selections.destroy_all
+      self.selections = Array(proposal_ids).each_with_index.map do |proposal_id, index|
+        selections.create! do |s|
+          s.proposal_id = proposal_id
+          s.position = index + 1
+        end
+      end
+    end
   end
 
   ### ACL Stuff ###

@@ -19,4 +19,10 @@ FactoryGirl.define do
     f.association :author, :factory => :user
     f.body { Faker::Lorem.paragraph(3, true) }
   end
+
+  factory :selection do |f|
+    f.association :proposal
+    f.association :user
+    f.position 1
+  end
 end
