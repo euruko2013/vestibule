@@ -98,6 +98,18 @@
                     <i class="icon-thumbs-down icon-white"></i> Not really interested...
                 <% end %>
             <% end %>
+
+        <% elsif can?(:create, Selection) %>
+            <br>
+
+            <small class="text-info">
+                <em>Would you like to see this talk during <%= Settings.event_name %>?</em>
+            </small>
+            &nbsp;
+
+            <%= link_to proposals_path, :class => 'btn btn-primary' do %>
+                Drag it to your selection list!
+            <% end %>
         <% end %>
     <% end %>
 </div>
