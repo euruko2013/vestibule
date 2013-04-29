@@ -9,7 +9,7 @@
 <% if can?(:create, Selection) %>
     <h2>Final voting is open!</h2>
 
-    <p><%= link_to "Define #{Settings.event_name} lineup!", '#nominations', :class => 'btn btn-primary' %></p>
+    <p><%= link_to "Define #{Settings.event_name} lineup!", proposals_path(:anchor => 'nominations'), :class => 'btn btn-primary' %></p>
 <% end %>
 
 <h2>Your proposals</h2>
