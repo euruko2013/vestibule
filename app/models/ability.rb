@@ -46,9 +46,9 @@ class Ability
         can [:create], Suggestion, :author_id => user.id
       end
 
-      #if phase.selection_allowed?
-        #can [:create], Selection # NOT READY!
-      #end
+      if phase.selection_allowed?
+        can [:create], Selection
+      end
 
       if user.moderator?
         can :update, Suggestion

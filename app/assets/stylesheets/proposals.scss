@@ -16,6 +16,34 @@
   cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;
 }
 
+#nominations, #selections {
+  float: left;
+}
+
+#nominations.one-third {
+  width: 66%;
+}
+
+#selections {
+  width: 23%;
+  top: 0;
+  left: auto;
+  right: 16%;
+  background-color: white;
+
+  .selections {
+    .proposal {
+      .title {
+        font-size: 16px;
+      }
+
+      .age {
+        display: none;
+      }
+    }
+  }
+}
+
 #suggestions {
   h2 {
     margin-top: 0;
