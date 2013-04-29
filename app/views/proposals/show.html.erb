@@ -2,32 +2,35 @@
     <%= proposal_div(@proposal) do %>
         <%= page_title @proposal.title, no_h1=true %>
 
-        <h1>
+        <div class="span4 well pull-right">
             <% if can?(:see_proposer, Proposal) %>
-                <em><strong><%= @proposal.proposer.name %>:</strong></em>
+                <em><strong><%= @proposal.proposer.name %></strong></em>
                 <br>
-                <%= @proposal.title %>
-            <% else %>
-                <%= @proposal.title %>
+                <%= image_tag(avatar_url(@proposal.proposer), :class => "avatar pull-right") %>
             <% end %>
+
+            <div>
+                <% if can? :see_stats, @proposal %>
+                    Ranked <em><strong><%= @proposal.phase_one_ranking %></strong></em> with
+                    <%= @proposal.counted_impressions %> unique views,
+                    <%= @proposal.counted_votes_for %> counted upvotes and
+                    <%= @proposal.counted_votes_against %> counted downvotes
+                <% else %>
+                    <%= proposal_update_information @proposal %>
+                <% end %>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+                <span class='st_googleplus' displayText='Google+'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_sharethis' displayText='ShareThis'></span>
+            </div>
+        </div>
+
+        <h1>
+            <%= @proposal.title %>
         </h1>
-
-        <p class="age muted">
-            <% if can? :see_stats, @proposal %>
-                Ranked <em><strong><%= @proposal.phase_one_ranking %></strong></em> with
-                <%= @proposal.counted_impressions %> unique views,
-                <%= @proposal.counted_votes_for %> counted upvotes and
-                <%= @proposal.counted_votes_against %> counted downvotes
-            <% else %>
-                <%= proposal_update_information @proposal %>
-            <% end %>
-
-            &nbsp;
-            <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
-            <span class='st_googleplus' displayText='Google+'></span>
-            <span class='st_facebook' displayText='Facebook'></span>
-            <span class='st_sharethis' displayText='ShareThis'></span>
-        </p>
 
         <% if @proposal.withdrawn? %>
             <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
