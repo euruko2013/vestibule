@@ -18,6 +18,10 @@ class Ability
       can [:see_nominations, :see_stats], Proposal
     end
 
+    if !phase.anonymous?
+      can [:see_proposer], Proposal
+    end
+
     # Registered users
     if user.persisted?
       can :destroy, :session

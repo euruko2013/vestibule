@@ -3,7 +3,7 @@
         <%= page_title @proposal.title, no_h1=true %>
 
         <h1>
-            <% if can?(:see_stats, Proposal) %>
+            <% if can?(:see_proposer, Proposal) %>
                 <em><strong><%= @proposal.proposer.name %>:</strong></em>
                 <br>
                 <%= @proposal.title %>

@@ -39,6 +39,9 @@ class Phase
   attr_accessor :selection_allowed
   alias_method :selection_allowed?, :selection_allowed
 
+  attr_accessor :anonymous
+  alias_method :anonymous?, :anonymous
+
   attr_accessor :submission_withdrawal_allowed
   alias_method :submission_withdrawal_allowed?, :submission_withdrawal_allowed
 
@@ -54,6 +57,7 @@ class Phase
     p.voting_allowed = false
     p.new_suggestions_allowed = false
     p.selection_allowed = false
+    p.anonymous = true
     p.submission_withdrawal_allowed = false
   end.freeze
 
@@ -69,6 +73,7 @@ class Phase
     p.voting_allowed = true
     p.new_suggestions_allowed = true
     p.selection_allowed = false
+    p.anonymous = true
     p.submission_withdrawal_allowed = true
   end.freeze
 
@@ -84,6 +89,7 @@ class Phase
     p.voting_allowed = true
     p.new_suggestions_allowed = false
     p.selection_allowed = false
+    p.anonymous = true
     p.submission_withdrawal_allowed = true
   end.freeze
 
@@ -99,6 +105,7 @@ class Phase
     p.voting_allowed = false
     p.new_suggestions_allowed = false
     p.selection_allowed = true
+    p.anonymous = false
     p.submission_withdrawal_allowed = true
   end.freeze
 
@@ -113,6 +120,7 @@ class Phase
     p.voting_allowed = false
     p.new_suggestions_allowed = false
     p.selection_allowed = false
+    p.anonymous = false
     p.submission_withdrawal_allowed = true
   end.freeze
 
@@ -127,6 +135,7 @@ class Phase
     p.voting_allowed = false
     p.new_suggestions_allowed = false
     p.selection_allowed = false
+    p.anonymous = false
     p.submission_withdrawal_allowed = false
   end.freeze
 end

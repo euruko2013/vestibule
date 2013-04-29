@@ -4,7 +4,7 @@
 %>
 
 <%= content_tag_for :li, proposal do %>
-    <% if can?(:see_stats, Proposal) %>
+    <% if can?(:see_proposer, Proposal) %>
         <%= link_to proposal, :class => 'title' do %>
             <em><strong><%= proposal.proposer.name %>:</strong></em>
             <%= proposal.title %>

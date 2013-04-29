@@ -204,7 +204,7 @@ Other than that, sounds great!
     end
   end
 
-  [Phase.all - [Phase::ONE]].flatten.each do |phase|
+  [Phase::INTERLUDE].flatten.each do |phase|
     context "During '#{phase.name}'" do
       setup do
         Phase.stubs(:current).returns(phase)
@@ -243,6 +243,90 @@ Other than that, sounds great!
 
             assert page.has_no_content?(@proposer.name)
             assert page.has_content?("The proposal author")
+          end
+        end
+
+        context "a proposer viewing their proposal" do
+          setup do
+            sign_in @proposer
+            visit proposal_path(@proposal)
+          end
+
+          should "see their suggestions identified as their own" do
+            suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :author => @proposer)
+            visit proposal_path(@proposal)
+
+            assert page.has_content?("You respond")
+          end
+
+          should "not be able to edit an existing suggestion of their own" do
+            own_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :author => @proposer)
+            visit proposal_path(@proposal)
+
+            refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, own_suggestion)}']")
+          end
+
+          should "not be able to edit an existing suggestion of someone else" do
+            other_suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal)
+            visit proposal_path(@proposal)
+
+            refute page.has_css?("form[action='#{proposal_suggestion_path(@proposal, other_suggestion)}']")
+          end
+        end
+
+        context "a moderator viewing a proposal with suggestions" do
+          setup do
+            @suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :created_at => 2.days.ago, :updated_at => 2.days.ago)
+            sign_in FactoryGirl.create(:user, :email => 'moderator@euruko2013.org')
+            visit proposal_path(@proposal)
+          end
+
+          should "be able to edit the suggestion" do
+            assert page.has_css?("form[action='#{proposal_suggestion_path(@proposal, @suggestion)}']")
+          end
+        end
+      end
+    end
+  end
+
+  [Phase::TWO, Phase::CONFIRMATION, Phase::LINEUP].flatten.each do |phase|
+    context "During '#{phase.name}'" do
+      setup do
+        Phase.stubs(:current).returns(phase)
+      end
+
+      context "Given a talk proposal" do
+        setup do
+          @proposer = FactoryGirl.create(:user)
+          @proposal = FactoryGirl.create(:proposal, :proposer => @proposer)
+        end
+
+        context "a visitor viewing the proposal" do
+          setup do
+            visit proposal_path(@proposal)
+          end
+
+          should "not be able to suggest anything" do
+            refute page.has_css?("form[action='#{proposal_suggestions_path(@proposal)}']")
+          end
+        end
+
+        context "a logged in user viewing the proposal" do
+          setup do
+            @me = FactoryGirl.create(:user)
+            sign_in @me
+            visit proposal_path(@proposal)
+          end
+
+          should "not be able to suggest anything" do
+            refute page.has_css?("form[action='#{proposal_suggestions_path(@proposal)}']")
+          end
+
+          should "not anonymise suggestions by the proposer" do
+            suggestion = FactoryGirl.create(:suggestion, :proposal => @proposal, :author => @proposer)
+            visit proposal_path(@proposal)
+
+            assert page.has_content?(@proposer.name)
           end
         end
 
