@@ -15,9 +15,8 @@
   <% end %>
 </head>
 <body class="" data-spy="scroll" data-target="#sidenav">
-  <div class="">
-
-    <div id="nav">
+  <div class="container">
+    <div id="nav" class="row">
       <ul class="centered clearfix">
         <li><a class="ir" href="http://euruko2013.org"><%= Settings.event_name %></a></li>
         <% if user_signed_in? -%>
@@ -57,43 +56,41 @@
     </div>
 
 
-    <div id="cfp">
-      <div class="section">
-        <section id="notices">
+      <section id="notices" class="row">
           <%= render "shared/notices" %>
 
           <% if remind_account_for_tickets %>
-          <div class="alert alert-info">
-            <i class="icon-bullhorn"></i>&nbsp;&nbsp;
-            <strong><em><%= link_to 'Tickets for EuRuKo 2013 are now available!', 'https://www.eventora.com/en/Events/euruko-2013-athens' %></em></strong>
-          </div>
+              <div class="alert alert-info">
+                  <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+                  <strong><em><%= link_to 'Tickets for EuRuKo 2013 are now available!', 'https://www.eventora.com/en/Events/euruko-2013-athens' %></em></strong>
+              </div>
           <% end %>
 
           <% if remind_account_for_signup_reason -%>
-          <div class="alert">
-            Other attendees are wondering what you hope to get out of <%= Settings.event_name %>.
-            <%= link_to "Tell them now", edit_user_path(current_user) %>.
-          </div>
+              <div class="alert">
+                  Other attendees are wondering what you hope to get out of <%= Settings.event_name %>.
+                  <%= link_to "Tell them now", edit_user_path(current_user) %>.
+              </div>
           <% end -%>
 
           <% if remind_account_for_author_bio -%>
-          <div class="alert">
-            <i class="icon-user"></i>
-            You have some proposals waiting to get into the shortlist!
-            <%= link_to "Why don't you update your profile with some background info about you?", edit_user_path(current_user) %>
-          </div>
+              <div class="alert">
+                  <i class="icon-user"></i>
+                  You have some proposals waiting to get into the shortlist!
+                  <%= link_to "Why don't you update your profile with some background info about you?", edit_user_path(current_user) %>
+              </div>
           <% end -%>
-        </section>
+      </section>
 
-        <%= yield %>
-      </div>
-      <footer>
-        <p><%= link_to "Code of conduct", 'http://euruko2013.org/codeofconduct' %></p>
-        <p><%= link_to "About the CfP process", about_path %></p>
-        <p><%= link_to "Motivations", motivation_path %></p>
-      </footer>
+    <div id="cfp" class="row">
+      <%= yield %>
     </div>
   </div>
+  <footer>
+      <p><%= link_to "Code of conduct", 'http://euruko2013.org/codeofconduct' %></p>
+      <p><%= link_to "About the CfP process", about_path %></p>
+      <p><%= link_to "Motivations", motivation_path %></p>
+  </footer>
   <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
   <script type="text/javascript">stLight.options({publisher: "a4771cba-dcbc-4ec6-9e9c-4abbf20f04c1", doNotHash: false, doNotCopy: false, hashAddressBar: false, servicePopup:true});</script>
 </body>

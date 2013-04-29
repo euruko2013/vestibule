@@ -14,24 +14,24 @@
 
 .selections, .nominated {
   cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;
-}
 
-#nominations, #selections {
-  float: left;
-}
-
-#nominations.one-third {
-  width: 66%;
+  .proposal {
+    &:hover {
+      background-color: #eee;
+    }
+  }
 }
 
 #selections {
-  width: 23%;
-  top: 0;
-  left: auto;
-  right: 16%;
-  background-color: white;
+  .affix {
+    padding: 0 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
 
   .selections {
+    padding-bottom: 15px;
+
     .proposal {
       .title {
         font-size: 16px;
@@ -52,7 +52,6 @@
 }
 
 .add-suggestion {
-  //margin-top: 64px;
 }
 
 .suggestions {

@@ -13,8 +13,6 @@ body, button, input, select, textarea {
 
 .section {
   margin: 0 auto;
-  padding: 80px 0 0;
-  max-width: 70%;
 }
 
 h1 {
@@ -69,26 +67,4 @@ footer {
 .age {
   color: #666;
   margin-top: 0px;
-}
-
-/* Media Queries: Tablet devices overwrite 641px...960px */
-
-@media only screen and (max-width: 960px) {
-  #cfp {
-  }
-}
-
-/* Media Queries: Mobile devices overwrite 320px...640px */
-
-@media only screen and (max-width: 640px) {
-  #cfp {
-    h1 {
-      font-size: 24px;
-    }
-
-    h2 {
-      margin-top: 32px;
-      font-size: 22px;
-    }
-  }
 }
