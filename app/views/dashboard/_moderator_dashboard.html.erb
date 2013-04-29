@@ -9,8 +9,8 @@
    upvotes = votes.where(:vote => true)
    downvotes = votes.where(:vote => false)
 %>
-<div class="row" style="text-align: center; margin-left: 0">
-    <div class="span3">
+<div class="row" style="text-align: center;">
+    <div class="span4">
         <h2>Users</h2>
         <span class="lead"><%= users.size %></span><br><br>
         <ul class="unstyled">
@@ -20,7 +20,7 @@
             <li><strong>With tickets:</strong> <%= users.where(:delegate => true).size %></li>
         </ul>
     </div>
-    <div class="span3">
+    <div class="span4">
         <h2>Proposals</h2>
         <span class="lead"><%= proposals.size %></span><br><br>
         <ul class="unstyled">
@@ -30,7 +30,7 @@
             <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voteable_id).size %></li>
         </ul>
     </div>
-    <div class="span3">
+    <div class="span4">
         <h2>Suggestions</h2>
         <span class="lead"><%= suggestions.size %></span><br><br>
         <ul class="unstyled">
@@ -40,16 +40,16 @@
     </div>
 </div>
 
-<div class="row" style="text-align: center; margin-bottom: 30px; margin-left: 0">
-    <div class="span3">
+<div class="row" style="text-align: center; margin-bottom: 30px;">
+    <div class="span4">
         <h2>Impressions</h2>
         <span class="lead"><%= impressions.size %></span><br><br>
     </div>
-    <div class="span3">
+    <div class="span4">
         <h2>Upvotes</h2>
         <span class="lead"><%= upvotes.size %></span>
     </div>
-    <div class="span3">
+    <div class="span4">
         <h2>Downvotes</h2>
         <span class="lead"><%= downvotes.size %></span>
     </div>

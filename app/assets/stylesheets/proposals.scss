@@ -14,6 +14,34 @@
 
 .selections, .nominated {
   cursor: url(https://mail.google.com/mail/images/2/openhand.cur), move;
+
+  .proposal {
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+#selections {
+  .affix {
+    padding: 0 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+
+  .selections {
+    padding-bottom: 15px;
+
+    .proposal {
+      .title {
+        font-size: 16px;
+      }
+
+      .age {
+        display: none;
+      }
+    }
+  }
 }
 
 #suggestions {
@@ -24,7 +52,6 @@
 }
 
 .add-suggestion {
-  //margin-top: 64px;
 }
 
 .suggestions {

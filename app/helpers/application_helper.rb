@@ -117,7 +117,7 @@ module ApplicationHelper
   end
 
   def proposal_update_information(proposal)
-    result = "updated #{time_ago_in_words proposal.updated_at} ago"
+    result = "Updated #{time_ago_in_words proposal.updated_at} ago"
     if proposal.suggestions.any?
       suggestion = proposal.suggestions.last
       result += "; #{proposal.suggestions.size} suggestions; latest suggestion #{time_ago_in_words(suggestion.updated_at)} ago"

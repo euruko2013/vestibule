@@ -35,27 +35,30 @@
 
 <% if can?(:see_nominations, Proposal) %>
     <% if @nominated_proposals.present? %>
-        <section id="nominations" class="<%= can?(:create, Selection) ? 'one-third' : '' %>">
-            <h2>
-                <%= @nominated_proposals.size %> Nominated &amp; active proposals
-            </h2>
+        <section class="row">
+            <section id="nominations" class="<%= can?(:create, Selection) ? 'span8' : 'span12' %>">
+                <h2>
+                    <%= @nominated_proposals.size %> Nominated &amp; active proposals
+                </h2>
 
-            <ul class="proposals nominated">
-                <%= render :partial => 'proposal_listing', collection: @nominated_proposals %>
-            </ul>
+                <ul class="proposals nominated">
+                    <%= render :partial => 'proposal_listing', collection: @nominated_proposals %>
+                </ul>
+            </section>
+
+
+            <% if can?(:create, Selection) %>
+                <section id="selections" class="span4">
+                    <div data-spy="affix" data-offset-top="500" style="top: 0">
+                        <h2>Your selections (drag here!)</h2>
+
+                        <ul class="selections">
+                            <%= render :partial => 'proposal_listing', collection: @selected_proposals %>
+                        </ul>
+                    </div>
+                </section>
+            <% end %>
         </section>
-
-        <% if can?(:create, Selection) %>
-        <section id="selections" data-spy="affix" data-offset-top="520">
-            <h2>Your selections</h2>
-
-            <ul class="selections">
-                <%= render :partial => 'proposal_listing', collection: @selected_proposals %>
-            </ul>
-        </section>
-        <% end %>
-
-        <br style="clear: both;">
     <% end %>
 
     <% if @leftout_proposals.present? %>
