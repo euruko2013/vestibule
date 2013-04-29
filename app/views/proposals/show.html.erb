@@ -4,9 +4,11 @@
 
         <div class="span4 well pull-right">
             <% if can?(:see_proposer, Proposal) %>
+                <%= link_to user_path(@proposal.proposer) do %>
                 <em><strong><%= @proposal.proposer.name %></strong></em>
                 <br>
                 <%= image_tag(avatar_url(@proposal.proposer), :class => "avatar pull-right") %>
+                <% end %>
             <% end %>
 
             <div>
