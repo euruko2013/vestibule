@@ -25,7 +25,7 @@
     <ul id="your-proposals" class="proposals">
       <%= render partial: 'proposals/proposal_listing',
                  collection: @your_proposals,
-                 locals: {:show_new_suggestions => true} %>
+                 locals: {:show_new_suggestions => true, :badge_with_nominations => true} %>
     </ul>
 <% end %>
 

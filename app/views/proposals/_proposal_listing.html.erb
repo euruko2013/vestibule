@@ -1,6 +1,7 @@
 <%
    proposal = proposal_listing
    show_new_suggestions = false unless defined?(show_new_suggestions)
+   badge_with_nominations = false unless defined?(badge_with_nominations)
 %>
 
 <%= content_tag_for :li, proposal do %>
@@ -11,6 +12,14 @@
         <% end %>
     <% else %>
         <%= link_to proposal.title, proposal, :class => 'title' %>
+    <% end %>
+
+    <% if can?(:see_stats, Proposal) && badge_with_nominations %>
+        <% if proposal.nominated? %>
+            <span class="badge badge-success">Nominated!</span>
+        <% else %>
+            <span class="badge">Not nominated :(</span>
+        <% end %>
     <% end %>
 
     <br>
