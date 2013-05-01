@@ -16,6 +16,10 @@ class User < ActiveRecord::Base
 
   before_save :update_contribution_score
 
+  def selected_proposals
+    selections.includes(:proposal).map(&:proposal)
+  end
+
   def proposals_you_should_look_at
     Proposal.active.without_suggestions_from(self).without_votes_from(self).not_proposed_by(self)
   end

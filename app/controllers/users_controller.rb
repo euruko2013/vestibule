@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   load_and_authorize_resource
 
   def show
+    @selected_proposals = @user.selected_proposals
   end
 
   def edit

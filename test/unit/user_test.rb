@@ -302,4 +302,17 @@ class UserTest < ActiveSupport::TestCase
       assert_equal @user.selections.fourth.proposal, other_proposals.fourth
     end
   end
+
+  context "#selected_proposals" do
+    setup do
+      @user = FactoryGirl.create(:user, :signup_reason => nil)
+      @proposals = FactoryGirl.create_list(:proposal, 2)
+      other_proposals = FactoryGirl.create_list(:proposal, 2)
+      @user.add_selections(@proposals.map(&:id))
+    end
+
+    should "return the selected proposals" do
+      assert_equal @user.selected_proposals, @proposals
+    end
+  end
 end

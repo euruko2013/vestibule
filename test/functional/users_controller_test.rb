@@ -18,6 +18,7 @@ class UsersControllerTest < ActionController::TestCase
         end
 
         should assign_to(:user) { @user }
+        should assign_to(:selected_proposals) { @user.selected_proposals } if action == :show
         should respond_with(:success)
         should render_template(action)
       end
@@ -67,6 +68,7 @@ class UsersControllerTest < ActionController::TestCase
         end
 
         should assign_to(:user) { @user }
+        should assign_to(:selected_proposals) { @user.selected_proposals }
         should respond_with(:success)
         should render_template(action)
       end
