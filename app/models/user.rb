@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :suggestions, :foreign_key => :author_id
   has_many :proposals_of_interest, :through => :suggestions, :source => :proposal, :uniq => true
   has_many :selections, order: :position
+  has_many :selected_proposals, :through => :selections, :source => :proposal
 
   acts_as_voter
   has_karma(:proposals, :as => :proposer)
@@ -15,10 +16,6 @@ class User < ActiveRecord::Base
                   :subscribe_to_suggestions_notifications
 
   before_save :update_contribution_score
-
-  def selected_proposals
-    selections.includes(:proposal).map(&:proposal)
-  end
 
   def proposals_you_should_look_at
     Proposal.active.without_suggestions_from(self).without_votes_from(self).not_proposed_by(self)
