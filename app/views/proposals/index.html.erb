@@ -50,8 +50,12 @@
             <% if can?(:create, Selection) %>
                 <section id="selections" class="span4">
                     <div data-spy="affix" data-offset-top="500" style="top: 0">
-                        <h2>Your selections (drag here!)</h2>
-
+                        <h2>
+                            Your selections (drag here!)
+                            <a data-toggle="tooltip"  data-placement="bottom" title="Just drag your selections from the left and drop them here in order of preference. Easy-peasy!">
+                                <i class="icon-question-sign" style="vertical-align: middle"></i>
+                            </a>
+                        </h2>
 
                         <div style="margin-bottom: 30px;">
                             <% if current_user.publish_selections? %>
