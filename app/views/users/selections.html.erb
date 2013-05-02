@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="span12">
+        <%= image_tag(avatar_url(@user), :class => "avatar pull-left") %>
+
+        <h1>
+            This is what I want to see at <%= Settings.event_name %>!
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <% if @selected_proposals.any? %>
+        <div class="span12">
+            <ul class="proposals">
+                <%= render :partial => '/proposals/proposal_listing', collection: @selected_proposals %>
+            </ul>
+        </div>
+    <% end %>
+</div>

@@ -53,17 +53,3 @@
     </section>
   </div>
 </div>
-
-<% if @selected_proposals.any? %>
-  <div class="row">
-    <div class="span12">
-      <section id="selected_proposals">
-        <h2><%= to_have %> selected <%= pluralize(@selected_proposals.size, 'proposal') %></h2>
-        <ul class="selections">
-          <%= render :partial => '/proposals/proposal_listing', collection: @selected_proposals %>
-        </ul>
-      </section>
-    </div>
-  </div>
-<% end %>
-

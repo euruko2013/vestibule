@@ -11,14 +11,14 @@ class UsersControllerTest < ActionController::TestCase
       session[:user_id] = @user.id
     end
 
-    [:show, :edit].each do |action|
+    [:show, :edit, :selections].each do |action|
       context "on #GET to #{action.to_s}" do
         setup do
           get action, :id => @user.to_param
         end
 
         should assign_to(:user) { @user }
-        should assign_to(:selected_proposals) { @user.selected_proposals } if action == :show
+        should assign_to(:selected_proposals) { @user.selected_proposals } if action == :selections
         should respond_with(:success)
         should render_template(action)
       end
@@ -61,14 +61,14 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   context "When not logged in" do
-    [:show].each do |action|
+    [:show, :selections].each do |action|
       context "on #GET to #{action.to_s}" do
         setup do
           get action, :id => @user.to_param
         end
 
         should assign_to(:user) { @user }
-        should assign_to(:selected_proposals) { @user.selected_proposals }
+        should assign_to(:selected_proposals) { @user.selected_proposals }  if action == :selections
         should respond_with(:success)
         should render_template(action)
       end
