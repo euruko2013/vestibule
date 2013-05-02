@@ -16,6 +16,6 @@ class UsersController < ApplicationController
       flash[:notice] = "Successfully updated user."
     end
 
-    redirect_to user_path(@user)
+    redirect_to params[:return_to] || user_path(@user)
   end
 end

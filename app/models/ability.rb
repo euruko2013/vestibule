@@ -16,7 +16,9 @@ class Ability
 
     if phase.selection_allowed?
       can [:see_nominations, :see_stats], Proposal
-      can [:selections], User
+      can [:selections], User do |user|
+        user.publish_selections?
+      end
     end
 
     if !phase.anonymous?

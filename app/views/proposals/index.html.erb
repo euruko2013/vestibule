@@ -52,15 +52,34 @@
                     <div data-spy="affix" data-offset-top="500" style="top: 0">
                         <h2>Your selections (drag here!)</h2>
 
+
                         <div style="margin-bottom: 30px;">
-                            <%
-                               share_url = selections_user_url(current_user)
-                               share_title = "I've made my selections for the final EuRuKo 2013 lineup! Have you?"
-                            %>
-                            <span class='st_twitter' st_via="euruko" displayText='Tweet' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
-                            <span class='st_googleplus' displayText='Google+' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
-                            <span class='st_facebook' displayText='Facebook' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
-                            <span class='st_sharethis' displayText='ShareThis' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
+                            <% if current_user.publish_selections? %>
+                                <div style="margin-bottom: 15px;">
+                                    <%
+                                       share_url = selections_user_url(current_user)
+                                       share_title = "I've made my selections for the final EuRuKo 2013 lineup! Have you?"
+                                    %>
+                                    <span class='st_twitter' st_via="euruko" displayText='Tweet' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
+                                    <span class='st_googleplus' displayText='Google+' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
+                                    <span class='st_facebook' displayText='Facebook' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
+                                    <span class='st_sharethis' displayText='ShareThis' st_url='<%= share_url %>' st_title="<%= share_title %>"></span>
+                                </div>
+
+                                <div>
+                                    <%= form_for current_user do |f| %>
+                                        <%= hidden_field_tag :return_to, proposals_path %>
+                                        <%= f.hidden_field :publish_selections, :value => 'false' %>
+                                        <%= f.submit 'Make my selections private', :class => 'btn btn-mini' %>
+                                    <% end %>
+                                </div>
+                            <% else %>
+                                <%= form_for current_user do |f| %>
+                                    <%= hidden_field_tag :return_to, proposals_path %>
+                                    <%= f.hidden_field :publish_selections, :value => 'true' %>
+                                    <%= f.submit 'Share my selection list!', :class => 'btn btn-success btn-small' %>
+                                <% end %>
+                            <% end %>
                         </div>
 
                         <ul class="selections">
