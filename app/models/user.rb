@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :suggestions, :foreign_key => :author_id
   has_many :proposals_of_interest, :through => :suggestions, :source => :proposal, :uniq => true
   has_many :selections, order: :position
+  has_many :selected_proposals, :through => :selections, :source => :proposal
 
   acts_as_voter
   has_karma(:proposals, :as => :proposer)
