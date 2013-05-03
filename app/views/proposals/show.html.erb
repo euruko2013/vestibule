@@ -28,6 +28,13 @@
                 <span class='st_facebook' displayText='Facebook'></span>
                 <span class='st_sharethis' displayText='ShareThis'></span>
             </div>
+
+            <% if can?(:see_proposer, Proposal) && @proposal.proposer.signup_reason.present? %>
+                <div>
+                    <h4>About the author</h4>
+                    <p><%= sanitize(markdown(@proposal.proposer.signup_reason)) %></p>
+                </div>
+            <% end %>
         </div>
 
         <h1>
@@ -114,6 +121,7 @@
             <% end %>
         <% end %>
     <% end %>
+    <br style="clear: both;">
 </div>
 
 <div>
