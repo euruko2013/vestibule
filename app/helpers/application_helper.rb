@@ -41,17 +41,21 @@ module ApplicationHelper
   end
 
   def avatar_url(user, bigger=false)
-    hash =
-      if user.email.present?
-        email_address = user.email.downcase
-        Digest::MD5.hexdigest(email_address)
-      else
-        '00000000000000000000000000000000'
-      end
+    if user.email.blank? && user.twitter_uid.present?
+      "https://api.twitter.com/1/users/profile_image?user_id=#{user.twitter_uid}&size=bigger"
+    else
+      hash =
+          if user.email.present?
+            email_address = user.email.downcase
+            Digest::MD5.hexdigest(email_address)
+          else
+            '00000000000000000000000000000000'
+          end
 
-    # `d` parameter is for custom fallback.
-    # See https://en.gravatar.com/site/implement/images/ for more info.
-    "http://www.gravatar.com/avatar/#{hash}?d=retro"
+      # `d` parameter is for custom fallback.
+      # See https://en.gravatar.com/site/implement/images/ for more info.
+      "http://www.gravatar.com/avatar/#{hash}?d=retro"
+    end
   end
 
   def markdown(text)
