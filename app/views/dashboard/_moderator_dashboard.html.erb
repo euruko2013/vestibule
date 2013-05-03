@@ -1,5 +1,5 @@
 <%
-   submissions_start = Phase::ONE.starting_at.to_date
+   chart_start = (DateTime.now - 2.weeks).to_date
 
    proposals = Proposal.scoped
    suggestions = Suggestion.scoped
@@ -8,26 +8,29 @@
    votes = Vote.where(voter_type: 'User').where(voteable_type: 'Proposal')
    upvotes = votes.where(:vote => true)
    downvotes = votes.where(:vote => false)
+   selections = Selection.scoped
 %>
 <div class="row" style="text-align: center;">
     <div class="span4">
         <h2>Users</h2>
         <span class="lead"><%= users.size %></span><br><br>
         <ul class="unstyled">
-            <li><strong>With proposals:</strong> <%= proposals.uniq.pluck(:proposer_id).size %></li>
-            <li><strong>With suggestions:</strong> <%= suggestions.uniq.pluck(:author_id).size %></li>
-            <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voter_id).size %></li>
-            <li><strong>With tickets:</strong> <%= users.where(:delegate => true).size %></li>
+            <li><strong>With proposals:</strong> <%= proposals.count(:group => :proposer_id).size %></li>
+            <li><strong>With suggestions:</strong> <%= suggestions.count(:group => :author_id).size %></li>
+            <li><strong>With votes:</strong> <%= votes.count(:group => :voter_id).size %></li>
+            <li><strong>With tickets:</strong> <%= users.where(:delegate => true).count %></li>
+            <li><strong>With selections:</strong> <%= selections.count(:group => :user_id).size %></li>
         </ul>
     </div>
     <div class="span4">
         <h2>Proposals</h2>
         <span class="lead"><%= proposals.size %></span><br><br>
         <ul class="unstyled">
-            <li><strong>Active:</strong> <%= proposals.where(withdrawn: false).size %></li>
-            <li><strong>Withdrawn:</strong> <%= proposals.where(withdrawn: true).size %></li>
-            <li><strong>With suggestions:</strong> <%= suggestions.uniq.pluck(:proposal_id).size %></li>
-            <li><strong>With votes:</strong> <%= votes.uniq.pluck(:voteable_id).size %></li>
+            <li><strong>Active:</strong> <%= proposals.where(withdrawn: false).count %></li>
+            <li><strong>Withdrawn:</strong> <%= proposals.where(withdrawn: true).count %></li>
+            <li><strong>With suggestions:</strong> <%= suggestions.count(:group => :proposal_id).size %></li>
+            <li><strong>With votes:</strong> <%= votes.count(:group => :voteable_id).size %></li>
+            <li><strong>With selections:</strong> <%= selections.count(:group => :proposal_id).size %></li>
         </ul>
     </div>
     <div class="span4">
@@ -35,7 +38,7 @@
         <span class="lead"><%= suggestions.size %></span><br><br>
         <ul class="unstyled">
             <li><strong>From unique users:</strong> <%= suggestions.uniq.pluck(:author_id).size %></li>
-            <li><strong>From proposal authors:</strong> <%= suggestions.joins(:proposal).where('suggestions.author_id != proposals.proposer_id').uniq.pluck(:author_id).size %></li>
+            <li><strong>From proposal authors:</strong> <%= suggestions.joins(:proposal).where('suggestions.author_id != proposals.proposer_id').count(:group => :author_id).size %></li>
         </ul>
     </div>
 </div>
@@ -43,26 +46,35 @@
 <div class="row" style="text-align: center; margin-bottom: 30px;">
     <div class="span4">
         <h2>Impressions</h2>
-        <span class="lead"><%= impressions.size %></span><br><br>
+        <span class="lead"><%= impressions.count %></span><br><br>
     </div>
     <div class="span4">
-        <h2>Upvotes</h2>
-        <span class="lead"><%= upvotes.size %></span>
+        <h2>Votes</h2>
+        <ul class="unstyled">
+            <li><strong>Up:</strong> <%= upvotes.count %></li>
+            <li><strong>Down:</strong> <%= downvotes.count %></li>
+        </ul>
     </div>
     <div class="span4">
-        <h2>Downvotes</h2>
-        <span class="lead"><%= downvotes.size %></span>
+        <h2>Selections</h2>
+        <ul class="unstyled">
+            <li><strong>Total:</strong> <%= selections.count %></li>
+            <li><strong>Min per proposal:</strong> <%= selections.count(:group => :proposal_id).map { |p, selections_count| selections_count }.min %></li>
+            <li><strong>Max per proposal:</strong> <%= selections.count(:group => :proposal_id).map { |p, selections_count| selections_count }.max %></li>
+        </ul>
+        <span class="lead"></span>
     </div>
 </div>
 
 <%
    series = [
-           {:name => 'Suggestions', :data => time_series_array(suggestions, :created_at, submissions_start)},
-           {:name => 'Proposals', :data => time_series_array(proposals, :created_at, submissions_start)},
-           {:name => 'Users', :data => time_series_array(users, :created_at, submissions_start)},
-           {:name => 'Impressions', :data => time_series_array(impressions, :created_at, submissions_start)},
-           {:name => 'Upvotes', :data => time_series_array(upvotes, :created_at, submissions_start)},
-           {:name => 'Downvotes', :data => time_series_array(downvotes, :created_at, submissions_start)}
+           {:name => 'Suggestions', :data => time_series_array(suggestions, :created_at, chart_start)},
+           {:name => 'Proposals', :data => time_series_array(proposals, :created_at, chart_start)},
+           {:name => 'Users', :data => time_series_array(users, :created_at, chart_start)},
+           {:name => 'Impressions', :data => time_series_array(impressions, :created_at, chart_start)},
+           {:name => 'Upvotes', :data => time_series_array(upvotes, :created_at, chart_start)},
+           {:name => 'Downvotes', :data => time_series_array(downvotes, :created_at, chart_start)},
+           {:name => 'Selections', :data => time_series_array(selections, :created_at, chart_start)}
    ]
 %>
 <div data-chart="true" data-target="#chart" data-series="<%= series.to_json %>">
