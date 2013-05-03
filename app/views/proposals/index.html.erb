@@ -34,9 +34,11 @@
 </div>
 
 <% if can?(:see_nominations, Proposal) %>
+    <% main_section_class = @nominated_proposals.present? && can?(:create, Selection) ? 'span8' : 'span12' %>
+
     <% if @nominated_proposals.present? %>
         <section class="row">
-            <section id="nominations" class="<%= can?(:create, Selection) ? 'span8' : 'span12' %>">
+            <section id="nominations" class="<%= main_section_class %>">
                 <h2>
                     <%= @nominated_proposals.size %> Nominated &amp; active proposals
                 </h2>
@@ -96,12 +98,14 @@
     <% end %>
 
     <% if @leftout_proposals.present? %>
-        <section>
-            <h2>The following <%= @leftout_proposals.size %> didn't make it into the final list</h2>
+        <section class="row">
+            <section class="<%= main_section_class %>">
+                <h2>The following <%= @leftout_proposals.size %> didn't make it into the final list</h2>
 
-            <ul class="proposals">
-                <%= render :partial => 'proposal_listing', collection: @leftout_proposals %>
-            </ul>
+                <ul class="proposals">
+                    <%= render :partial => 'proposal_listing', collection: @leftout_proposals %>
+                </ul>
+            </section>
         </section>
     <% end %>
 <% else %>
