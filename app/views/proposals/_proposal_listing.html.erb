@@ -2,6 +2,7 @@
    proposal = proposal_listing
    show_new_suggestions = false unless defined?(show_new_suggestions)
    badge_with_nominations = false unless defined?(badge_with_nominations)
+   hide_stats_and_information = false unless defined?(hide_stats_and_information)
 %>
 
 <%= content_tag_for :li, proposal do %>
@@ -24,6 +25,7 @@
 
     <br>
 
+    <% unless hide_stats_and_information %>
     <span class="age">
         <% if can?(:see_stats, proposal) %>
             Ranked <em><strong><%= proposal.phase_one_ranking %></strong></em> in phase 1 with
@@ -34,6 +36,7 @@
             <%= proposal_update_information proposal %>
         <% end %>
     </span>
+    <% end %>
 
     <% if show_new_suggestions && proposal.new_suggestions.any? %>
         <%= pluralize proposal.new_suggestions.count, "new suggestion" %>

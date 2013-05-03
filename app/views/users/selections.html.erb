@@ -1,19 +1,33 @@
-<div class="row">
-    <div class="span12">
-        <%= image_tag(avatar_url(@user), :class => "avatar pull-left") %>
+<%= page_title "#{possessive(true)} selections for #{Settings.event_name}", hide_h1=true %>
 
-        <h1>
-            This is what I want to see at <%= Settings.event_name %>!
-        </h1>
-    </div>
-</div>
+<div class="hero-unit">
+    <h1>
+        My selections for <%= Settings.event_name %>!
+    </h1>
 
-<div class="row">
-    <% if @selected_proposals.any? %>
-        <div class="span12">
-            <ul class="proposals">
-                <%= render :partial => '/proposals/proposal_listing', collection: @selected_proposals %>
-            </ul>
+    <br>
+
+    <div class="span4 well pull-right">
+        <%= link_to user_path(@user) do %>
+            <em><strong><%= @user.name %></strong></em>
+            <br>
+            <%= image_tag(avatar_url(@user), :class => "avatar pull-right") %>
+        <% end %>
+
+        <div style="margin-bottom: 15px;">
+            <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+            <span class='st_googleplus' displayText='Google+'></span>
+            <span class='st_facebook' displayText='Facebook'></span>
+            <span class='st_sharethis' displayText='ShareThis'></span>
         </div>
+    </div>
+
+    <ul class="proposals">
+        <%= render :partial => '/proposals/proposal_listing', collection: @selected_proposals, locals: {hide_stats_and_information: true} %>
+    </ul>
+
+    <br>
+    <% if can?(:see_nominations, Proposal) %>
+        <p><%= link_to "Select yours now!", proposals_path(:anchor => 'nominations'), :class => 'btn btn-primary btn-large' %></p>
     <% end %>
 </div>
