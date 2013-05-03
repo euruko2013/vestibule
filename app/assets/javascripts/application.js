@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui/jquery-ui-1.10.2.custom.min
+//= require jquery.ui.touch-punch
 //= require bootstrap
 //= require countdown
 //= require_tree .
