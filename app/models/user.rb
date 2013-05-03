@@ -48,9 +48,8 @@ class User < ActiveRecord::Base
   def self.find_or_create_with_omniauth(auth)
     auth = auth.with_indifferent_access
 
-    self.where("#{auth[:provider]}_uid = ? OR email =?",
-               auth[:uid],
-               auth[:info][:email]).first ||
+    (auth[:info] && auth[:info][:email].present? ? self.find_by_email(auth[:info][:email]) : nil) ||
+        self.send("find_by_#{auth[:provider]}_uid", auth[:uid]) ||
         self.create_with_omniauth(auth)
   end
 

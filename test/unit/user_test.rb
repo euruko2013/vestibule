@@ -175,6 +175,19 @@ class UserTest < ActiveSupport::TestCase
           assert_equal 'Nickname', @user.google_nickname
         end
       end
+
+      context 'and has an empty email set' do
+        setup do
+          @existing_user_with_empty_email = FactoryGirl.create(:user, :github_uid => 'GITHUB_ID', :email => '')
+        end
+
+        should 'not be matched to existing one with empty email' do
+          logged_in_user = User.find_or_create_with_omniauth(:uid => 'GITHUB_ID_2', :provider => 'github', :info => {:email => ''})
+          assert_not_nil logged_in_user
+          assert_not_equal logged_in_user.id, @existing_user_with_empty_email.id
+        end
+      end
+
     end
 
     context 'who has already signed up' do
