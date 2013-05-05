@@ -36,6 +36,36 @@ class Proposal < ActiveRecord::Base
 
   after_create :update_proposer_score
 
+  class << self
+    def update_phase_one_stats!
+      transaction do
+        all.each { |v| v.update_phase_one_stats! }
+      end
+    end
+
+    def rank_phase_one!
+      transaction do
+        self.order('total_wilson_score DESC').each_with_index do |proposal, index|
+          proposal.phase_one_ranking = index + 1
+          proposal.save!
+        end
+      end
+    end
+
+    def nominate!
+      nominated_ids =
+          self.active.order(:phase_one_ranking).to_a.
+              uniq { |p| p.proposer_id }.
+              take(30).
+              map { |p| p.id }
+
+      transaction do
+        self.update_all('nominated = false')
+        self.update_all('nominated = true', ['id IN (?)', nominated_ids])
+      end
+    end
+  end
+
   def last_modified
     new_suggestions.any? ? new_suggestions.maximum(:updated_at) : last_modified_by_proposer
   end
@@ -60,7 +90,7 @@ class Proposal < ActiveRecord::Base
     update_attribute(:withdrawn, false)
   end
 
-  def update_stats!
+  def update_phase_one_stats!
     self.counted_impressions = unique_impressions_by_unique_users
     self.counted_votes_for = votes_without_bad_users.select { |v| v.vote == true }.size
     self.counted_votes_against = votes_without_bad_users.select { |v| v.vote == false }.size
@@ -70,33 +100,9 @@ class Proposal < ActiveRecord::Base
     self.save!
   end
 
-  def self.update_stats!
-    transaction do
-      all.each { |v| v.update_stats! }
-    end
-  end
 
-  def self.rank_phase_one!
-    transaction do
-      self.order('total_wilson_score DESC').each_with_index do |proposal, index|
-        proposal.phase_one_ranking = index + 1
-        proposal.save!
-      end
-    end
-  end
 
-  def self.nominate!
-    nominated_ids =
-        self.active.order(:phase_one_ranking).to_a.
-            uniq { |p| p.proposer_id }.
-            take(30).
-            map { |p| p.id }
 
-    transaction do
-      self.update_all('nominated = false')
-      self.update_all('nominated = true', ['id IN (?)', nominated_ids])
-    end
-  end
 
   #######
   private

@@ -43,7 +43,7 @@ class ProposalTest < ActiveSupport::TestCase
       end
     end
 
-    context "update_stats!" do
+    context "update_phase_one_stats!" do
       setup do
         # Two positive votes from users with more than one votes
         proposal2 = FactoryGirl.create(:proposal)
@@ -82,7 +82,7 @@ class ProposalTest < ActiveSupport::TestCase
           Impression.create!(:impressionable_id => proposal4.id, :impressionable_type => 'Proposal', :user_id => user.id)
         }
 
-        @proposal.update_stats!
+        @proposal.update_phase_one_stats!
         @proposal.reload
       end
 
