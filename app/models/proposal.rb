@@ -64,6 +64,23 @@ class Proposal < ActiveRecord::Base
         self.update_all('nominated = true', ['id IN (?)', nominated_ids])
       end
     end
+
+    def update_phase_two_stats!
+      transaction do
+        self.where(:nominated => true).includes([{:selections => :user}]).each do |proposal|
+          proposal.update_phase_two_stats!
+        end
+      end
+    end
+
+    def rank_phase_two!
+      transaction do
+        self.where(:nominated => true).order('user_weighted_selections_score DESC').each_with_index do |proposal, index|
+          proposal.phase_two_ranking = index + 1
+          proposal.save!
+        end
+      end
+    end
   end
 
   def last_modified
@@ -100,9 +117,31 @@ class Proposal < ActiveRecord::Base
     self.save!
   end
 
+  PURE_ANALOG_SELECTION_POINTS = {
+      1 => 10,
+      2 => 9,
+      3 => 8,
+      4 => 7,
+      5 => 6,
+      6 => 5,
+      7 => 4,
+      8 => 3,
+      9 => 2,
+      10 => 1
+  }
 
+  def update_phase_two_stats!
+    self.absolute_selections_score =
+        selections.inject(0) { |acc, selection| acc + PURE_ANALOG_SELECTION_POINTS[selection.position] }
 
+    self.bad_users_excluded_absolute_selections_score =
+        selections_without_bad_users.inject(0) { |acc, selection| acc + PURE_ANALOG_SELECTION_POINTS[selection.position] }
 
+    self.user_weighted_selections_score =
+        selections.inject(0) { |acc, selection| acc + (PURE_ANALOG_SELECTION_POINTS[selection.position] * selection.user.contribution_score) }
+
+    self.save!
+  end
 
   #######
   private
@@ -156,5 +195,9 @@ class Proposal < ActiveRecord::Base
 
   def unique_impressions_by_unique_users
     @unique_impressions_by_unique_users ||= Impression.count('user_id', :distinct => true, :conditions => "user_id IS NOT NULL AND impressionable_id = #{self.id}")
+  end
+
+  def selections_without_bad_users
+    @selections_without_bad_users ||= selections.reject { |s| Selection.count(:conditions => {'user_id' => s.user_id}) < 2}
   end
 end
