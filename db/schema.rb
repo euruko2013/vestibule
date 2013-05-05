@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130502214849) do
+ActiveRecord::Schema.define(:version => 20130504193501) do
 
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
@@ -82,7 +82,6 @@ ActiveRecord::Schema.define(:version => 20130502214849) do
     t.datetime "created_at",                                                :null => false
     t.datetime "updated_at",                                                :null => false
     t.string   "name"
-    t.integer  "contribution_score"
     t.string   "github_uid"
     t.string   "github_nickname"
     t.string   "email"
@@ -96,6 +95,7 @@ ActiveRecord::Schema.define(:version => 20130502214849) do
     t.datetime "last_visited_at"
     t.boolean  "delegate",                               :default => false
     t.boolean  "publish_selections",                     :default => true
+    t.float    "contribution_score"
   end
 
   create_table "versions", :force => true do |t|

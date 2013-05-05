@@ -10,13 +10,10 @@ class User < ActiveRecord::Base
 
   scope :with_signup_reasons, where("signup_reason IS NOT NULL")
   scope :without_signup_reasons, where(:signup_reason => nil)
-  scope :by_contribution, order("contribution_score DESC")
 
   attr_accessible :signup_reason,
                   :subscribe_to_suggestions_notifications,
                   :publish_selections
-
-  before_save :update_contribution_score
 
   def proposals_you_should_look_at
     Proposal.active.without_suggestions_from(self).without_votes_from(self).not_proposed_by(self)
@@ -66,16 +63,8 @@ class User < ActiveRecord::Base
     self.save!
   end
 
-  REASON_WEIGHT = 5
-  SUGGESTION_WEIGHT = 2
-
   def proposals_with_interest
     proposals.select { |p| p.suggestions.any? }
-  end
-
-  def update_contribution_score
-    self.contribution_score = (suggestions.not_on_proposals_by(self).count * SUGGESTION_WEIGHT)
-    self.contribution_score += REASON_WEIGHT if self.signup_reason.present?
   end
 
   def add_selections(proposal_ids)
@@ -90,6 +79,21 @@ class User < ActiveRecord::Base
     end
   end
 
+  # Max score: 5
+  def update_contribution_score!
+    self.contribution_score =
+        # Thorough reading of the actual proposals before voting
+        (number_of_proposals_seen_before_phase_two.to_f / Proposal.count) + # Max: 1
+        (number_of_nominated_proposals_seen_during_phase_two.to_f / Proposal.where(:nominated => true).count) + # Max: 1
+        # Interaction with proposal authors
+        (number_of_proposals_discussed.to_f / Proposal.count) + # Max: 1
+        # No hit & run votes/selections
+        (number_of_proposals_voted.to_f / Proposal.count) + # Max: 1
+        (number_of_proposals_selected.to_f / Proposal.where(:nominated => true).count) # Max: 1
+    self.save!
+    self.contribution_score
+  end
+
   ### ACL Stuff ###
 
   def moderator?
@@ -98,5 +102,36 @@ class User < ActiveRecord::Base
 
   def committee_member?
     self.email.present? && self.email =~ /@euruko2013\.org$/
+  end
+
+  #######
+  private
+  #######
+
+  def number_of_proposals_seen_before_phase_two
+    Impression.
+        where(:user_id => self.id, :impressionable_type => 'Proposal').
+        where('created_at < ?', Phase::TWO.starting_at).
+        count(:impressionable_id, :distinct => true)
+  end
+
+  def number_of_nominated_proposals_seen_during_phase_two
+    Impression.
+        where(:user_id => self.id, :impressionable_type => 'Proposal', :impressionable_id => Proposal.where(:nominated => true).pluck(:id)).
+        where('created_at > ?', Phase::TWO.starting_at).
+        where('created_at < ?', Phase::TWO.ending_at).
+        count(:impressionable_id, :distinct => true)
+  end
+
+  def number_of_proposals_discussed
+    suggestions.not_on_proposals_by(self).count(:proposal_id, :distinct => true)
+  end
+
+  def number_of_proposals_voted
+    Vote.where(:voter_id => self.id).count
+  end
+
+  def number_of_proposals_selected
+    selections.count
   end
 end
