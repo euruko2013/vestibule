@@ -13,10 +13,15 @@
 
             <div>
                 <% if can? :see_stats, @proposal %>
-                    Ranked <em><strong><%= @proposal.phase_one_ranking %></strong></em> in Phase 1 with
-                    <%= @proposal.counted_impressions %> unique views,
-                    <%= @proposal.counted_votes_for %> counted upvotes and
-                    <%= @proposal.counted_votes_against %> counted downvotes
+                    <% if @proposal.nominated? && current_phase.selection_completed? %>
+                        Ranked <em><strong><%= @proposal.phase_two_ranking %></strong></em> in Phase 2 with
+                        a weighted final score of <%= @proposal.user_weighted_selections_score %>
+                    <% else %>
+                        Ranked <em><strong><%= @proposal.phase_one_ranking %></strong></em> in Phase 1 with
+                        <%= @proposal.counted_impressions %> unique views,
+                        <%= @proposal.counted_votes_for %> counted upvotes and
+                        <%= @proposal.counted_votes_against %> counted downvotes
+                    <% end %>
                 <% else %>
                     <%= proposal_update_information @proposal %>
                 <% end %>
