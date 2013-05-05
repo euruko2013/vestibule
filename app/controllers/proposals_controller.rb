@@ -13,8 +13,9 @@ class ProposalsController < ApplicationController
     @selected_proposals = current_user.selected_proposals if current_user
 
     if can? :see_nominations, Proposal
-      @nominated_proposals = Proposal.active.where(:nominated => true).order(:phase_one_ranking)
-      @leftout_proposals = Proposal.active.where(:nominated => false).order(:phase_one_ranking)
+      order = current_phase.selection_completed? ? :phase_two_ranking : :phase_one_ranking
+      @nominated_proposals = Proposal.active.where(:nominated => true).order(order)
+      @leftout_proposals = Proposal.active.where(:nominated => false).order(order)
     end
 
     respond_with @proposals
