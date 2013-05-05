@@ -14,7 +14,7 @@ class Ability
     can :read, User
     can :read, Proposal
 
-    if phase.selection_allowed?
+    if phase.selection_allowed? || phase.selection_completed?
       can [:see_nominations, :see_stats], Proposal
       can [:selections], User do |user|
         user.publish_selections?
