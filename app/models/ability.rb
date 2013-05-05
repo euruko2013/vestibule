@@ -56,6 +56,7 @@ class Ability
       if user.moderator?
         can :update, Suggestion
         can :see, :moderator_dashboard
+        can :selections, User
       end
 
       if phase.voting_allowed?
