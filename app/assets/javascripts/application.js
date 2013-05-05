@@ -16,4 +16,5 @@
 //= require jquery.ui.touch-punch
 //= require bootstrap
 //= require countdown
+//= require sortable
 //= require_tree .

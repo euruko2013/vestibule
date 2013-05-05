@@ -22,6 +22,12 @@
   }
 }
 
+.table.final-selections {
+  tr:nth-child(10) {
+    border-bottom: 5px solid red;
+  }
+}
+
 #selections {
   .affix {
     padding: 0 25px;

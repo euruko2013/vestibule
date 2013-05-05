@@ -1,0 +1,26 @@
+<table class="table table-hover sortable final-selections">
+    <thead>
+    <tr>
+        <th>Position</th>
+        <th>Phase 1 position</th>
+        <th>Author</th>
+        <th>Title</th>
+        <th style="white-space: nowrap">Abs. score</th>
+        <th style="white-space: nowrap">Abs. score <br>(excl. bad users)</th>
+        <th style="white-space: nowrap">User weighed score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @proposals.each_with_index do |proposal, index| %>
+    <tr class="<%= index < 10 ? 'success' : 'warning' %>">
+        <td><%= index + 1 %></td>
+        <td><%= proposal.phase_one_ranking %></td>
+        <td><%= link_to proposal.proposer.name, user_path(proposal.proposer) %></td>
+        <td><%= link_to proposal.title, proposal_path(proposal) %></td>
+        <td><%= proposal.absolute_selections_score %></td>
+        <td><%= proposal.bad_users_excluded_absolute_selections_score %></td>
+        <td><%= proposal.user_weighted_selections_score %></td>
+    </tr>
+    <% end %>
+    </tbody>
+</table>

@@ -20,6 +20,11 @@ class ProposalsController < ApplicationController
     respond_with @proposals
   end
 
+  def selections
+    authorize! :selections, Proposal
+    @proposals = Proposal.where(:nominated => true).order(:phase_two_ranking)
+  end
+
   def show
     @proposal = Proposal.find(params[:id])
     authorize! :read, @proposal

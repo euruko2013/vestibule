@@ -57,6 +57,7 @@ class Ability
         can :update, Suggestion
         can :see, :moderator_dashboard
         can :selections, User
+        can :selections, Proposal
       end
 
       if phase.voting_allowed?

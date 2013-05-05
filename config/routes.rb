@@ -13,6 +13,9 @@ Vestibule::Application.routes.draw do
       post :republish
       post :vote
     end
+    collection do
+      get :selections
+    end
   end
 
   match "/motivation", :to => "home#motivation", :as => "motivation"
