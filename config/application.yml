@@ -1,6 +1,7 @@
 defaults: &defaults
   event_name: 'EuRuKo 2013'
   main_site: 'http://euruko2013.org'
+  twitter_account: 'euruko'
   main_slogan: 'Community powered Call for Presentations for <a href="http://euruko2013.org">EuRuKo 2013</a>'
   event_description:
   event_audience: |
