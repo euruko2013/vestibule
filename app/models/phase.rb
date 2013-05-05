@@ -118,7 +118,7 @@ class Phase
 
   CONFIRMATION = Phase.new.tap do |p|
     p.name = "Speakers confirmation"
-    p.main_text = "That's all folks! The voting period has ended and soon the final speaker lineup will be announced. Until then, grab your ticket if you haven't already done so and see you in Athens!"
+    p.main_text = "That's all folks! The voting period has ended and soon the final speaker lineup will be announced. Until then, grab your ticket if you haven't already and see you in Athens!"
     p.starting_at = DateTime.parse('2013-05-06T00:00:00+3')
     p.ending_at = DateTime.parse('2013-05-09T00:00:00+3')
 
