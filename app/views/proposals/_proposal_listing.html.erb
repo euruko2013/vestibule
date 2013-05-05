@@ -30,7 +30,7 @@
         <% if can?(:see_stats, proposal) %>
             <% if proposal.nominated? && current_phase.selection_completed? %>
                 Ranked <em><strong><%= proposal.phase_two_ranking %></strong></em> in Phase 2 with
-                a weighted final score of <%= proposal.user_weighted_selections_score %>
+                a weighted final score of <%= proposal.user_weighted_selections_score.round %>
             <% else %>
                 Ranked <em><strong><%= proposal.phase_one_ranking %></strong></em> in Phase 1 with
                 <%= proposal.counted_impressions %> unique views,
