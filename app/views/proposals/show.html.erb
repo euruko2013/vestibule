@@ -46,6 +46,8 @@
             <%= @proposal.title %>
         </h1>
 
+        <% if @proposal.confirmed? %><span class="label label-success">Confirmed!</span><% end %>
+
         <% if @proposal.withdrawn? %>
             <h2 class="withdrawl_explanation">This proposal has been withdrawn...</h2>
         <% end %>

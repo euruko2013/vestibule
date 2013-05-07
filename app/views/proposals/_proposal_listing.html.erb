@@ -14,6 +14,7 @@
     <% else %>
         <%= link_to proposal.title, proposal, :class => 'title' %>
     <% end %>
+    <% if proposal.confirmed? %><span class="label label-success">Confirmed!</span><% end %>
 
     <% if can?(:see_stats, Proposal) && badge_with_nominations %>
         <% if proposal.nominated? %>
