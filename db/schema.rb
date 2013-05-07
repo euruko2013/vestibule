@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130504200241) do
+ActiveRecord::Schema.define(:version => 20130507084019) do
 
   create_table "impressions", :force => true do |t|
     t.string   "impressionable_type"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20130504200241) do
     t.integer  "bad_users_excluded_absolute_selections_score", :default => 0
     t.float    "user_weighted_selections_score",               :default => 0.0
     t.integer  "phase_two_ranking"
+    t.boolean  "confirmed",                                    :default => false
   end
 
   create_table "selections", :force => true do |t|
