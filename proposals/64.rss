@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "35.000 tests and counting!"</title>
+    <description>A list of all suggestions made for "35.000 tests and counting!"</description>
+    <link>http://cfp.euruko2013.org/proposals/64</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/64.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>The aforementioned number of tests refers solely to UI tests running over rspec or cucumber tests for checking javascript functionalities. The number of tests written for models or testing APIs are not included. Main concept behing this presentation is the mentality of writting such tests (or when not to), and some do and dont&#39;s we got together over our experience. </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:38:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/64#suggestion_236</link>
+      <guid>http://cfp.euruko2013.org/proposals/64#suggestion_236</guid>
+    </item>
+    <item>
+      <title>Suggestion from Daniel Lobato García (@eLobato)</title>
+      <description type="html">
+        <![CDATA[<p>Will this presentation cover how to maintain such a large test codebase?</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 17:40:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/64#suggestion_174</link>
+      <guid>http://cfp.euruko2013.org/proposals/64#suggestion_174</guid>
+    </item>
+    <item>
+      <title>Suggestion from rilian (@rilian)</title>
+      <description type="html">
+        <![CDATA[<p>Would be cool if author describe <strong>how he got to this situation?</strong></p>
+
+<p>We had the same experience with monstrous large legacy project - a &quot;mega-rails&quot; one with 2500 tests that run over 25 minutes... We in team have done a series of brainstorming, and made a decision to split it to (now counting 8!) separate REST APIs. This brought success! Each API had own, clear and decoupled tests, and, even though once everything was built we have like 3000 tests in total, they run much faster, most of them are clear and they allow us to look for future challenges.</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 11:43:21 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/64#suggestion_170</link>
+      <guid>http://cfp.euruko2013.org/proposals/64#suggestion_170</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Natural Language Processing with Ruby"</title>
+    <description>A list of all suggestions made for "Natural Language Processing with Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/67</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/67.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Would loooove to see this. It will take me way back to my university years. Would be cool to see how to do in Ruby the things we did in C</p>
+]]>
+      </description>
+      <pubDate>Sun, 21 Apr 2013 15:23:06 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/67#suggestion_180</link>
+      <guid>http://cfp.euruko2013.org/proposals/67#suggestion_180</guid>
+    </item>
+    <item>
+      <title>Suggestion from Grzegorz Witek (@arnvald)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;d love to see this presentation, as I&#39;m interested in NLP and I haven&#39;t seen many resources about this related to Ruby language :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 21 Apr 2013 13:38:55 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/67#suggestion_179</link>
+      <guid>http://cfp.euruko2013.org/proposals/67#suggestion_179</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I will leverage <em>OpenNLP</em> and <em>JRuby</em> as technologies to present a solution to the discussed real-world problem. </p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 18:16:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/67#suggestion_176</link>
+      <guid>http://cfp.euruko2013.org/proposals/67#suggestion_176</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Yes please!! :-)</p>
+
+<p>Is this pure Ruby NLP btw or is it using  CoreNLP through JRuby wrappers for example?</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 18:08:40 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/67#suggestion_175</link>
+      <guid>http://cfp.euruko2013.org/proposals/67#suggestion_175</guid>
+    </item>
+  </channel>
+</rss>

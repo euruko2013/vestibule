@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "How to use RVM: development, deployment, production"</title>
+    <description>A list of all suggestions made for "How to use RVM: development, deployment, production"</description>
+    <link>http://cfp.euruko2013.org/proposals/37</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/37.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>When you get it working it all seems simple, but many users gets confused when it comes to more advanced setups - this will show the best proofed setups.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 15:36:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/37#suggestion_87</link>
+      <guid>http://cfp.euruko2013.org/proposals/37#suggestion_87</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>What will there (roughly) be in your talk that the excellent RVM documentation doesn&#39;t cover already? Or put differently: Why should I attend this talk and not just read through the documentation – especially when it comes to server configuration which should be &quot;perfect&quot; anyway?</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 14:16:16 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/37#suggestion_85</link>
+      <guid>http://cfp.euruko2013.org/proposals/37#suggestion_85</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Immutability in Ruby"</title>
+    <description>A list of all suggestions made for "Immutability in Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/10</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/10.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>@Nicolas you have some good points but not the whole audience will be composed from beginners. </p>
+
+<p>I&#39;m totally interested in this topic, but indeed, providing some concrete examples with the direct benefits of immutability would be more than useful. </p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 10:11:10 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/10#suggestion_118</link>
+      <guid>http://cfp.euruko2013.org/proposals/10#suggestion_118</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nicolas Mérouze (@nmerouze)</title>
+      <description type="html">
+        <![CDATA[<p>I like this topic but feel like your proposal is too much theory and not enough practical use. Will you show a real-world application using immutability in Ruby?</p>
+
+<p>You explain that immutability is getting more attention because of concurrency and parallelism. Maybe you could explain why because some people may not understand the relation you made (I&#39;m thinking about beginners who can have a hard time understanding these concepts, especially if they began learning Ruby before any other language).</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 09:53:13 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/10#suggestion_117</link>
+      <guid>http://cfp.euruko2013.org/proposals/10#suggestion_117</guid>
+    </item>
+  </channel>
+</rss>

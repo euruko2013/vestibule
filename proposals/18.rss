@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Minimal Surface Area"</title>
+    <description>A list of all suggestions made for "Minimal Surface Area"</description>
+    <link>http://cfp.euruko2013.org/proposals/18</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/18.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>&quot;How we can build small services into larger applications without overloading our brains&quot; -. are you implying that with ruby we can do this?</p>
+
+<p>If so, where is the basis of your thesis that &quot;writing decoupled, smaller classes make code that fit&#39;s better into our heads&quot; is indeed true? :-)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:19:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/18#suggestion_48</link>
+      <guid>http://cfp.euruko2013.org/proposals/18#suggestion_48</guid>
+    </item>
+    <item>
+      <title>Suggestion from Bamboo (@b4mboo)</title>
+      <description type="html">
+        <![CDATA[<p>Sorry, auto-correct got a hold of me there. It was meant to say &quot;that sort of questions&quot;. </p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 10:16:04 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/18#suggestion_18</link>
+      <guid>http://cfp.euruko2013.org/proposals/18#suggestion_18</guid>
+    </item>
+    <item>
+      <title>Suggestion from Bamboo (@b4mboo)</title>
+      <description type="html">
+        <![CDATA[<p>More importantly, are you going to answer these questions by supplying strategies to achieve better results or is this talk aiming at discovery by asking that story of questions in the first place?</p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 10:14:18 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/18#suggestion_17</link>
+      <guid>http://cfp.euruko2013.org/proposals/18#suggestion_17</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Even though I like the main idea of your proposal, it sounds rather generic. Can you give a few concrete examples of what this presentation is going to be about?</p>
+]]>
+      </description>
+      <pubDate>Sun, 31 Mar 2013 13:21:25 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/18#suggestion_14</link>
+      <guid>http://cfp.euruko2013.org/proposals/18#suggestion_14</guid>
+    </item>
+  </channel>
+</rss>

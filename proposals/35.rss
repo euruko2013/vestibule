@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Enabling the quest of science with Ruby. A talk about building an infrastructure with Ruby."</title>
+    <description>A list of all suggestions made for "Enabling the quest of science with Ruby. A talk about building an infrastructure with Ruby."</description>
+    <link>http://cfp.euruko2013.org/proposals/35</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/35.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Actually a little bit of both. The former topic has already been discussed a lot though, but I can come up with anecdotes and such. I particularly like the fact that the ecosystem is fairly mature now and building the infrastructure with ruby is almost not a bottleneck for any application language to run on top of the systems. </p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 14:28:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/35#suggestion_57</link>
+      <guid>http://cfp.euruko2013.org/proposals/35#suggestion_57</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>This sounds very interesting!</p>
+
+<p>Will it be about how Ruby is used to manage the infrastructure or about how Ruby is used as the application language by which such distributed infrastructure is taken advantage of?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 10:51:27 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/35#suggestion_42</link>
+      <guid>http://cfp.euruko2013.org/proposals/35#suggestion_42</guid>
+    </item>
+  </channel>
+</rss>

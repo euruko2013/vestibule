@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Dissecting Ruby with Ruby"</title>
+    <description>A list of all suggestions made for "Dissecting Ruby with Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/12</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/12.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Zachary Scott (@zzak)</title>
+      <description type="html">
+        <![CDATA[<p>You should also checkout Kernel#caller_locations via Thread::Backtrace::Location</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 14:40:18 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12#suggestion_217</link>
+      <guid>http://cfp.euruko2013.org/proposals/12#suggestion_217</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Without saying whether this talk sounds interesting or not, I want to ask a stupid question: isn&#39;t a debugger sufficient enough to trace such problems efficiently enough? I&#39;m asking cause I have hunted in the past a lot of such bugs from 3rd party libraries with the debugger and even though it was cumbersome it did work out. Are you going to propose a better alternative or a something complimentary?</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 08:58:43 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12#suggestion_134</link>
+      <guid>http://cfp.euruko2013.org/proposals/12#suggestion_134</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Author here - We start with a problem, something we want to fix in a huge library (Rails) but we don&#39;t know where to find the offending code. To get to it we use <code>Kernel#caller</code>, <code>Method#source_location</code>, <code>Kernel#ancestors</code>, <code>Object#method</code>, <code>Module#instance_method</code> and a few more to really dig into the library. These are all standard Ruby functions, but with them you&#39;ll see how easy it is to navigate any code base. This is exactly the process that new to intermediate devs need to learn before they can contribute and patch large libraries. I gave the talk in Uruguay, and it was <strong>VERY</strong> well received. It is technical, fun, and entertaining. </p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 14:58:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12#suggestion_24</link>
+      <guid>http://cfp.euruko2013.org/proposals/12#suggestion_24</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>The title looks very interesting! </p>
+
+<p>However the proposal abstract needs some more information. Can you please clarify further?</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 07:15:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12#suggestion_23</link>
+      <guid>http://cfp.euruko2013.org/proposals/12#suggestion_23</guid>
+    </item>
+    <item>
+      <title>Suggestion from Albert Llop (@mrsimo)</title>
+      <description type="html">
+        <![CDATA[<p>Seems a very generic presentation. What do you mean by &quot;simple and sharp ruby tools&quot;? I don&#39;t know what to expect from it.</p>
+
+<p>I&#39;d suggest you give some examples of techniques so that I can then think &quot;Oh, I&#39;d like to learn that&quot;.</p>
+]]>
+      </description>
+      <pubDate>Tue, 02 Apr 2013 06:46:19 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12#suggestion_22</link>
+      <guid>http://cfp.euruko2013.org/proposals/12#suggestion_22</guid>
+    </item>
+  </channel>
+</rss>

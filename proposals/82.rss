@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Down the rb_newobj() Rabbit Hole: Garbage Collection and a Glimpse into Ruby&amp;#x27;s Future"</title>
+    <description>A list of all suggestions made for "Down the rb_newobj() Rabbit Hole: Garbage Collection and a Glimpse into Ruby&amp;#x27;s Future"</description>
+    <link>http://cfp.euruko2013.org/proposals/82</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/82.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Zachary Scott (@zzak)</title>
+      <description type="html">
+        <![CDATA[<p>Yes!!!</p>
+
+<p>I wish I could vote for this more than once!</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 14:20:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/82#suggestion_216</link>
+      <guid>http://cfp.euruko2013.org/proposals/82#suggestion_216</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Jan&#39;s suggestion was what I was thinking as well.</p>
+
+<p>This looks really  promising :-)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:21:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/82#suggestion_206</link>
+      <guid>http://cfp.euruko2013.org/proposals/82#suggestion_206</guid>
+    </item>
+    <item>
+      <title>Suggestion from Jan Stępień (@)</title>
+      <description type="html">
+        <![CDATA[<p>It would be great to see a short overview of approaches to garbage collection in other Ruby implementations and a comparison with MRI&#39;s GC, if time allows.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:13:01 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/82#suggestion_204</link>
+      <guid>http://cfp.euruko2013.org/proposals/82#suggestion_204</guid>
+    </item>
+  </channel>
+</rss>

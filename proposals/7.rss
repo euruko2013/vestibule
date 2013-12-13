@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Scaling and automating the heck out of your infrastructure with Chef"</title>
+    <description>A list of all suggestions made for "Scaling and automating the heck out of your infrastructure with Chef"</description>
+    <link>http://cfp.euruko2013.org/proposals/7</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/7.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;ll do my best to include a link set to best-practices, resources and apps that are being used by automation practitioners all over the biggest shops in SF and the startup scene in general (since those are the people who tend to follow bleeding-edge developments).</p>
+
+<p>I hope this gets accepted too :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 20:53:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_80</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_80</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>Very interesting, therefore +1.</p>
+
+<p>However, I have a big wish (request?) for the talk, should it get accepted: Please include some Chef-independent info about server management or at least some resources in your slide deck for further reference. What I mean is: While I can get a single server for a Rails app up and running just fine, I – as a programmer – don&#39;t really have a clue of what makes a good and stable server. I&#39;m thinking about things like monitoring and security as well as multi-server setups. I&#39;m aware that this might be too much for a single talk but as I said: Some references in your slides for further reading would be just fine.</p>
+
+<p>I hope this gets accepted. :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:51:44 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_71</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_71</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>The plan is to introduce the basic concepts of Chef by parables using easy-to-understand cartoonish images, explain the DSL and then expand to advanced Ruby stuff that are relatively new to the community (like the thread cookbook) and elaborate on the emerging best-practice ecosystem (cookbook development with berkshelf, vagrant, vagabond/lxc, test-kitchen, ridley and other stuff that will have emerged by June - the Chef community is moving FAST!) and how you can tie them all together in a rapid deployment process.</p>
+
+<p>The idea is that the attendants will leave the talk with a full understanding of the Chef development workflow, go home, setup a Chef server on a Vagrant VM/LXC and start using it as a production environment replica for all their projects</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 22:53:45 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_10</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_10</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Chef is a big subject. I&#39;m with τhe author, I&#39;d prefer more relevant content than comparisons with Puppet (we have Chefconf for that :P ). 
+What I would find extremely interesting is the way Ruby&#39;s programming practices are a benefit to anyone using Chef and how they are actually applied within recipes (from writing LWRPs to setting up a test infrastructure with test-kitchen or the way berkshelf borrows concepts from bundler to enable cookbook management). </p>
+
+<p>Ruby devs will grasp the intricacies of the Chef DSL faster but the Ops side of things (environments, roles, application cookbooks etc.) would probably need more elaboration. Or you might want to focus on the development workflow for recipes and throw a little vagrant in the mix.</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 20:22:28 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_9</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_9</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I could include a small comparison to Puppet, but since the Chef material that needs to be covered is extensive I&#39;d prefer utilizing the timeslot given for passing on more useful information and as a result, such widely-documented subjects may be left out.</p>
+
+<p>Of course, it goes without saying that cookbooks used for web-scale real world deployments will be displayed and analyzed, along with other cool stuff and best practices!</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 00:45:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_5</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_5</guid>
+    </item>
+    <item>
+      <title>Suggestion from Fotos Georgiadis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Will it include a comparison with Puppet? The main issue I face is choosing one over the other.</p>
+
+<ol>
+<li>What does it do better?</li>
+<li>Where does it lack?</li>
+<li>Can it serve sushi?</li>
+</ol>
+
+<p>Furthermore, it would be awesome to see and examine real world, full scale, recipes.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 22:54:21 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7#suggestion_4</link>
+      <guid>http://cfp.euruko2013.org/proposals/7#suggestion_4</guid>
+    </item>
+  </channel>
+</rss>

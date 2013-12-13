@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "A Rails Criticism"</title>
+    <description>A list of all suggestions made for "A Rails Criticism"</description>
+    <link>http://cfp.euruko2013.org/proposals/31</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/31.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>@author I see where you stand - I&#39;m almost in the same situation :) I would suggest to also update the proposal description to reflect what you said above.</p>
+]]>
+      </description>
+      <pubDate>Fri, 12 Apr 2013 10:58:54 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/31#suggestion_127</link>
+      <guid>http://cfp.euruko2013.org/proposals/31#suggestion_127</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I work with Rails from the 0.x era, and have seen a lot of projects evolve during their lifespan. As you know, maintaing and improve software is hard, and sometimes the Rails doesn&#39;t make our life easy. Based on my experience (especially on legacy projects), I started maturing my own point of view about the framework, which is still great, but not perfect.</p>
+
+<p>I want to talk about:
+* How the Golden Path advices can be helpful at the beginning, but dangerous when the codebase grows;
+* The Rails applications architecture that violates OOP principles and why this is bad for code modularity (main point – with a lot of bad practice examples and related solutions);
+* Testability issues (integration tests vs unit tests, slow test suites);
+* How Rails discourages emerging design.</p>
+
+<p>PS: I already gave this talk to another conf, and got a great feedback about it.</p>
+]]>
+      </description>
+      <pubDate>Fri, 12 Apr 2013 10:55:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/31#suggestion_126</link>
+      <guid>http://cfp.euruko2013.org/proposals/31#suggestion_126</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>In general: Criticism of Rails is literally everywhere. There are hundreds of blog posts about it and at least one talk at every conference is at least in parts dedicated to the topic. Personally, I&#39;ve seen and read to much of this already.</p>
+
+<p>But I agree with Nikos: Way to generic to make an informed decision of whether or not I want to see this talk. If you can at least outline what you intend to present in this talk and how it will differ from the wealth of blog posts and conference talks that are already out there, I might consider giving it a +1.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:32:54 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/31#suggestion_59</link>
+      <guid>http://cfp.euruko2013.org/proposals/31#suggestion_59</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hello there author! The proposal sounds more generic than I&#39;ld like. Can you give some more concrete examples of what your talk is going to be about?</p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 23:01:10 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/31#suggestion_34</link>
+      <guid>http://cfp.euruko2013.org/proposals/31#suggestion_34</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Testing HTTP APIs with Ruby"</title>
+    <description>A list of all suggestions made for "Testing HTTP APIs with Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/75</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/75.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Totally agree with @Fotos. Your identity will be revealed on the next phase anyway :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:33:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/75#suggestion_200</link>
+      <guid>http://cfp.euruko2013.org/proposals/75#suggestion_200</guid>
+    </item>
+    <item>
+      <title>Suggestion from Fotos Georgiadis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Writing (good) integration tests is a difficult endeavour and one that many engineers avoid mostly due to the huge development effort and high cost maintenance. I think lots of people would love to see a new approach in integration testing especially one that stems for experience.</p>
+
+<p>As a side note, I believe you should not disclose identifiable information about yourself. At this point of the CFP process what matters is the content and not the author. Thus you should avoid mentioning your name or other conferences where you have given this talk. It would be kind to remove such sections and instead elaborate more on the content. You can read more about the CFP in the <a href="http://cfp.euruko2013.org/about#faq-submissions">FAQ</a> and especially the <em>How anonymous does my proposal have to be?</em> question. For example instead of linking to your presentation you could extract the relevant / intriguing parts and highlight them here and this way gather more comments and valuable feedback. ;-)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:30:58 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/75#suggestion_199</link>
+      <guid>http://cfp.euruko2013.org/proposals/75#suggestion_199</guid>
+    </item>
+  </channel>
+</rss>

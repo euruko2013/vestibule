@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Always Be Closing "</title>
+    <description>A list of all suggestions made for "Always Be Closing "</description>
+    <link>http://cfp.euruko2013.org/proposals/56</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/56.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>It&#39;s totally fine with me since this is now reflected in the description :) </p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 09:30:08 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/56#suggestion_144</link>
+      <guid>http://cfp.euruko2013.org/proposals/56#suggestion_144</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>The rationale behind this proposal is that I assume there will be quite some attendees who work on their own startups, have to advice on UX or are just interested in the human mind. Is it a Ruby talk? No. Is it interesting to web developers and humans in general? Definitely!</p>
+
+<p>Disclaimer: I am a Rubyist, not a psychologist. I&#39;ve been interested in (online) influence and persuasion for a while though and have read pretty much all the standard works on the subject. I may not be an expert, but I do teach some useful tricks :-)</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 09:27:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/56#suggestion_143</link>
+      <guid>http://cfp.euruko2013.org/proposals/56#suggestion_143</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hello there author! :)</p>
+
+<p>Even though the topic is really interesting to me, I can&#39;t understand how it relates to Ruby. Would you care to expand a little bit the description addressing this?</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 09:23:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/56#suggestion_142</link>
+      <guid>http://cfp.euruko2013.org/proposals/56#suggestion_142</guid>
+    </item>
+  </channel>
+</rss>

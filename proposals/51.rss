@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "From Monorail to Tri-rail"</title>
+    <description>A list of all suggestions made for "From Monorail to Tri-rail"</description>
+    <link>http://cfp.euruko2013.org/proposals/51</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/51.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>This talk would mostly be focused on rails applications, but some of the techniques that I will discuss will be applicable outside of rails.  </p>
+
+<p>A couple of the specific concepts I am thinking about are: separate data access from the final UI with API&#39;s, and using object composition to simplify large classes (models).</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 13:23:55 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/51#suggestion_141</link>
+      <guid>http://cfp.euruko2013.org/proposals/51#suggestion_141</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>What you are going to say, are only applicable to Rails applications or are they generic enough for people outside the Rails world to use? I&#39;m asking because I believe a certain percentage of the audience won&#39;t be rails developers (I am :D). Is this presentation going to be useful for them?</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 08:39:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/51#suggestion_132</link>
+      <guid>http://cfp.euruko2013.org/proposals/51#suggestion_132</guid>
+    </item>
+  </channel>
+</rss>

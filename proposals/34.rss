@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Architecting your Rails app for success!"</title>
+    <description>A list of all suggestions made for "Architecting your Rails app for success!"</description>
+    <link>http://cfp.euruko2013.org/proposals/34</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/34.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Murray,</p>
+
+<p>My talk is from the perspective of a brand new Rails app, but all of the patterns and techniques can be applied to existing apps. However, I believe applying them to any and all new Rails app is a bad idea and would be premature optimization.</p>
+
+<p>The app I worked on was... special. It was a rewrite of an existing app, and we had a good idea of the direction we were going to be headed: large codebase, lots of developers, high performance, and easily extensible. We almost coded with the fear of where we&#39;d end up in 6-12 months of zero architecture. As such, we did more architecture up front that I would have ever felt comfortable with otherwise. The result was an extremely well factored codebase that was consistent and easy to work in.</p>
+
+<p>My vision for this talk, is that people would come away with various patterns that they could apply to a new app, or an existing one if they are feeling some pain that the pattern solves. I would strongly suggest not following any of my patterns until you feel the pain of not having it, or are extremely confident that you will experience it in the future.</p>
+
+<p>I will update the abstract to explicitly state that the information from this talk can be applied to new or existing apps. Thanks for the feedback!</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 04:49:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_100</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_100</guid>
+    </item>
+    <item>
+      <title>Suggestion from Murray Steele (@h-lame)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;m really interested in this.  I&#39;ve worked on projects where we&#39;ve felt the pain of not thinking about how the project will feel in a year or so, but I&#39;ve also worked on projects where we&#39;ve felt the pain of thinking too hard from the beginning and getting it painfully wrong.  There&#39;s loads of theoretical advice out there, but a lack of practical &quot;do this, then do this, don&#39;t do that&quot; advice, so if you can ground this talk in advice taken from real-world projects that would be great.</p>
+
+<p>One thing I&#39;m left wondering - am I right in thinking this will be of most use for people when they start their next new rails app?  I suspect most people in the audience will probably have an existing app that would benefit from some re-architecting right now; will there be anything for them?  There doesn&#39;t have to be, but I do think making that explicit in the description would be useful.</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 21:13:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_99</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_99</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for the feedback. I&#39;m always happy to talk about these topics! If the talk doesn&#39;t get accepted, feel free to track me down and pick my brain.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 20:12:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_76</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_76</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Now, it&#39;s super - you got my +1! I find the topic really interesting and I would really like to discuss it in person anyway :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 19:07:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_75</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_75</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Using swear words makes the title provocative but not in a positive way. I&#39;m actually put off by it instead of being intrigued. 
+To bad, because the problems with large code bases are real and I would also be interested in your definition of large.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 09:50:56 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_40</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_40</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>The title of this proposal is using language that&#39;s not appropriate for the event. Can you please refine it? If not, we may have to disapprove the proposal and that&#39;s a shame cause the topic is rather interesting.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 06:53:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34#suggestion_39</link>
+      <guid>http://cfp.euruko2013.org/proposals/34#suggestion_39</guid>
+    </item>
+  </channel>
+</rss>

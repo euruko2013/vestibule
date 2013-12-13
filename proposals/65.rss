@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "The future of Ruby is faster"</title>
+    <description>A list of all suggestions made for "The future of Ruby is faster"</description>
+    <link>http://cfp.euruko2013.org/proposals/65</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/65.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>As you please - it&#39;s your proposal after all!</p>
+
+<p>:)</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 13:24:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/65#suggestion_166</link>
+      <guid>http://cfp.euruko2013.org/proposals/65#suggestion_166</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;ve been a Rubinius contributor for the last 5 years and have been working a lot on performance lately. Should I update the proposal with this information?</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 13:20:35 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/65#suggestion_165</link>
+      <guid>http://cfp.euruko2013.org/proposals/65#suggestion_165</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Can you provide a little background regarding your experience in order to be able to understand a little better the expertise level?</p>
+
+<p>P.S.: Definitely voting up for this!!! </p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 13:18:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/65#suggestion_164</link>
+      <guid>http://cfp.euruko2013.org/proposals/65#suggestion_164</guid>
+    </item>
+  </channel>
+</rss>

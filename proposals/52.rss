@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Chipping Away at Enterprise"</title>
+    <description>A list of all suggestions made for "Chipping Away at Enterprise"</description>
+    <link>http://cfp.euruko2013.org/proposals/52</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/52.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Nikos - That contradiction is exactly my point (see below for background).  The talk will mostly contain tips &amp; tricks on how to make internal processes better (more efficient) by using small applications to ease individual pain points.</p>
+
+<p>A little background: I was a stake holder in a smaller company where we practiced standard agile processes and developed many workflow optimizing applications.  That company was bought out by a large corporation with an official policy forbidding internal development.  Now, I am in a position advocating that internal applications do not need to be taboo.  </p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 13:17:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/52#suggestion_140</link>
+      <guid>http://cfp.euruko2013.org/proposals/52#suggestion_140</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Vassilis - That is the direction I was going with it.  I do think that it will end up being applicable to more than just the corporate in-house types, as the sorts of things that I intend to discuss will apply to many (if not all) businesses.  I intend to analyze extremely common business issues often solved with manual labor (manual education tracking, giant Excel spreadsheets, drawers full of paperwork organized by customer, etc).  </p>
+
+<p>Hint: the key to breaking into this arena is to make life better for everyone involved!</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 13:07:19 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/52#suggestion_138</link>
+      <guid>http://cfp.euruko2013.org/proposals/52#suggestion_138</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>It&#39;s not a &quot;new world&quot;, it&#39;s a different, parallel world if not older than the one we (want to) live in.
+And there are thousands of people trapped in it. Whole companies in sections of the economy where the main expertise has nothing to do with software find themselves in need of computers and applications without actually having the knowledge or manpower needed.
+Strict regulation and draconian limitations on what can be used are common. Stiff processes, mountains of paperwork and general risk aversion abound.
+We all know that software in general and Ruby in particular can drastically improve effectiveness, efficiency and worker happiness. The trick is getting them in the door.</p>
+
+<p>Now, is this a correct semantical edit of your proposal?
+Having been there (several times) I can relate and spend days swapping war stories. My fear is that it might just be the two of us and that the rest of the audience will just laugh at the academic knowledge of a world left behind :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 10:03:08 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/52#suggestion_136</link>
+      <guid>http://cfp.euruko2013.org/proposals/52#suggestion_136</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>This is a new world that you mention and I don&#39;t get it: &quot;in-house developer for a corporation that forbids application development&quot;. It&#39;s contradictory you know :D What exactly is your role then? I&#39;m asking cause I&#39;m trying to understand what the &quot;suggestions&quot; for people in your position are going to be and whether these apply to normal software development departments, that do have &quot;enterprizey&quot; constraints like using tools from well known and pricey vendors.</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 08:48:07 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/52#suggestion_133</link>
+      <guid>http://cfp.euruko2013.org/proposals/52#suggestion_133</guid>
+    </item>
+  </channel>
+</rss>

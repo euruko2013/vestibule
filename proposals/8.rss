@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "RVM 2.0 A Ruby Environment Manager in Ruby"</title>
+    <description>A list of all suggestions made for "RVM 2.0 A Ruby Environment Manager in Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/8</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/8.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@rilian that would be part of <a href="http://cfp.euruko2013.org/proposals/37">http://cfp.euruko2013.org/proposals/37</a></p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 16:41:57 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/8#suggestion_173</link>
+      <guid>http://cfp.euruko2013.org/proposals/8#suggestion_173</guid>
+    </item>
+    <item>
+      <title>Suggestion from rilian (@rilian)</title>
+      <description type="html">
+        <![CDATA[<p>Would be nice to hear practical advices of pros and cons of 
+* using binary rubies
+* how to smoothly migrate and rollback to new Ruby versions
+* what is the latest best practice of using .rvmrc VS .ruby-version, .ruby-gemset and how you manage them (in repo?) across the team working on multiple projects</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 11:52:18 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/8#suggestion_172</link>
+      <guid>http://cfp.euruko2013.org/proposals/8#suggestion_172</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>RVM2 will emulate the RVM1 interface so the usage should be the same, this is intended to show more internal details, if you like a talk on using RVM in different situations like development, production, deployment - I could propose a separate proposal for it.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 14:23:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/8#suggestion_56</link>
+      <guid>http://cfp.euruko2013.org/proposals/8#suggestion_56</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>So is this talk more about how RVM is structured and how it can be extended as opposed to how to use it?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 12:58:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/8#suggestion_54</link>
+      <guid>http://cfp.euruko2013.org/proposals/8#suggestion_54</guid>
+    </item>
+  </channel>
+</rss>

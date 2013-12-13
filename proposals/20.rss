@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Web applications with Ruby (not Rails)"</title>
+    <description>A list of all suggestions made for "Web applications with Ruby (not Rails)"</description>
+    <link>http://cfp.euruko2013.org/proposals/20</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/20.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thank you all for the suggestions.</p>
+
+<p>This is more of a beginner level talk. While you probably never want to do this in production, I like to think that we must know our tools and a little of the philosophy that eventually became the frameworks themselves over time.</p>
+
+<p>The talk is more about inciting to think on the solutions that are already solved by the frameworks and that we take for granted.</p>
+
+<p>That is why I want to do live coding, not just about showing code, but also about giving it some thought and build things little by little which is probably how our ancestors built Rails, Sinatra, Padrino and others in their time.</p>
+
+<p>I can probably replace the live coding with video to save it for the posterity. I&#39;m actually beginning to think its a better idea.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 14:15:23 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/20#suggestion_84</link>
+      <guid>http://cfp.euruko2013.org/proposals/20#suggestion_84</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>I agree with John that the &quot;why?&quot; aspect of your talk needs to be addressed: Sure, it&#39;s hell of interesting to do things yourself and not use any existing frameworks. But was are the practical aspects of this? There are so many Ruby web frameworks out there – some of them fully featured (like Rails), some of them small and nimble (like Sinatra) – that, in my mind, you&#39;d have to have a very good reason to skip frameworks altogether and write your whole stack from scratch.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:04:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/20#suggestion_65</link>
+      <guid>http://cfp.euruko2013.org/proposals/20#suggestion_65</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>The important bit which you need to address is &quot;Why?&#39;. why would we want to do what you suggest? So that people vote on your presentation based not on what can be done, but rather on what the learning will be.</p>
+
+<p>I also suggst that you do promise to present using slides. Having a coding session only talk is difficult and leaves not collateral material for posterity. A deck of slides is good for people that want to re-review your talk. The committee will alos need to see that you are well prepared before the event should your talk is voted for.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:12:25 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/20#suggestion_46</link>
+      <guid>http://cfp.euruko2013.org/proposals/20#suggestion_46</guid>
+    </item>
+  </channel>
+</rss>

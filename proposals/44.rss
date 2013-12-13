@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Look behind the scenes of a PaaS"</title>
+    <description>A list of all suggestions made for "Look behind the scenes of a PaaS"</description>
+    <link>http://cfp.euruko2013.org/proposals/44</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/44.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>They shouldn&#39;t! After all this is the purpose of the suggestions/comments: the help improve the proposal itself :)</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 07:52:28 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_169</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_169</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Could it be that the first comments somehow influence people although the proposal has been completely re-written?</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 10:25:30 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_158</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_158</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I would say this is an exceptional proposal!</p>
+
+<p>:)</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 12:53:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_121</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_121</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Now it should be without any product flavor with full focus to the technology.</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 12:42:43 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_120</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_120</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Actually the talk is similar to the delta cloud talk about the open source software cloudfoundry.
+Both projects are somehow funded by the industry.</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 11:13:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_119</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_119</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Vatikiotis (@)</title>
+      <description type="html">
+        <![CDATA[<p>It seems to me that we have landed on grey area. Is this presentation about the Open Source project CloudFoundry or the product? </p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 09:02:44 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_105</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_105</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>If I&#39;m not mistaken, cloudfoundry is an open source product backed up from commercial companies/partners. So I&#39;m not sure this is in &#39;violation&#39; or rules - unless of course it promotes the commercial part of it which is the actual PaaS hosting. So the proper question for is: Is this presentation going to be for <a href="http://www.cloudfoundry.org/">http://www.cloudfoundry.org/</a> or <a href="http://www.cloudfoundry.com/">http://www.cloudfoundry.com/</a>? </p>
+
+<p>:)</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 08:55:19 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_104</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_104</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hi</p>
+
+<p>According to the &#39;Rules&#39; <a href="http://cfp.euruko2013.org/about">http://cfp.euruko2013.org/about</a> having a talk which just promotes a product is forbidden.</p>
+
+<p>However, from what it looks like, you can give us insight as to how Ruby may be used to &quot;to operate, maintain and scale the platform&quot; as you say using Bosh.</p>
+
+<p>So, if I was you, I&#39;d change the angle to focus on this latter aspect of your talk rather than an outright presentation of CloudFundry (which is otherwise very interesting for many, including myself:-)</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 08:46:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44#suggestion_103</link>
+      <guid>http://cfp.euruko2013.org/proposals/44#suggestion_103</guid>
+    </item>
+  </channel>
+</rss>

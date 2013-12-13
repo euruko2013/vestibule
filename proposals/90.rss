@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "⚡ Contributing to Ruby ⚡"</title>
+    <description>A list of all suggestions made for "⚡ Contributing to Ruby ⚡"</description>
+    <link>http://cfp.euruko2013.org/proposals/90</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/90.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos Alrighty! I wouldn&#39;t mind giving a full 30 minute talk on this in any case, so I&#39;ll leave the proposal up.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:48:27 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/90#suggestion_229</link>
+      <guid>http://cfp.euruko2013.org/proposals/90#suggestion_229</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>FYI we are going to have a separate section for lightning talks after the main lineup/schedule is ready.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:44:03 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/90#suggestion_228</link>
+      <guid>http://cfp.euruko2013.org/proposals/90#suggestion_228</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>This is meant to be a Lightning talk, I&#39;ve given a full 45 minute presentation on it before, but I think I can get across all the major talking points in a few minutes.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:39:43 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/90#suggestion_227</link>
+      <guid>http://cfp.euruko2013.org/proposals/90#suggestion_227</guid>
+    </item>
+  </channel>
+</rss>

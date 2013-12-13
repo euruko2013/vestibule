@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "The Web of tomorrow"</title>
+    <description>A list of all suggestions made for "The Web of tomorrow"</description>
+    <link>http://cfp.euruko2013.org/proposals/9</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/9.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>WebRTC specifically attempts to be an standard for communication within browsers but that just because both peers are webRTC-capable. So having a backend webRTC capable provides another level of communication and that&#39;s the main idea in the talk. Learn all the backend aspects that are necessary to make a large scale system... not just the call/answer demo.</p>
+
+<p>Thank you for your suggestions. I&#39;ll add an outline of the talk.</p>
+
+<p>Cheers.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:55:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/9#suggestion_73</link>
+      <guid>http://cfp.euruko2013.org/proposals/9#suggestion_73</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>The topic of the talk is certainly interesting: If we finally manage to get rid of old technology (think IE &lt; 10, Flash and the like), the &quot;web as we know it&quot; will probably gradually disappear.</p>
+
+<p>However, I&#39;m not clear how Ruby fits into the title of the talk: Ruby is a server-side (backend) language and unless efforts like Google&#39;s NaCl catch on quickly and globally, I don&#39;t see that this will change in the near future. And most, if not all, of the main web technology RFCs are language agnostic: One can use them with Ruby or whichever other language.</p>
+
+<p>That being said, I can imagine a talk without (forced) references to Ruby that focuses entirely on aspects of the future web. You would need to outline some of these aspects in your proposal, though, so I (and others) can determine whether or not they are interesting enough for a full talk.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:41:08 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/9#suggestion_70</link>
+      <guid>http://cfp.euruko2013.org/proposals/9#suggestion_70</guid>
+    </item>
+  </channel>
+</rss>

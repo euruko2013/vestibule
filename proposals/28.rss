@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Crossing the Refactoring Swamp"</title>
+    <description>A list of all suggestions made for "Crossing the Refactoring Swamp"</description>
+    <link>http://cfp.euruko2013.org/proposals/28</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/28.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>50% of my talk focuses on why&#39;s instead of the how&#39;s. That&#39;s what will make it different from YART:</p>
+
+<p>I talk about the real-world pressures to skip the refactoring pass. Why that&#39;s a terrible thing to do. It distorts velocity instead of enhancing it. </p>
+
+<p>I also explore where you might <em>want</em> to skip refactoring, where incurring technical debt is the more pragmatic choice. In the real world you need to be able to make that assessment.</p>
+
+<p>Finally, but this is where I got the idea in the first place, sometimes you inherit of pile of crap and you need to fix it to get the system to do something [else/better/more]. How do you get it done within the &quot;usual business day&quot; when there&#39;s so much pressure to keep delivering stories? Perhaps the PM won&#39;t give it high enough priority. Here&#39;s where the &quot;you find extra time where you can&quot; comes in. I certainly wouldn&#39;t advocate making an already long day, longer, as a general practice! </p>
+
+<p>The title and abstract are slowly getting out of date as I do rewrites (I&#39;m starting another pass after I write this response). It&#39;s becoming a contrapuntal in five movements. The baseline melody is the &quot;usual refactoring talk&quot; which I counter point with business and process arguments. </p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:07:15 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/28#suggestion_67</link>
+      <guid>http://cfp.euruko2013.org/proposals/28#suggestion_67</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>To me, this reads like Yet Another Refactoring Talk that have been omnipresent at (Ruby) conferences over the past few years. What will make this talk different from all the other talks at all the other (Ruby) conferences around the world?</p>
+
+<p>Moreover, there&#39;s a small thing that I find quite disconcerting: You write about how you did refactoring on your daily commute without interfering with client work or family time. While I would certainly never suggest to work on a 9-to-5 schedule, in my mind this sends the wrong signal: Clients and employers should be educated to see actual business value in refactoring if they&#39;re not seeing it already.</p>
+
+<p>That being said, let me state my suggestion again: Please outline what would make your refactoring talk different from all the other refactoring talks. If it really will be different, I might give it a +1.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:43:07 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/28#suggestion_60</link>
+      <guid>http://cfp.euruko2013.org/proposals/28#suggestion_60</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>All my examples are from open source ruby project that I maintain. The repository is on github.com</p>
+
+<p>I want to tell a &quot;war-story&quot; about the refactor. The story is the device to deliver several themes:</p>
+
+<ul>
+<li>Refactoring is a skill that must learned and practiced, daily.</li>
+<li>Refactoring is hard. It isn&#39;t the reward or the cherry on the cake for delivering a feature.</li>
+<li>Technical debt has real-world consequences that upper managers often miss.</li>
+<li>As developers we should not skip the refactor pass (&quot;later&quot; when later never comes).</li>
+<li>And yet, there a times when you should not spend time on refactoring; this must be a conscious choice with full knowledge of the costs and benefits.</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 15:41:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/28#suggestion_33</link>
+      <guid>http://cfp.euruko2013.org/proposals/28#suggestion_33</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Technical dept and refactoring is usually a daily conversation topic especially when trying to go faster and something drags you down. Are you planning to propose something specific in order to improve this situation, or just the same old rules of test and refactor before saying it&#39;s done? Also, is it going to be generic for software development or is it going to have a more ruby flavour?</p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 06:24:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/28#suggestion_29</link>
+      <guid>http://cfp.euruko2013.org/proposals/28#suggestion_29</guid>
+    </item>
+  </channel>
+</rss>

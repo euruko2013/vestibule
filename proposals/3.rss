@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Combat Ready Development"</title>
+    <description>A list of all suggestions made for "Combat Ready Development"</description>
+    <link>http://cfp.euruko2013.org/proposals/3</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/3.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>So I just realized that I got another appointment scheduled for the Euruko weekend, which I can&#39;t move. Sadly, that means I have to withdraw my proposal. :-(</p>
+
+<p>Sorry, guys. But thanks again for the feedback.</p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 16:58:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_21</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_21</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for your feedback, guys. It&#39;s nice to see that my proposal at least got your curiosity. Even though it&#39;s not quite easy to give a lot of detailed examples without spoiling too much of the talk&#39;s contents or giving away personal information (and thus killing the whole anonymity thing), I&#39;m gonna try and shed some light on the matter.</p>
+
+<p>First off, rest assured that this talk will contain some Ruby code. Of course there are some interdisciplinary topics in Combat Ready Development, but I&#39;m also gonna talk about testing, design patterns and premature optimization.</p>
+
+<p>Take optimization for an example: When training a martial art you&#39;d never try to improve your performance before getting the movement right. First you refine your technique, then you try to do it with more power. The same should be true for your code. Once you&#39;re sure what data a view should display you start to tweak your queries using clever scoping, adding indices, counter caches, handwritten SQL, etc.</p>
+
+<p>I could elaborate even more, but I hope I already got enough of your attention for you to vote for me. ;-)</p>
+
+<p>I&#39;m happy to answer more questions for you though. See you in Athens.</p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 09:15:38 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_16</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_16</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>To be clear...I really like this proposal - I imagine talking about how real ninjas can help you be a better developer :P. </p>
+
+<p>Ruby conferences have a tradition of including at least one non-Ruby or even non-programming talk in the program. And I&#39;m behind Peter in that a breadth of subjects makes a conference like Euruko all the more interesting.</p>
+
+<p>Outside views are all the more valuable if you can find the connecting thread that allows you to apply them in your field...in this case Ruby which is the connection I&#39;ve been looking for to make it even more attractive ;).</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 20:15:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_8</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_8</guid>
+    </item>
+    <item>
+      <title>Suggestion from Peter Szinek (@)</title>
+      <description type="html">
+        <![CDATA[<p>I disagree that talks should be about Ruby only. Yeah, there are obviously some hard limits (like giving a pure Python talk would be ridiculous :-) but during the few EuRuKos I have attended, I personally enjoyed interdisciplinary talks the most (a bit of Ruby, a bit of comparison with X (be it a language, concept, philosophy etc), a bit of applying it in real life (and not only involving the dev layer, but up all the way to sales etc. etc). I have also heard about node.js for the first time from the original author, who was (or so we tought) a mostly Ruby hacker at that time, at an EuRuKo (well that was a lot of years ago).</p>
+
+<p>Now I understand that some of use are pure hackers who&#39;d love to know about Ruby 2.0&#39;s hidden features, or that chef has a setting which makes it easy to set up a DB sharding in the cloud in 5 min etc. and don&#39;t care about any non-dev aspect, and that&#39;s fine (and I have quite a bit of that in myself too) - but I personally think these conferences are better for their breadth/width (overview, broad picture, trends etc.) rather than depth (going into a specific framework like cucumber, puppet, rails, or whatever in great detail).</p>
+
+<p>tl;dr: bring on the non-pure Ruby talks too! They will be sifted out anyway if the majority of the crowd doesn&#39;t like them. And don&#39;t be afraid, whatever you do, most of the talks will be pure Ruby anyways. Balance is good.</p>
+
+<p>That said... I could also use some details :)</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 08:55:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_6</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_6</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I would be totally interested though, in contrast to Vassillis. Still it would be very useful to give some examples of what you exactly mean.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 18:48:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_2</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_2</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>The Ruby community is a great one for abstractions and best practices and it&#39;s members are always open minded. 
+I personally love abstracting away the &quot;implementation details&quot; and find the subject fascinating...but Euruko is a Ruby conference and I don&#39;t get a Ruby connection from the abstract. </p>
+
+<p>Can you elaborate without giving too many spoilers?</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 13:57:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/3#suggestion_1</link>
+      <guid>http://cfp.euruko2013.org/proposals/3#suggestion_1</guid>
+    </item>
+  </channel>
+</rss>

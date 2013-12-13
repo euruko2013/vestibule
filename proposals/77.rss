@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Getting Started with “Style Guide Driven Development”"</title>
+    <description>A list of all suggestions made for "Getting Started with “Style Guide Driven Development”"</description>
+    <link>http://cfp.euruko2013.org/proposals/77</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/77.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@eirc K: I can do a quick intro, but 30 min is a bit short. I would rather talk about the concepts. Moving your legacy code is important and I will try to get it in. Thanks!</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:30:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/77#suggestion_209</link>
+      <guid>http://cfp.euruko2013.org/proposals/77#suggestion_209</guid>
+    </item>
+    <item>
+      <title>Suggestion from eirc K (@)</title>
+      <description type="html">
+        <![CDATA[<p>Are you planning on including info on using living styleguide generators/documentors such as <a href="http://warpspire.com/kss/styleguides/">KSS</a> or <a href="http://kaleistyleguide.com/">Kalei Style guide</a> and the example of Github&#39;s <a href="https://github.com/styleguide/css">styleguide</a>? They are all amazing but IMO currently lack a quick and easy way to get into them. The big question however (as always) is how you move your legacy code there :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:37:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/77#suggestion_201</link>
+      <guid>http://cfp.euruko2013.org/proposals/77#suggestion_201</guid>
+    </item>
+  </channel>
+</rss>

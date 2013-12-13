@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Virtual Machines: Down the Rabbit Hole"</title>
+    <description>A list of all suggestions made for "Virtual Machines: Down the Rabbit Hole"</description>
+    <link>http://cfp.euruko2013.org/proposals/58</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/58.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Since I&#39;ll be giving an overview of how the code ends up in the Virtual Machine, I&#39;ll use Ruby -&gt; the Rubinius instruction set as the most straightforward example -- nevertheless I&#39;m afraid there will be no time to talk about translating bytecodes between VMs or language development on the Rubinius VM. I&#39;d love to the latter as a separate talk though :)</p>
+
+<p>Regarding graphics primitives, I have no experience with that unfortunately! Another interesting thing to learn :D</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 12:33:00 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/58#suggestion_148</link>
+      <guid>http://cfp.euruko2013.org/proposals/58#suggestion_148</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Sounds exciting! </p>
+
+<p>Will you cover the topic of compiling other languages/bytecodes to Ruby CRuby or Rubinius bytecode? </p>
+
+<p>I&#39;d also love to hear someone touching the subject of bytecodes relating to graphics primitives such as &#39;bitblt&#39; so that it is not in the &#39;joke&#39; instruction category any longer :-)`?</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 12:26:54 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/58#suggestion_147</link>
+      <guid>http://cfp.euruko2013.org/proposals/58#suggestion_147</guid>
+    </item>
+  </channel>
+</rss>

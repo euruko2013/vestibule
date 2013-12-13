@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Functional Programming and Ruby"</title>
+    <description>A list of all suggestions made for "Functional Programming and Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/15</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/15.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>You seem to be taking the one-or-the-other approach between OO and FP, which would be against the grain of recent times (what with hybrid paradigm languages like Scala etc.). But we can debate the futility of labeling something &quot;better&quot; in the conference!</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 15:07:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/15#suggestion_109</link>
+      <guid>http://cfp.euruko2013.org/proposals/15#suggestion_109</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@John - Yea I won&#39;t have time to go very deep into Ruby internals, but I will quickly explain how the lazy enumeration feature works in 2.0. The point of looking at Ruby internals in this talk is mostly to explore whether or not Ruby is a functional language..</p>
+
+<p>@Punchy - Yes, I will talk about this - both by directly explaining what FP is what its benefits are, and through example. Of course, all of this is debatable; OO and FP are very different paradigms and not everyone agrees on which is better (to say the least!), or on whether they are compatible.</p>
+
+<p>Thanks for the suggestions, guys!</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 14:53:07 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/15#suggestion_108</link>
+      <guid>http://cfp.euruko2013.org/proposals/15#suggestion_108</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>You say &quot;we’ll explore how Ruby works internally&quot;, which parts do you intent to cover in 30mins+15mins QA?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:28:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/15#suggestion_50</link>
+      <guid>http://cfp.euruko2013.org/proposals/15#suggestion_50</guid>
+    </item>
+    <item>
+      <title>Suggestion from Punchy (@)</title>
+      <description type="html">
+        <![CDATA[<p>Will the presentation cover why Ruby needs a &quot;functional programming&quot; aspect? I.e. what are the benefits of using the functional programming paradigm with Ruby?</p>
+]]>
+      </description>
+      <pubDate>Sun, 31 Mar 2013 14:09:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/15#suggestion_15</link>
+      <guid>http://cfp.euruko2013.org/proposals/15#suggestion_15</guid>
+    </item>
+  </channel>
+</rss>

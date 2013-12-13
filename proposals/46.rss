@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Asynchronous network progamming with JRuby and Netty"</title>
+    <description>A list of all suggestions made for "Asynchronous network progamming with JRuby and Netty"</description>
+    <link>http://cfp.euruko2013.org/proposals/46</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/46.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;m totally covered from your response :) Would to care to update the description appropriately?</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 08:36:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/46#suggestion_116</link>
+      <guid>http://cfp.euruko2013.org/proposals/46#suggestion_116</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos</p>
+
+<p>Netty is widely used and is developed by Red Hat. For example the Play Framework (best Java/Scala framework IMO) is using Netty. The web framework I&#39;m making to simplify it in JRuby is usable in production but has not enough features yet to be used for any apps.
+I&#39;ve been using JRuby for a long time for various apps and scripts. I know Scala (and Akka), Clojure and asynchronous IO Java 7 features. I can answer hard questions about JRuby, asynchrony and concurrency in general (Go, Node.js, EventMachine...) but I can have a hard time on answering too-deep-technical questions about the JVM itself.</p>
+
+<p>@Vassilis</p>
+
+<p>There&#39;ll be a comparative performance for the real-world usage (a RESTful JSON API).</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 07:54:29 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/46#suggestion_113</link>
+      <guid>http://cfp.euruko2013.org/proposals/46#suggestion_113</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I really like this topic since it should be apparent that what node.js does is not limited to javascript, it is just easier to grasp due to the asynchronous way one works with javascript and I&#39;d very much like to see how a complicated and chatty Java library can be wrapped and simplified in Ruby.
+Any chance we&#39;ll get comparative performance numbers for a sample app?</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 06:23:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/46#suggestion_112</link>
+      <guid>http://cfp.euruko2013.org/proposals/46#suggestion_112</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Totally love the idea of this topic!!! There are a lot of times I feel constrained by the Ruby <strong>VM</strong> (not the language). </p>
+
+<p>My questions are:</p>
+
+<ul>
+<li>Are these techniques production ready or are they for side/toy projects and experimentation?</li>
+<li>How experienced are you with JRuby and the JVM in general? I mean, will you be able to answer some hard/too-deep-technical questions from the audience if they come up?</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 22:26:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/46#suggestion_111</link>
+      <guid>http://cfp.euruko2013.org/proposals/46#suggestion_111</guid>
+    </item>
+  </channel>
+</rss>

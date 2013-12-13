@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Achieving zomgscale with Celluloid and JRuby!"</title>
+    <description>A list of all suggestions made for "Achieving zomgscale with Celluloid and JRuby!"</description>
+    <link>http://cfp.euruko2013.org/proposals/5</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/5.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Hey John, thanks for commenting. You made some good points and I&#39;ll feed that back in to the proposal now.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 08:44:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/5#suggestion_82</link>
+      <guid>http://cfp.euruko2013.org/proposals/5#suggestion_82</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Is this talk going to show-off Celluloid on CRuby/YARV vs JRuby or will it address other VMs as well?</p>
+
+<p>There seem to be too much good stuff on your proposal which may be too for 30mins presentation + 15mins QA. Perhaps discussing about the GVL issue vs JRuby&#39;simplementation is unecessary if what you are trying to achieve is to present Celluloid and the actor-based way of programming in Ruby.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 13:09:21 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/5#suggestion_55</link>
+      <guid>http://cfp.euruko2013.org/proposals/5#suggestion_55</guid>
+    </item>
+  </channel>
+</rss>

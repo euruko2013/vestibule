@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Running and maintaining complex web infrastructures with Ruby and Bosh"</title>
+    <description>A list of all suggestions made for "Running and maintaining complex web infrastructures with Ruby and Bosh"</description>
+    <link>http://cfp.euruko2013.org/proposals/48</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/48.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Vassilis: You hit the nail on the head. It&#39;s about the deployment tool that makes it possible to manage a beast like CF.</p>
+]]>
+      </description>
+      <pubDate>Fri, 12 Apr 2013 09:46:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/48#suggestion_125</link>
+      <guid>http://cfp.euruko2013.org/proposals/48#suggestion_125</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>And it&#39;s on <a href="https://github.com/cloudfoundry/bosh">GitHub</a></p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 17:26:35 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/48#suggestion_124</link>
+      <guid>http://cfp.euruko2013.org/proposals/48#suggestion_124</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>No, he means the Cloudfoundry tools used for deployment and large scale release management.
+Pretty impressive beast I must say.</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 17:25:28 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/48#suggestion_123</link>
+      <guid>http://cfp.euruko2013.org/proposals/48#suggestion_123</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>What&#39;s Bosh? You mean this <a href="http://xmpp.org/extensions/xep-0124.html">http://xmpp.org/extensions/xep-0124.html</a> or something else?</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 17:09:13 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/48#suggestion_122</link>
+      <guid>http://cfp.euruko2013.org/proposals/48#suggestion_122</guid>
+    </item>
+  </channel>
+</rss>

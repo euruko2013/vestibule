@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Building your Testing Mindset with Ruby"</title>
+    <description>A list of all suggestions made for "Building your Testing Mindset with Ruby"</description>
+    <link>http://cfp.euruko2013.org/proposals/30</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/30.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Hi Max,</p>
+
+<p>Thanks for your feedback. I have to agree with you on being a very generic proposal. Maybe I didn&#39;t make clear that even by showing code, I won&#39;t be diving into any technicalities. Code will be a supporting material to present basic concepts that led to the creation of tools/techniques like unit testing, BDD, cucumber and selenium to name a few.</p>
+
+<p>You might not learn anything new, technically speaking, from this talk but you will have a deeper understanding on how certain things were designed/thought. </p>
+
+<p>For example, one of my favorites is the reasoning behind the word &quot;should&quot; being used in RSpec. So many other words you could possibly choose like ensure, enforce, verify, check but &quot;should&quot; was the one, following principles of NLP (<a href="http://en.wikipedia.org/wiki/Neuro-linguistic_programming">http://en.wikipedia.org/wiki/Neuro-linguistic_programming</a>), which says that if your code read well, you don&#39;t need to document that much. Added to that the fact the &quot;should&quot; is one word that triggers critical thinking, making you question things, know as &quot;begging the question&quot; (<a href="http://en.wikipedia.org/wiki/Begging_the_question">http://en.wikipedia.org/wiki/Begging_the_question</a>). </p>
+
+<p>But if you ask me, the biggest lesson from this talk (which I purposely didn&#39;t mention on this proposal) is that at the end of the day, &quot;test code&quot; is &quot;code&quot;. Unfortunately I cannot write it here, otherwise will be a &quot;spoiler&quot;. 
+;)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:51:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/30#suggestion_202</link>
+      <guid>http://cfp.euruko2013.org/proposals/30#suggestion_202</guid>
+    </item>
+    <item>
+      <title>Suggestion from Max Gorin (@nomadcoder)</title>
+      <description type="html">
+        <![CDATA[<blockquote>
+<p>On this talk, with plentiful of code, you will learn/understand the motivation behind the most common tools / techniques for testing in the Ruby world.</p>
+</blockquote>
+
+<p>Honestly, this doesn&#39;t make me excited, as I still can&#39;t imagine what would be new things I&#39;d learn about motivation behind those. Could you elaborate?</p>
+
+<p>About diving into the source code to understand the internals - nothing new here either. All in all, too generic a proposal.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 02:36:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/30#suggestion_191</link>
+      <guid>http://cfp.euruko2013.org/proposals/30#suggestion_191</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/61 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:25:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <title>Rails controller action and JS are like brothers now –  thanks to the gon gem - EuRuKo 2013</title>
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic' rel='stylesheet' type='text/css'>
+
+  <link href="../assets/application-90617de45bcd26abfa6bdfaac134730d.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="../assets/application-2a9aea2aed1eb0bb867ffb106dd5aa4c.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="FJdDFlfhkXPeqhLRMOS1KHbFyK63rQYcurVKDx7UeG0=" name="csrf-token" />
+      <link href="61.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+
+  <script type="text/javascript">
+    var _gas = _gas || [];
+    _gas.push(['_setAccount', 'UA-36907690-1']);
+    _gas.push(['_setDomainName', 'euruko2013.org']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_trackPageview']);
+
+    _gas.push(['_gasTrackForms']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    _gas.push(['_gasTrackMaxScroll']);
+    _gas.push(['_gasTrackDownloads']);
+    _gas.push(['_gasTrackYoutube', {force: true}]);
+    _gas.push(['_gasTrackVimeo', {force: true}]);
+    _gas.push(['_gasTrackMailto']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '../assets/gas-1aa20a83ef9dcebb42b69476d216da47.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</head>
+<body class="" data-spy="scroll" data-target="#sidenav">
+  <div class="container">
+    <div id="nav" class="row">
+      <ul class="centered clearfix">
+        <li><a class="ir" href="http://euruko2013.org/">EuRuKo 2013</a></li>
+          <li class="dropdown sign-in">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Sign in
+              <b class="caret"></b>
+            </a>
+            <div class="dropdown-menu">
+              <p><a href="../auth/google.html">Google</a></p>
+<p><a href="https://api.twitter.com/oauth/authenticate?oauth_token=dchXjVTr3lCO0s6kqt9qRclvu8PGPmhPPUqia6vaUo">Twitter</a></p>
+<p><a href="https://github.com/login/oauth/authorize?response_type=code&amp;client_id=3cffed970ad0c7e64529&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Fgithub%2Fcallback&amp;state=c5cc1ef30f5d71d637231eb3fe8868eaf5ae51c6372fbf18&amp;scope=user%3Aemail">Github</a></p>
+<p><a href="https://graph.facebook.com/oauth/authorize?response_type=code&amp;client_id=620349184658194&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Ffacebook%2Fcallback&amp;state=232f7efee33c4cd8f67a7a572362132d43f9066d5eeb08bb&amp;scope=email">Facebook</a></p>
+            </div>
+          </li>
+
+        <li><a href="http://euruko2013.org/blog/">Blog</a></li>
+        <li><a href="http://euruko2013.org/#contact">Contact</a></li>
+        <li  class="active"><a href="../proposals.html">Proposals</a></li>
+        <li><a href="http://euruko2013.org/#sponsors">Sponsors</a></li>
+        <li><a href="http://euruko2013.org/#venue">Venue</a></li>
+        <li><a href="http://euruko2013.org/#tickets">Tickets</a></li>
+        <li><a href="http://euruko2013.org/#speakers">Speakers</a></li>
+        <li><a href="http://euruko2013.org/#about">About</a></li>
+       </ul>
+    </div>
+
+
+      <section id="notices" class="row">
+          
+
+
+          <div class="alert alert-info">
+              <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+              <strong><em><a href="http://euruko2013.org/speakers">See the final speaker lineup!</a></em></strong>
+          </div>
+
+
+      </section>
+
+    <div id="cfp" class="row">
+      <div id="proposal" class="hero-unit">
+    <div class="proposal">
+        
+
+        <div class="span4 well pull-right">
+                <a href="../users/234.html">
+                <em><strong>Alexey Gaziev</strong></em>
+                <br>
+                <img alt="D52cc558a29696bb722492259f3f52de?d=retro" class="avatar pull-right" src="http://www.gravatar.com/avatar/d52cc558a29696bb722492259f3f52de?d=retro" />
+</a>
+            <div>
+                        Ranked <em><strong>74</strong></em> in Phase 1 with
+                        43 unique views,
+                        10 counted upvotes and
+                        12 counted downvotes
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+                <span class='st_googleplus' displayText='Google+'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_sharethis' displayText='ShareThis'></span>
+            </div>
+
+        </div>
+
+        <h1>
+            Rails controller action and JS are like brothers now –  thanks to the gon gem
+        </h1>
+
+        
+
+        <div class="description"><p>Did you ever want to integrate your Ruby code in controllers and JavaScript code in the frontend? Gon is here to help with seamless serialization, DRY code and live reloading. Organize your frontend the way it deserves!</p>
+
+<hr>
+
+<p>This talk will describe several strategies of transporting data between backend and frontend with the gon gem. It covers:</p>
+
+<ul>
+<li>  simple variable transfer</li>
+<li>  complex serialization with Rabl and JBuilder templates</li>
+<li>  transparent synchronization of JavaScript variables with their server-side counterparts</li>
+<li>  easy way to set initial or global data for whole application</li>
+<li>  real-life examples</li>
+<li>  nice mood with a set of nifty pics</li>
+<li>  and a bit of spice: Gon internals!</li>
+</ul>
+</div>
+
+
+        
+
+</div>    <br style="clear: both;">
+</div>
+
+<div>
+        <a href="60.html" class="btn btn-small" data-toggle="tooltip" title="Improving the community: contribution without commits">
+            <i class="icon-chevron-left"></i>
+            Previous
+</a>
+        <a href="62.html" class="btn btn-small pull-right" data-toggle="tooltip" title="Creating Games with WebGL and Three.js">
+            Next
+            <i class="icon-chevron-right"></i>
+</a></div>
+<br>
+
+<div id="suggestions">
+
+</div>
+
+
+
+    </div>
+  </div>
+  <footer>
+      <p><a href="http://euruko2013.org/codeofconduct">Code of conduct</a></p>
+      <p><a href="../about.html">About the CfP process</a></p>
+      <p><a href="../motivation.html">Motivations</a></p>
+  </footer>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "a4771cba-dcbc-4ec6-9e9c-4abbf20f04c1", doNotHash: false, doNotCopy: false, hashAddressBar: false, servicePopup:true});</script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-3.newrelic.com","df4a5bcdeb","1306772","cwkITEFfDQpdRRoTRF8WCUtSXBJJS19aFA==",57,237,new Date().getTime(),"","","","",""]);</script></body>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/61 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:25:37 GMT -->
+</html>

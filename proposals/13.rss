@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for " Concurrency, Caching, and CDNs"</title>
+    <description>A list of all suggestions made for " Concurrency, Caching, and CDNs"</description>
+    <link>http://cfp.euruko2013.org/proposals/13</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/13.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>You said &quot;In this talk we&#39;ll cover backend tips and frontend tricks that will help your Rails app go faster than ever&quot;. Can you please mention the areas which you will cover please so that people know what they will be voting for?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:32:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/13#suggestion_52</link>
+      <guid>http://cfp.euruko2013.org/proposals/13#suggestion_52</guid>
+    </item>
+    <item>
+      <title>Suggestion from Kostas Karachalios (@vrinek)</title>
+      <description type="html">
+        <![CDATA[<p>I agree with @Bamboo, the namedropping is in direct contrast to what this whole <strong>anonymous</strong> voting process is all about.</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 15:38:43 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/13#suggestion_25</link>
+      <guid>http://cfp.euruko2013.org/proposals/13#suggestion_25</guid>
+    </item>
+    <item>
+      <title>Suggestion from Bamboo (@b4mboo)</title>
+      <description type="html">
+        <![CDATA[<p>I like the topic and would like to see the talk make it to Euruko. </p>
+
+<p>That said, I don&#39;t think the namedropping was necessary. I can see why you did it, but it would have been easy to play along and stay anonymous.</p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 12:02:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/13#suggestion_19</link>
+      <guid>http://cfp.euruko2013.org/proposals/13#suggestion_19</guid>
+    </item>
+    <item>
+      <title>Suggestion from Agis Anastasopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Not enough details are given. Some more info would be nice.</p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 00:09:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/13#suggestion_11</link>
+      <guid>http://cfp.euruko2013.org/proposals/13#suggestion_11</guid>
+    </item>
+  </channel>
+</rss>

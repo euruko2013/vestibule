@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Curly — Refactoring the view layer"</title>
+    <description>A list of all suggestions made for "Curly — Refactoring the view layer"</description>
+    <link>http://cfp.euruko2013.org/proposals/16</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/16.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Clemens: Curly basically brings the paradigms from Mustache/Handlebars to Rails in a consistent and Rails-like manner. If you&#39;re deeply familiar with those technologies, the talk will mostly be an introduction to Curly. I expect that most people are not that versed in Mustache/Handlebars, though. Curly has brough real and very visible improvements to the app we&#39;re working on, and the split between structure and logic that Curly enforces enables all sorts of cool things, caching being one.</p>
+
+<p>Nikos: it will focus mostly on the underlying paradigms, and how classic OO techniques can be utilized to improve the view layer.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 11:52:36 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/16#suggestion_83</link>
+      <guid>http://cfp.euruko2013.org/proposals/16#suggestion_83</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>Curly looks to me like Mustache/Handlebars + enforced presenter pattern – which is, of course, a good thing but in my opinion neither very new, nor very difficult, nor very interesting.</p>
+
+<p>Why should we vote for this talk? What will be in the talk that can&#39;t be taken straight from the README? What will be new for conference attendees who are (deeply) familiar with Mustache/Handlebars and the presenter pattern?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:13:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/16#suggestion_69</link>
+      <guid>http://cfp.euruko2013.org/proposals/16#suggestion_69</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>So is this presentation a demo of curly or something more like explaining a different paradigm for the view layer?</p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 20:30:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/16#suggestion_13</link>
+      <guid>http://cfp.euruko2013.org/proposals/16#suggestion_13</guid>
+    </item>
+  </channel>
+</rss>

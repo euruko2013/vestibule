@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Fun with Ruby and Redis"</title>
+    <description>A list of all suggestions made for "Fun with Ruby and Redis"</description>
+    <link>http://cfp.euruko2013.org/proposals/72</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/72.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Xavier, Thanks for your suggestion. I was thinking of mentioning the Lua scripting possibilities when talking about the interesting problems you get into when distributing your application, but I am going to make it explicit now. Anyway, being a 30 minutes session I&#39;m not confident I can really go into much details, but it&#39;s definitely one of the highlights in the latests versions of Redis, so I will show at least a quick mention with a practical application.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 21:11:40 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/72#suggestion_189</link>
+      <guid>http://cfp.euruko2013.org/proposals/72#suggestion_189</guid>
+    </item>
+    <item>
+      <title>Suggestion from Xavier Noria (@fxn)</title>
+      <description type="html">
+        <![CDATA[<p>Are you going to cover the fact that you can script with Lua? I have found that&#39;s really interesting and solves many race conditions/transactions headaches, leaning towards and originally named &quot;skinny Ruby, fat Lua&quot; pattern.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 20:59:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/72#suggestion_188</link>
+      <guid>http://cfp.euruko2013.org/proposals/72#suggestion_188</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>If you dislike the proposal, I would appreciate a comment saying what you found uninteresting, so I can explain why this is relevant... or maybe I&#39;m just totally wrong and it doesn&#39;t make sense at all, it wouldn&#39;t be the first time it happens :)</p>
+
+<p>Thanks for your feedback!</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 20:39:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/72#suggestion_187</link>
+      <guid>http://cfp.euruko2013.org/proposals/72#suggestion_187</guid>
+    </item>
+  </channel>
+</rss>

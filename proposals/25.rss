@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "I &amp;lt;3 State"</title>
+    <description>A list of all suggestions made for "I &amp;lt;3 State"</description>
+    <link>http://cfp.euruko2013.org/proposals/25</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/25.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Josep M. Bach (@txus)</title>
+      <description type="html">
+        <![CDATA[<p>Can&#39;t wait to see this one! Would you explain whether this is the first time you try something like this in production, or if there have been previous experiences (and what problems did you encounter back then)? </p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 12:08:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/25#suggestion_146</link>
+      <guid>http://cfp.euruko2013.org/proposals/25#suggestion_146</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>thanks, good point, i&#39;ll try to clarify what i mean by &quot;stateful application&quot;.</p>
+]]>
+      </description>
+      <pubDate>Fri, 12 Apr 2013 16:37:06 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/25#suggestion_130</link>
+      <guid>http://cfp.euruko2013.org/proposals/25#suggestion_130</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>This sounds interesting:-)</p>
+
+<p>By a &quot;stateful application&quot; do you imply something Smalltalk-like where the app and its state is preserved in the same image at all times? Can you please elaborate a bit so that people understand what is this about (and thus are well informed when they vote for your proposal:-)?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:00:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/25#suggestion_44</link>
+      <guid>http://cfp.euruko2013.org/proposals/25#suggestion_44</guid>
+    </item>
+  </channel>
+</rss>

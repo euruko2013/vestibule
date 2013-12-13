@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Bug or Feature – the Ruby quiz game"</title>
+    <description>A list of all suggestions made for "Bug or Feature – the Ruby quiz game"</description>
+    <link>http://cfp.euruko2013.org/proposals/50</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/50.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>My 2 cents regarding the <em>interactivity</em>: go for the analog/physical way - it&#39;s always more fun in my eyes ;)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 04:58:01 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/50#suggestion_192</link>
+      <guid>http://cfp.euruko2013.org/proposals/50#suggestion_192</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for your comments and questions.</p>
+
+<p>This presentation is based on a talk I gave previously and the duration was about half an hour IIRC. While some of the questions are relatively quick to cover, others require more in-depth answers.</p>
+
+<p>What I did in the past was pretty simple: I distributed pairs of paper signs (red &amp; green) that people could raise whenever I asked if some intriguing code example was a bug or a feature.</p>
+
+<p>It was easy to estimate the feeling of the audience, but more importantly, I found that forcing people to think about a question and take a side is very engaging. It&#39;s also more fun when the answer comes, even if (or especially if) you guessed wrong.</p>
+
+<p>To avoid having people influenced by others, I was considering writing a simple app where people could select their answers privately using laptops/phones and the totals would only show when the answer is actually revealed. This is what you were suggesting, right? It would also make it easier to see how much better Rubyists do at this &quot;quiz&quot; than monkeys!</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 22:08:14 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/50#suggestion_190</link>
+      <guid>http://cfp.euruko2013.org/proposals/50#suggestion_190</guid>
+    </item>
+    <item>
+      <title>Suggestion from Fotos Georgiadis (@)</title>
+      <description type="html">
+        <![CDATA[<p>This looks like a fun presentation.</p>
+
+<p>Is it meant to be a 30 - 45 minute talk or are you willing to do this as a lightning talk as well?</p>
+
+<p>What do you mean by saying <em>interactive</em>? Can you give us a glimpse on how you are going to interact with the audience? Pass mics around and ask questions? Some other way? For example a web application, where you show a question and ask for a quick (3-5 seconds) answer?</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 19:35:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/50#suggestion_186</link>
+      <guid>http://cfp.euruko2013.org/proposals/50#suggestion_186</guid>
+    </item>
+  </channel>
+</rss>

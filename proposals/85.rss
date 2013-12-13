@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Thoughts on w̶e̶b̶ application development"</title>
+    <description>A list of all suggestions made for "Thoughts on w̶e̶b̶ application development"</description>
+    <link>http://cfp.euruko2013.org/proposals/85</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/85.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<blockquote>
+<p>I not convinced (anymore I should say) that Model-View-Controller is the best answer to “How you build your application?”.</p>
+</blockquote>
+
+<p>Exactly, worst case what actually I am facing is hearing programming languages, framework names, even worst versions. 
+Mvc is a way to build an application, I am not currently in the position to comment (soon to come) but I can use it as an example.</p>
+
+<blockquote>
+<p>I figure it&#39;s more important to actually manage the how, rather than the partitioning into the parts that MVC provides.</p>
+</blockquote>
+
+<p>MVC here is just by accident (&quot;Architecture the lost years&quot; by Robert Martin), but I will play its game to get my point out.</p>
+
+<blockquote>
+<p>Thinking about how Use Cases, stories and &#39;guiding principles&#39; (like the single responsibility or open/closed principles) might be more helpful to come up with good ways to build an application.</p>
+</blockquote>
+
+<p>There is big room to talk about good ways and would love this conversation. I want to get developers out of the main &quot;following the tutorial&quot; mentality when they build applications by spoiling them.</p>
+
+<blockquote>
+<p>That said: I may well be wrong. :-</p>
+</blockquote>
+
+<p>There is no such thing as a silver bullet. :)</p>
+
+<p>@Stephan, Thanks you for writing/reading the above.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:54:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_230</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_230</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>@author: what do you mean there is no &quot;edit&quot; button? On the proposal itself? Can you please contact me directly (nikosd at euruko2013 dot org)?</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 19:19:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_233</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_233</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>bad there is no preview and no edit button around :(</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:54:40 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_231</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_231</guid>
+    </item>
+    <item>
+      <title>Suggestion from Stephan (@)</title>
+      <description type="html">
+        <![CDATA[<p>I not convinced (anymore I should say) that Model-View-Controller is the best answer to “How you build your application?”.</p>
+
+<p>I figure it&#39;s more important to actually manage the <em>how</em>, rather than the partitioning into the parts that MVC provides. 
+Thinking about how Use Cases, stories and &#39;guiding principles&#39; (like the single responsibility or open/closed principles) might be more helpful to come up with good ways to build an application.</p>
+
+<p>That said: I may well be wrong. :-)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:34:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_226</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_226</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Feel free to include more information inside the proposal text if you want. I like the topic so, some more information inline would help everyone I guess!</p>
+
+<p>P.S.: As for your identity it will be revealed in less than one week anyway ;)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:32:06 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_210</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_210</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos Dimitrakopoulos Removed the link as requested. Does it look fine now?</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:28:15 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_208</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_208</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Can you please remove the link and update the proposal text without including personal information?</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:26:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85#suggestion_207</link>
+      <guid>http://cfp.euruko2013.org/proposals/85#suggestion_207</guid>
+    </item>
+  </channel>
+</rss>

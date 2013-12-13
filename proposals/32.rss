@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Rubymotion 1-2-3"</title>
+    <description>A list of all suggestions made for "Rubymotion 1-2-3"</description>
+    <link>http://cfp.euruko2013.org/proposals/32</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/32.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Paul Battley (@threedaymonk)</title>
+      <description type="html">
+        <![CDATA[<p>I wouldn&#39;t go so far as Nikos, but I do share some concerns about the exclusivity of this topic. You have to buy a Mac, an iOS device, XCode and RubyMotion (and, presumably, pay an Apple Developer fee) to join the RubyMotion club. I know that plenty of Ruby developers are using Macs and iPhones already, but for the rest this might not be very relevant.</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 12:31:56 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_160</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_160</guid>
+    </item>
+    <item>
+      <title>Suggestion from Kostas Karachalios (@vrinek)</title>
+      <description type="html">
+        <![CDATA[<p>I agree with Nikos in this one. Rubymotion is not open to even experiment with it <strong>unless you pay</strong>. This means that anyone who learns something new from this talk, will not be able to apply it <strong>unless they pay</strong>. This means that, even indirectly, this talk is just promoting a commercial product.</p>
+
+<p>Or at least, that&#39;s the way I view it :-)</p>
+]]>
+      </description>
+      <pubDate>Thu, 18 Apr 2013 11:03:36 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_156</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_156</guid>
+    </item>
+    <item>
+      <title>Suggestion from Florian Gilcher (@skade)</title>
+      <description type="html">
+        <![CDATA[<p>I don&#39;t see why &quot;paying&quot; is opposed to &quot;community spirit&quot;. The RubyMotion community is pretty strong in open source.</p>
+
+<p>Then again, basic introductions might not fit the spirit of the conference.</p>
+]]>
+      </description>
+      <pubDate>Tue, 16 Apr 2013 17:04:10 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_153</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_153</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>But still, you can&#39;t even access it without paying. I don&#39;t believe it fits with the EuRuKo theme:</p>
+
+<blockquote>
+<p>Proposals promoting a product, a company or a service will be discarded. - See more at: <a href="http://cfp.euruko2013.org/about#rules">http://cfp.euruko2013.org/about#rules</a></p>
+</blockquote>
+
+<p>as mentioned here: <a href="http://cfp.euruko2013.org/about#rules">http://cfp.euruko2013.org/about#rules</a>. </p>
+
+<p>It&#39;s almost the same as promoting using SQL Server with Ruby because it&#39;s faster (or whatever) than the X other SQL system. Related to ruby, but promoting a product or a service.</p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 23:13:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_38</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_38</guid>
+    </item>
+    <item>
+      <title>Suggestion from Jamie van Dyke (@fearoffish)</title>
+      <description type="html">
+        <![CDATA[<p>There&#39;s a huge community spirit, with lots of wrappers for Objective-C libraries, as well as a tool chain that&#39;s open source. Only part of it is commercial.</p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 23:09:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_37</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_37</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Even though RubyMotion is really hyped this period and looks a way more healthier alternative to Objective-C, I don&#39;t like the fact that&#39;s a commercial software with no community spirit in mind. </p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 23:05:34 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32#suggestion_35</link>
+      <guid>http://cfp.euruko2013.org/proposals/32#suggestion_35</guid>
+    </item>
+  </channel>
+</rss>

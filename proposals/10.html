@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/10 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:24:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <title>Immutability in Ruby - EuRuKo 2013</title>
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic' rel='stylesheet' type='text/css'>
+
+  <link href="../assets/application-90617de45bcd26abfa6bdfaac134730d.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="../assets/application-2a9aea2aed1eb0bb867ffb106dd5aa4c.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="FJdDFlfhkXPeqhLRMOS1KHbFyK63rQYcurVKDx7UeG0=" name="csrf-token" />
+      <link href="10.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+
+  <script type="text/javascript">
+    var _gas = _gas || [];
+    _gas.push(['_setAccount', 'UA-36907690-1']);
+    _gas.push(['_setDomainName', 'euruko2013.org']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_trackPageview']);
+
+    _gas.push(['_gasTrackForms']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    _gas.push(['_gasTrackMaxScroll']);
+    _gas.push(['_gasTrackDownloads']);
+    _gas.push(['_gasTrackYoutube', {force: true}]);
+    _gas.push(['_gasTrackVimeo', {force: true}]);
+    _gas.push(['_gasTrackMailto']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '../assets/gas-1aa20a83ef9dcebb42b69476d216da47.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</head>
+<body class="" data-spy="scroll" data-target="#sidenav">
+  <div class="container">
+    <div id="nav" class="row">
+      <ul class="centered clearfix">
+        <li><a class="ir" href="http://euruko2013.org/">EuRuKo 2013</a></li>
+          <li class="dropdown sign-in">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Sign in
+              <b class="caret"></b>
+            </a>
+            <div class="dropdown-menu">
+              <p><a href="../auth/google.html">Google</a></p>
+<p><a href="https://api.twitter.com/oauth/authenticate?oauth_token=dchXjVTr3lCO0s6kqt9qRclvu8PGPmhPPUqia6vaUo">Twitter</a></p>
+<p><a href="https://github.com/login/oauth/authorize?response_type=code&amp;client_id=3cffed970ad0c7e64529&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Fgithub%2Fcallback&amp;state=c5cc1ef30f5d71d637231eb3fe8868eaf5ae51c6372fbf18&amp;scope=user%3Aemail">Github</a></p>
+<p><a href="https://graph.facebook.com/oauth/authorize?response_type=code&amp;client_id=620349184658194&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Ffacebook%2Fcallback&amp;state=923ceb8805035a8f91226ba9a1e8222560dbad64278bd7b5&amp;scope=email">Facebook</a></p>
+            </div>
+          </li>
+
+        <li><a href="http://euruko2013.org/blog/">Blog</a></li>
+        <li><a href="http://euruko2013.org/#contact">Contact</a></li>
+        <li  class="active"><a href="../proposals.html">Proposals</a></li>
+        <li><a href="http://euruko2013.org/#sponsors">Sponsors</a></li>
+        <li><a href="http://euruko2013.org/#venue">Venue</a></li>
+        <li><a href="http://euruko2013.org/#tickets">Tickets</a></li>
+        <li><a href="http://euruko2013.org/#speakers">Speakers</a></li>
+        <li><a href="http://euruko2013.org/#about">About</a></li>
+       </ul>
+    </div>
+
+
+      <section id="notices" class="row">
+          
+
+
+          <div class="alert alert-info">
+              <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+              <strong><em><a href="http://euruko2013.org/speakers">See the final speaker lineup!</a></em></strong>
+          </div>
+
+
+      </section>
+
+    <div id="cfp" class="row">
+      <div id="proposal" class="hero-unit">
+    <div class="proposal">
+        
+
+        <div class="span4 well pull-right">
+                <a href="../users/39.html">
+                <em><strong>Tero Parviainen</strong></em>
+                <br>
+                <img alt="Profile_image?user_id=14157530&amp;size=bigger" class="avatar pull-right" src="https://api.twitter.com/1/users/profile_image?user_id=14157530&amp;size=bigger" />
+</a>
+            <div>
+                        Ranked <em><strong>14</strong></em> in Phase 2 with
+                        a weighted final score of 221
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+                <span class='st_googleplus' displayText='Google+'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_sharethis' displayText='ShareThis'></span>
+            </div>
+
+        </div>
+
+        <h1>
+            Immutability in Ruby
+        </h1>
+
+        
+
+        <div class="description"><p>What does the concept of immutable data mean from a Ruby programmer’s perspective?
+How is immutability supported in Ruby, and why should you care?</p>
+
+<p>Immutable objects and data structures have existed for a long time, but in the last few years they have started getting more attention than ever before. Partly this is because of the movement towards concurrency and parallelism. That&#39;s a very good reason, but there&#39;s also a more fundamental one: In this talk we will see how using immutable data can actually make code more readable and easier to reason about. We will also see how immutability is the most natural way to deal with many kinds of data - much more than what we are used to doing in Ruby.</p>
+
+<p>We&#39;ll discuss immutability the Ruby standard library, and which parts of it deal with mutation and which don&#39;t. We&#39;ll see how to become aware of operations that mutate objects in-place, and why the use of those should be minimised.</p>
+
+<p>We&#39;ll also discuss object-oriented domain models, and how immutability shows up in them. Immutable values have been discussed in many of the most important OO design books throughout the years, but their use in the field has been nowhere as common as it could have. In Ruby classes mutability is always the default, and to achieve immutability we always have to do some work. We will see how to do this effectively.</p>
+</div>
+
+
+        
+
+</div>    <br style="clear: both;">
+</div>
+
+<div>
+        <a href="9.html" class="btn btn-small" data-toggle="tooltip" title="The Web of tomorrow">
+            <i class="icon-chevron-left"></i>
+            Previous
+</a>
+        <a href="11.html" class="btn btn-small pull-right" data-toggle="tooltip" title="What should we take out of Ruby?">
+            Next
+            <i class="icon-chevron-right"></i>
+</a></div>
+<br>
+
+<div id="suggestions">
+        <h2>Suggestions</h2>
+
+        <ul class="suggestions">
+                <li class="suggestion" id="suggestion_118">
+                    <h5 class="author">
+                            <a href="../users/67.html"><img alt="D87dddeb300217e6c6574f5ffae220be?d=retro" class="avatar" src="http://www.gravatar.com/avatar/d87dddeb300217e6c6574f5ffae220be?d=retro" /></a>
+<a href="../users/67.html">Nikos Dimitrakopoulos</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>@Nicolas you have some good points but not the whole audience will be composed from beginners. </p>
+
+<p>I&#39;m totally interested in this topic, but indeed, providing some concrete examples with the direct benefits of immutability would be more than useful. </p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_117">
+                    <h5 class="author">
+                            <a href="../users/158.html"><img alt="Ca1e596b035117dc7c41b1d99469fe91?d=retro" class="avatar" src="http://www.gravatar.com/avatar/ca1e596b035117dc7c41b1d99469fe91?d=retro" /></a>
+<a href="../users/158.html">Nicolas Mérouze</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>I like this topic but feel like your proposal is too much theory and not enough practical use. Will you show a real-world application using immutability in Ruby?</p>
+
+<p>You explain that immutability is getting more attention because of concurrency and parallelism. Maybe you could explain why because some people may not understand the relation you made (I&#39;m thinking about beginners who can have a hard time understanding these concepts, especially if they began learning Ruby before any other language).</p>
+</section>
+
+</li>        </ul>
+
+</div>
+
+
+
+    </div>
+  </div>
+  <footer>
+      <p><a href="http://euruko2013.org/codeofconduct">Code of conduct</a></p>
+      <p><a href="../about.html">About the CfP process</a></p>
+      <p><a href="../motivation.html">Motivations</a></p>
+  </footer>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "a4771cba-dcbc-4ec6-9e9c-4abbf20f04c1", doNotHash: false, doNotCopy: false, hashAddressBar: false, servicePopup:true});</script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-3.newrelic.com","df4a5bcdeb","1306772","cwkITEFfDQpdRRoTRF8WCUtSXBJJS19aFA==",33,231,new Date().getTime(),"","","","",""]);</script></body>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/10 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:24:05 GMT -->
+</html>

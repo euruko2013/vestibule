@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Node.Js and Rails 4 - building an app twice"</title>
+    <description>A list of all suggestions made for "Node.Js and Rails 4 - building an app twice"</description>
+    <link>http://cfp.euruko2013.org/proposals/42</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/42.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>It&#39;s a pity you withdrew this... I hope the comments didn&#39;t look offensive. As said on my previous one. it does sound interesting as a topic- it just wasn&#39;t really well developed :(</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 20:49:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/42#suggestion_96</link>
+      <guid>http://cfp.euruko2013.org/proposals/42#suggestion_96</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hello there,</p>
+
+<p>the topic is really interesting to me in general but I believe your proposal needs some expansion. What exactly are you going to talk about?</p>
+
+<ul>
+<li>Is it going to be a rails vs node talk?</li>
+<li>Is it going to be how to use framework and language A for some parts and framework and language B for some other parts?</li>
+</ul>
+
+<p>Also keep in mind that not everyone in the audience is a web developer - I am :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 06:29:32 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/42#suggestion_91</link>
+      <guid>http://cfp.euruko2013.org/proposals/42#suggestion_91</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>You really need to add some detail or something that describes what you will say in 30 minutes in the talk. You namedrop 3 subjects that each can have their own conference so a single line description really does not say much</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 06:29:03 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/42#suggestion_90</link>
+      <guid>http://cfp.euruko2013.org/proposals/42#suggestion_90</guid>
+    </item>
+  </channel>
+</rss>

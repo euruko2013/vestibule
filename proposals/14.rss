@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Millions of Apps: What we&amp;#x27;ve Learned"</title>
+    <description>A list of all suggestions made for "Millions of Apps: What we&amp;#x27;ve Learned"</description>
+    <link>http://cfp.euruko2013.org/proposals/14</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/14.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I love the topic and the description but I would really appreciate it if we could get some feedback from the proposal author regarding @John&#39;s question: &quot;Are these patterns Heroku-specific only&quot;?</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 09:19:06 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14#suggestion_135</link>
+      <guid>http://cfp.euruko2013.org/proposals/14#suggestion_135</guid>
+    </item>
+    <item>
+      <title>Suggestion from Daniel Lobato García (@eLobato)</title>
+      <description type="html">
+        <![CDATA[<p>Honestly I liked the proposal, but not the namedrop.. it goes against the spirit of this CFP. </p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 20:53:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14#suggestion_79</link>
+      <guid>http://cfp.euruko2013.org/proposals/14#suggestion_79</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>...and will such &quot;patterns&quot; be Heroku-specific only?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:30:27 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14#suggestion_51</link>
+      <guid>http://cfp.euruko2013.org/proposals/14#suggestion_51</guid>
+    </item>
+    <item>
+      <title>Suggestion from Bamboo (@b4mboo)</title>
+      <description type="html">
+        <![CDATA[<p>@svs: Most likely. ;-)</p>
+
+<p>I&#39;m gonna stick with what I wrote in reply to the other talk (which dropped the same company name): The topic and description alone would have been sufficient to get me interested.</p>
+
+<p>So you got my vote (as did the other proposal), even though I don&#39;t want to see both of them.</p>
+
+<p>I&#39;d still appreciate it, if you could remove the company name. I really liked the anonymous approach Euruko was going for. This feels a bit like a cheap shot.</p>
+]]>
+      </description>
+      <pubDate>Mon, 01 Apr 2013 12:27:23 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14#suggestion_20</link>
+      <guid>http://cfp.euruko2013.org/proposals/14#suggestion_20</guid>
+    </item>
+    <item>
+      <title>Suggestion from Siddharth Sharma (@)</title>
+      <description type="html">
+        <![CDATA[<p>Would this talk largely be covering the same ground as <a href="http://12factor.net">http://12factor.net</a>?</p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 02:32:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14#suggestion_12</link>
+      <guid>http://cfp.euruko2013.org/proposals/14#suggestion_12</guid>
+    </item>
+  </channel>
+</rss>

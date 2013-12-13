@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "It&amp;#x27;s all about the Motion"</title>
+    <description>A list of all suggestions made for "It&amp;#x27;s all about the Motion"</description>
+    <link>http://cfp.euruko2013.org/proposals/23</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/23.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Paul Battley (@threedaymonk)</title>
+      <description type="html">
+        <![CDATA[<p>I share some concerns about the exclusivity and general relevance of RubyMotion talks. If you&#39;re not interested in buying into the whole Apple ecosystem (Mac + iDevice + development tools, €2000+), this might not be very useful or interesting.</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 12:34:40 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/23#suggestion_161</link>
+      <guid>http://cfp.euruko2013.org/proposals/23#suggestion_161</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>As also said in <a href="http://cfp.euruko2013.org/proposals/32">http://cfp.euruko2013.org/proposals/32</a>, I don&#39;t like the fact that RubyMotion is a commercial software with no community spirit in mind. Thus I&#39;m not sure it fits really well with the EuRuKo spirit.</p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 23:07:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/23#suggestion_36</link>
+      <guid>http://cfp.euruko2013.org/proposals/23#suggestion_36</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Pushing Mongoid to the limit"</title>
+    <description>A list of all suggestions made for "Pushing Mongoid to the limit"</description>
+    <link>http://cfp.euruko2013.org/proposals/43</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/43.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks! </p>
+
+<p>This talk is actually supposed to be only in Ruby realm! I  have changed the intro to ensure the Ruby aspect is highlighted and not Rails.</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 10:22:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/43#suggestion_93</link>
+      <guid>http://cfp.euruko2013.org/proposals/43#suggestion_93</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Very well written outline - kudos! My suggestion would also be to relate it as much as you can with ruby and not only rails.</p>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 09:42:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/43#suggestion_92</link>
+      <guid>http://cfp.euruko2013.org/proposals/43#suggestion_92</guid>
+    </item>
+  </channel>
+</rss>

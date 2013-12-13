@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Ruby, Rock and Roll"</title>
+    <description>A list of all suggestions made for "Ruby, Rock and Roll"</description>
+    <link>http://cfp.euruko2013.org/proposals/22</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/22.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>There are a number of potential ways Muse can be used:</p>
+
+<ul>
+<li>To generate personalized ring-tones by converting certain text, image or other data. For example, a certain tweet or a short paragraph can be converted into a ring-tone. This could be an interesting business idea</li>
+<li>To generate background music for various purposes including games (instead of repeating the same music, generate music according to the user, or a randomly generated level, according to the situation)</li>
+<li>To generate personalized music which is copyright free. For example, someone can create free background music for an event, personalized for that purpose. While this doesn&#39;t exactly create Mozart-level music, with sufficiently good algorithms and knowledge of music theory, reasonably decent music should be able to be generated</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:08:35 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/22#suggestion_68</link>
+      <guid>http://cfp.euruko2013.org/proposals/22#suggestion_68</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>While I really love having fun with programming (e.g. Arduino, MindStorms etc.), I also really like conference talks to have at least a little bit of practical value. Are there any &quot;real world applications&quot; of the topics you&#39;ll discuss in your talk? If yes, could you please outline them?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:57:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/22#suggestion_63</link>
+      <guid>http://cfp.euruko2013.org/proposals/22#suggestion_63</guid>
+    </item>
+  </channel>
+</rss>

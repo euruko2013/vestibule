@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/82 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:23:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <title>Down the rb_newobj() Rabbit Hole: Garbage Collection and a Glimpse into Ruby&#x27;s Future - EuRuKo 2013</title>
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic' rel='stylesheet' type='text/css'>
+
+  <link href="../assets/application-90617de45bcd26abfa6bdfaac134730d.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="../assets/application-2a9aea2aed1eb0bb867ffb106dd5aa4c.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="FJdDFlfhkXPeqhLRMOS1KHbFyK63rQYcurVKDx7UeG0=" name="csrf-token" />
+      <link href="82.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+
+  <script type="text/javascript">
+    var _gas = _gas || [];
+    _gas.push(['_setAccount', 'UA-36907690-1']);
+    _gas.push(['_setDomainName', 'euruko2013.org']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_trackPageview']);
+
+    _gas.push(['_gasTrackForms']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    _gas.push(['_gasTrackMaxScroll']);
+    _gas.push(['_gasTrackDownloads']);
+    _gas.push(['_gasTrackYoutube', {force: true}]);
+    _gas.push(['_gasTrackVimeo', {force: true}]);
+    _gas.push(['_gasTrackMailto']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '../assets/gas-1aa20a83ef9dcebb42b69476d216da47.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</head>
+<body class="" data-spy="scroll" data-target="#sidenav">
+  <div class="container">
+    <div id="nav" class="row">
+      <ul class="centered clearfix">
+        <li><a class="ir" href="http://euruko2013.org/">EuRuKo 2013</a></li>
+          <li class="dropdown sign-in">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Sign in
+              <b class="caret"></b>
+            </a>
+            <div class="dropdown-menu">
+              <p><a href="../auth/google.html">Google</a></p>
+<p><a href="https://api.twitter.com/oauth/authenticate?oauth_token=dchXjVTr3lCO0s6kqt9qRclvu8PGPmhPPUqia6vaUo">Twitter</a></p>
+<p><a href="https://github.com/login/oauth/authorize?response_type=code&amp;client_id=3cffed970ad0c7e64529&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Fgithub%2Fcallback&amp;state=c5cc1ef30f5d71d637231eb3fe8868eaf5ae51c6372fbf18&amp;scope=user%3Aemail">Github</a></p>
+<p><a href="https://graph.facebook.com/oauth/authorize?response_type=code&amp;client_id=620349184658194&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Ffacebook%2Fcallback&amp;state=efd739653d8a6111e6e75d8ba5df9e47d5a1eb1be2168ded&amp;scope=email">Facebook</a></p>
+            </div>
+          </li>
+
+        <li><a href="http://euruko2013.org/blog/">Blog</a></li>
+        <li><a href="http://euruko2013.org/#contact">Contact</a></li>
+        <li  class="active"><a href="../proposals.html">Proposals</a></li>
+        <li><a href="http://euruko2013.org/#sponsors">Sponsors</a></li>
+        <li><a href="http://euruko2013.org/#venue">Venue</a></li>
+        <li><a href="http://euruko2013.org/#tickets">Tickets</a></li>
+        <li><a href="http://euruko2013.org/#speakers">Speakers</a></li>
+        <li><a href="http://euruko2013.org/#about">About</a></li>
+       </ul>
+    </div>
+
+
+      <section id="notices" class="row">
+          
+
+
+          <div class="alert alert-info">
+              <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+              <strong><em><a href="http://euruko2013.org/speakers">See the final speaker lineup!</a></em></strong>
+          </div>
+
+
+      </section>
+
+    <div id="cfp" class="row">
+      <div id="proposal" class="hero-unit">
+    <div class="proposal">
+        
+
+        <div class="span4 well pull-right">
+                <a href="../users/149.html">
+                <em><strong>Chris Kelly</strong></em>
+                <br>
+                <img alt="Profile_image?user_id=41456770&amp;size=bigger" class="avatar pull-right" src="https://api.twitter.com/1/users/profile_image?user_id=41456770&amp;size=bigger" />
+</a>
+            <div>
+                        Ranked <em><strong>10</strong></em> in Phase 2 with
+                        a weighted final score of 242
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+                <span class='st_googleplus' displayText='Google+'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_sharethis' displayText='ShareThis'></span>
+            </div>
+
+                <div>
+                    <h4>About the author</h4>
+                    <p><p>Like the ancient civilizations uncovered by anthropologists, the tools we use say something about who we are. Chris joyfully uses Ruby every day. He believes that flourishing is the key to happiness, servers are an anachronism, and the person that will create SkyNet has already been born. At <a href="http://newrelic.com/">New Relic</a> he is a Happiness Engineer, where they let him work on things that makes someone’s day better. His stuff lives in San Francisco where he visits it from time to time. Chris <a href="https://twitter.com/amateurhuman">tweets</a> occasionally, speaks often, and drinks coffee in between.</p>
+</p>
+                </div>
+        </div>
+
+        <h1>
+            Down the rb_newobj() Rabbit Hole: Garbage Collection and a Glimpse into Ruby&#x27;s Future
+        </h1>
+
+        <span class="label label-success">Confirmed!</span>
+
+        <div class="description"><p>Garbage collection is one of the pillars of Ruby&#39;s performance story, but getting into the inner workings of MRI&#39;s garbage collector is a bit hairy. If you want to explore the garbage collector then you&#39;re going to have to get your hands deep into C code.</p>
+
+<p>We&#39;re going to take a walk through the C internals from Foo.new through garbage collection in Ruby&#39;s MRI. We’ll examine the idioms and optimizations in the C source and leave you feeling comfortable to explore the code yourself.</p>
+
+<p>At the end of the rb_newobj() rabbit hole is a whole world of garbage collection. Major changes have been made in MRI&#39;s garbage collector from Ruby 1.8 through 2.0: changes intended to make Ruby more performant, changes that can capitalize on MRI&#39;s roots in UNIX. From mark-and-sweep to copy-on-write and bitmap marking, we&#39;ll see what the future of Ruby performance might look like by peering through the window of the garbage collector. </p>
+</div>
+
+
+        
+
+</div>    <br style="clear: both;">
+</div>
+
+<div>
+        <a href="81.html" class="btn btn-small" data-toggle="tooltip" title="Broadening horizons">
+            <i class="icon-chevron-left"></i>
+            Previous
+</a>
+        <a href="83.html" class="btn btn-small pull-right" data-toggle="tooltip" title="Object-Oriented Lessons for a Service-Oriented World">
+            Next
+            <i class="icon-chevron-right"></i>
+</a></div>
+<br>
+
+<div id="suggestions">
+        <h2>Suggestions</h2>
+
+        <ul class="suggestions">
+                <li class="suggestion" id="suggestion_216">
+                    <h5 class="author">
+                            <a href="../users/315.html"><img alt="7fe945668a4fc098e886e20dea71d2ee?d=retro" class="avatar" src="http://www.gravatar.com/avatar/7fe945668a4fc098e886e20dea71d2ee?d=retro" /></a>
+<a href="../users/315.html">Zachary Scott</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>Yes!!!</p>
+
+<p>I wish I could vote for this more than once!</p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_206">
+                    <h5 class="author">
+                            <a href="../users/78.html"><img alt="9287985f53b36866bb3c639a6aedc867?d=retro" class="avatar" src="http://www.gravatar.com/avatar/9287985f53b36866bb3c639a6aedc867?d=retro" /></a>
+<a href="../users/78.html">John Pagonis</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>Jan&#39;s suggestion was what I was thinking as well.</p>
+
+<p>This looks really  promising :-)</p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_204">
+                    <h5 class="author">
+                            <a href="../users/318.html"><img alt="Profile_image?user_id=115406098&amp;size=bigger" class="avatar" src="https://api.twitter.com/1/users/profile_image?user_id=115406098&amp;size=bigger" /></a>
+<a href="../users/318.html">Jan Stępień</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>It would be great to see a short overview of approaches to garbage collection in other Ruby implementations and a comparison with MRI&#39;s GC, if time allows.</p>
+</section>
+
+</li>        </ul>
+
+</div>
+
+
+
+    </div>
+  </div>
+  <footer>
+      <p><a href="http://euruko2013.org/codeofconduct">Code of conduct</a></p>
+      <p><a href="../about.html">About the CfP process</a></p>
+      <p><a href="../motivation.html">Motivations</a></p>
+  </footer>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "a4771cba-dcbc-4ec6-9e9c-4abbf20f04c1", doNotHash: false, doNotCopy: false, hashAddressBar: false, servicePopup:true});</script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-3.newrelic.com","df4a5bcdeb","1306772","cwkITEFfDQpdRRoTRF8WCUtSXBJJS19aFA==",69,78,new Date().getTime(),"","","","",""]);</script></body>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/82 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:23:52 GMT -->
+</html>

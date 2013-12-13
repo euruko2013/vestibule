@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/12 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:24:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <title>Dissecting Ruby with Ruby - EuRuKo 2013</title>
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic' rel='stylesheet' type='text/css'>
+
+  <link href="../assets/application-90617de45bcd26abfa6bdfaac134730d.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="../assets/application-2a9aea2aed1eb0bb867ffb106dd5aa4c.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="FJdDFlfhkXPeqhLRMOS1KHbFyK63rQYcurVKDx7UeG0=" name="csrf-token" />
+      <link href="12.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+
+  <script type="text/javascript">
+    var _gas = _gas || [];
+    _gas.push(['_setAccount', 'UA-36907690-1']);
+    _gas.push(['_setDomainName', 'euruko2013.org']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_trackPageview']);
+
+    _gas.push(['_gasTrackForms']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    _gas.push(['_gasTrackMaxScroll']);
+    _gas.push(['_gasTrackDownloads']);
+    _gas.push(['_gasTrackYoutube', {force: true}]);
+    _gas.push(['_gasTrackVimeo', {force: true}]);
+    _gas.push(['_gasTrackMailto']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = '../assets/gas-1aa20a83ef9dcebb42b69476d216da47.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</head>
+<body class="" data-spy="scroll" data-target="#sidenav">
+  <div class="container">
+    <div id="nav" class="row">
+      <ul class="centered clearfix">
+        <li><a class="ir" href="http://euruko2013.org/">EuRuKo 2013</a></li>
+          <li class="dropdown sign-in">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Sign in
+              <b class="caret"></b>
+            </a>
+            <div class="dropdown-menu">
+              <p><a href="../auth/google.html">Google</a></p>
+<p><a href="https://api.twitter.com/oauth/authenticate?oauth_token=dchXjVTr3lCO0s6kqt9qRclvu8PGPmhPPUqia6vaUo">Twitter</a></p>
+<p><a href="https://github.com/login/oauth/authorize?response_type=code&amp;client_id=3cffed970ad0c7e64529&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Fgithub%2Fcallback&amp;state=c5cc1ef30f5d71d637231eb3fe8868eaf5ae51c6372fbf18&amp;scope=user%3Aemail">Github</a></p>
+<p><a href="https://graph.facebook.com/oauth/authorize?response_type=code&amp;client_id=620349184658194&amp;redirect_uri=http%3A%2F%2Fcfp.euruko2013.org%2Fauth%2Ffacebook%2Fcallback&amp;state=8022b7f9cebe19d7cc6971eef99f33c4a612917687ec3700&amp;scope=email">Facebook</a></p>
+            </div>
+          </li>
+
+        <li><a href="http://euruko2013.org/blog/">Blog</a></li>
+        <li><a href="http://euruko2013.org/#contact">Contact</a></li>
+        <li  class="active"><a href="../proposals.html">Proposals</a></li>
+        <li><a href="http://euruko2013.org/#sponsors">Sponsors</a></li>
+        <li><a href="http://euruko2013.org/#venue">Venue</a></li>
+        <li><a href="http://euruko2013.org/#tickets">Tickets</a></li>
+        <li><a href="http://euruko2013.org/#speakers">Speakers</a></li>
+        <li><a href="http://euruko2013.org/#about">About</a></li>
+       </ul>
+    </div>
+
+
+      <section id="notices" class="row">
+          
+
+
+          <div class="alert alert-info">
+              <i class="icon-bullhorn"></i>&nbsp;&nbsp;
+              <strong><em><a href="http://euruko2013.org/speakers">See the final speaker lineup!</a></em></strong>
+          </div>
+
+
+      </section>
+
+    <div id="cfp" class="row">
+      <div id="proposal" class="hero-unit">
+    <div class="proposal">
+        
+
+        <div class="span4 well pull-right">
+                <a href="../users/55.html">
+                <em><strong>Richard Schneeman</strong></em>
+                <br>
+                <img alt="Profile_image?user_id=23621187&amp;size=bigger" class="avatar pull-right" src="https://api.twitter.com/1/users/profile_image?user_id=23621187&amp;size=bigger" />
+</a>
+            <div>
+                        Ranked <em><strong>17</strong></em> in Phase 2 with
+                        a weighted final score of 197
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span class='st_twitter' st_via="euruko" displayText='Tweet'></span>
+                <span class='st_googleplus' displayText='Google+'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_sharethis' displayText='ShareThis'></span>
+            </div>
+
+        </div>
+
+        <h1>
+            Dissecting Ruby with Ruby
+        </h1>
+
+        
+
+        <div class="description"><h2>Description</h2>
+
+<p>Underneath the beautiful veneer of our Ruby libraries lies a twisted tangle of writhing guts. Maybe you&#39;re curious how the pieces fit together or maybe you&#39;re tracking down a bug, either way it&#39;s easy to get lost in the blood and bile that ties our code together. In this talk you&#39;ll learn how to use simple and sharp Ruby tools to slice into large libraries with surgical precision. We&#39;ll do some live hacking on Rails on the stage and cover useful code probing techniques. Turn your impossible bugs into pull requests, and level up your programming skills by Dissecting Ruby with Ruby.</p>
+
+<h2>Expect:</h2>
+
+<ul>
+<li>Low level Ruby commands</li>
+<li>Real world examples</li>
+<li>To walk away with a better understanding of how Ruby works</li>
+<li>To be a better Ruby community member and coder</li>
+</ul>
+</div>
+
+
+        
+
+</div>    <br style="clear: both;">
+</div>
+
+<div>
+        <a href="11.html" class="btn btn-small" data-toggle="tooltip" title="What should we take out of Ruby?">
+            <i class="icon-chevron-left"></i>
+            Previous
+</a>
+        <a href="13.html" class="btn btn-small pull-right" data-toggle="tooltip" title=" Concurrency, Caching, and CDNs">
+            Next
+            <i class="icon-chevron-right"></i>
+</a></div>
+<br>
+
+<div id="suggestions">
+        <h2>Suggestions</h2>
+
+        <ul class="suggestions">
+                <li class="suggestion" id="suggestion_217">
+                    <h5 class="author">
+                            <a href="../users/315.html"><img alt="7fe945668a4fc098e886e20dea71d2ee?d=retro" class="avatar" src="http://www.gravatar.com/avatar/7fe945668a4fc098e886e20dea71d2ee?d=retro" /></a>
+<a href="../users/315.html">Zachary Scott</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>You should also checkout Kernel#caller_locations via Thread::Backtrace::Location</p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_134">
+                    <h5 class="author">
+                            <a href="../users/67.html"><img alt="D87dddeb300217e6c6574f5ffae220be?d=retro" class="avatar" src="http://www.gravatar.com/avatar/d87dddeb300217e6c6574f5ffae220be?d=retro" /></a>
+<a href="../users/67.html">Nikos Dimitrakopoulos</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>Without saying whether this talk sounds interesting or not, I want to ask a stupid question: isn&#39;t a debugger sufficient enough to trace such problems efficiently enough? I&#39;m asking cause I have hunted in the past a lot of such bugs from 3rd party libraries with the debugger and even though it was cumbersome it did work out. Are you going to propose a better alternative or a something complimentary?</p>
+</section>
+
+</li>                <li class="suggestion alert alert-block alert-info" id="suggestion_24">
+                    <h5 class="author">
+                                The proposal author responded
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>Author here - We start with a problem, something we want to fix in a huge library (Rails) but we don&#39;t know where to find the offending code. To get to it we use <code>Kernel#caller</code>, <code>Method#source_location</code>, <code>Kernel#ancestors</code>, <code>Object#method</code>, <code>Module#instance_method</code> and a few more to really dig into the library. These are all standard Ruby functions, but with them you&#39;ll see how easy it is to navigate any code base. This is exactly the process that new to intermediate devs need to learn before they can contribute and patch large libraries. I gave the talk in Uruguay, and it was <strong>VERY</strong> well received. It is technical, fun, and entertaining. </p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_23">
+                    <h5 class="author">
+                            <a href="../users/83.html"><img alt="1bb0c9acde5c36e515da3d0da95ea748?d=retro" class="avatar" src="http://www.gravatar.com/avatar/1bb0c9acde5c36e515da3d0da95ea748?d=retro" /></a>
+<a href="../users/83.html">John Pagonis</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>The title looks very interesting! </p>
+
+<p>However the proposal abstract needs some more information. Can you please clarify further?</p>
+</section>
+
+</li>                <li class="suggestion" id="suggestion_22">
+                    <h5 class="author">
+                            <a href="../users/70.html"><img alt="5a429759e7d90e2d27d94b28e1b63cee?d=retro" class="avatar" src="http://www.gravatar.com/avatar/5a429759e7d90e2d27d94b28e1b63cee?d=retro" /></a>
+<a href="../users/70.html">Albert Llop</a>
+ suggested
+                        <span class="age">8 months ago</span>
+                        
+                    </h5>
+
+                    <section class="body"><p>Seems a very generic presentation. What do you mean by &quot;simple and sharp ruby tools&quot;? I don&#39;t know what to expect from it.</p>
+
+<p>I&#39;d suggest you give some examples of techniques so that I can then think &quot;Oh, I&#39;d like to learn that&quot;.</p>
+</section>
+
+</li>        </ul>
+
+</div>
+
+
+
+    </div>
+  </div>
+  <footer>
+      <p><a href="http://euruko2013.org/codeofconduct">Code of conduct</a></p>
+      <p><a href="../about.html">About the CfP process</a></p>
+      <p><a href="../motivation.html">Motivations</a></p>
+  </footer>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "a4771cba-dcbc-4ec6-9e9c-4abbf20f04c1", doNotHash: false, doNotCopy: false, hashAddressBar: false, servicePopup:true});</script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-3.newrelic.com","df4a5bcdeb","1306772","cwkITEFfDQpdRRoTRF8WCUtSXBJJS19aFA==",76,171,new Date().getTime(),"","","","",""]);</script></body>
+
+<!-- Mirrored from cfp.euruko2013.org/proposals/12 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 11 Dec 2013 22:24:16 GMT -->
+</html>

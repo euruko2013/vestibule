@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "I See Your 127.32+, A Tale of Rationals"</title>
+    <description>A list of all suggestions made for "I See Your 127.32+, A Tale of Rationals"</description>
+    <link>http://cfp.euruko2013.org/proposals/70</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/70.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Interesting and always relevant topic, and I agree with Fotos, about the title :)</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 14:17:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/70#suggestion_185</link>
+      <guid>http://cfp.euruko2013.org/proposals/70#suggestion_185</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Glad you find it interesting! It certainly requires discipline.</p>
+
+<p>Yeah, it is going to be more radical. The money gem uses BigDecimal for infinite precision in Ruby, while this solution uses actual rational numbers across all layers. No float of any kind is involved.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 10:48:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/70#suggestion_184</link>
+      <guid>http://cfp.euruko2013.org/proposals/70#suggestion_184</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Rizopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>I really like this type of subjects I must say. Perennial problems like the one where infinite precision is required in a system with finite significant places and the pitfalls this brings especially when dealing with money are not &quot;solved&quot;.
+Ruby&#39;s automagical number handling obscures the complexity and there are some nasty nasty pitfalls.
+Would definitely like to watch this.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 10:47:03 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/70#suggestion_183</link>
+      <guid>http://cfp.euruko2013.org/proposals/70#suggestion_183</guid>
+    </item>
+    <item>
+      <title>Suggestion from Fotos Georgiadis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Having dealt with money in an international setting, I say this is a really nice topic. In general handling I18n issues in large applications is difficult, needs experience and lots of discipline.</p>
+
+<p>I guess this is going to talk a bit about the money gem, right? Or are you going to show something different / more radical?</p>
+
+<p>Tongue in cheek I propose you change the presentation title to &quot;&quot;I see your $127.32 and raise you 20,89 €&quot; :-)</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 10:40:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/70#suggestion_182</link>
+      <guid>http://cfp.euruko2013.org/proposals/70#suggestion_182</guid>
+    </item>
+  </channel>
+</rss>

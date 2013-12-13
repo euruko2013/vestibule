@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Making Sense of Making Code"</title>
+    <description>A list of all suggestions made for "Making Sense of Making Code"</description>
+    <link>http://cfp.euruko2013.org/proposals/84</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/84.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>:-)
+so I guess we will get to see concrete examples of DCI within web or other apps?</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:19:47 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/84#suggestion_205</link>
+      <guid>http://cfp.euruko2013.org/proposals/84#suggestion_205</guid>
+    </item>
+  </channel>
+</rss>

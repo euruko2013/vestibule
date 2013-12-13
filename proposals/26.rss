@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Opal, get back at doing Ruby on your browser ☺"</title>
+    <description>A list of all suggestions made for "Opal, get back at doing Ruby on your browser ☺"</description>
+    <link>http://cfp.euruko2013.org/proposals/26</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/26.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Paul Battley (@threedaymonk)</title>
+      <description type="html">
+        <![CDATA[<p>As someone who implemented a simple Ruby-to-JavaScript proof-of-concept transpiler many years ago, I&#39;m very interested in this talk, and especially in the details of how you implemented the Ruby object model.</p>
+
+<p>I still don&#39;t think the title&#39;s quite right: <em>get back <em>at</em>*</em> means &quot;exact revenge upon&quot;. You probably want <em>get back <strong>to</strong></em>, in the sense of &quot;return to&quot;, yes?</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 11:45:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_159</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_159</guid>
+    </item>
+    <item>
+      <title>Suggestion from Josep M. Bach (@txus)</title>
+      <description type="html">
+        <![CDATA[<p>This sounds really interesting! The details on the internals I&#39;d find particularly interesting to learn, as well as issues discovered while implementing it (cross-browser issues maybe?).</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 12:06:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_145</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_145</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for the correction John, I&#39;ll layout the main points and update the description. </p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:45:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_61</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_61</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>The talk seems very interesting, as I said. however to be fair to others and in order for everyone to know what they are voting for, I&#39;d like to see more details about the talk. Perhaps a bulleted skeleton would help?</p>
+
+<p>btw the title needs a minor correction &quot;Opal, get back <em>at</em> doing Ruby....&quot; :-)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 10:47:35 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_41</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_41</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p><strong>@nikos</strong> description updated, thanks!                                           </p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 12:39:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_32</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_32</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Super! I would suggest to update the proposal description to reflect this :)</p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 06:26:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_30</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_30</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Some internals will be there along with an overview, thanks for the feedback!</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 22:32:44 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_28</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_28</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Totally agree with what John said. Even though it sounds interesting to see what you can achieve with Opal, some information regarding how it&#39;s implemented would be really nice!</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 19:06:56 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_27</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_27</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Is this only about usage of Opal or does it also cover its internals as well?</p>
+
+<p>I&#39;d suggest that you cover both intro/usage of Opal as well as its design. I also hope it is not just an intro tutorial with basic info which anyone could pick from the Opal site.</p>
+
+<p>I for once i&#39;m interested in the subject btw :-)</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 18:51:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26#suggestion_26</link>
+      <guid>http://cfp.euruko2013.org/proposals/26#suggestion_26</guid>
+    </item>
+  </channel>
+</rss>

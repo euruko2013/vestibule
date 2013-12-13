@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Rails, meet DDD"</title>
+    <description>A list of all suggestions made for "Rails, meet DDD"</description>
+    <link>http://cfp.euruko2013.org/proposals/55</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/55.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Can&#39;t disagree with Leszek, I would also like a little more break down of &quot;how a set of techniques can guide the architecture of your domain&quot; :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 16 Apr 2013 16:31:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/55#suggestion_152</link>
+      <guid>http://cfp.euruko2013.org/proposals/55#suggestion_152</guid>
+    </item>
+    <item>
+      <title>Suggestion from Zalewski Leszek (@)</title>
+      <description type="html">
+        <![CDATA[<p>I would appreciate some sum-up in list what will be discussed in the talk ;)</p>
+
+<p>Best
+Leszek</p>
+]]>
+      </description>
+      <pubDate>Tue, 16 Apr 2013 10:27:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/55#suggestion_149</link>
+      <guid>http://cfp.euruko2013.org/proposals/55#suggestion_149</guid>
+    </item>
+  </channel>
+</rss>

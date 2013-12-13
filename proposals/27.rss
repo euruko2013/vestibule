@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "50 Shades of MVC"</title>
+    <description>A list of all suggestions made for "50 Shades of MVC"</description>
+    <link>http://cfp.euruko2013.org/proposals/27</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/27.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@John, I forgot to clarify: </p>
+
+<p>It won&#39;t be only rails specific, the idea is to compare different MVC implementations (including, but not limited to Rails) and think about why they are different, what is the purpose/constraints of each implementation and what can we learn from it. </p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 16:29:38 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/27#suggestion_89</link>
+      <guid>http://cfp.euruko2013.org/proposals/27#suggestion_89</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@clemens, @john.</p>
+
+<p>I agree, I&#39;ve had this feedback before about this abstract. </p>
+
+<p>Adding DCI to this talk would probably be too much for me to go into deep on the topic so it&#39;s probably better to just leave it out and focus on the main MVC implementations and what we can learn from their differences subject, which was always the main thrust of the talk.</p>
+
+<p>Thanks for the feedback guys! :)  </p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 16:05:03 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/27#suggestion_88</link>
+      <guid>http://cfp.euruko2013.org/proposals/27#suggestion_88</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>I agree with John in that the proposal sounds too extensive for the talk format – even if you&#39;d extend it in favor of a shorter Q&amp;A (which you shouldn&#39;t). As it is, the talk would probably be quite broad but relatively shallow. There are lots of blog posts out there that give broad overviews of MVC/DCI/etc. with and without a focus on Ruby and/or Rails. In my opinion, what we need is more depth and real world applications – particularly when it comes to DCI.</p>
+
+<p>Perhaps, as John suggested, it would be better to focus on one thing – whether it be the history of MVC or DCI or something else is entirely up to you, of course.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:48:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/27#suggestion_62</link>
+      <guid>http://cfp.euruko2013.org/proposals/27#suggestion_62</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Will this be a Rails specific MVC and DCI talk?</p>
+
+<p>Perhaps going from MVC -&gt; MVP -&gt; DCI in 30mins( +15mins for QA) is too hard and you&#39;d rather focus on DCI a bit more?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 10:55:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/27#suggestion_43</link>
+      <guid>http://cfp.euruko2013.org/proposals/27#suggestion_43</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Multi-hundred-model apps with Rails and Netzke"</title>
+    <description>A list of all suggestions made for "Multi-hundred-model apps with Rails and Netzke"</description>
+    <link>http://cfp.euruko2013.org/proposals/29</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/29.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Ivan Ilves (@)</title>
+      <description type="html">
+        <![CDATA[<p>Netzke allowed me to develop a couple of important apps in matter of days.
+I like almost every aspect of this framework. Looking forward to meet author.
+And yes, agree with Ebin J, Netzke will benefit from better documentation. :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 13:10:08 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/29#suggestion_139</link>
+      <guid>http://cfp.euruko2013.org/proposals/29#suggestion_139</guid>
+    </item>
+    <item>
+      <title>Suggestion from Paul Schyska (@pschyska)</title>
+      <description type="html">
+        <![CDATA[<p>If that&#39;s whom I think (the author of Netzke), I have seen him back in 2010 on Rubyandrails Amsterdam and was very impressed with it. The guy is a great speaker and what he showed us just blew my mind.
+Looking forward to see him!</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 11:57:58 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/29#suggestion_107</link>
+      <guid>http://cfp.euruko2013.org/proposals/29#suggestion_107</guid>
+    </item>
+    <item>
+      <title>Suggestion from Ebin J (@)</title>
+      <description type="html">
+        <![CDATA[<p>I am using netzke for all my rails projects. If some fine tuned documentation is given netzke will reach heights.</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 10:09:20 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/29#suggestion_106</link>
+      <guid>http://cfp.euruko2013.org/proposals/29#suggestion_106</guid>
+    </item>
+    <item>
+      <title>Suggestion from Dmytro Koval&amp;#x27;ov (@)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;ve used Netzke to develop pretty complex application for banking sector, and really enjoyed cleanliness of the design. It allowed me to finish project in much shorter time than I anticipated.</p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 07:08:16 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/29#suggestion_31</link>
+      <guid>http://cfp.euruko2013.org/proposals/29#suggestion_31</guid>
+    </item>
+  </channel>
+</rss>

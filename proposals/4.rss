@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Roll your own web framework in half an hour"</title>
+    <description>A list of all suggestions made for "Roll your own web framework in half an hour"</description>
+    <link>http://cfp.euruko2013.org/proposals/4</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/4.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for the suggestion Fotos.</p>
+
+<p>It is the intention of this talk that seeing a framework built in half an hour will give the audience the tools necessary to evaluate the various frameworks out there in terms of their design tradeoffs (if any), to better understand the Rack ecosystem so they can contribute to existing frameworks and as a last resort, to take matters into their own hands.</p>
+
+<p>It is also intended to further the audience&#39;s appreciation of how much work Ruby developers have put in to  that we can trivially create web frameworks by combining some awesome gems. </p>
+
+<p>I have in mind a different approach from most micro-frameworks utilising some different design choices (no magic, proper object orientation, extreme testability) and will certainly touch upon the pros and cons of the various choices made by other frameworks in my talk.</p>
+
+<p>I will be live coding, starting with a router, then building simple, easily testable rack apps that respond with the desired data, layering on some nice Rack utilities that deal with URL parsing, security, JSON, CORS and so on until we end up with a pretty decent and blazing fast web framework. </p>
+
+<p>I will be amending my proposal to incorporate your feedback. Thanks again.</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 10:07:14 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/4#suggestion_7</link>
+      <guid>http://cfp.euruko2013.org/proposals/4#suggestion_7</guid>
+    </item>
+    <item>
+      <title>Suggestion from Fotos Georgiadis (@)</title>
+      <description type="html">
+        <![CDATA[<p>The trend is indeed to break monolithic apps to more manageable services. I&#39;d certainly like to see the best practices on building manageable services / APIs and / or how to transition from a huge monolithic app to service oriented ones.</p>
+
+<p>While this proposal is interesting in itself, there a lot of micro-frameworks out there already (camping, cuba, sinatra, grape to name a few). I&#39;m not quite sure how learning to roll yet another one (micro-framework) makes this a good presentation. Well, what might make this more interesting is to include a small walkthrough of the existing micro frameworks, their pros and cons and then delve into making another one along with the qualities it should possess in order to differentiate itself and at the same time solve problems unresolved by the existing (micro-)frameworks.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 22:27:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/4#suggestion_3</link>
+      <guid>http://cfp.euruko2013.org/proposals/4#suggestion_3</guid>
+    </item>
+  </channel>
+</rss>

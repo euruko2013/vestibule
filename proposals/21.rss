@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "From Rails to the web server to the browser"</title>
+    <description>A list of all suggestions made for "From Rails to the web server to the browser"</description>
+    <link>http://cfp.euruko2013.org/proposals/21</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/21.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I have to be honest here: there is no new or innovative topics in my talk. My goals are merely educational. This talk is intended for people that are relatively new to Ruby and Rails. I&#39;ve known a handful of Rails developers that do not care too much about being Ruby developers. While not going as low as teaching Ruby itself, I want to point out the underlying classes and frameworks that make a webserver serve a Web Application. There&#39;s more to Ruby than Rails.</p>
+
+<p>Some of the ideas that I want to incept to the audience would be:</p>
+
+<ul>
+<li>Encourage developers to be curious about their tools and frameworks.</li>
+<li>Reading code is always a fun way to learn new things.</li>
+<li>Promote the fact that you can create Rack apps!</li>
+<li>Show how you can write EventMachine services and your own protocols.</li>
+</ul>
+
+<p>The Railscasts topics that you mention are mostly related to Rails, I intend for my talk to be more within the EventMachine - Rack neighborhood.</p>
+
+<p>You will not make a lot of money with the things that I intend to show on this talk, its just about knowing your tools and how things work under the hood.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 00:20:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/21#suggestion_81</link>
+      <guid>http://cfp.euruko2013.org/proposals/21#suggestion_81</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>Here&#39;s the thing: There are RailsCasts about this topic (<a href="http://railscasts.com/?tag_id=39">http://railscasts.com/?tag_id=39</a>) and while they are available to Pro Subscribers only, they&#39;re still there and they&#39;re good (I&#39;ve watched all of them). So I don&#39;t see the need for a conference talk if there are good, affordable resources readily available for everyone.</p>
+
+<p>Aside from the &quot;low level&quot; aspects of your talk (web server startup and TCP communication), what content would you present that is new and interesting? Maybe you can give a little more details and convince me (and probably others) why this talk would be worth a +1.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:01:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/21#suggestion_64</link>
+      <guid>http://cfp.euruko2013.org/proposals/21#suggestion_64</guid>
+    </item>
+  </channel>
+</rss>

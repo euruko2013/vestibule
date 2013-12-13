@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Shrink To Grow"</title>
+    <description>A list of all suggestions made for "Shrink To Grow"</description>
+    <link>http://cfp.euruko2013.org/proposals/6</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/6.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I have talked to matz and he is happy to support the Q&amp;A session. So together we should be able to answer all occurring questions from the community :-)</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 09:14:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6#suggestion_181</link>
+      <guid>http://cfp.euruko2013.org/proposals/6#suggestion_181</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>It is indeed not the AVR version but the ARM and a PIC version.</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 16:43:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6#suggestion_167</link>
+      <guid>http://cfp.euruko2013.org/proposals/6#suggestion_167</guid>
+    </item>
+    <item>
+      <title>Suggestion from Paul Battley (@threedaymonk)</title>
+      <description type="html">
+        <![CDATA[<p>This talk seems a lot more specific than Matz&#39;s keynote is likely to be (based on his previous keynotes that I&#39;ve seen), so I don&#39;t think there&#39;s necessarily a conflict.</p>
+
+<p>Running mruby on an Arduino sounds impressive. I assume this is one of the newer Arm-based Arduinos, not the old AVR boards, right?</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 12:49:36 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6#suggestion_163</link>
+      <guid>http://cfp.euruko2013.org/proposals/6#suggestion_163</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>The talk will be given by a mruby committer. Matz will mention mruby in his Keynote but won&#39;t go into technical details about the usage and implementation. This talk is for people who maybe want to use mruby and need to know the current status quo.</p>
+
+<p>But of course you are right, it is hard to compete against Matz :-) Maybe I can convince him to support this talk. Lets see.</p>
+]]>
+      </description>
+      <pubDate>Sat, 13 Apr 2013 05:25:38 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6#suggestion_131</link>
+      <guid>http://cfp.euruko2013.org/proposals/6#suggestion_131</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;m curious, so I guess I&#39;d like to see this talk.</p>
+
+<p>However (maybe the organizers can answer this): What if Matz will talk about mruby in his keynote as he did in the past? It&#39;s his current pet project after all. And if I have the choice between Matz – the creator of Ruby and mruby – and someone else talking about mruby, I guess I&#39;d rather go with Matz. ;-)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:54:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6#suggestion_72</link>
+      <guid>http://cfp.euruko2013.org/proposals/6#suggestion_72</guid>
+    </item>
+  </channel>
+</rss>

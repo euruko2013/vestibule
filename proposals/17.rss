@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Parsing And Analysing Ruby For Fun And Profit"</title>
+    <description>A list of all suggestions made for "Parsing And Analysing Ruby For Fun And Profit"</description>
+    <link>http://cfp.euruko2013.org/proposals/17</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/17.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>More or less both. Part of understanding the need for these tools is the limitations of the MRI parser. I won&#39;t go into too specific details though, one could speak for hours and hours about how the MRI parser works.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 12:13:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/17#suggestion_53</link>
+      <guid>http://cfp.euruko2013.org/proposals/17#suggestion_53</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Will the talk give insight to the CRuby parser in order to appreciate the concept in general or in order to find plug-points to exploit in tooling?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:25:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/17#suggestion_49</link>
+      <guid>http://cfp.euruko2013.org/proposals/17#suggestion_49</guid>
+    </item>
+  </channel>
+</rss>

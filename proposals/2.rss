@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Swimming with The Majestic Sea Creature"</title>
+    <description>A list of all suggestions made for "Swimming with The Majestic Sea Creature"</description>
+    <link>http://cfp.euruko2013.org/proposals/2</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/2.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>I have a couple of problems with this proposal:</p>
+
+<p>1) IMO, Prawn basically hasn&#39;t moved much in the last couple of years (1.0.0.rc1 =&gt; rc2 after 1 1/2 years!). While you certainly don&#39;t need to add features to a library that is relatively mature (which Prawn certainly is), it shouldn&#39;t rot for months either.
+2) The Prawn documentation is rock-solid. I don&#39;t see which benefits a talk would bring over just working through the documentation.
+3) While I like Prawn for certain tasks (and still use it to this day), I have found that wkhtmltopdf (and its wrapper wicked<em>pdf) are way more relevant for real-world applications like generating PDF versions of views (e.g. invoices, product data sheets etc.) because HTML/CSS are just way easier to handle. Of course, this is highly subjective and wkhtmltopdf (and therefore wicked</em>pdf) certainly has its own set of specific problems – but in this case I&#39;d prefer practical use.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 18:05:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/2#suggestion_74</link>
+      <guid>http://cfp.euruko2013.org/proposals/2#suggestion_74</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Crafting your own cave: deployments made easy with Mina."</title>
+    <description>A list of all suggestions made for "Crafting your own cave: deployments made easy with Mina."</description>
+    <link>http://cfp.euruko2013.org/proposals/92</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/92.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos, it&#39;s a bit of both, it&#39;s about what makes it different to Capistrano or regular bash scripts and why you should care but more importantly it&#39;s about how you can design and grow your deployment strategy to suit your needs.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 19:30:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/92#suggestion_234</link>
+      <guid>http://cfp.euruko2013.org/proposals/92#suggestion_234</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Is the topic of this talk going to be only a presentation of how Mina works or is it going to include stuff like how it&#39;s designed, how it compares to capistrano and other similar tools, etc?</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 19:14:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/92#suggestion_232</link>
+      <guid>http://cfp.euruko2013.org/proposals/92#suggestion_232</guid>
+    </item>
+  </channel>
+</rss>

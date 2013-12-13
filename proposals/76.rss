@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Forget about classes, welcome objects"</title>
+    <description>A list of all suggestions made for "Forget about classes, welcome objects"</description>
+    <link>http://cfp.euruko2013.org/proposals/76</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/76.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@vassilis if this gets accepted and I make it to the conference, let&#39;s talk. It&#39;s so easy to do OO in Prototype-based languages and I&#39;d love to talk about it.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 17:01:34 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_221</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_221</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>@bruno that&#39;s my plan. I have some cards up my sleeve, like regarding the Law of Demeter, in which I will show why you&#39;d be forcing yourself to lose time (and money) if you violate it (and when that doesn&#39;t hold true). I will also show why long methods go against the goals of OO.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 16:42:03 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_220</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_220</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thank you for updating this. I didn&#39;t mean to offend. If this is part of the code of conduct, I&#39;ll gladly respect and follow this :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 16:35:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_219</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_219</guid>
+    </item>
+    <item>
+      <title>Suggestion from Bruno Aguirre (@elcuervo)</title>
+      <description type="html">
+        <![CDATA[<p>Using PORO seems to be the right way to do it after the application starts to grow.
+Are you planning some real world examples on this?
+I&#39;m looking forward to see it.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 11:28:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_214</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_214</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Title was moderated and foul language was removed.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:34:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_212</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_212</guid>
+    </item>
+    <item>
+      <title>Suggestion from Javier Gonel (@)</title>
+      <description type="html">
+        <![CDATA[<p>Let me agree on focusing on Ruby and leaving slang aside. </p>
+
+<p>An international audience can understand things in a very different way. I believe it&#39;s better to keep it neutral.</p>
+
+<p>On the other side, linking &quot;screw&quot; to &quot;attitude&quot; looks really bad.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:06:01 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_203</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_203</guid>
+    </item>
+    <item>
+      <title>Suggestion from Vassilis Vatikiotis (@)</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos, reading your last comment and the CoC quote I can&#39;t find something offensive related to gender, sexual orientation and so on with this presentation proposal. As far as the title goes, we can be pedantic or we can be a bit laid back. Use of slang aren&#39;t necessarily offensive and looking in it up in the dictionary, &#39;screw&#39; is considered &#39;taboo/slang&#39; but nowhere offensive, at least in some circles.</p>
+
+<p>The presentation sounds awesome! Imo, it&#39;s high time we got back to the true essence of OO and get rid of miles long class hierarchies and Class Orientated Programming masquerading as OOP. Javascript, anyone? :) </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:22:05 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_197</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_197</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>@author and @Kostas, please read the <a href="http://euruko2013.org/codeofconduct/">Code of Conduct</a> and the <a href="http://cfp.euruko2013.org/about#rules">rules</a> and keep in mind also for the conference:</p>
+
+<blockquote>
+<p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+</blockquote>
+
+<p>If it doesn&#39;t change soon we will either have to moderate it ourselves or withdraw it without further notice.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:01:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_195</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_195</guid>
+    </item>
+    <item>
+      <title>Suggestion from Kostas Karachalios (@vrinek)</title>
+      <description type="html">
+        <![CDATA[<p>@Nikos, I don&#39;t see a reason to change the presentation title. Personally, I quite like a presentation having some attitude. :-)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 08:46:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_194</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_194</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Would you be so kind to update the title of this proposal to use a more appropriate language? Thanks!</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 05:50:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76#suggestion_193</link>
+      <guid>http://cfp.euruko2013.org/proposals/76#suggestion_193</guid>
+    </item>
+  </channel>
+</rss>

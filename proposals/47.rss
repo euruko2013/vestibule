@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "The Days After Tomorrow — Are Cucumber, RSpec, Mini::Test And Friends Enough?"</title>
+    <description>A list of all suggestions made for "The Days After Tomorrow — Are Cucumber, RSpec, Mini::Test And Friends Enough?"</description>
+    <link>http://cfp.euruko2013.org/proposals/47</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/47.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for the comment. You&#39;re right it is supposed to be a teaser as well as an abstract. I&#39;ll tell you a bit more about what I have in mind, yet, won&#39;t tell the whole story. Because, you know, what&#39;s the point of telling everything in an abstract (and/or teaser)? If you do, who&#39;s going to listen to you at the conf? ;-)</p>
+
+<p>What I see a lot in many projects I&#39;ve worked in, is that the better ones are using well described business scenarios for testing (whether these are automated or not, often written in Cucumber, if automated) and/or pretty detailed unit tests (automated almost always using RSpec, Mini::Test or what-have-you). 
+And that&#39;s fine: If done right, these help team implementing the right systems and feature and it also helps to avoid bugs.</p>
+
+<p>However, I learned that team should also have the future of the project in mind and be open to probable/likely new features and/or unanticipated uses of the system. I think we should find ways to explicitly work on topics as maintainability, expandability, etc. (It&#39;s called <em>soft</em>ware for a reason.)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:18:50 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/47#suggestion_224</link>
+      <guid>http://cfp.euruko2013.org/proposals/47#suggestion_224</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hi, could you care to elaborate? Your abstract sounds more like an interesting tease :-)</p>
+]]>
+      </description>
+      <pubDate>Sun, 21 Apr 2013 10:18:11 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/47#suggestion_177</link>
+      <guid>http://cfp.euruko2013.org/proposals/47#suggestion_177</guid>
+    </item>
+  </channel>
+</rss>

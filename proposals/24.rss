@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Fabulous adventures of Rubyist in Clojure world"</title>
+    <description>A list of all suggestions made for "Fabulous adventures of Rubyist in Clojure world"</description>
+    <link>http://cfp.euruko2013.org/proposals/24</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/24.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>&quot;how Clojure has changed the way we write Ruby code, approaches to concurrency and code structuring&quot; this by itself should make an interesting talk :-)
+I don&#39;t know how other feels but I think this quoted sentence is more than enough to fill the presentation time with substantial points.</p>
+
+<p>Perhaps we wouldn&#39;t want to see how to migrate away from Ruby(during a Ruby conf:-) , but rather about the learning we can bring into Ruby and the learning we can give to other languages.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:04:00 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/24#suggestion_45</link>
+      <guid>http://cfp.euruko2013.org/proposals/24#suggestion_45</guid>
+    </item>
+  </channel>
+</rss>

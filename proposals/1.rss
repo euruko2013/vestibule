@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Écouter et répéter is SO last century"</title>
+    <description>A list of all suggestions made for "Écouter et répéter is SO last century"</description>
+    <link>http://cfp.euruko2013.org/proposals/1</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/1.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from rilian (@rilian)</title>
+      <description type="html">
+        <![CDATA[<p>Just pure spherical syntax in vacuum? Meh. How about change the topic a little, and provide Ruby-language specific solutions for most common software architecture design patters used in networked software such as Rails and REST APIs ?</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 11:47:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/1#suggestion_171</link>
+      <guid>http://cfp.euruko2013.org/proposals/1#suggestion_171</guid>
+    </item>
+  </channel>
+</rss>

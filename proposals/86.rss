@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Mantri JS Dependency System Extraordinaire"</title>
+    <description>A list of all suggestions made for "Mantri JS Dependency System Extraordinaire"</description>
+    <link>http://cfp.euruko2013.org/proposals/86</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/86.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Could you clarify how this relates to ruby? From what I understand it applies to rails applications and asset pipeline, right?</p>
+
+<p>P.S.: Thanks for removing the link :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:54:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/86#suggestion_213</link>
+      <guid>http://cfp.euruko2013.org/proposals/86#suggestion_213</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Can you please remove the link to the slides which also reveal your identity? If someone <strong>wants</strong> to find out will be able to do so anyway through the project page :)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:33:45 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/86#suggestion_211</link>
+      <guid>http://cfp.euruko2013.org/proposals/86#suggestion_211</guid>
+    </item>
+  </channel>
+</rss>

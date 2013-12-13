@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EuRuKo 2013 Talk Proposals </title>
+    <description>A list of all talk proposals made to the vestibule system for EuRuKo 2013</description>
+    <link>http://cfp.euruko2013.org/proposals</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>"No one plans for complexity, and neither should you!"</title>
+      <description>
+        <![CDATA[<p>Great ideas start small, hell, just look at all the great services we use today, all of them small ideas which grew, and grew, and grew.</p>
+
+<p>Do you think they planned for this level of scale from the outset? God no! And why would they? Planning too early can be the death of such a great idea!</p>
+
+<p>The mantra is simple, start small, growth will come naturally.</p>
+
+<p>That might sound stupid, but the idea is solid. As your product grows you will learn where the bottlenecks are, where the pain points in code and processing exist, and what needs to scale and what needs to be thrown out the door.</p>
+
+<p>Travis CI was no different, started as a simple Rails app, it has now grown into a platform built upon over 9 different apps, using everything from Postgres, Redis, RabbitMQ, Memcached, S3, BlueBox, MRI, JRuby, Websockets, and a huge array of services helping with email, metrics, and alerts.</p>
+
+<p>We never designed or planned for this, this came about from natural growth, and we have only just started.</p>
+
+<p>This talk is a story of architecture, complexity, and growth, as well as a candid look on what we did wrong and could have done better.</p>
+
+<p>And most importantly, this is a talk about how sometimes <strong>not</strong> building something is more important than building it in the first place.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:53:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/97</link>
+      <guid>http://cfp.euruko2013.org/proposals/97</guid>
+    </item>
+    <item>
+      <title>"Ruby in the Lab"</title>
+      <description>
+        <![CDATA[<p>It doesn&#39;t matter the science field, nowadays every research needs some kind of programming task to get/analize/produce results. When faced to a computational problem, scientists without programming background often choose Java, Python, R, Excel… to scratch their itch, why not Ruby? </p>
+
+<p>Why scientists and people in academia and research centers are not using Ruby? </p>
+
+<p>What can we do to make Ruby the language of preference in science? Is that even possible? </p>
+
+<p>I&#39;ll ask you these questions and try to answer them in this talk.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:50:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/95</link>
+      <guid>http://cfp.euruko2013.org/proposals/95</guid>
+    </item>
+    <item>
+      <title>"A Tale of Two Rubies"</title>
+      <description>
+        <![CDATA[<p>It was the best of runtimes, it was the worst of runtimes, it was the summer of alternative Ruby compatibility, it was the winter of poorly specified behavior – in short, it was the very reason why having more than one Ruby implementation is so important.</p>
+
+<p>Our story begins, innocently enough, with an attempt to port a Rails app to JRuby. In the land of JRuby, a bug in 1.9 compatibility appears. It almost isn&#39;t worth a second look, and a fix is fashioned easily enough, but we will take a second look because that is our nature. Our narrative then turns to the more subtle setting of C Ruby (a.k.a. MRI), where we discover that this JRuby bug has pointed us in the direction of poorly specified behavior in the oldest of Rubies.</p>
+
+<p>Two more patches later (including a clever workaround to avoid the potential of a stack overflow), and the moral of our story emerges. Even if you never intend to use an alternate Ruby implementation, having multiple implementations of Ruby will ultimately make Ruby a better language.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:18:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/94</link>
+      <guid>http://cfp.euruko2013.org/proposals/94</guid>
+    </item>
+    <item>
+      <title>"Rove – efortless Vagrant provisioning"</title>
+      <description>
+        <![CDATA[<p>Vagrant is a great tool to build development environments. It hits the bull&#39;s eye by the support of provisioning. Provisioners make your setup idempotent. However they also make you suffer – hanging out with Chef is easier said then done. There&#39;s a solution though.</p>
+
+<p>Rove (<a href="http://www.rove.io">http://www.rove.io</a>) is designed to solve the issue. The service allows you to generate provisioning config in one click using visual setup. Rove is the open-source project written in Ruby. But there&#39;s something behind what you see: the DSL. We&#39;ve made Rove as extensible as possible. During this talk I will describe internals of the service to explain how to host its copy internally with your own set of packages and what benefits you are going to get with that.</p>
+
+<p>I will also share with you the Roadmap of the project including some nice hidden yet niches that we are after ;)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:10:57 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/93</link>
+      <guid>http://cfp.euruko2013.org/proposals/93</guid>
+    </item>
+    <item>
+      <title>"Crafting your own cave: deployments made easy with Mina."</title>
+      <description>
+        <![CDATA[<p><strong>Want to know how to craft your deployment&#39;s environment and fully understand and be in control of what&#39;s going on every step?</strong></p>
+
+<p><em>Dead simple.</em></p>
+
+<p>Follow me on this talk and we will leverage <a href="http://nadarei.co/mina">Mina</a>&#39;s power: a bloody fast deployer with many integrations and a ridiculously simple plugin system to suit your needs.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 19:12:34 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/92</link>
+      <guid>http://cfp.euruko2013.org/proposals/92</guid>
+    </item>
+    <item>
+      <title>"UX your Rubies with a real Backbone ;)"</title>
+      <description>
+        <![CDATA[<p><em>Users want well thought workflows and responsive interfaces.</em></p>
+
+<p><em>They want to use your app and get that feeling that it&#39;s sharp and snappy.</em></p>
+
+<p><em>They also want it to work everywhere.</em></p>
+
+<p><em>Oh, yeah, and the more geekies will surely want to connect it with another amazing platform (or that wicked script on their sh-dev-shed) that does that little thing that makes their life complete and which they would love you for.</em></p>
+
+<p><strong>This talk is about building real applications with proper UX, helping you understand where you should be drawing the line between what Ruby should be doing and when something like Backbone or any other frontend structure would be a perfect fit so that your users &lt;3 you for such an unbelievable experience.</strong></p>
+
+<p>It will also push you towards building well structured APIs from day one so that you can easily interconnect with other systems afterwards, grow and scale.</p>
+
+<p>Yes, this talk is about getting the right structure in and using technologies that fit better to make your users happy. At the end of the day, it&#39;s all bout making things right.</p>
+
+<p><strong>It&#39;s a win win :)</strong></p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:57:16 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/91</link>
+      <guid>http://cfp.euruko2013.org/proposals/91</guid>
+    </item>
+    <item>
+      <title>"⚡ Contributing to Ruby ⚡"</title>
+      <description>
+        <![CDATA[<p>Newcomer or seasoned veteran looking to get involved with Ruby documentation?</p>
+
+<p>The path to eternal gratification can seem like a scary one, but we&#39;ll show you it&#39;s alot easier than you thought.  Writing documentation is a great way to give back to the open source community and build your Ruby skills and fundamentals.</p>
+
+<p>This talk will teach you the value of open-source, the benefits of contributing, and a little bit about how ruby-core works. You will learn what to look for when spotting documentation bugs in the MRI source code. We will cover the guidelines to writing MRI documentation, and how to submit a patch.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 18:30:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/90</link>
+      <guid>http://cfp.euruko2013.org/proposals/90</guid>
+    </item>
+    <item>
+      <title>"Handling trees with Ruby"</title>
+      <description>
+        <![CDATA[<h3>Have you ever been interested in dealing with (syntax) trees in Ruby?</h3>
+
+<p>This talk will be about <em>Forest</em>, a new (syntax) tree handling library for Ruby that I&#39;ve been working on at work.
+I&#39;ve been working on a source-to-source compiler (compiling from a subset of C to Java/Ruby/C#/Whatever) and ended up working on this library while doing so.</p>
+
+<p>I&#39;ll talk about how to deal with arbitrary syntax trees, node visiting strategies for generating arbitrary output based on a tree, symbol lookup strategies (<em>what type does this variable have and where is it defined?</em>), how to deal with static type systems, tree-rewriting for optimization passes in compilers and much more.
+And the best part about this: It&#39;s all in Ruby! And it should be pretty easy to understand, even if you have no experience with parsers and compilers so far.</p>
+
+<p>This talk is going to be a bit technical but I promise you&#39;ll learn something new.
+A decent understanding of Ruby will be required, but I promise to keep it as simple as possible.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 17:15:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/89</link>
+      <guid>http://cfp.euruko2013.org/proposals/89</guid>
+    </item>
+    <item>
+      <title>"Let&amp;#x27;s hear it for Adhearsion"</title>
+      <description>
+        <![CDATA[<p>Have you ever tried to do a telephony-related application? Were you afraid it was too difficult to build one? Adhearsion makes it easy.</p>
+
+<p>This talk will deal with all the stages of building an Adhearsion project including:</p>
+
+<ul>
+<li><p>Getting started/Creating a new project</p></li>
+<li><p>Structuring your code, particularly the controllers &amp; models.</p></li>
+<li><p>Advise on not using ActiveRecord in the Adhearsion project itself.</p></li>
+<li><p>Unit testing, and making the code testable.</p></li>
+<li><p>End-to-end functional testing using another telephony application.</p></li>
+<li><p>Deploying to production and scaling it horizontally.</p></li>
+</ul>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 16:29:59 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/88</link>
+      <guid>http://cfp.euruko2013.org/proposals/88</guid>
+    </item>
+    <item>
+      <title>"What we learned from growing our top 50 open source project"</title>
+      <description>
+        <![CDATA[<p>Since we started our open source project 1,5 years ago it became really popular. More than 10.000 organizations trust us with a critical piece of their infrastructure and we have very active community. However we also constantly experience growing pains and have to figure out how to deal with this in our bootstrapped startup. We want to share our stories with the Euruko attendees.</p>
+
+<p>We learned a lot about the following things:</p>
+
+<ul>
+<li>How an open source project in ruby is useful for people working in other languages helps to introduce people to ruby and make their first contributions</li>
+<li>Why and how you should release each month on the same date</li>
+<li>How to deal with security disclosures by having a responsible disclosure policy and giving acknowledgements.</li>
+</ul>
+
+<p>We&#39;re still figuring out the subjects below but want to share what we found out so far:</p>
+
+<ul>
+<li>How to make money to work on our project fulltime: first donations, then professional   services, and now an enterprise edition.</li>
+<li>How to manage user contributions (issues, code, requests) with clear contributing guidelines, a feature forum and an experienced community manager.</li>
+<li>How to keep the quality of the code high</li>
+</ul>
+
+<p>If there are things you want to hear about please let us know.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 14:52:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/87</link>
+      <guid>http://cfp.euruko2013.org/proposals/87</guid>
+    </item>
+    <item>
+      <title>"Mantri JS Dependency System Extraordinaire"</title>
+      <description>
+        <![CDATA[<p>This presentation is about Mantri, a novel approach to managing your Javascript dependencies on the browser. Mantri leaves no footprint on your deployed file, which means faster delivery of your app. Provides dead easy testing by exposing all your methods and properties on development, hides them on production. Simple and lean provide and require statements, and a complete workflow to build your codebase.</p>
+
+<p>Mantri wraps around the powerful Google Closure Tools, the same tools used by most of Google&#39;s web assets. These tools were build for the purpose of easily managing and maintaining large codebases. Mantri lowers the barier of entry by abstracting all the complexity of such sofisticated systems. In other words, Mantri will be there for you from the second file up to thousands.</p>
+
+<p>The presentation revisits the whole workflow of frontend application development. In that retrospection a lot of myths will get debunked, misnomers revealed and a new sensible way of managing your JS dependencies will be demonstrated.</p>
+
+<p><img src="http://mantrijs.com/img/mantri-logo-whole-182.png" alt="Mantri JS Logo"> </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:30:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/86</link>
+      <guid>http://cfp.euruko2013.org/proposals/86</guid>
+    </item>
+    <item>
+      <title>"Thoughts on w̶e̶b̶ application development"</title>
+      <description>
+        <![CDATA[<blockquote>
+<p>“How you build your application, it is not the tools you use.”</p>
+</blockquote>
+
+<p>This quote is result of discussions with other developers. Every time the “how you build your application?” question drops, I get answers like “we use <strong>x</strong> framework”, “<strong>y</strong> database” in some rare cases “we do tdd” is between the answers.
+I will stand in the framework as it is considered to be main library to build your application. And since MVC is the monopoly out there lets rethink about it for a minute, shall we?!</p>
+
+<h2>Model</h2>
+
+<p>There is a misconception that Active Record is the Model, that&#39;s bad. Using an active record as you model, dominate the shape of your code. Now the persistence logic is all over your application code.</p>
+
+<h2>Controller</h2>
+
+<p>Controller here is to define the context. Based of context he uses the appropriate models. Its use case, a scenario. Its not Create Read Update Delete. </p>
+
+<h2>View</h2>
+
+<p>A representation of your application models in variety of states during their lifecircle. A view of your application should not contain html. Html is used by browser to render a web page. Your models data may appear on that page but they are not the page. </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 10:19:21 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/85</link>
+      <guid>http://cfp.euruko2013.org/proposals/85</guid>
+    </item>
+    <item>
+      <title>"Making Sense of Making Code"</title>
+      <description>
+        <![CDATA[<p>Making <strong>just one quick change</strong> becomes a nightmare where you&#39;re bouncing through methods and classes in file after file.</p>
+
+<p>Your biggest asset in writing software is understanding the business needs. But when those needs change, you&#39;re on a hunt for all of the related code and you&#39;re piecing it together in your head.</p>
+
+<p>You find yourself thinking <strong>&quot;how does this work!?&quot;</strong></p>
+
+<p>Creating software is difficult. It&#39;s not just you that needs to understand it, it&#39;s the users, the business owners, and the other developer who needs to pick up where you left off (even if that&#39;s you a year later). Keeping your code free of distraction means staying focused on what really matters. Business rules change over time.</p>
+
+<h2>No matter what you build, you&#39;re code is a user interface for your business.</h2>
+
+<p>Together we&#39;ll talk about object-oriented programming and techniques to make sense of the stakeholders mental models of our business. We&#39;ll explore staying focused on objects and the roles they play. We&#39;ll be modeling with DCI and seeing how this affects your thinking by keeping the right things together and distractions away. Most of all we&#39;ll explore a new way of approaching application architecture with laser focus on how we perceive what it does.</p>
+
+<h2>Walk away with a better way to communicate through code and the ability to make a clear picture of your business software.</h2>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:49:08 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/84</link>
+      <guid>http://cfp.euruko2013.org/proposals/84</guid>
+    </item>
+    <item>
+      <title>"Object-Oriented Lessons for a Service-Oriented World"</title>
+      <description>
+        <![CDATA[<p>The dreams of developers working on monolithic Rails applications are frequently filled with sugar plums and service-oriented architectures--but like any kind of software design, SOA can easily become a tangled mess. Many of the same principles that guide our software design can guide our architecture design. </p>
+
+<p>We apply SOLID principles to applications to keep them loosely coupled, we design interfaces so we can send logical messages to our domain objects. We hide our databases behind abstractions because how we access our data shouldn&#39;t matter to how we consume it. Rarely, though, do we see the same practices applied to our services and APIs, leaving us with tightly coupled and difficult to extend service-oriented architectures. </p>
+
+<p>If you are facing the monorail to SOA challenge, consider looking at your services as objects and your APIs as messages. Service-oriented applications are complex, and the best way to fend off complexity is though object-oriented design.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:30:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/83</link>
+      <guid>http://cfp.euruko2013.org/proposals/83</guid>
+    </item>
+    <item>
+      <title>"Down the rb_newobj() Rabbit Hole: Garbage Collection and a Glimpse into Ruby&amp;#x27;s Future"</title>
+      <description>
+        <![CDATA[<p>Garbage collection is one of the pillars of Ruby&#39;s performance story, but getting into the inner workings of MRI&#39;s garbage collector is a bit hairy. If you want to explore the garbage collector then you&#39;re going to have to get your hands deep into C code.</p>
+
+<p>We&#39;re going to take a walk through the C internals from Foo.new through garbage collection in Ruby&#39;s MRI. We’ll examine the idioms and optimizations in the C source and leave you feeling comfortable to explore the code yourself.</p>
+
+<p>At the end of the rb_newobj() rabbit hole is a whole world of garbage collection. Major changes have been made in MRI&#39;s garbage collector from Ruby 1.8 through 2.0: changes intended to make Ruby more performant, changes that can capitalize on MRI&#39;s roots in UNIX. From mark-and-sweep to copy-on-write and bitmap marking, we&#39;ll see what the future of Ruby performance might look like by peering through the window of the garbage collector. </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 09:18:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/82</link>
+      <guid>http://cfp.euruko2013.org/proposals/82</guid>
+    </item>
+    <item>
+      <title>"Broadening horizons"</title>
+      <description>
+        <![CDATA[<p>The release of Ruby 2.0 was another step in the process of language&#39;s
+maturation. A lot of things have changed since the language&#39;s infancy, not only
+in the language itself, but also in minds of its speakers. We&#39;ve learnt Ruby&#39;s
+arsenal of features well enough to use it as the primary tool of achieving our
+day-to-day goals. Both we and the language have become more mature. But there&#39;s
+still a lot of things to learn out there.</p>
+
+<p>Ruby is just a single cell in the lively, diverse ecosystem of programming
+languages. They assist their users in achieving their goals using various
+paradigms and are based on their own ways of thinking about problems. Many of them
+are far different from Ruby and rely on foreign concepts, such as</p>
+
+<ul>
+<li>strict and merciless static typing,</li>
+<li>introduction of concurrency lingo into the core of the grammar,</li>
+<li>usage of pure logic as the main way of solving problems,</li>
+<li>enforced immutability of state, or</li>
+<li>using macros to write programs which write programs.</li>
+</ul>
+
+<p>These concepts seem different. They seem opaque. Their value is not immediately
+visible to a naked eye. However, trying to learn them and trying to understand
+how they can assist us in our daily job is a fruitful undertaking.</p>
+
+<p>This talk will be dedicated to presenting various approaches to solving problems
+which despite being absent in Ruby are core building blocks of other, less
+known languages. Apart from discussing their potential I&#39;m going to demonstrate
+how we can learn from them and apply them in Ruby. After all, there&#39;s nothing in
+our language which would prevent us from doing so.</p>
+
+<p>My main goal will be to kindle your interest. To make you curious. To make you
+ask questions. To make you want to learn. To make you want to broaden your
+horizons. Will I succeed? Let&#39;s give it a try.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 07:22:25 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/81</link>
+      <guid>http://cfp.euruko2013.org/proposals/81</guid>
+    </item>
+    <item>
+      <title>"The Esoteric Library"</title>
+      <description>
+        <![CDATA[<p>Have you ever wondered what that ~20MB of code in your Ruby installation is there for? You didn&#39;t know Ruby came with a eso- standard library?! Well it totally does, and there&#39;s a lot of hidden gems in there just waiting for you to uncover. </p>
+
+<p>Allow me to guide you through some of the more delightful members of the standard library. I will hand pick libraries authored by the pioneers of Ruby and show you the useful bits.</p>
+
+<p>You&#39;ll discover a pure Ruby Markdown parser, practical configuration for the REPL, and distributed Ruby just to name a few.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 07:15:10 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/80</link>
+      <guid>http://cfp.euruko2013.org/proposals/80</guid>
+    </item>
+    <item>
+      <title>"Sinatra Prime"</title>
+      <description>
+        <![CDATA[<p>Have you tried Sinatra yet? I will bet that you&#39;ve at least heard of it, or made a small app before.</p>
+
+<p>Suited for the Ruby newbies and Sinatra pros alike, this talk will help you surpass common pitfalls and get your app ready for primetime.</p>
+
+<p>The most common concerns are testing, scaling, and organizing your Sinatra app.</p>
+
+<p>Allow me to show you a bit of magic that will help your app stand the test of time.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 07:14:39 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/79</link>
+      <guid>http://cfp.euruko2013.org/proposals/79</guid>
+    </item>
+    <item>
+      <title>"Escaping Reality With Shoes"</title>
+      <description>
+        <![CDATA[<p>Are you bored of hearing about Rails, Node, or Ember? Is your day job hacking on the same Rails app getting the best of you? Maybe you&#39;re looking for a fun way to get into this programming thing.</p>
+
+<p>Let&#39;s imagine for a moment, your boss just gave you the day off because you&#39;ve managed to squash the remaining bugs and shipped some invaluable features. With all of this free time there&#39;s so many options, what do you dooo? I know! You can build a game and experiment with some new code in the Magical Land of Shoes.</p>
+
+<p>Why once said, &quot;if you program and want any longevity to your work, make a game. all else recycles, but people rewrite architectures to keep games alive.&quot;</p>
+
+<p>It&#39;s important to step out of your comfort zone and try something new! This talk will give you a whirlwind tour and cover the essentials that Shoes has to offer.</p>
+
+<p>Together we can build a fun little game you can share with your friends, and inspire you to venture to places you&#39;re unaccustomed to.</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 07:13:49 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/78</link>
+      <guid>http://cfp.euruko2013.org/proposals/78</guid>
+    </item>
+    <item>
+      <title>"Getting Started with “Style Guide Driven Development”"</title>
+      <description>
+        <![CDATA[<p>You are writing your web application, you create your <strong>tests</strong> first, you develop the code right after that. Later you run the tests again to ensure your code is still working as expected—or as defined. You are doing it right.</p>
+
+<p>The next step is to adopt this concept for CSS (including <em>Sass</em> or <em>Less</em>). Which is very easy with only a few changes. It will:</p>
+
+<ul>
+<li>Give the designer/CSS developer the chance to quickly develop without dependencies</li>
+<li>Speed up your browser tests massively.</li>
+<li>Help you to keep visual consistency.</li>
+<li>Avoid legacy code.</li>
+<li>Make the developers that hate frontend stuff happy ;)</li>
+<li>Include <em>One more thing.</em></li>
+</ul>
+
+<p>Does it sound strange for CSS? I’ll show you how. And how this combines the experiences made in <strong>software development and corporate design style guides.</strong></p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 05:57:57 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/77</link>
+      <guid>http://cfp.euruko2013.org/proposals/77</guid>
+    </item>
+    <item>
+      <title>"Forget about classes, welcome objects"</title>
+      <description>
+        <![CDATA[<p>This talk is a tale about a time when Object-Oriented Programming was about objects and messages, not about classes and methods, when it was about behavior, not schemas. You will understand how OO was intended to be used and what it means to say that OO is about messages.</p>
+
+<p>We&#39;ll talk about the past and then go back to the future to look at our Class-Oriented Programming culture and how we can fix it by doing real OO in Ruby. By doing that, we&#39;ll start to understand why principles like SOLID and Demeter are here to help us stop losing time and money.</p>
+
+<p>This talk is about making you reevaluate the way you approach OO.</p>
+
+<p><em>p.s. Expect lots of Alan Kay quotes.</em></p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 01:05:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/76</link>
+      <guid>http://cfp.euruko2013.org/proposals/76</guid>
+    </item>
+    <item>
+      <title>"Testing HTTP APIs with Ruby"</title>
+      <description>
+        <![CDATA[<p>Good integration tests are hard. There are lots of approaches for testing server and client libraries all with various tradeoffs and problems that come up. Some are obvious, some are a little more tricky.</p>
+
+<p>I&#39;ll run through some approaches I&#39;ve come across developing server APIs along with their corresponding clients, while developing these in a highly distributed systems setup at Engine Yard. </p>
+
+<p>I set this up with a story about a music label company exposing an API for musicians to consume, and how to build a good robust client library with different paradigms. </p>
+
+<p>I have working tested examples of each approach, to play with, after the talk.</p>
+
+<p>I&#39;ve given this talk at a few places and will present this at RailsConf next week as well. I&#39;ve gotten pretty good feedback. However, I&#39;d be even more happy to hear and learn more from you! My talk is already up, here: </p>
+
+<p><a href="https://github.com/shaiguitar/ruby_apis_and_clients">https://github.com/shaiguitar/ruby_apis_and_clients</a></p>
+
+<p>Let me know if you need any other info! </p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 00:17:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/75</link>
+      <guid>http://cfp.euruko2013.org/proposals/75</guid>
+    </item>
+    <item>
+      <title>"The Ruby workflow or: Less workflow, more Ruby."</title>
+      <description>
+        <![CDATA[<p><em>This talk is about how we set up a beautiful development process using Ruby, Git and Continuous Integration &amp; Deployment.</em></p>
+
+<p>Our team deploys new versions of our product 10 times a day or more. That’s because we develop in tiny iterations, building tiny features and release them as soon as possible. Even our designers deploy – without even noticing it. All of us develop their tiny features on their own Git branches. As soon as we are done, we push them to GitHub and let someone code-review what we’ve done. Our Continuous Integration system displays on GitHub if everything works in this feature, so the code-reviewer can securely merge the feature into master. That’s where the process ends already. Continuous Deployment picks up the new version and it is online within minutes.</p>
+
+<p>Although this process is simple, we love it. It just works and it has got plenty of advantages:</p>
+
+<ul>
+<li>It only takes hours from a feature idea to shipping it. This way we get customer feedback instantly without spending weeks on something our customers don&#39;t even want.</li>
+<li>Everybody can contribute instantly. New developers can deploy on their first day. Designers can change the application without needing a developer at all.</li>
+<li>Code reviews don&#39;t only ensure the quality of our code: Everybody is informed about each other&#39;s work and learns by looking at other developers&#39; code.</li>
+<li>If there&#39;s a bug we can deploy a fix within 20 minutes. And there is no risk that we will break another part of the app on the way.</li>
+<li>Deployment is no task anymore. It just happens.</li>
+<li>It is a lot of fun. For us there&#39;s no greater pleasure than seeing customers use the code that was at our fingertips a few minutes ago.</li>
+<li>And most of all: We don&#39;t need to care about tedious repetitive tasks anymore. We can focus on what we do best and love most: coding Ruby.</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 23:10:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/74</link>
+      <guid>http://cfp.euruko2013.org/proposals/74</guid>
+    </item>
+    <item>
+      <title>"Ruby in my yard!"</title>
+      <description>
+        <![CDATA[<p>Look, I know you love your sprinkler timer, with its endearing little dials and simple, easy-to-use interface, and its killer dot-matrix LCD.</p>
+
+<p>I thought I could do better, and I thought Ruby could help me. With the awesomeness of things like the Raspberry Pi and maybe a little Arduino, who&#39;s to say I can&#39;t use Ruby to water my lawn, remind me to fertilize, or let me know where I could save a little water?</p>
+
+<p>I&#39;ll take you on a quick tour of the automated sprinkler system world and the problems it has, and how I aim to solve them with Ruby, Raspberry Pi, and about 24V of AC power. I promise not to electrocute you, but I can’t guarantee you won’t get a little bit wet.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 21:46:15 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/73</link>
+      <guid>http://cfp.euruko2013.org/proposals/73</guid>
+    </item>
+    <item>
+      <title>"Fun with Ruby and Redis"</title>
+      <description>
+        <![CDATA[<p>All the cool cats are using Redis, and with a reason: It&#39;s fast, it&#39;s robust, it&#39;s easy and it&#39;s web scale. Put it together with Ruby and it&#39;s fun too!</p>
+
+<p>In this session I will talk about what is redis, what you can do with it, how you can use it from Ruby, why you should be using it already and some common patterns when dealing with it. I will talk about:</p>
+
+<ul>
+<li>what REALLY FAST means </li>
+<li>Redis data structures, and mapping them to Ruby objects</li>
+<li>queuing slow ruby operations with Resque and Sidekiq</li>
+<li>using redis for cross-language development</li>
+<li>atomic counters and generating sequences</li>
+<li>dealing with temporary data in your application</li>
+<li>redis as a cache</li>
+<li>shared sessions (rack-based) with redis</li>
+<li>how to store relational data in a non relational data store</li>
+<li>interesting problems when distributing your application. Using Lua scripting for atomic operations </li>
+<li>reducing your memory footprint via compression</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 17:20:35 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/72</link>
+      <guid>http://cfp.euruko2013.org/proposals/72</guid>
+    </item>
+    <item>
+      <title>"How Rails helps people understand new idea? - A case study on exporting local culture with Rails application"</title>
+      <description>
+        <![CDATA[<p>There are many interesting local cultures in the world, but it is 
+difficult to introduce such cultures to other people. 
+Rails application can reduce such difficulty using some tips. </p>
+
+<p>Our experience is introduction of Japanese &#39;Kukai&#39; to French 
+students. Kukai is a game to enjoy Haiku, short Japanese poetry. In 
+Kukai, attendees score each Haikus and comments by each other. We 
+developed a Kukai Rails application and this system used by a lecture at 
+a French school. The lecture was well-received.
+To develop our Kukai system, Internationalisation (i18n) 
+is easy to support using Rails framework.</p>
+
+<p>In this talk, we show our experience and key points of transferring one 
+local culture to other cultures using Rails web application.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 15:26:19 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/71</link>
+      <guid>http://cfp.euruko2013.org/proposals/71</guid>
+    </item>
+    <item>
+      <title>"I See Your 127.32+, A Tale of Rationals"</title>
+      <description>
+        <![CDATA[<p>Money, be careful with money.</p>
+
+<p>While developing a brand new website for online betting I found the requirements related to the flow of money were just not possible to implement with traditional datatypes. There were fundamental features that no matter your precision, would just not work correctly.</p>
+
+<p>After reflecting on the feature set, we ended up resorting to fractions. In this talk I&#39;ll explain how we integrated rationals in the full stack, from JavaScript down to PostgreSQL, going via Active Record. An interesting journey that ends with all cents under control, and me sleeping very well at night.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 10:01:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/70</link>
+      <guid>http://cfp.euruko2013.org/proposals/70</guid>
+    </item>
+    <item>
+      <title>"Deploying Rails in Large Scale"</title>
+      <description>
+        <![CDATA[<p>Simple Rails deployments are easy. Create a couple of machines by hand, add them to  Capistrano script and let it do the magic for you. This sort of works if the number of machines you manage is small, but as soon as the complexity  and the number of machines increase to deal with scale this approach breaks down.</p>
+
+<p>This talk focuses on dealing with rails deployments for large web apps that spread into 10s or 100s of machines, and how to deal with aspects of scale that is not a big deal with small deployments.</p>
+
+<p>Some of the following</p>
+
+<ul>
+<li>Zero down time deployments</li>
+<li>Managing Redundancies/Backups/slaves (across DC&#39;s)</li>
+<li>Capistrano&#39;s issues</li>
+<li>AutoScaling</li>
+</ul>
+
+<p>Other things I may cover</p>
+
+<ul>
+<li>Paas vs IaaS debate(in context of large apps)</li>
+<li>Puppet vs Chef debate( in context of large apps)</li>
+</ul>
+
+<p>A lot of this talk comes from experiences working on such large web apps. If time allows share some Architecural wins, faux pas, and some war stories.</p>
+]]>
+      </description>
+      <pubDate>Mon, 22 Apr 2013 05:49:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/69</link>
+      <guid>http://cfp.euruko2013.org/proposals/69</guid>
+    </item>
+    <item>
+      <title>"... but we had to kill Unicorns"</title>
+      <description>
+        <![CDATA[<p>How often do you have to leave your comfort zone? How often does it happen that you need to change the fundamentals of your application?</p>
+
+<p>Well… it has happened to my team recently. We had to abandon our way of thinking about Ruby on Rails applications. Single-threaded servers were not a choice anymore, neither was JRuby nor Event Machine. And we had to handle up to 200k requests per minute.</p>
+
+<p>This talk is a case study about how, step by step, we got to multi threaded RoR application with MRI 1.9, MySQL, DataMapper. I want to present how we came to the solution, what did we have to do to make our application thread safe, how did we manage to use threads in MRI and what we learned while working on the big feature, that made us change the fundamentals of our application.</p>
+
+<p>Although the application in this case was built with Ruby on Rails, the talk won&#39;t be specific to this framework. I want to talk about threading and parallelism in Ruby and its open source libraries, as well as the process of making deep changes in the application that handles pretty big traffic.</p>
+]]>
+      </description>
+      <pubDate>Sun, 21 Apr 2013 11:09:13 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/68</link>
+      <guid>http://cfp.euruko2013.org/proposals/68</guid>
+    </item>
+    <item>
+      <title>"Natural Language Processing with Ruby"</title>
+      <description>
+        <![CDATA[<p>Natural Language Processing (NLP) is the art and science of making sense of user-generated data. It is a <em>combination of state-of-the-art computer science techniques and linguistics</em>. Being able to analyze plain text data allows us to gain a lot of insights. Popular NLP tasks are <em>text summarization</em>, <em>keyword extraction</em> or <em>automatic extraction of the author&#39;s opinion</em> from a text. In the age of social media, only NLP provides solutions to analyze what users are really care about. Companies such as Google or Facebook invest millions in NLP solutions to harvest information from all the data they have been gathering over the years.</p>
+
+<p>In this talk, I will present you a <em>real-world NLP problem</em>. We will discuss this problem from both, the linguistic and the computer science perspective. Throughout the talk, <em>we will develop a processing pipeline</em> to efficiently solve this problem in an automated fashion. An NLP pipeline usually consists of multiple components, each solving one aspect of the problem and presenting its own challenges. Among other things, you will learn how to tackle the following essential NLP problems <em>using JRuby and OpenNLP</em>:</p>
+
+<ul>
+<li>Sentence segmentation,</li>
+<li>Tokenization,</li>
+<li>Part-of-speech tagging, and</li>
+<li>Named entity recognition.</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 18:04:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/67</link>
+      <guid>http://cfp.euruko2013.org/proposals/67</guid>
+    </item>
+    <item>
+      <title>"Rails is Not the Holy Grail"</title>
+      <description>
+        <![CDATA[<p>Let me start by saying: Rails is awesome. Seriously, I&#39;ve been developing Rails since &#39;06 and I still think of Rails as my primary platform for web development.</p>
+
+<p>However, over the years I&#39;ve noticed that Rails is often used to solve problems it was not designed to solve. Once you&#39;ve become proficient with the Rails-hammer, every problem starts to look like a Rails-nail. </p>
+
+<p>In this talk I want to discuss different scenarios where Rails turned out <em>not</em> to be the answer. I want to show you how I used plain Ruby, Java, Go and even C to create better solutions and how they were integrated into the original Rails application.</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 07:55:18 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/66</link>
+      <guid>http://cfp.euruko2013.org/proposals/66</guid>
+    </item>
+    <item>
+      <title>"The future of Ruby is faster"</title>
+      <description>
+        <![CDATA[<p>You care about your code. You write nicely factored and clean code, with nice and small methods that each do just what they are supposed to do. Maybe you worry sometimes that these additional methods and small objects can be problematic? This talk hopefully makes you stop worrying about this.</p>
+
+<p>So with all this care that you do, what can a Ruby implementation do to make sure your code actually runs fast? In this talk I will discuss the techniques used that allow your Ruby code to execute faster. How do we make sure calling a method is cheap or even free? How can we let you mostly get away with allocating a lot of objects? How do we make iterating with .each as fast as a while loop?</p>
+
+<p>Different techniques will be discussed, such as inline caches, just in time compilation, method / block inlining and better garbage collection. As a Rubinius contributor I&#39;ve worked on all these subjects so I know a few things about these topics, but these will explained such that any Ruby developer can understand how these optimizations work.</p>
+
+<p>The quest for a faster Ruby is happening in a lot of places and you can learn how this is done!</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 13:15:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/65</link>
+      <guid>http://cfp.euruko2013.org/proposals/65</guid>
+    </item>
+    <item>
+      <title>"35.000 tests and counting!"</title>
+      <description>
+        <![CDATA[<p>Some say it’s madness, we answer it’s sanity. Have you ever deployed to production clutching your teeth, crossing your fingers, holding lucky charms or praying to the god of luck to have a successful one? Well.. we haven’t! Why? Because we have made testing a constant and indispensable part of our work. </p>
+
+<p>Quality assurance is a vital part of program development so that the requirements of the final program are achieved, and we think testing is the right way to it. Most of the times we know when something goes wrong really early and we get to change stuff here and there without worrying that the final result will be a tower of cards coming tumbling down. </p>
+
+<p>From all this meddling with the forces of the universe we have come to know some tips and tricks you can use, rabbit holes to avoid and features to keep in mind. Such as:</p>
+
+<ul>
+<li>Anti-patterns to avoid</li>
+<li>When to <strong>not</strong> write a test</li>
+<li>Continuous development, continuous testing, continuous integration, continuous development.</li>
+<li>Know that testing is not a panacea.</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 12:43:56 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/64</link>
+      <guid>http://cfp.euruko2013.org/proposals/64</guid>
+    </item>
+    <item>
+      <title>"SRP &amp;gt; MVC"</title>
+      <description>
+        <![CDATA[<p>Everyone knows that in Object Oriented programming, the Single Responsibility Principal (SRP) is the bedrock of happy code. However, when it comes to our frameworks, we are happy with a separation of responsibilites largely into the Model, View and Controller type of responsibilites. This leads to various object oriented anti-patterns existing in our frameworks. It leads to the creation of layers that straddle the boundaries in the MVC paradigm such as service layers, presenters and so on. In this talk, I propose that MVC is no longer adequate for building applications in Ruby and what we need instead is a focus on classes that do only one thing. </p>
+
+<p>Take for example, everyone&#39;s favourite whipping boy - the Controller. The Controller is responsible for authentication, authorization, assigning data and returning the response for index, new, show, create, delete, update, edit, destroy and any other action that you care to stuff into it. No wonder everyone hates controllers. They are an OO anti-pattern.</p>
+
+<p>It&#39;s time to take matters into our own hands and use MVC not as a strict rule but rather as a convenient nomenclature and replace it with what is much better suited to building applications. </p>
+
+<p>I will show the audience how to build an application first and then how to present it to the web using nothing but tiny classes with one responsibility each. I&#39;ll demonstrate how to deal with this level of modularity without going crazy and lastly, I&#39;ll demonstrate the benefits of this approach by turning the same application into a mobile app by changing nothing in the application, only its interface to the rest of the world.</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 05:58:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/63</link>
+      <guid>http://cfp.euruko2013.org/proposals/63</guid>
+    </item>
+    <item>
+      <title>"Creating Games with WebGL and Three.js"</title>
+      <description>
+        <![CDATA[<p>There was once a time where gaming in the browser meant Flash. That time is no more. Based on OpenGL ES, WebGL brings the 3D world to the browser without any plugins. Three.js, a scenegraph library for WebGL, allows us to make creating 3D web apps easier by abstracting away many of the low-level API calls.</p>
+
+<p>In this session, you’ll learn the basics of game programming, WebGL, and how to use Three.js to create WebGL applications.</p>
+]]>
+      </description>
+      <pubDate>Thu, 18 Apr 2013 19:14:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/62</link>
+      <guid>http://cfp.euruko2013.org/proposals/62</guid>
+    </item>
+    <item>
+      <title>"Rails controller action and JS are like brothers now –  thanks to the gon gem"</title>
+      <description>
+        <![CDATA[<p>Did you ever want to integrate your Ruby code in controllers and JavaScript code in the frontend? Gon is here to help with seamless serialization, DRY code and live reloading. Organize your frontend the way it deserves!</p>
+
+<hr>
+
+<p>This talk will describe several strategies of transporting data between backend and frontend with the gon gem. It covers:</p>
+
+<ul>
+<li>  simple variable transfer</li>
+<li>  complex serialization with Rabl and JBuilder templates</li>
+<li>  transparent synchronization of JavaScript variables with their server-side counterparts</li>
+<li>  easy way to set initial or global data for whole application</li>
+<li>  real-life examples</li>
+<li>  nice mood with a set of nifty pics</li>
+<li>  and a bit of spice: Gon internals!</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Thu, 18 Apr 2013 10:09:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/61</link>
+      <guid>http://cfp.euruko2013.org/proposals/61</guid>
+    </item>
+    <item>
+      <title>"Improving the community: contribution without commits"</title>
+      <description>
+        <![CDATA[<p>Open source is a community effort. Yet, we usually judge open source developers by commits. I&#39;d like to present other ways of contributing, especially by building communities. This talk gives advice on how to get started by running user groups, being involved in online discussions in a meaningful way and encouraging other people to contribute. It also discusses what makes community events meaningful, how to make sure that the right people attend and how to deal with arising issues.</p>
+
+<p>This talk will present ways to get involved as a community organizer for almost any skill level and independent on how much time you have. All suggestions and examples come from hands-on experience with all kinds of events.</p>
+]]>
+      </description>
+      <pubDate>Tue, 16 Apr 2013 15:05:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/60</link>
+      <guid>http://cfp.euruko2013.org/proposals/60</guid>
+    </item>
+    <item>
+      <title>"The OO/web impedance mismatch"</title>
+      <description>
+        <![CDATA[<p>This talk makes the following observations/arguments:</p>
+
+<ul>
+<li>OOP is inherently stateful</li>
+<li>HTTP is a stateless protocol</li>
+<li>Using rack and similar, we make this statelessness an integral part of our applications</li>
+<li>We structure our web applications using objects rather than a functional model</li>
+</ul>
+
+<p>I&#39;ll look at the implications this situation has for object-oriented design, arguing that it is nigh impossible to evolve a pure object-oriented design given these constraints. We&#39;ll look at both ends of the problem: an attempt to create an object-oriented architecture while embracing statelessness (Model 2 architectures such as Rails), and an attempt to bend HTTP to the will of the programmer by avoiding statelessness (continuation-based web servers such as Seaside). We&#39;ll look at the characteristics of the design under each model, and talk about their strengths and their weaknesses.</p>
+
+<p>Given that we&#39;re more familiar with Model 2 architectures than continuation-based architectures, we&#39;ll also take a look at some ways of finessing the problems identified. This may include an ill-advised attempt to argue for the utility of Inversion of Control/Dependency Injection containers.</p>
+]]>
+      </description>
+      <pubDate>Tue, 16 Apr 2013 08:06:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/59</link>
+      <guid>http://cfp.euruko2013.org/proposals/59</guid>
+    </item>
+    <item>
+      <title>"Virtual Machines: Down the Rabbit Hole"</title>
+      <description>
+        <![CDATA[<p>For the past two years I&#39;ve been studying compilers and virtual machines, developing some simple compilers in Ruby, programming languages on the Rubinius VM, and working on my own language-agnostic virtual machine, the Terror VM.</p>
+
+<p>This talk will cover what I&#39;ve learned during this enlightening process, how a Virtual Machine works, and most importantly why you (as a Ruby programmer) should care about it. I&#39;ll also guide the audience through the implementation of a very simple VM in Ruby, to show that there are less dragons than you might think.</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 11:48:16 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/58</link>
+      <guid>http://cfp.euruko2013.org/proposals/58</guid>
+    </item>
+    <item>
+      <title>"Sass in the Real World"</title>
+      <description>
+        <![CDATA[<p>You&#39;ve seen all the Getting started with Sass &amp; Compass talks. Sure, the parent reference and sprites are awesome, but how to use that to tackle real-life problems? Let&#39;s take a look at advanced uses, such as the benefits of nested lists, retina sprites, using Sass to code for performance and more.</p>
+
+<p>This is not a Ruby talk, but assuming a large portion of the audience uses Rails and Sass, this should give them superpowers.</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 09:22:16 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/57</link>
+      <guid>http://cfp.euruko2013.org/proposals/57</guid>
+    </item>
+    <item>
+      <title>"Always Be Closing "</title>
+      <description>
+        <![CDATA[<p>Whether you want it or not, you&#39;re the constant victim of neuro-marketing. Understand the unconscious reasons for your online actions, and how to apply psychology-meets-UX to your own apps.</p>
+
+<p>The rationale behind this proposal is that I assume there will be quite some attendees who work on their own startups, have to advice on UX or are just interested in the human mind. Is it a Ruby talk? No. Is it interesting to web developers and humans in general? Definitely!</p>
+
+<p>Disclaimer: I am a Rubyist, not a psychologist. I&#39;ve been interested in (online) influence and persuasion for a while though and have read pretty much all the standard works on the subject. I may not be an expert, but I do teach some useful tricks.</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 09:21:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/56</link>
+      <guid>http://cfp.euruko2013.org/proposals/56</guid>
+    </item>
+    <item>
+      <title>"Rails, meet DDD"</title>
+      <description>
+        <![CDATA[<p>Rails applications are great for simple domains, but what if your domain is complex?</p>
+
+<p>Modeling complex domains &quot;the Rails way&quot; without the right foresight in architecture can bring you a world of hurt. Going down the road of creating insufficient decoupling and organization of models and responsibilities can quickly create incomprehensible webs of domain logic, halting sane, sustainable growth, and ultimately bringing you to your knees.</p>
+
+<p>At want point is &quot;the Rails way&quot; not enough? And what is this DDD?</p>
+
+<p>We&#39;ll explore exactly what Domain Driven Design is and how a set of techniques can guide the architecture of your domain. </p>
+
+<p>I&#39;ll talk about:</p>
+
+<ul>
+<li>How communication is key, and language should be ubiquitous and exact in both code and discussions</li>
+<li>Aggregates wrap up a complex set of domain rules around a tight knit group of models</li>
+<li>Value objects remove unnecessary coupling and complexities</li>
+<li>Repositories consolidate and express how object retrieval is important to the domain</li>
+<li>Services represent natural transactions of a domain</li>
+<li>When and when not to use DDD, especially with Rails</li>
+</ul>
+
+<p>No matter how complex your domain becomes, it will stay easy to grok by a fresh pair of eyes, flexible enough to continuously change and grow, and ultimately make sure you continue to be that happy developer that Rails and ruby wants you to be.</p>
+]]>
+      </description>
+      <pubDate>Mon, 15 Apr 2013 03:03:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/55</link>
+      <guid>http://cfp.euruko2013.org/proposals/55</guid>
+    </item>
+    <item>
+      <title>"Keep your ActiveRecord models manageable the Rails way"</title>
+      <description>
+        <![CDATA[<p>Rails is awesome! It makes very easy and fun to start new projects. However, as your application grows, you will eventually need to <em>come off the Rails</em>. Otherwise your codebase will become completely unmanageable. Everyone knows that.</p>
+
+<p>You&#39;ll need presenters and a service layer, including role and use-case objects. DCI will be great too or, alternatively, you can go Hexagonal. After all, the web is just a delivery mechanism, the database is a mere persistence strategy and, of course, “Rails is a detail”.</p>
+
+<p>But… Wait a minute! Is all that really true? Does the <em>Golden Path</em> no longer work as your application becomes larger? How is it, then, that Rails claims to be “optimised for sustainable productivity”?</p>
+
+<p>Criticising Rails is so last year! This time we&#39;ll revisit the patterns and conventions that Rails encourages and push them to the limit to see what happens. We&#39;ll seek examples of large Rails applications keeping their models manageable without <em>derailing</em>. We&#39;ll also discuss the trade-offs of running on and off the Rails. And, maybe, we&#39;ll finally learn how to stop worrying and love the Rails way!</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 20:07:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/54</link>
+      <guid>http://cfp.euruko2013.org/proposals/54</guid>
+    </item>
+    <item>
+      <title>"Chipping Away at Enterprise"</title>
+      <description>
+        <![CDATA[<p>Over the years &#39;enterprises&#39; have become quite entrenched in their opinions about software development. Many corporations even forbid internal development completely! Unfortunately, this means that using ruby can be quite a challenge for many of us. </p>
+
+<p>This talk will show you how to navigate &#39;enterprisey&#39; barriers to development by examining the following questions: What are some ways to really open the corporate decision-maker&#39;s eyes to what is possible with ruby? How can we sneak ruby into production without running into typical roadblocks? How can we use small simple applications to make a huge difference in our internal business processes?</p>
+
+<p>As an in-house developer for a large corporation with a formal policy forbidding any application development I have been through the wars. I would like to help other rubyists &#39;beard the lion&#39; and come through unscathed.</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 03:18:48 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/52</link>
+      <guid>http://cfp.euruko2013.org/proposals/52</guid>
+    </item>
+    <item>
+      <title>"From Monorail to Tri-rail"</title>
+      <description>
+        <![CDATA[<p>Rails is so powerful that it can be easy to forget the basics of good software design. When every feature is simple to tack on to an application it is very difficult to see when you may have crossed the line. When this happens your application becomes a bloated mess.</p>
+
+<p>You don&#39;t need to look far to find reference to a &#39;Monorail&#39;. Is this just an odd reference to Disney World or does it actually have something to do with software development? How can you decouple your monolithic application into smaller and more distinct chunks? </p>
+
+<p>Using a number of examples from real production rails applications, this talk will examine some of the problems developers faced as the applications grew, and highlight a few strategies to address them.</p>
+
+<p>As a developer I have fallen down the rabbit hole of simply adding on new features, only to find later that my entire codebase was a giant mess of <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a>, <a href="https://en.wikipedia.org/wiki/Law_Of_Demeter">Demeter</a>, and <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> violations.</p>
+
+<blockquote>
+<p>The only thing necessary for the triumph of evil is for good men to do nothing.</p>
+</blockquote>
+
+<ul>
+<li>Edmund Burke</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 03:17:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/51</link>
+      <guid>http://cfp.euruko2013.org/proposals/51</guid>
+    </item>
+    <item>
+      <title>"Bug or Feature – the Ruby quiz game"</title>
+      <description>
+        <![CDATA[<p>Test your Ruby knowledge and intuition with an interactive quiz on Ruby. How surely can you detect unexpected behavior from normality? Are you in tune with Matz&#39;s principle of least surprise? Is it a bug or a feature?</p>
+
+<p>The questions will cover some interesting bug reports and feature requests of ruby-core, spiced up with a couple of trick questions. To uncover the answers, we&#39;ll have to explore unchartered territories. We&#39;ll dig deep in recursion, battle failing specs, encounter exotic <code>Float</code>s and other infinities, and decipher arcane C code.</p>
+
+<p>Rubyists of all levels, from beginners to hardcore pros are invited in this informal challenge. Be sure to check your ego at the door, as no-one will escape unscathed; even top notch ruby-core committers don&#39;t always get right answers! Let&#39;s discover what can lie under the apparent simplicity of Ruby without forgetting the most important: having fun.</p>
+]]>
+      </description>
+      <pubDate>Sun, 14 Apr 2013 00:40:57 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/50</link>
+      <guid>http://cfp.euruko2013.org/proposals/50</guid>
+    </item>
+    <item>
+      <title>"Features what you might have missed about PostgreSQL"</title>
+      <description>
+        <![CDATA[<p>PostgreSQL is a feature-packed relational database that every Ruby and Rails developer should consider using. Why? </p>
+
+<p>In this talk I would like to cover the most useful features in PostgreSQL and show how we can use them, like:</p>
+
+<ul>
+<li>Flexible Data Types (array, ranges, JSON)</li>
+<li>WITH</li>
+<li>LISTEN/NOTIFY and unlogged tables</li>
+<li>Window functions</li>
+<li>Table Inheritance</li>
+<li>Indexes (partial, functional, concurrent, GIST and GIN)</li>
+<li>Foreign Data Wrappers</li>
+<li>Extensions (postgis, hstore, dblink, uuid-ossp, plv8, smlar, pgcrypto)</li>
+</ul>
+
+<p>Many of this features were added in Rails 4 and I would like to show how to use them.</p>
+]]>
+      </description>
+      <pubDate>Sat, 13 Apr 2013 12:22:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/49</link>
+      <guid>http://cfp.euruko2013.org/proposals/49</guid>
+    </item>
+    <item>
+      <title>"Running and maintaining complex web infrastructures with Ruby and Bosh"</title>
+      <description>
+        <![CDATA[<p>The lifecycle of systems with dozens of web services can become
+a real challenge.</p>
+
+<p>In those environments the management and orchestration of servers, operating systems, services and applications often is 
+cumbersome and painful.</p>
+
+<p>With Bosh you describe the complete environment of a distributed system on top of an Infrastructure as a Service (IaaS) layer such as AWS, VmWare vCloud or OpenStack.</p>
+
+<p>Just throw your Bosh deployment manifest at your Bosh-Server and it will get the whole system up and running for you.</p>
+
+<p>In this talk you&#39;ll see how you can wrap up a complete set of distributed services, spin up new instances, set them up, deploy apps
+and get them running with only one tool. </p>
+
+<p>Also get information about how Bosh relates to technologies such as Opscode Chef and Capistrano and whether they
+are coexisting or competing.</p>
+
+<p>Bosh has been developed in the context of CloudFoundry an open source, Ruby based PaaS which has been subject to heavy change of years.
+Shaped from that emerging environment BOSH will assist you during and beyond your initial deployment and help you to maintain the full lifecycle of an evolving infrastructure.</p>
+
+<p>So learn how to handle virtual machines, OS images, OS services and app deployments holistically with Bosh.</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 12:40:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/48</link>
+      <guid>http://cfp.euruko2013.org/proposals/48</guid>
+    </item>
+    <item>
+      <title>"The Days After Tomorrow — Are Cucumber, RSpec, Mini::Test And Friends Enough?"</title>
+      <description>
+        <![CDATA[<p>The anniversaries we&#39;re celebrating at Euruko 2013 are a good reason to think about what you need to do, to create long lasting software. Let&#39;s think about the <em>future of the software we&#39;re building</em>.</p>
+
+<p>Sure: If our software fails to provide enough value <em>today</em> (or at least in the near future), we&#39;ll probably be better off looking for the next job. However, software development is a game played in rounds — and most teams nearly always prefer to <em>stay in the game</em> for many rounds.</p>
+
+<p>It&#39;s interesting — and a it worrying — that most of the testing techniques and approaches applied today are focussed on the <em>current</em> version of our software and its ability to solve to right problem and doing this correctly: We concentrate on a relatively short period of time.</p>
+
+<p>However, we should also make sure our systems can cope with tomorrows requirements, customers and users. Therefore, let&#39;s look at some ways we can do this.</p>
+]]>
+      </description>
+      <pubDate>Thu, 11 Apr 2013 09:20:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/47</link>
+      <guid>http://cfp.euruko2013.org/proposals/47</guid>
+    </item>
+    <item>
+      <title>"Asynchronous network progamming with JRuby and Netty"</title>
+      <description>
+        <![CDATA[<p>Through this presentation, I will show the audience that JRuby combines the power of the JVM and the elegancy of Ruby through popular Ruby topics such as asynchrony and web applications.</p>
+
+<p>More and more people are migrating from Ruby to Node.js because it&#39;s easier to do asynchronous applications and web applications can be faster and more scalable. But easy asynchrony, performance and scalability can be achieve with JRuby using Java libraries.</p>
+
+<p>To show that, I will show an example based on a popular Java library named Netty – an asynchronous event-driven network application framework (it is similar to Node.js and EventMachine). Netty is widely used and is developed by Red Hat. For example the Play Framework (best Java/Scala framework) is using Netty. Netty – like a lot of Java libraries – is complex but JRuby can easily hide this complexity and let Ruby developers use a very fast library without the quirks of the Java syntax.</p>
+
+<p>I&#39;ll show some code examples of a web framework I&#39;ve made based on Netty and how it can easily be used in association with Ruby libraries like ActiveRecord. I&#39;ll show a real-world usage, a REST API for an iOS app and a performance comparison with other solutions.</p>
+
+<p>In summary, I think it&#39;s a great practical guide to JRuby and how it could help to achieve great performances for your applications while still writing normal Ruby.</p>
+
+<p><strong>A note about myself:</strong> I&#39;ve been using JRuby for a long time for various apps and scripts. I know Scala (and Akka), Clojure and asynchronous IO Java 7 features in addition to Node.js, Go and Ruby libraries like EventMachine and Celluloid.</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 18:41:19 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/46</link>
+      <guid>http://cfp.euruko2013.org/proposals/46</guid>
+    </item>
+    <item>
+      <title>"Deltacloud API - an opensource cloud API"</title>
+      <description>
+        <![CDATA[<p>Deltacloud API prevents you from cloud vendor-lockin and cloud API changes. With deltacloud you can speak up to 18 different cloud providers using one single API. Deltacloud now officialy support the CIMI API as a new industry standard for cloud computing and also non-officialy Amazon EC2 query API.</p>
+
+<p>Deltacloud contains a cloud abstraction API - whether the Deltacloud classic API, the DMTF CIMI API or even the EC2 API. The API works as a wrapper around a large number of clouds, abstracting their differences. For every cloud provider there is a driver &quot;speaking&quot; that cloud provider&#39;s native API, freeing you from dealing with the particulars of each cloud&#39;s API.</p>
+
+<p>Deltacloud is based in Sinatra  and able to be mounted into your Rails/Rack application.</p>
+
+<p>In the presentation I want to show how Deltacloud API is implemented and what we use under the hood (sinatra-rabbit DSL, multiple API frontends, Rack collections...) and also demonstrate how it could be useful when you are programming a cloud-based app.</p>
+
+<p><a href="http://deltacloud.apache.org/">http://deltacloud.apache.org/</a></p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 16:00:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/45</link>
+      <guid>http://cfp.euruko2013.org/proposals/45</guid>
+    </item>
+    <item>
+      <title>"Look behind the scenes of a PaaS"</title>
+      <description>
+        <![CDATA[<p>Have you ever thought about what is going on behind the scenes of a platform as a service?</p>
+
+<p>Learning about the nature of PaaS will help you to better adapt your apps for the operation on such an infrastructure.</p>
+
+<p>In this talk we will go through the major challenges of building a large distributed service oriented architecture to
+easily deploy applications of different languages binding dynamically to multiple services.</p>
+
+<p>Learn about the basic building blocks of such a system and see what these services do and how they interoperate.</p>
+
+<p>Get a glance at how to implement self-configuration, self-healing and scalability while being language and version control agnostic.</p>
+
+<p>All done in the beloved Ruby language. All open source. Ready to be discovered and improved.</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 08:34:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/44</link>
+      <guid>http://cfp.euruko2013.org/proposals/44</guid>
+    </item>
+    <item>
+      <title>"Pushing Mongoid to the limit"</title>
+      <description>
+        <![CDATA[<p>Mongoid (especially 3.x) has become a very popular choice as an ODM for Rails applications. But did you know that Mongoid goes way beyond acting as just as an ODM in Rails? It can be used with any Ruby application and can be used to its full potential. This talk is about how we can push mongoid (and in turn MongoDB) to its limit.</p>
+
+<ul>
+<li>Mongoid introduced Origin and Moped. This talk discusses about the origins of Origin and Moped, why they were introduced and how they can even be used independently.</li>
+<li>We see what mongoize is and how its used for custom field types and their serialization.</li>
+<li>We see how querying has improved with Origin and peek into its DSL. For example, we shall see what goes on under the covers for a call like <code>:created_at.lte</code> and how <code>Symbol</code> class is enhanced for better querying. We see how <code>.or</code> and <code>.and</code> operations can be done easily without any MongoDB specific syntax.</li>
+<li>We see how to leverage field aliasing for better storage and compound indexing. </li>
+<li>We learn how 2dsphere indexes improve geo-spatial searches and how hashed indexes are awesome for sharding.</li>
+<li>How often do we hit a problem where we need aggregated data from multiple collections? This talks discusses simulating &quot;joins&quot; using map re-reduce.</li>
+<li>Full text search indexing is now an experimental features of MongoDB 2.4. We take on text indexes, their pros and cons and compare it with indexing engines like ElasticSearch and IndexTank.</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Tue, 09 Apr 2013 08:20:36 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/43</link>
+      <guid>http://cfp.euruko2013.org/proposals/43</guid>
+    </item>
+    <item>
+      <title>"Take care of Work-Life-Open-Source balance"</title>
+      <description>
+        <![CDATA[<p>You know the constraints: Day job, time for your family, urge to hack, visiting the local user group, and 
+start a new project about the latest rocket science technology you need to learn. There is never enough 
+time for all this stuff at once. This talk will present the time management method, called Pomodoro. Learn
+how to work time-boxed, get rid of distractions, focus on a single task for 25 minutes, and relax for 
+couple of minutes to free your mind. We all love Open Source work and shouldn&#39;t fall into the pit to neglect other, more important parts in our life like the relationship to beloved ones.The Pomodoro Technique will help you to hack
+on your beloved babies in a time-boxed way to get more done in less time.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 16:22:06 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/41</link>
+      <guid>http://cfp.euruko2013.org/proposals/41</guid>
+    </item>
+    <item>
+      <title>"Becoming a speaker"</title>
+      <description>
+        <![CDATA[<p>I was watching confreaks (<a href="http://www.confreaks.com/">http://www.confreaks.com/</a>) videos and asked myself: &quot;Can I become one of those speakers?&quot;. My dream came true because I was invited to speak at Ruby Midwest 2013 in Kansas City. The basic essence of each talk is the speaker, the topic, how to act on stage, how to connect with the audience and how to tell your personal story. Learn how to become a speaker for conferences - you can do and learn this.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 16:20:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/40</link>
+      <guid>http://cfp.euruko2013.org/proposals/40</guid>
+    </item>
+    <item>
+      <title>"Ruby Groups: Act Locally - Think Globally"</title>
+      <description>
+        <![CDATA[<p>There are thousands of local Ruby groups worldwide. Sadly, many suffer along, become stagnant, some even die off. How can you make your local Ruby Group better and in so doing, improve the global Ruby Community?</p>
+
+<p>This talk focuses on the human side of getting a group together and making it successful so the members, as a group can contribute to the larger community. It is a universally useful guide to improving all parts of the ruby community, starting on a local level.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 13:57:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/39</link>
+      <guid>http://cfp.euruko2013.org/proposals/39</guid>
+    </item>
+    <item>
+      <title>"How to use RVM: development, deployment, production"</title>
+      <description>
+        <![CDATA[<p>General tutorial &quot;how to use RVM&quot;, starting simple with basics of shell usage and going into details including deployment and server configuration.</p>
+
+<p>There are multiple ways to use RVM I want to tell about them not avoiding tricks that save time.</p>
+
+<p>I will also try to mention most common problems and the best ways of avoiding them.</p>
+]]>
+      </description>
+      <pubDate>Mon, 08 Apr 2013 01:47:43 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/37</link>
+      <guid>http://cfp.euruko2013.org/proposals/37</guid>
+    </item>
+    <item>
+      <title>"The Healthy Rubyist – A No-Frills Guide to Refactoring Your Lifestyle"</title>
+      <description>
+        <![CDATA[<p>We Rubyists are geeks: We love what we do and we&#39;re deeply passionate about it. Chances are that you, like the average computer geek, aren&#39;t half as passionate about your general lifestyle as you are about tech stuff.</p>
+
+<p><em>Our bodies are just like our code base</em>: Not taking good and constant care of it might not hurt you today but at some point it will certainly come back to haunt you. And while <strong>you can always throw a rotten code base away and rewrite it from scratch, the same is not true for your body</strong>: Damage done today is often permanent and physiological and psychological issues certainly aren&#39;t fun to carry around for the rest of your life.</p>
+
+<p>Fortunately, it doesn&#39;t take much effort to prevent health issues in the first place. Just as in your code, the <strong>proper small changes will make a huge difference and improve the system as a whole</strong>.</p>
+
+<p>In this talk you will learn about the corner stones of good health:</p>
+
+<ul>
+<li>Pitfalls of common knowledge: learn about common and often contradictory myths in terms of nutrition and what actual science has to say about them</li>
+<li>Knowing instead of guessing: tools and ways to determine your body&#39;s real health status and how to interpret results</li>
+<li>Not all foods are created equal: how to differentiate between good and bad foods</li>
+<li>Enjoying healthy food: how to arrange your meals around healthy eating patterns without (too many) sacrifices</li>
+<li>The minimum viable amount of exercise: how to become and stay physically active without spending hours in the gym</li>
+</ul>
+
+<p>Let us treat our bodies more like our code base: Let us check constantly and religiously that our systems are running as best as they can and throw out the bad stuff and bring in more good stuff. Let us care just a little bit more.</p>
+
+<p>Let us refactor our lifestyle and be healthy!</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:15:51 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/36</link>
+      <guid>http://cfp.euruko2013.org/proposals/36</guid>
+    </item>
+    <item>
+      <title>"Enabling the quest of science with Ruby. A talk about building an infrastructure with Ruby."</title>
+      <description>
+        <![CDATA[<p>Infrastructure is hot these days. Salaries are still high even though Heroku, Engine Yard, and others have made deployments easy as pie. It is not only that infrastructure these days can be managed with code, using Chef, Puppet and the like, but Ruby can be used for, and is used to power some of the most important super computer centers these days. </p>
+
+<p>We&#39;re going to talk about how Ruby is absolutely valid today to build a Computing Center. We&#39;re going to talk about this in a very general sense, using great libraries and tools to stand upon the shoulders of giants and be agnostic of whatever our computing distributed system is about. Rackspace, AWS, Openstack, Libvirt.. can all be managed and built using libraries like Fog, Mcollective, Foreman, and others. The great thing about it is that these tools promote domain driven development and you can absolutely disregard a lot of details until you have proven the underlying architecture to be solid. </p>
+
+<p>My idea is to share this with you through the eyes of my experience. I can show you how Ruby is and has been for a while a wonderful tool to think about all of the problems that arise with a bird&#39;s eye view. A lot of these tools are being actively developed, and I would love to share my experiences working in these open source tools with teams from all around the world, and how to handle all this.</p>
+
+<p>As for my background, I have been working at CERN learning and building the new infrastructure that is power the data center that processes data from all the experiments, including the Higgs&#39; boson search, how antiprotons react with cancerous cells, and how quarks and gluons interact with the particles we see, among others. I have worked on several consumer-facing startups so I can take a look at these problems I mentioned from many different perspectives.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 09:39:38 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/35</link>
+      <guid>http://cfp.euruko2013.org/proposals/35</guid>
+    </item>
+    <item>
+      <title>"Architecting your Rails app for success!"</title>
+      <description>
+        <![CDATA[<p>Rails is a great framework for creating web apps... for awhile. What do you do when your codebase grows large? How do you handle large teams of developers? When performance becomes an issue, how do you scale? Most importantly, how do you write code which can easily be refactored later?</p>
+
+<p>This is a story of a real life project built from day 1 with all these questions in mind. Learn about the problems we solved and lessons we learned: how to partition your Rails app into distinct modular engines, how to speed up your test suite by only running code effected by your changes, how to add a layer on top of ActiveRecord to enforce loose coupling, and many other patterns that can be applied to your own Rails apps!</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 01:15:04 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/34</link>
+      <guid>http://cfp.euruko2013.org/proposals/34</guid>
+    </item>
+    <item>
+      <title>"Hacking with Gems"</title>
+      <description>
+        <![CDATA[<p>What&#39;s the worst that could happen if your app has a dependency on a malicious gem? How easy would it be to write a gem that could compromise a box?</p>
+
+<p>Much of the Ruby community blindly trusts our gems. This talk will make you second guess that trust. It will also show you what malicious gems can do, how an attack could be executed, how to vet gems, and what the Ruby community can do to increase security around gems.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 01:13:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33</link>
+      <guid>http://cfp.euruko2013.org/proposals/33</guid>
+    </item>
+    <item>
+      <title>"Rubymotion 1-2-3"</title>
+      <description>
+        <![CDATA[<p>In this talk, we&#39;re going to cover the basics of Rubymotion - a sane, Ruby-centric way of developing 100% native iOS apps using Ruby. We&#39;ll cover all aspects one has to know in order to start TDDing their own iOS apps from scratch, from installation to deployment with no prior experience on Objective-C required and using the IDE of their choice (unless they really dig XCode).</p>
+]]>
+      </description>
+      <pubDate>Sat, 06 Apr 2013 13:53:10 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/32</link>
+      <guid>http://cfp.euruko2013.org/proposals/32</guid>
+    </item>
+    <item>
+      <title>"A Rails Criticism"</title>
+      <description>
+        <![CDATA[<p>A deep insight on why Ruby on Rails has revolutionized web development.</p>
+
+<p>This talk will focus its attention on the Rails &quot;Golden Path&quot;, the reasons to its success, the most common problems, and how its API can be improved.</p>
+
+<p>We will learn to benefit from a tool as powerful as it is dangerous, how to mitigate  architectural, design and testability implications for our applications and how to improve the quality of our code.</p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 09:15:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/31</link>
+      <guid>http://cfp.euruko2013.org/proposals/31</guid>
+    </item>
+    <item>
+      <title>"Building your Testing Mindset with Ruby"</title>
+      <description>
+        <![CDATA[<p>Have you ever wondered why the word &quot;should&quot; is so important on BDD?
+Or which context tools like TestUnit, RSpec, Cucumber and Selenium were created?
+Or even why we use the &quot;given, when, then&quot; format on Cucumber?</p>
+
+<p>On this talk, with plentiful of code, you will learn/understand the motivation behind the most common tools / techniques for testing in the Ruby world.</p>
+
+<p>Furthermore, knowing how to use your toolset&#39;s API is not even considered a minimum requirement nowadays. Some might dare to dive on their toolset source-code to understand their internals and reason about their decisions but even fewer dare to understand why and in which circumstances those tools were created. Even though this talk&#39;s code examples are in Ruby you will realize the general principle is the same, no matter your technology of choice. </p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 08:13:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/30</link>
+      <guid>http://cfp.euruko2013.org/proposals/30</guid>
+    </item>
+    <item>
+      <title>"Multi-hundred-model apps with Rails and Netzke"</title>
+      <description>
+        <![CDATA[<p>What do you do when your Rails app needs to manage a hundred or two of data models? Like, you know, in the case of those &quot;ERP systems&quot; that help their users with accounting,  call centres, logistics, backends, etc. If you&#39;re among those of us who have to deal with this - I feel your pain! Because for each model, you would probably write (or generate) controllers and views with overlapping functionality - like CRUD, search, export/import, etc. And soon you&#39;d realise that this much code is far from being comfortably maintainable, so, you think: &quot;I wish I had to write that code only once!&quot; But how cooperative is Rails on this, really? Can you easily reuse your controller and view code? If you ever try, you&#39;ll know it&#39;s not a trivial task.</p>
+
+<p>An extension to Rails called <a href="http://netzke.org">Netzke</a> does not only provide you with a tool to create extremely reusable client-server GUI components capable of replacing Rails controllers and views, but it also gives you full-featured pre-built components (such as data grid) out of the box. You&#39;ll be amazed with how little code you can start creating solid web apps that handle all of your models. And if you need to extend, combine, or configure existing components - it&#39;s straight forward, because each Netzke component is, first of all, a Ruby class. Developing complex apps also becomes much easier due to the fact that Netzke components can be developed, tested, and shared individually, decoupled from the complexity of your application.</p>
+
+<p>The client-side of Netzke apps is powered by Sencha Ext JS, which takes care of polished look and desktop-like experience familiar to any &quot;business guy&quot;. Ext JS leverages modular approach to the client code already, which makes it a perfect match with the core Netzke concept of modularity.</p>
+
+<p>This talk will give you the insight into the rationale behind Netzke - you&#39;ll learn how Netzke implements its &quot;modular MVC&quot;, how it differs from Rails MVC, and what are the many advantages descending from that. You&#39;ll be presented with some cool Ruby code that will make you want to use Netzke in your next project. It will also become clear that Netzke is not a replacement for Rails, but a tool that makes your life a lot easier in the context of a very specific domain - the one of complex data-rich web apps.</p>
+]]>
+      </description>
+      <pubDate>Fri, 05 Apr 2013 05:27:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/29</link>
+      <guid>http://cfp.euruko2013.org/proposals/29</guid>
+    </item>
+    <item>
+      <title>"Crossing the Refactoring Swamp"</title>
+      <description>
+        <![CDATA[<h3>Abstract</h3>
+
+<p>Refactoring can be hard to balance against the urge to dive right back into delivering features. The good news, though, is that refactoring can take place anywhere. It can be done solo. It can be done in pieces. Recently, when I needed to refactor an annoying patch of code, I worked on it during my daily commute to and from the office. It didn’t interfere with client work or family time, and I accomplished a significant amount of work with near-zero opportunity cost.</p>
+
+<h3>Additional Notes</h3>
+
+<h4>Red-Green-Refactor Without Refactor Is About As Useful As a Two-Legged Stool</h4>
+
+<p>The test-driven development “mantra” is red ➔ green ➔ refactor ⟲. It is an essential step in the development process. Without it, over time, your code will accumulate unnecessary dependencies, have poor separation of responsibilities, and present confusing interfaces; all the opposite of SOLID design.</p>
+
+<h4>Technical Debt Is Like a Payday Loan</h4>
+
+<p>It is quite easy to be seduced to the dark side where you get to “green” and then decide to refactor “later,” where later often never comes. This decision is like a payday loan. You are incurring technical debt every time you deliver a new feature. And as is true for payday loans, your velocity will appear to be faster, but just a few iterations down the road, the debt must be paid. Eventually, your velocity will start to bog down, developers will cringe when they have to edit the code, tests will become brittle, and finally, refactoring will no longer be an option. The only choice will be to declare “bankruptcy”; that is, rewrite the code from scratch. That is why it is so important to complete the refactor within the context of a feature.</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 23:08:04 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/28</link>
+      <guid>http://cfp.euruko2013.org/proposals/28</guid>
+    </item>
+    <item>
+      <title>"50 Shades of MVC"</title>
+      <description>
+        <![CDATA[<p>We at the Rails world are very proud of embracing the Model-View-Controller design pattern, it is integral to the way we build web applications and there is a general consensus that all of us generally know what we are talking about in regards to it, hell , most of our code files are under a model, controller or views directories! We&#39;ve got to know what we are doing, right?</p>
+
+<p>Much like Object Orientation the Model-View-Controller pattern is one of the most popular-yet-heavily-altered concepts in modern computer science, what were the original propositions of the pattern? How was it applied back in the 70&#39;s, when it was proposed as a part of Smalltalk? How much have we changed it to adapt it to the web application scene? How can we apply this to our day to day work in 2013? is altering the original pattern necessarily a bad thing? </p>
+
+<p>On this talk I present different aspects of the MVC pattern and its changes from its inception to modern day use, what to keep in mind about the pattern as opposed to a single framework&#39;s implementation of it and how knowing this should make us all around better programmers.</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 18:17:33 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/27</link>
+      <guid>http://cfp.euruko2013.org/proposals/27</guid>
+    </item>
+    <item>
+      <title>"Opal, get back at doing Ruby on your browser ☺"</title>
+      <description>
+        <![CDATA[<p><img src="https://f.cloud.github.com/assets/1051/343869/0d2f31d2-9ded-11e2-9848-553e0b8e4232.png" align="left"></p>
+
+<p><a href="http://opalrb.org">Opal</a> is a production ready Ruby-to-Javascript compiler. In this presentation I will talk on how Ruby can be used to build awesome code for the browser. Keep applying all of your OO design skills having less context switch and increasing happiness!</p>
+
+<p>This presentation will cover:</p>
+
+<ul>
+<li>a general overview and why I feel so good doing Ruby on the client</li>
+<li><em>some</em> internals along explanation of implementing choices</li>
+<li>real world (™) use cases (including code ported from the server to the browser)</li>
+<li>fun! :-D</li>
+</ul>
+
+<p><br>
+<br>
+<br>
+<br></p>
+
+<p>I think it&#39;s still time for a general presentation of Opal, but if anyone feels otherwise I&#39;m open to feedback. 
+Here are some alternative (additional?) topics that would be fun to present:</p>
+
+<ul>
+<li>re-implementing Rack and Sinatra on Node.js in Ruby</li>
+<li>using Opal objects and methods from Javascript/CoffeeScript</li>
+<li>testing native Javascript with Opal Spec</li>
+<li>Vienna, the Ruby client MVC</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 16:17:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/26</link>
+      <guid>http://cfp.euruko2013.org/proposals/26</guid>
+    </item>
+    <item>
+      <title>"I &amp;lt;3 State"</title>
+      <description>
+        <![CDATA[<p>The conventional approach is to make web applications stateless, and store all data in some kind of database. This pattern is so deeply entrenched in our minds that people sometimes forget it is not the <em>only</em> way. </p>
+
+<p>When designing the architecture for a high-traffic web application with millions of users, we decided to go with exactly the opposite approach: no database, but a stateful application, that persists all its data. </p>
+
+<p>Why did we do this? What are the advantages and disadvantages? And how does it work?</p>
+
+<p>The implementation itself -- based on JRuby and a Java ConcurrentHashMap -- is surprisingly simple.
+But it raises a lot of interesting &quot;secondary&quot; problems, as you cannot simply restart the application. 
+I will explain in detail how we handle persistence, sharding, data migrations and deployment.</p>
+
+<p>Last but not least, I will report how our application is performing in production ..... are we happy with our decision?</p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 15:11:31 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/25</link>
+      <guid>http://cfp.euruko2013.org/proposals/25</guid>
+    </item>
+    <item>
+      <title>"Fabulous adventures of Rubyist in Clojure world"</title>
+      <description>
+        <![CDATA[<p>World is moving fast, and new programming languages emerge and get adopted quickly. 
+People get used to the toolset, and after some time start longing for new paradigms and ideas. </p>
+
+<p>Functional programming is one of the biggest trends of the recent years in programming, and 
+quite soon, if you don&#39;t know any functional programming language, your market value will 
+decrease.</p>
+
+<p>Clojure is a contemporary LISP, functional programming language with immutable, persistent 
+data structures, running on JVM. For Rubyists, its really easy to start working with Clojure, since
+many things in Ruby world help to understand FP paradigms better. </p>
+
+<p>Learn about Clojure tooling, and hear the story of migrating off Ruby stack to Clojure, about 
+reasoning behind such a decision, how Clojure has changed the way we write Ruby code, 
+approaches to concurrency and code structuring. </p>
+]]>
+      </description>
+      <pubDate>Thu, 04 Apr 2013 07:03:53 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/24</link>
+      <guid>http://cfp.euruko2013.org/proposals/24</guid>
+    </item>
+    <item>
+      <title>"It&amp;#x27;s all about the Motion"</title>
+      <description>
+        <![CDATA[<p>I&#39;ve been developing iOS applications for a little while now, and when RubyMotion came out I was excited at the possibility of ruby-fying the verbose syntax. I&#39;d like to talk about how we&#39;re changing the Objective-C syntax into Ruby wrapped methods with blocks, as well as how simple it is to get into iOS development now.</p>
+
+<p>In short, I&#39;d like to cover:</p>
+
+<p>RubyMotion, a simple getting started example
+Changing Objective-C syntax into something more readable
+The ups and the downs that i&#39;ve seen so far
+and the Future</p>
+]]>
+      </description>
+      <pubDate>Wed, 03 Apr 2013 17:03:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/23</link>
+      <guid>http://cfp.euruko2013.org/proposals/23</guid>
+    </item>
+    <item>
+      <title>"Ruby, Rock and Roll"</title>
+      <description>
+        <![CDATA[<p><a href="http://github.com/sausheong/muse">Muse</a> is a Ruby domain-specific language for creating digital music. In this presentation, I will talk on how Ruby can be used to create digital music through a simple analog software synthesizer, either transcribed from existing music scores, or algorithmically created out of data from various sources. </p>
+]]>
+      </description>
+      <pubDate>Wed, 03 Apr 2013 10:25:24 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/22</link>
+      <guid>http://cfp.euruko2013.org/proposals/22</guid>
+    </item>
+    <item>
+      <title>"From Rails to the web server to the browser"</title>
+      <description>
+        <![CDATA[<p>Most of us know how to build beautiful web applications with Rails. With the help of templating tools like ERB and HAML our web apps create HTML documents, but, do you know exactly how those HTML documents end up in a browser?</p>
+
+<p>During this talk I will show you the bits that make it all happen. We will dissect the relevant code within Rails, Rack and the thin web server to discover exactly how the web server starts and listens to a TCP port, communicates with Rails and returns the HTML document that your browser parses.</p>
+
+<p>Why? Because we&#39;re curious about it, that&#39;s why.</p>
+]]>
+      </description>
+      <pubDate>Wed, 03 Apr 2013 04:35:29 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/21</link>
+      <guid>http://cfp.euruko2013.org/proposals/21</guid>
+    </item>
+    <item>
+      <title>"Web applications with Ruby (not Rails)"</title>
+      <description>
+        <![CDATA[<p>These days, whenever you say that you&#39;re building a web application with Ruby, its almost implied that you will be using Rails to do so.</p>
+
+<p>Well, what if you don&#39;t want to use Rails? Or Sinatra? Or any other Framework for that matter. What if you just want to roll your own code for routing, controllers, rendering and models?</p>
+
+<p>Join me in this live coding experiment, I promise no slides and a lot of live coding action while we build an application from scratch using nothing but good old fashioned Ruby and a little Rack.</p>
+]]>
+      </description>
+      <pubDate>Wed, 03 Apr 2013 04:33:57 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/20</link>
+      <guid>http://cfp.euruko2013.org/proposals/20</guid>
+    </item>
+    <item>
+      <title>"Cutting off the browser fat from your app"</title>
+      <description>
+        <![CDATA[<p>The pursuit of losing weight is something that people always try to achieve; the same thing happens with web apps so I&#39;ll show a plan to reduce that extra fat on the browser that we always left there. I&#39;m gonna explain a couple of effortless rules to make your views faster from good code practice for views to write better CSS and JS, how to load them correctly and 2 or 3 tricks that I found particularly attractive. And last but not least all of this will end in a clean code structure with happy Dev team who will do any change effortless.</p>
+
+<p>There&#39;s a lot of things devs may think know, but there&#39;s a lot fat to cut off.</p>
+
+<h2>But, Why?</h2>
+
+<p>Front-end is always a topic that we as engineers tends to left apart, and every day becomes more and more valuable as building a solid backend. So it is always good to talk about Front-End.</p>
+
+<p>Also, I’m from Mexico and we are always cool.</p>
+]]>
+      </description>
+      <pubDate>Tue, 02 Apr 2013 21:53:52 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/19</link>
+      <guid>http://cfp.euruko2013.org/proposals/19</guid>
+    </item>
+    <item>
+      <title>"Minimal Surface Area"</title>
+      <description>
+        <![CDATA[<p>Our brains are not designed to code. Yet some how we manage it. Why? How? Do we know?</p>
+
+<p>Our mental models affect how we design and build software, after all software is an intellectual output, some developers prefer pair programming, others prefer isolation, everyone hates to be interrupted. How do our mental models influence our processes? How does this affect how we build software? </p>
+
+<p>Can we take advantage of how our brains work to write better applications? Does it drive our decisions?</p>
+
+<p>Can minimising the surface area of our code help us fit more into our heads? Allow us to build better software and just get stuff done?</p>
+
+<p>I think it can. I know from my own experience that writing smaller, decoupled classes allows me to write faster tests, and produce what I feel is &#39;better&#39; code; but I believe that building smaller services and overall minimising the surface area of my code is allowing me to focus more on the job at hand, and allows me quicker context switching, which is often an essential part of being a freelancer.</p>
+]]>
+      </description>
+      <pubDate>Sun, 31 Mar 2013 07:16:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/18</link>
+      <guid>http://cfp.euruko2013.org/proposals/18</guid>
+    </item>
+    <item>
+      <title>"Parsing And Analysing Ruby For Fun And Profit"</title>
+      <description>
+        <![CDATA[<p>Ruby is a flexible language but also a complicated one due to its dynamic
+nature. In other languages such as C and Python there are plenty of tools
+available that can aid developers in finding problems (and preventing them) in
+their code. Sadly with Ruby there are only a handful of tools available and
+those tend to focus more on coding guidelines instead of technical problems
+(such as the use of undefined variables).</p>
+
+<p>For the past year I spent working on a tool that takes care of this: a linter
+for Ruby. It spots errors such as the use of undefined variables, method calls
+with invalid parameters and much more.</p>
+
+<p>This talk will not just focus on that single tool. We&#39;ll be looking at the MRI
+parser (and the quirks of it in particular), the importance of knowing how a
+language is parsed and broader topics such as the importance of static code
+analysis and most importantly: how all of this can make your life as a Ruby
+programmer a lot easier.</p>
+
+<p>A small note that&#39;s worth taking into account: this talk will be fairly
+technical. Although I&#39;ll do my best to make it accessible to people of
+different skill levels it still remains a fairly complex topic. I&#39;ll probably
+also include one or two cat pictures in my slides.</p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 20:21:14 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/17</link>
+      <guid>http://cfp.euruko2013.org/proposals/17</guid>
+    </item>
+    <item>
+      <title>"Curly — Refactoring the view layer"</title>
+      <description>
+        <![CDATA[<p>While most parts of Rails have been thoroughly overhauled during the past few years, one part has stubbornly refused improvement. The view layer is still by default using ERB to transform your app’s objects into HTML. While HAML has gained a lot of traction, it is not a fundamental shift away from ERB, but rather a preference for putting HTML in your Ruby rather than the other way around.</p>
+
+<p>More recent efforts in the realm of JavaScript have produced Mustache and its ambitious younger brother, Handlebars. While these are more radical in their attempt to separate structure and logic, they still do not feel like native Rails code.</p>
+
+<p>Curly is a project that aims to bring a simple, powerful, and clean view layer to your Rails apps, by completely separating structure and logic while integrating with Rails. By writing all your view logic in a plain old Ruby class, you get back all the powerful means of refactoring and improving your code.</p>
+
+<p>Curly is open source and available at <a href="http://github.com/zendesk/curly">http://github.com/zendesk/curly</a></p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 14:17:04 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/16</link>
+      <guid>http://cfp.euruko2013.org/proposals/16</guid>
+    </item>
+    <item>
+      <title>"Functional Programming and Ruby"</title>
+      <description>
+        <![CDATA[<p>While Ruby is object oriented and imperative, it does have some features that allow for functional programming. In this talk we’ll compare Haskell, a functional programming language, with Ruby while exploring these common functional patterns: higher order functions, lazy evaluation, and memoization.</p>
+
+<p>Along the way we’ll explore how Ruby works internally, find out whether it’s a true functional language, and zoom in to take a close look at Ruby 2.0’s implementation of the new “Enumerator::Lazy” feature.</p>
+]]>
+      </description>
+      <pubDate>Sat, 30 Mar 2013 11:03:42 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/15</link>
+      <guid>http://cfp.euruko2013.org/proposals/15</guid>
+    </item>
+    <item>
+      <title>"Millions of Apps: What we&amp;#x27;ve Learned"</title>
+      <description>
+        <![CDATA[<p>Heroku has deployed millions of web apps. When you&#39;ve run that many applications, it&#39;s hard not to notice when frameworks and developers do things wrong, and when they do them right. We&#39;ve taken a look at the most common patterns and boiled down the best of our advice in to 12 simple factors that can help you build your next app to be stable, successful, and scaleable. After this talk you&#39;ll walk away with in depth knowledge of web framework design patterns and practical examples of how to improve your application code.</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 17:51:27 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/14</link>
+      <guid>http://cfp.euruko2013.org/proposals/14</guid>
+    </item>
+    <item>
+      <title>" Concurrency, Caching, and CDNs"</title>
+      <description>
+        <![CDATA[<p>You customers care about how fast your application works, you should too.... At Heroku we see millions of apps deploy and we know what it takes to get serious performance out of your code and Rails. In this talk we&#39;ll cover backend tips and frontend tricks that will help your Rails app go faster than ever before.</p>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 17:50:59 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/13</link>
+      <guid>http://cfp.euruko2013.org/proposals/13</guid>
+    </item>
+    <item>
+      <title>"Dissecting Ruby with Ruby"</title>
+      <description>
+        <![CDATA[<h2>Description</h2>
+
+<p>Underneath the beautiful veneer of our Ruby libraries lies a twisted tangle of writhing guts. Maybe you&#39;re curious how the pieces fit together or maybe you&#39;re tracking down a bug, either way it&#39;s easy to get lost in the blood and bile that ties our code together. In this talk you&#39;ll learn how to use simple and sharp Ruby tools to slice into large libraries with surgical precision. We&#39;ll do some live hacking on Rails on the stage and cover useful code probing techniques. Turn your impossible bugs into pull requests, and level up your programming skills by Dissecting Ruby with Ruby.</p>
+
+<h2>Expect:</h2>
+
+<ul>
+<li>Low level Ruby commands</li>
+<li>Real world examples</li>
+<li>To walk away with a better understanding of how Ruby works</li>
+<li>To be a better Ruby community member and coder</li>
+</ul>
+]]>
+      </description>
+      <pubDate>Fri, 29 Mar 2013 17:50:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/12</link>
+      <guid>http://cfp.euruko2013.org/proposals/12</guid>
+    </item>
+    <item>
+      <title>"What should we take out of Ruby?"</title>
+      <description>
+        <![CDATA[<p>When a new version of Ruby is released, discussion usually focuses on what&#39;s been added. However, what if we took advantage of the next major Ruby version to <strong>drop</strong> some features?</p>
+
+<p>The question I&#39;d like to ask is: <em>could we increase programmer happiness by removing features from Ruby?</em> And, assuming that the answer is yes, <em>what might we consider removing?</em></p>
+
+<p>I have several candidates in mind, including:</p>
+
+<ul>
+<li>Perlish <code>$</code>-variables (especially <code>$1</code> etc)</li>
+<li>Class variables (<code>@@foo</code>)</li>
+<li>Local variables from named regexp captures (you probably didn&#39;t even know this feature existed …)</li>
+<li><code>for</code> loops</li>
+<li>Control-flow booleans (<code>and</code>, <code>or</code>)</li>
+<li>Mutable strings</li>
+<li>Autoloading (<a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/41149">Matz has already warned that this might be removed in Ruby 3.0</a>)</li>
+<li>The flip-flop operator (<a href="https://matousek.wordpress.com/2008/12/06/ruby-flip-flop-operator/">special range behaviour in a condition</a>)</li>
+</ul>
+
+<p>Some of these will be more controversial than others; some more practical than others. Some may already be shunned by the majority of Ruby developers; others may be dearly beloved. Some might be completely impractical!</p>
+
+<p>For each candidate, I&#39;ll:</p>
+
+<ul>
+<li>Explain the rationale for dropping it</li>
+<li>Show the alternatives</li>
+<li>Report on how often it&#39;s actually used in Ruby&#39;s standard library and popular gems. </li>
+</ul>
+
+<p>Finally, I&#39;ll explore whether we as Ruby programmers might unilaterally cut out use of some features, how we&#39;d practically achieve this, and what benefits it might give us. As a comparison, the <code>asm.js</code> subset allows JavaScript engines to make some performance optimisations and precompile code. Is there something similar hiding at the heart of Ruby? That might be going a bit far, but dropping some features might be useful, as in the case of JRuby, which disables ObjectSpace by default to improve performance.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 23:45:02 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/11</link>
+      <guid>http://cfp.euruko2013.org/proposals/11</guid>
+    </item>
+    <item>
+      <title>"Immutability in Ruby"</title>
+      <description>
+        <![CDATA[<p>What does the concept of immutable data mean from a Ruby programmer’s perspective?
+How is immutability supported in Ruby, and why should you care?</p>
+
+<p>Immutable objects and data structures have existed for a long time, but in the last few years they have started getting more attention than ever before. Partly this is because of the movement towards concurrency and parallelism. That&#39;s a very good reason, but there&#39;s also a more fundamental one: In this talk we will see how using immutable data can actually make code more readable and easier to reason about. We will also see how immutability is the most natural way to deal with many kinds of data - much more than what we are used to doing in Ruby.</p>
+
+<p>We&#39;ll discuss immutability the Ruby standard library, and which parts of it deal with mutation and which don&#39;t. We&#39;ll see how to become aware of operations that mutate objects in-place, and why the use of those should be minimised.</p>
+
+<p>We&#39;ll also discuss object-oriented domain models, and how immutability shows up in them. Immutable values have been discussed in many of the most important OO design books throughout the years, but their use in the field has been nowhere as common as it could have. In Ruby classes mutability is always the default, and to achieve immutability we always have to do some work. We will see how to do this effectively.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 21:27:18 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/10</link>
+      <guid>http://cfp.euruko2013.org/proposals/10</guid>
+    </item>
+    <item>
+      <title>"The Web of tomorrow"</title>
+      <description>
+        <![CDATA[<p>The web is changing and new changes are coming.</p>
+
+<h1>Description</h1>
+
+<p>How will the new RFCs will affect the web as we know it?
+What technologies will raise again?
+Is Ruby prepared for this changes? Are we?</p>
+
+<p>I want to answer these questions and talk about new web technologies and how we need to change to adapt to this upcoming era.</p>
+
+<p>The web is changing fast and we as Ruby developers need to be in the cutting edge.</p>
+
+<p>From web sockets to WebRTC.
+From distributed to decentralised.</p>
+
+<p>Are you ready to change the web as we know it?</p>
+
+<h1>Agenda</h1>
+
+<ol>
+<li>How does getUserMedia works.</li>
+<li>How to store camera information in the backend.</li>
+<li>How does PeerConnection works.</li>
+<li>Ruby&#39;s task in the connection</li>
+<li>DataChannel</li>
+<li>WebRTC Social Impact</li>
+</ol>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 20:33:27 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/9</link>
+      <guid>http://cfp.euruko2013.org/proposals/9</guid>
+    </item>
+    <item>
+      <title>"RVM 2.0 A Ruby Environment Manager in Ruby"</title>
+      <description>
+        <![CDATA[<p>RVM2 is coming, with it&#39;s new implementation in Ruby it will be a big step for whole ruby community, bringing ruby version and environment management to a new level, in any meaning experience, development and maintenance included.</p>
+
+<p>In the talk I want to introduce RVM2, make a short look on how it is possible that RVM2 is written in ruby. I want to introduce attendees to the simplicity of the code and show them how easy it is to understand RVM2 code and to customize it to your own needs.</p>
+
+<p>Although code examples might be present, overall it should be more a look on it and lot more talking then technical details, no live codding.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 19:59:37 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/8</link>
+      <guid>http://cfp.euruko2013.org/proposals/8</guid>
+    </item>
+    <item>
+      <title>"Scaling and automating the heck out of your infrastructure with Chef"</title>
+      <description>
+        <![CDATA[<p>Nobody loves Ops, right? Well nobody except old school System Administrators and new school DevOps advocates. Manually setting up servers, hand-crafting complex configuration files, setting up service monitoring, graphing, logging and alerting (especially in the era of cloud computing where most services count server deployments in the hundreds and thousands) when all you ever wanted is your awesome code to just work!</p>
+
+<p>Fortunately, a bunch of smart dudes (and dudetes) at Opscode (and the amazing surrounding open source community) came in to change that. Enter Chef.</p>
+
+<p>Chef is a configuration management, automation and continuous deployment software stack written in Ruby and Erlang, designed to take over your manual labor over cloud server provisioning, service configuration and application deployment and turn it into a fun and exciting process. Using a complete Ruby environment and an extremely semantic DSL, it helps you provision servers, automate cloud infrastructure and continuously deploy your app, be it on Ruby, Node, Erlang, Python or any other stack of your choice.</p>
+
+<p>The talk will be about Chef fundamentals (installation, concepts, DSL, especially focusing to the newly released Chef 11 and the changes it brings), cookbook management best practices (such as the &quot;application-role&quot; cookbook paradigm) and an extensive reference to the Chef tool ecosystem (such as berkshelf, spork, santoku, ridley and testing with vagrant/vagabond/test-kitchen) will be made.</p>
+
+<p>At the end of the talk, ideally, the attendants will leave with a full understanding of the Chef development workflow, go home, setup a Chef server on a vagrant/vagabond VM and start using it as a production environment replica for all their projects.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 17:22:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/7</link>
+      <guid>http://cfp.euruko2013.org/proposals/7</guid>
+    </item>
+    <item>
+      <title>"Shrink To Grow"</title>
+      <description>
+        <![CDATA[<p>Ruby has grown in the last 20 years. The feature-set and field of usage has increased. But also the code-size has reached an exceptional size. For many systems Ruby is nowadays to large.</p>
+
+<p>To reach new systems we have to re-think the way we implement Ruby. We have to shrink Ruby to be able to grow into a new field with an army of small devices.</p>
+
+<p>This talk will cover the development of mruby. The current state of the implementation and the reason why you should contribute to it.</p>
+
+<p>Remarkable Key Points of this Talk:</p>
+
+<ul>
+<li>presenting my hack to run mruby on an official Arduino</li>
+<li>analyse real-time behavior of mruby</li>
+<li>mruby on iPhone and Android</li>
+<li>modifing mruby source to your own needs</li>
+</ul>
+
+<p>Matz will support the Q&amp;A session of this talk!</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 15:06:26 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/6</link>
+      <guid>http://cfp.euruko2013.org/proposals/6</guid>
+    </item>
+    <item>
+      <title>"Achieving zomgscale with Celluloid and JRuby!"</title>
+      <description>
+        <![CDATA[<p>Light up your cores! Learn how to achieve levels of scale hitherto unknown to mere mortals.</p>
+
+<p>This talk will cover concurrency and parallelisation for the discerning rubyist. We&#39;ll cover why MRI is keeping your CPUs way cooler than they find comfortable and how you can unlock unfound levels of roflscale by spending a little time with celluloid and JRuby. I&#39;ll touch on points and techniques including:</p>
+
+<ul>
+<li>an exploration of celluloid and the actor model (a forty year+ old pattern!)</li>
+<li>writing fast, robust and maintainable multi-threaded code with celluloid</li>
+<li>how to identify the low-hanging fruit in your apps that will benefit from multi-threading</li>
+<li>guarding your code against common thread-safety pitfalls </li>
+<li>where ruby fits in with the future of multi-threading and parallelisation</li>
+</ul>
+
+<p>All gained from solid experience in the field and on-project - engineering a messaging solution processing many thousands of messages in parallel per second.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 13:37:00 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/5</link>
+      <guid>http://cfp.euruko2013.org/proposals/5</guid>
+    </item>
+    <item>
+      <title>"Roll your own web framework in half an hour"</title>
+      <description>
+        <![CDATA[<p>Web apps are moving from being monolithic beasts to smaller, more composable services working in tandem to provide the user a harmonious experience. In such a situation, perhaps you find that your favourite web framework is overkill for a particular task, or that it doesn&#39;t play so well with some tasty new toy that&#39;s just been released. It&#39;s time to roll your own web framework.</p>
+
+<p>The talk will be a lot about Rack, some of the design decisions that one might make differently while putting together a framework and also about the cool tools that we have at our disposal as rubyists when we set out to mount some URLs on bare metal. If there is time, we&#39;ll talk about how building services that adhere to SRP can bring to your web app a competition-beating degree of flexibility.</p>
+
+<p>It is the intention of this talk that seeing a framework built in half an hour will give the audience the tools necessary to evaluate the various frameworks out there in terms of their design tradeoffs (if any), to better understand the Rack ecosystem so they can contribute to existing frameworks and as a last resort, to take matters into their own hands.</p>
+
+<p>It is also intended to further the audience&#39;s appreciation of how much work Ruby developers have put in to bring us to a point where we can trivially create web frameworks by combining some awesome gems.</p>
+
+<p>I have in mind a different approach from most micro-frameworks utilising some different design choices (no magic, proper object orientation, extreme testability) and will certainly touch upon the pros and cons of the various choices made by other frameworks in my talk.</p>
+
+<p>I will be live coding, starting with a router, then building simple, easily testable rack apps that respond with the desired data, layering on some nice Rack utilities that deal with URL parsing, security, JSON, CORS and so on until we end up with a pretty decent and blazing fast web framework.</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 12:46:46 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/4</link>
+      <guid>http://cfp.euruko2013.org/proposals/4</guid>
+    </item>
+    <item>
+      <title>"Écouter et répéter is SO last century"</title>
+      <description>
+        <![CDATA[<p>You know what? Learning how to speak another language shouldn&#39;t be hard. So lets put it in a context that we know and love - programming in Ruby. This is a talk about abstraction, counting, syntax and grammar. It&#39;s nerdy, but its fun.</p>
+
+<p>What you won&#39;t see is your typical &quot;language talk&quot; - I won&#39;t be banging on about language theory (except to relate to Ruby), or any particular natural language.</p>
+
+<p>I think this is better, because it&#39;s about applying what you already know to the task at hand. There might even be a lesson or two snuck in there - wouldn&#39;t that be nice?</p>
+
+<p>Learning another language shouldn&#39;t be an insurmountable challenge, learning to speak another language even less so. I fully believe, and will explain that by our very nature as programmers, we do this all the time - I&#39;ll talk about how these same skills that let us switch from Java to Ruby to Go can be used to help us switch from English to Sweedish to Japanese.</p>
+
+<p>Hell, it might even help you switch from programming in Ruby to painting landscapes!</p>
+]]>
+      </description>
+      <pubDate>Thu, 28 Mar 2013 12:13:04 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/1</link>
+      <guid>http://cfp.euruko2013.org/proposals/1</guid>
+    </item>
+  </channel>
+</rss>

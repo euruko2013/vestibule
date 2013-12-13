@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Cutting off the browser fat from your app"</title>
+    <description>A list of all suggestions made for "Cutting off the browser fat from your app"</description>
+    <link>http://cfp.euruko2013.org/proposals/19</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/19.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>I know it may sound like normal/common stuff like Clemens said, and maybe it is, but I&#39;m going came with a plan to make your apps faster, optimizing your front-end not just CSS and JS, I&#39;m talking about cleaner views, cache, the turbolinks approach on rails 4, and if the time on my side maybe more. </p>
+
+<p>This may not be the specific ruby talk, but you know I think every purist rubist needs to be aware and take care of the their front end apps.</p>
+
+<p>A lot of us are already doing it, but I&#39;m sure that there are  many people out there ignoring this matter</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 05:03:41 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/19#suggestion_102</link>
+      <guid>http://cfp.euruko2013.org/proposals/19#suggestion_102</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>What aspects of your talk are Ruby-specific? What can we (roughly) expect that isn&#39;t already covered by tools like YSlow, PageSpeed etc. and their accompanying documentation, blog posts etc.?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 17:07:13 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/19#suggestion_66</link>
+      <guid>http://cfp.euruko2013.org/proposals/19#suggestion_66</guid>
+    </item>
+    <item>
+      <title>Suggestion from John Pagonis (@)</title>
+      <description type="html">
+        <![CDATA[<p>It sounds useful, but is there anything Ruby specific in your talk?</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 11:16:00 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/19#suggestion_47</link>
+      <guid>http://cfp.euruko2013.org/proposals/19#suggestion_47</guid>
+    </item>
+  </channel>
+</rss>

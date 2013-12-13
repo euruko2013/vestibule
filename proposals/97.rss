@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "No one plans for complexity, and neither should you!"</title>
+    <description>A list of all suggestions made for "No one plans for complexity, and neither should you!"</description>
+    <link>http://cfp.euruko2013.org/proposals/97</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/97.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Done and done, I saw that after the first time I submitted it I got a Rails 500 errors, so I hit &#39;back&#39; and submitted it again only to see I had done it twice :/</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:57:58 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/97#suggestion_238</link>
+      <guid>http://cfp.euruko2013.org/proposals/97#suggestion_238</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>Hey, can you withdraw one of the two? You seem to have submitted it twice :) (<a href="http://cfp.euruko2013.org/proposals/96">http://cfp.euruko2013.org/proposals/96</a>)</p>
+]]>
+      </description>
+      <pubDate>Tue, 23 Apr 2013 20:54:45 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/97#suggestion_237</link>
+      <guid>http://cfp.euruko2013.org/proposals/97#suggestion_237</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vestibule :: Suggestions for "Hacking with Gems"</title>
+    <description>A list of all suggestions made for "Hacking with Gems"</description>
+    <link>http://cfp.euruko2013.org/proposals/33</link>
+    <atom:link href="http://cfp.euruko2013.org/proposals/33.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Paul, it&#39;s a fun topic to think about. This talk always gets people talking about creative, interesting, and scary ideas for malicious gems.</p>
+
+<p>That last part of the talk offers concrete actions individuals can take to avoid malicious gems. It also presents steps the Ruby community can take to make gems more secure. There is no silver bullet solution though. Each layer of additional security only makes it harder for someone with malicious intent... but not impossible.</p>
+]]>
+      </description>
+      <pubDate>Sat, 20 Apr 2013 01:25:36 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_168</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_168</guid>
+    </item>
+    <item>
+      <title>Suggestion from Paul Battley (@threedaymonk)</title>
+      <description type="html">
+        <![CDATA[<p>This sounds like it could be fun – and scary! I can already imagine plenty of exploits using gems, so I&#39;m especially interested in the last part: how can we protect against this?</p>
+]]>
+      </description>
+      <pubDate>Fri, 19 Apr 2013 12:37:12 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_162</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_162</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Nikos,</p>
+
+<p>My talk is broken into three parts: What could a gem do? How could an attack be executed? and How can we avoid it?</p>
+
+<p>As one real life example of &quot;How could an attack be executed?&quot;, at other conferences I have written a (harmless) gem which at install time gathers usernames (via <code>whoami</code>). During the conference, I social engineer people into installing my gem. Then during my talk I reveal I am the gem author... and also all the usernames of everyone who installed it. Thus far, the reception to this has been great. People love it, and it tends to be the highlight of my talk.</p>
+
+<p>It is a slightly, risque or shady, thing to do... so I&#39;ve always left it up to the conference organizers on whether or not I attempt this and the details surrounding it.</p>
+]]>
+      </description>
+      <pubDate>Wed, 10 Apr 2013 05:01:22 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_101</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_101</guid>
+    </item>
+    <item>
+      <title>Suggestion from Nikos Dimitrakopoulos (@)</title>
+      <description type="html">
+        <![CDATA[<p>We are always open to crazy ideas so feel to share them with us :)</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 20:27:09 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_78</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_78</guid>
+    </item>
+    <item>
+      <title>Suggestion from the proposer</title>
+      <description type="html">
+        <![CDATA[<p>Thanks for the recommendation Clemens!</p>
+
+<p>I agree that this talk works best when scheduled at certain times. It quite entertaining making a good end of day talk when audience energy is low. It also tends to generate a lot of conversations which is good for a beginning of day/conference talk. Depending on the level of involvement/integration the organizers would like (I can provide details directly to the organizers on this if they wish to pursue the talk), this talk can provide a major splash if done near the end of the conference.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 20:23:17 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_77</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_77</guid>
+    </item>
+    <item>
+      <title>Suggestion from Clemens Kofler (@clemens)</title>
+      <description type="html">
+        <![CDATA[<p>I&#39;ve already seen this talk and it&#39;s good fun and interesting – so I can highly recommend it.</p>
+
+<p>If this proposal gets accepted, I suggest to the organizers that it be placed at the beginning or end of a day as it might be a good way to start or round off a day filled with &quot;hard&quot; topics.</p>
+]]>
+      </description>
+      <pubDate>Sun, 07 Apr 2013 16:29:01 +0000</pubDate>
+      <link>http://cfp.euruko2013.org/proposals/33#suggestion_58</link>
+      <guid>http://cfp.euruko2013.org/proposals/33#suggestion_58</guid>
+    </item>
+  </channel>
+</rss>
