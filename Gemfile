@@ -49,6 +49,8 @@ group :development do
 end
 
 group :test do
+  gem "test-unit", '~> 3.0'
+
   gem "minitest"
   gem "minitest-reporters", '>= 0.8.0'
   gem "factory_girl_rails", "4.1.0"
