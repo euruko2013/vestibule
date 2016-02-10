@@ -60,7 +60,6 @@ group :test do
   gem "timecop", "0.5.7"
 
   # Things that aren't *required*, but you might need as you go.
-  gem "debugger"
   gem "launchy"
   gem "escape_utils", "0.1.9"
 end
