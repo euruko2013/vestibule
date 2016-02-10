@@ -150,7 +150,7 @@ GEM
     paper_trail (2.7.1)
       activerecord (~> 3.0)
       railties (~> 3.0)
-    pg (0.14.1)
+    pg (0.18.1)
     polyglot (0.3.3)
     powerbar (1.0.11)
       ansi (~> 1.4.0)
@@ -271,7 +271,7 @@ DEPENDENCIES
   omniauth-openid
   omniauth-twitter
   paper_trail (~> 2.7.1)
-  pg (= 0.14.1)
+  pg (= 0.18.1)
   quiet_assets
   rails (= 3.2.13)
   redcarpet (= 2.2.2)
