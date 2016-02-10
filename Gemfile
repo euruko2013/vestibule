@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 ruby "2.2.4"
 
-gem "rails", "3.2.13"
+gem "rails", "3.2.22"
 gem "pg", "0.18.1"
 gem "simple_form", "2.0.4"
 gem "paper_trail", "~> 2.7.1"
